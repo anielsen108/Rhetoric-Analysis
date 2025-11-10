@@ -4,7 +4,7 @@
 
 This repository contains comprehensive rhetorical and syntactic analyses of literary passages from world literature, organized chronologically by decade. The collection spans from ancient epic to contemporary fiction, with particular depth in the period 1850-present. Each analysis examines how language creates meaning through both classical rhetorical devices and modern syntactic structures.
 
-**Total Analyses: 125** (and growing)
+**Total Analyses: 176** (and growing)
 
 ## Methodology
 
@@ -123,36 +123,54 @@ Each analysis file includes:
 
 **1900s:**<br>
 [117. **Joseph Conrad** - *Heart of Darkness* (1899/1902)](analyses/117_heart_darkness.md)<br>
+[147. **Joseph Conrad** - *Heart of Darkness* (1899/1902)](analyses/147_heart_darkness.md)<br>
 [118. **Anton Chekhov** - *The Cherry Orchard* (1904)](analyses/118_cherry_orchard.md)<br>
-[119. **Edith Wharton** - *The House of Mirth* (1905)](analyses/119_house_of_mirth.md)
+[119. **Edith Wharton** - *The House of Mirth* (1905)](analyses/119_house_of_mirth.md)<br>
+[146. **Theodore Dreiser** - *Sister Carrie* (1900)](analyses/146_sister_carrie.md)
 
 **1910s:**<br>
-[044. **James Joyce** - *A Portrait of the Artist as a Young Man* (1916)](analyses/044_portrait_artist.md)<br>
-[023. **James Joyce** - *Dubliners* - "The Dead" ending (1914)](analyses/023_dubliners_the_dead.md)<br>
+[149. **D.H. Lawrence** - *Sons and Lovers* (1913)](analyses/149_sons_lovers.md)<br>
 [065. **Marcel Proust** - *In Search of Lost Time* - Madeleine (1913)](analyses/065_in_search_lost_time.md)<br>
+[023. **James Joyce** - *Dubliners* - "The Dead" ending (1914)](analyses/023_dubliners_the_dead.md)<br>
+[151. **James Joyce** - *Dubliners* - "The Dead" (1914)](analyses/151_dubliners_dead.md)<br>
 [070. **T.S. Eliot** - "The Love Song of J. Alfred Prufrock" (1915)](analyses/070_love_song_prufrock.md)<br>
 [019. **Franz Kafka** - *The Metamorphosis* - Opening (1915)](analyses/019_metamorphosis_opening.md)<br>
+[150. **Franz Kafka** - *The Metamorphosis* (1915)](analyses/150_metamorphosis.md)<br>
+[153. **Virginia Woolf** - *The Voyage Out* (1915)](analyses/153_voyage_out.md)<br>
+[044. **James Joyce** - *A Portrait of the Artist as a Young Man* (1916)](analyses/044_portrait_artist.md)<br>
+[148. **James Joyce** - *A Portrait of the Artist as a Young Man* (1916)](analyses/148_portrait_artist.md)<br>
 [120. **Willa Cather** - *My Ántonia* (1918)](analyses/120_my_antonia.md)
 
 **1920s:**<br>
-[016. **T.S. Eliot** - *The Waste Land* - "April is the cruellest month" (1922)](analyses/016_wasteland_april.md)<br>
 [084. **Wallace Stevens** - "The Snow Man" (1921)](analyses/084_snow_man.md)<br>
+[016. **T.S. Eliot** - *The Waste Land* - "April is the cruellest month" (1922)](analyses/016_wasteland_april.md)<br>
+[152. **T.S. Eliot** - *The Waste Land* (1922)](analyses/152_waste_land.md)<br>
 [085. **Pablo Neruda** - "Tonight I Can Write" (1924)](analyses/085_tonight_i_can_write.md)<br>
 [013. **Virginia Woolf** - *Mrs. Dalloway* - Opening (1925)](analyses/013_mrs_dalloway_opening.md)<br>
 [006. **F. Scott Fitzgerald** - *The Great Gatsby* - Green light passage (1925)](analyses/006_great_gatsby_green_light.md)<br>
 [018. **Ernest Hemingway** - *The Sun Also Rises* - Paris passage (1926)](analyses/018_sun_also_rises.md)<br>
 [068. **William Butler Yeats** - "Sailing to Byzantium" (1928)](analyses/068_sailing_byzantium.md)<br>
 [014. **William Faulkner** - *The Sound and the Fury* - Benjy's section (1929)](analyses/014_sound_fury_benjy.md)<br>
+[155. **William Faulkner** - *The Sound and the Fury* (1929)](analyses/155_sound_fury.md)<br>
+[154. **Ernest Hemingway** - *A Farewell to Arms* (1929)](analyses/154_farewell_arms.md)<br>
 [096. **Virginia Woolf** - *A Room of One's Own* - Money and room (1929)](analyses/096_room_of_ones_own.md)
 
 **1930s:**<br>
 [121. **Aldous Huxley** - *Brave New World* (1932)](analyses/121_brave_new_world.md)<br>
+[159. **William Faulkner** - *Absalom, Absalom!* (1936)](analyses/159_absalom_absalom.md)<br>
+[156. **Zora Neale Hurston** - *Their Eyes Were Watching God* (1937)](analyses/156_their_eyes.md)<br>
+[077. **W.H. Auden** - "Musée des Beaux Arts" (1938)](analyses/077_musee_beaux_arts.md)<br>
 [021. **John Steinbeck** - *The Grapes of Wrath* - Turtle chapter (1939)](analyses/021_grapes_wrath_turtle.md)<br>
-[077. **W.H. Auden** - "Musée des Beaux Arts" (1938)](analyses/077_musee_beaux_arts.md)
+[157. **John Steinbeck** - *The Grapes of Wrath* (1939)](analyses/157_grapes_wrath.md)<br>
+[158. **Raymond Chandler** - *The Big Sleep* (1939)](analyses/158_big_sleep.md)
 
 **1940s:**<br>
 [122. **Richard Wright** - *Native Son* (1940)](analyses/122_native_son.md)<br>
+[160. **Richard Wright** - *Native Son* (1940)](analyses/160_native_son.md)<br>
 [086. **Jorge Luis Borges** - "The Garden of Forking Paths" (1941)](analyses/086_garden_forking_paths.md)<br>
+[163. **Albert Camus** - *The Stranger* (1942)](analyses/163_stranger.md)<br>
+[161. **Robert Penn Warren** - *All the King's Men* (1946)](analyses/161_all_kings_men.md)<br>
+[162. **W.H. Auden** - *The Age of Anxiety* (1947)](analyses/162_age_anxiety.md)<br>
 [097. **Simone de Beauvoir** - *The Second Sex* - "One is not born" (1949)](analyses/097_second_sex.md)<br>
 [004. **George Orwell** - *1984* - "It was a bright cold day in April" (1949)](analyses/004_1984_opening.md)
 
@@ -161,21 +179,27 @@ Each analysis file includes:
 **1950s:**<br>
 [008. **J.D. Salinger** - *The Catcher in the Rye* - Opening (1951)](analyses/008_catcher_rye_opening.md)<br>
 [011. **Ralph Ellison** - *Invisible Man* - Opening (1952)](analyses/011_invisible_man_opening.md)<br>
+[164. **Ralph Ellison** - *Invisible Man* (1952)](analyses/164_invisible_man.md)<br>
 [049. **Ernest Hemingway** - *The Old Man and the Sea* (1952)](analyses/049_old_man_sea.md)<br>
 [055. **Samuel Beckett** - *Waiting for Godot* (1953)](analyses/055_waiting_godot.md)<br>
+[165. **William Golding** - *Lord of the Flies* (1954)](analyses/165_lord_flies.md)<br>
 [017. **Vladimir Nabokov** - *Lolita* - Opening (1955)](analyses/017_lolita_opening.md)<br>
 [093. **James Baldwin** - *Notes of a Native Son* (1955)](analyses/093_notes_native_son.md)<br>
 [038. **Allen Ginsberg** - *Howl* - Opening (1956)](analyses/038_howl_ginsberg.md)<br>
+[166. **Jack Kerouac** - *On the Road* (1957)](analyses/166_on_road.md)<br>
 [020. **Chinua Achebe** - *Things Fall Apart* - Okonkwo introduction (early version) (1958)](analyses/020_things_fall_apart.md)<br>
-[087. **Chinua Achebe** - *Things Fall Apart* - Okonkwo passage (1958)](analyses/087_things_fall_apart.md)
+[087. **Chinua Achebe** - *Things Fall Apart* - Okonkwo passage (1958)](analyses/087_things_fall_apart.md)<br>
+[172. **Chinua Achebe** - *Things Fall Apart* (1958)](analyses/172_things_fall_apart.md)
 
 **1960s:**<br>
 [079. **Gwendolyn Brooks** - "We Real Cool" (1960)](analyses/079_we_real_cool.md)<br>
 [028. **Martin Luther King Jr.** - *I Have a Dream* - Opening (1963)](analyses/028_i_have_dream.md)<br>
 [061. **Martin Luther King Jr.** - "Letter from Birmingham Jail" (1963)](analyses/061_letter_birmingham_jail.md)<br>
 [060. **Sylvia Plath** - *The Bell Jar* (1963)](analyses/060_bell_jar.md)<br>
+[167. **Sylvia Plath** - *The Bell Jar* (1963)](analyses/167_bell_jar.md)<br>
 [083. **Sylvia Plath** - "Daddy" (1965)](analyses/083_daddy_plath.md)<br>
 [040. **Gabriel García Márquez** - *One Hundred Years of Solitude* - Opening (1967)](analyses/040_one_hundred_years_solitude.md)<br>
+[168. **Gabriel García Márquez** - *One Hundred Years of Solitude* (1967)](analyses/168_hundred_solitude.md)<br>
 [062. **Kurt Vonnegut** - *Slaughterhouse-Five* (1969)](analyses/062_slaughterhouse_five.md)
 
 **1970s:**<br>
@@ -192,11 +216,17 @@ Each analysis file includes:
 
 **1980s:**<br>
 [088. **Salman Rushdie** - *Midnight's Children* - Opening (1981)](analyses/088_midnights_children.md)<br>
+[174. **Salman Rushdie** - *Midnight's Children* (1981)](analyses/174_midnight_children.md)<br>
+[173. **Isabel Allende** - *The House of the Spirits* (1982)](analyses/173_house_spirits.md)<br>
 [089. **Margaret Atwood** - *The Handmaid's Tale* - "Night falls" (1985)](analyses/089_handmaids_tale.md)<br>
+[170. **Margaret Atwood** - *The Handmaid's Tale* (1985)](analyses/170_handmaids_tale.md)<br>
 [090. **Cormac McCarthy** - *Blood Meridian* - "They rode on" (1985)](analyses/090_blood_meridian.md)<br>
 [091. **Don DeLillo** - *White Noise* - Smoke alarm passage (1985)](analyses/091_white_noise.md)<br>
+[171. **Don DeLillo** - *White Noise* (1985)](analyses/171_white_noise.md)<br>
 [015. **Toni Morrison** - *Beloved* - "124 was spiteful" (1987)](analyses/015_beloved_opening.md)<br>
-[063. **Toni Morrison** - *Beloved* - "Sixty Million and more" (1987)](analyses/063_beloved_60_million.md)
+[169. **Toni Morrison** - *Beloved* (1987)](analyses/169_beloved.md)<br>
+[063. **Toni Morrison** - *Beloved* - "Sixty Million and more" (1987)](analyses/063_beloved_60_million.md)<br>
+[175. **Kazuo Ishiguro** - *The Remains of the Day* (1989)](analyses/175_remains_day.md)
 
 **1990s:**<br>
 [123. **Jhumpa Lahiri** - "A Temporary Matter" (1999)](analyses/123_interpreter_maladies.md)
@@ -204,7 +234,8 @@ Each analysis file includes:
 ### 21st Century (2000-Present)
 
 **2000s:**<br>
-[124. **Zadie Smith** - *White Teeth* (2000)](analyses/124_white_teeth.md)
+[124. **Zadie Smith** - *White Teeth* (2000)](analyses/124_white_teeth.md)<br>
+[176. **Ian McEwan** - *Atonement* (2001)](analyses/176_atonement.md)
 
 **2010s:**<br>
 [125. **Colson Whitehead** - *The Underground Railroad* (2016)](analyses/125_underground_railroad.md)
