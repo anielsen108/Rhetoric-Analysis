@@ -4,7 +4,7 @@
 
 This repository contains comprehensive rhetorical and syntactic analyses of literary passages from world literature, organized chronologically by decade. The collection spans from ancient epic to contemporary fiction, with particular depth in the period 1850-present. Each analysis examines how language creates meaning through both classical rhetorical devices and modern syntactic structures.
 
-**Total Analyses: 176** (and growing)
+**Total Analyses: 196** (and growing)
 
 ## Methodology
 
@@ -229,16 +229,36 @@ Each analysis file includes:
 [175. **Kazuo Ishiguro** - *The Remains of the Day* (1989)](analyses/175_remains_day.md)
 
 **1990s:**<br>
+[178. **Michael Ondaatje** - *The English Patient* (1992)](analyses/178_english_patient.md)<br>
+[179. **Carol Shields** - *The Stone Diaries* (1993)](analyses/179_stone_diaries.md)<br>
+[180. **E. Annie Proulx** - *The Shipping News* (1993)](analyses/180_shipping_news.md)<br>
+[177. **David Foster Wallace** - *Infinite Jest* (1996)](analyses/177_infinite_jest.md)<br>
+[182. **Arundhati Roy** - *The God of Small Things* (1997)](analyses/182_god_small_things.md)<br>
+[181. **Barbara Kingsolver** - *The Poisonwood Bible* (1998)](analyses/181_poisonwood_bible.md)<br>
 [123. **Jhumpa Lahiri** - "A Temporary Matter" (1999)](analyses/123_interpreter_maladies.md)
 
 ### 21st Century (2000-Present)
 
 **2000s:**<br>
 [124. **Zadie Smith** - *White Teeth* (2000)](analyses/124_white_teeth.md)<br>
-[176. **Ian McEwan** - *Atonement* (2001)](analyses/176_atonement.md)
+[184. **Michael Chabon** - *The Amazing Adventures of Kavalier & Clay* (2000)](analyses/184_amazing_adventures.md)<br>
+[176. **Ian McEwan** - *Atonement* (2001)](analyses/176_atonement.md)<br>
+[183. **Jonathan Franzen** - *The Corrections* (2001)](analyses/183_corrections.md)<br>
+[188. **Edward P. Jones** - *The Known World* (2003)](analyses/188_known_world.md)<br>
+[186. **Marilynne Robinson** - *Gilead* (2004)](analyses/186_gilead.md)<br>
+[185. **Junot Díaz** - *The Brief Wondrous Life of Oscar Wao* (2007)](analyses/185_brief_wondrous_life.md)<br>
+[189. **Han Kang** - *The Vegetarian* (2007/2015 trans.)](analyses/189_vegetarian.md)
 
 **2010s:**<br>
-[125. **Colson Whitehead** - *The Underground Railroad* (2016)](analyses/125_underground_railroad.md)
+[187. **Donna Tartt** - *The Goldfinch* (2013)](analyses/187_goldfinch.md)<br>
+[190. **George Saunders** - *Tenth of December* (2013)](analyses/190_tenth_december.md)<br>
+[191. **Chimamanda Ngozi Adichie** - *Americanah* (2013)](analyses/191_americanah.md)<br>
+[125. **Colson Whitehead** - *The Underground Railroad* (2016)](analyses/125_underground_railroad.md)<br>
+[192. **George Saunders** - *Lincoln in the Bardo* (2017)](analyses/192_lincoln_bardo.md)<br>
+[194. **Andrew Sean Greer** - *Less* (2017)](analyses/194_less.md)<br>
+[195. **Min Jin Lee** - *Pachinko* (2017)](analyses/195_pachinko.md)<br>
+[193. **Richard Powers** - *The Overstory* (2018)](analyses/193_overstory.md)<br>
+[196. **Colson Whitehead** - *The Nickel Boys* (2019)](analyses/196_nickel_boys.md)
 
 ---
 
