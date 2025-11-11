@@ -149,6 +149,7 @@
 **Postmodern skepticism:** Aligns with Susan Sontag’s cultural critiques.
 
 **Fairy-tale inversion:** Similar to Angela Carter’s subversive tales.
+**New Journalism manifesto:** Dialogues with Tom Wolfe’s hybrid reportage manifestos while remaining cooler in tone.
 
 ---
 

@@ -152,6 +152,7 @@
 **Metafictional modernism:** Resembles Nabokov’s self-aware narrators.
 
 **Fairy-tale inversion:** Similar to Angela Carter’s subverted openings.
+**Postcolonial historiography:** Converses with contemporaries like Amitav Ghosh in blending myth and politics.
 
 ---
 

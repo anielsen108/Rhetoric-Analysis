@@ -2,8 +2,8 @@
 
 **Gabriel García Márquez** · *Cien años de soledad* · 1967 (trans. Gregory Rabassa) | Opening sentence
 
-**Occasion/Pressure:** Launch the saga by binding childhood wonder to future violence in a single sentence.
-**Persona/Stance:** Omniscient narrator with panoramic temporal vision.
+**Occasion/Pressure:** Launch the saga by binding childhood wonder to future violence in a single breath.
+**Persona/Stance:** Omniscient storyteller with panoramic temporal vision.
 **Thesis of Effect:** Layered temporal clauses and juxtaposed imagery collapse past, present, and future into one magical-realist instant.
 
 ---
@@ -17,19 +17,19 @@
 ## A) RHETORICAL TROPES USED
 
 ### **Prolepsis** (pro-LEP-sis)
-**Evidence:** Future execution referenced before main narrative.
-**Effect:** Foreshadows fate while anchoring memory in future viewpoint.
+**Evidence:** Future execution referenced before main narrative begins.
+**Effect:** Foreshadows fate while anchoring memory in foreknown tragedy.
 
 ### **Juxtaposition**
 **Evidence:** "firing squad" beside "discover ice."
-**Effect:** Death coexists with innocent wonder.
+**Effect:** Death coexists with innocent wonder, making both mythic.
 
 ### **Magical realism gesture**
 **Evidence:** Treating ice discovery with epic weight.
-**Effect:** Signals world where marvel and mundane intertwine.
+**Effect:** Signals world where marvel and mundane intertwine seamlessly.
 
 ### **In medias res**
-**Evidence:** Drop directly into firing squad moment.
+**Evidence:** Dropped directly into execution scene with no preamble.
 **Effect:** Immediate tension; story already in motion.
 
 ---
@@ -50,7 +50,7 @@
 
 ### **Proper-noun formality**
 **Evidence:** Full title "Colonel Aureliano Buendía."
-**Effect:** Mythologizes character at outset.
+**Effect:** Mythologizes character at the outset.
 
 ---
 
@@ -72,7 +72,7 @@
 
 ## 1) EAR & PROSODY
 
-**Mouthfeel:** Gentle m-sounds in "Many" "firing" offset by hard consonants in "Colonel," "Buendía."
+**Mouthfeel:** Gentle m-sounds in "Many" and "remember" offset by hard consonants in "Colonel," "Buendía."
 
 **Cadence:** Commas pace long sweep; final "ice" lands softly, surprising after martial build-up.
 
@@ -101,11 +101,11 @@
 
 ## 3) DEIXIS, ASPECT, MODALITY
 
-**Deixis:** Shifts between later self and childhood self.
+**Deixis:** Shifts between later self and childhood self via "Many years later" and "that distant afternoon."
 
-**Aspect:** "was to remember" conveys future-in-past inevitability.
+**Aspect:** "was to remember" conveys future-in-past inevitability; memory predestined.
 
-**Modality:** Implicit destiny—memory must occur.
+**Modality:** Implicit destiny—no modal verb, yet certainty in construction.
 
 **Temporal logic:** Circular; past remembered in future narrated from present.
 
@@ -119,95 +119,95 @@
 
 **Lexical fields:** Time, memory, family, exploration.
 
-**Image logic:** Brutal adulthood illuminated by frozen childhood wonder.
+**Image logic:** Beauty and brutality cohabit Macondo; the miraculous is tinged with mortality.
 
 ---
 
 ## 5) NARRATIVE MECHANICS
 
-**Focalization:** External narrator with access to Colonel's future memory.
+**Focalization:** External narrator glimpsing both execution ground and childhood yard.
 
-**Time:** Sets novel’s non-linear rhythm.
+**Time:** Braids future crisis with origin myth, inaugurating novel’s non-linear chronology.
 
-**Beat structure:** Future danger → identity → recollection → formative childhood scene.
+**Beat structure:** Foreshadowed death → character naming → remembered adventure.
 
-**Subtext:** Memory preserves innocence amid later violence; Macondo’s history cyclical.
+**Subtext:** Violence is baked into family legend; progress toward modernity (ice) costs blood.
 
 ---
 
 ## 6) APPEALS & STRATEGY
 
-**Ethos:** Authorial voice omniscient and confident—controls time.
+**Ethos:** Authorial confidence in compressing decades into one clause.
 
-**Pathos:** Contrast between firing squad and ice evokes poignancy.
+**Pathos:** Sympathy for boy unaware of doom awaiting him.
 
-**Logos:** Syntax logically links cause (firing squad) to effect (memory triggered).
+**Logos:** Logical chain of temporal markers persuades reader of narrative inevitability.
 
 ---
 
 ## 7) LINEAGE & KINSHIPS
 
-**Faulkner influence:** Time folding reminiscent of *Absalom, Absalom!*.
+**Biblical cadence:** Echoes genealogical openings in scripture.
 
-**Latin American mythic historiography:** History treated as legend.
+**Modernist time-bending:** Converses with Faulkner’s *Absalom, Absalom!* temporal gymnastics.
 
-**Modernist temporality:** Aligns with Proustian memory techniques.
+**Latin American mythmaking:** Shares kinship with Carpentier’s marvelous real.
 
 ---
 
 ## 8) HOTSPOTS & FAULTLINES
 
 ### Hotspots
-1. **"Many years later"** — time sweep.
-2. **"firing squad"** — shock.
-3. **"discover ice"** — unexpected wonder.
+1. **"Many years later"** — instigates time spiral.
+2. **"firing squad"** — injects lethal stakes.
+3. **"discover ice"** — culminates in wonder.
 
 ### Faultlines
-1. **Translation choice "discover"** carries weight; alternative "see" would dull magic.
-2. **Complex syntax** demands attentive reading—sets tone for novel’s density.
+- Tension between colonial violence and scientific curiosity.
+- Memory as both sanctuary and trigger of trauma.
 
 ---
 
 ## 9) REVISION STUDIO
 
-**Subtraction test:** Remove "Many"—temporal grandeur lessens.
+**Subtraction test:** Remove "as he faced the firing squad"—sentence loses proleptic charge.
 
-**Amplification test:** Add adjectives to "firing squad"—would overdramatize; restraint better.
+**Amplification test:** Add sensory detail about ice—risks slowing legendary snap.
 
 **Register shift:**
-- **Formal:** *"It was many years afterward that, confronting the firing squad…"*
-- **Colloquial:** *"Years later, facing the firing squad, Aureliano would remember…"*
+- **Formal:** *"In subsequent years, while confronting his executioners, Colonel Aureliano Buendía recalled the afternoon his father introduced him to ice."*
+- **Colloquial:** *"Years later, right there in front of the firing squad, Aureliano remembered the day his dad showed him ice."*
 
-**Punctuation swap:** Replace commas with dashes—could modernize but disrupt flow.
+**Punctuation swap:** Replace commas with em dashes; yields more dramatic pauses but breaks fluidity.
 
 ---
 
 ## 10) IMITATIO / COUNTER-IMITATIO
 
-**Imitatio:** *Decades later, as she signed the peace accords, Marta would remember that rainy night when her mother taught her to read.*
+**Imitatio:** *Many years later, when she stood beneath the guillotine blade, Geneviève would remember the winter dusk when her mother first taught her to set bones.*
 
-**Counter-Imitatio:** *Years later he remembered seeing ice.* — Flat, no grandeur.
+**Counter-Imitatio:** *Later, Colonel Buendía remembered finding ice.* — Too flat, no mythic scope.
 
-**Compression (≤25 words):** *Years later, facing the firing squad, Colonel Aureliano Buendía would remember that distant afternoon when his father took him to discover ice.*
+**Compression (≤25 words):** *Facing execution, Colonel Aureliano Buendía remembers the day his father introduced him to ice.*
 
 ---
 
 ## 11) STEAL THIS (Takeaways)
 
-1. Begin with future memory to hook readers with destiny.
-2. Juxtapose violence and wonder for magical-realist tone.
-3. Use "was to" construction to imply inevitability.
-4. Let a single sentence hold multiple temporal planes.
-5. Employ precise familial detail (father, ice) to humanize mythic figure.
-6. Title + full name builds legend immediately.
-7. End on unexpected concrete image to linger in reader’s mind.
+1. Launch epic with single sentence folding multiple timelines.
+2. Pair innocence with impending violence for instant stakes.
+3. Use formal titles to confer mythic gravitas.
+4. Embed purpose infinitives to frame discovery as quest.
+5. Let relative clauses telescope time and place.
+6. Harness prolepsis to promise narrative payoff.
+7. End with unexpected concrete noun to seal memory.
 
 ---
 
 ## 12) MINI-GLOSSARY (Pronunciation Recap)
 
-**Prolepsis** (pro-LEP-sis) — Flash-forward reference.
-**Relative clause** — Dependent clause modifying noun.
-**Infinitive of purpose** — "to" + verb showing intent.
-**Magical realism** — Style blending fantastical and mundane.
-**Future-in-the-past** — Structure expressing later event from past viewpoint ("was to remember").
+**Prolepsis** — pro-LEP-sis: Flash-forward reference.
+**Juxtaposition** — juhk-stuh-puh-ZIH-shun: Placing contrasting images side by side.
+**Infinitive of purpose** — Expresses goal of action ("to discover").
+**Narrative telescoping** — Compressing wide time spans into one structure.
+**Magical realism** — Blend of ordinary reality with marvelous elements treated as normal.

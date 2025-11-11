@@ -1,53 +1,214 @@
-# Passage 189: "The Vegetarian"
+# Passage 189: Ordinary No More (*The Vegetarian*)
 
-## Author and Source
-**Han Kang**, *The Vegetarian* (2007/2015, trans. from Korean)
+**Han Kang** · *The Vegetarian* · 2007 (trans. Deborah Smith, 2015) | Opening lines
 
-## Passage
-> Before my wife turned vegetarian, I'd always thought of her as completely unremarkable in every way. To be frank, the first time I met her I wasn't even attracted to her.
+**Occasion/Pressure:** Husband narrates pre-transformation expectations to frame shock of wife’s vegetarianism.
+**Persona/Stance:** Detached, self-satisfied male narrator confessing indifference.
+**Thesis of Effect:** Temporal framing, totalizing adjectives, and blunt negations display his emotional vacancy while inviting reader distrust.
 
-## Rhetorical Tropes
+---
 
-### **Litotes** (LY-tuh-teez)
-*Definition:* Understatement through negation.
-*Example:* "wasn't even attracted to her"
-*Effect:* Emphasizes emotional absence through double negative.
+## PASSAGE
 
-### **Hyperbole** (hy-PER-buh-lee)
-*Definition:* Exaggeration.
-*Example:* "completely unremarkable in every way"
-*Effect:* Overstates wife's ordinariness to husband.
+[L1] Before my wife turned vegetarian, I'd always thought of her as completely unremarkable in every way.
+[L2] To be frank, the first time I met her I wasn't even attracted to her.
 
-### **Irony** (EYE-ruh-nee)
-*Definition:* Meaning opposite to surface.
-*Example:* Husband's assessment proves catastrophically wrong.
-*Effect:* Opens novel with narrator's complete misunderstanding.
+---
 
-## Syntax as Style Analysis
+## A) RHETORICAL TROPES USED
 
-### Temporal Subordinate
-"Before my wife turned vegetarian"—**temporal conjunction** with intransitive verb. Syntax marks transformation moment.
+### **Hyperbole**
+**Evidence:** "completely unremarkable in every way."
+**Effect:** Overstates ordinariness, revealing narrator’s arrogance.
 
-### Past Perfect Thinking
-"I'd always thought of her"—**past perfect** with adverb. Syntax shows prior continuous belief.
+### **Litotes**
+**Evidence:** "wasn't even attracted."
+**Effect:** Understates attraction to emphasize lack.
 
-### Adverbial Totality
-"always"—**universal time adverb**. Syntax emphasizes unbroken assessment.
+### **Irony**
+**Evidence:** Reader knows transformation will contradict his assessment.
+**Effect:** Sets up dramatic reversal.
 
-### Copulative Judgment
-"as completely unremarkable"—**comparative preposition** with intensified adjective. Syntax makes extreme ordinariness claim.
+### **Metonymy of appetite**
+**Evidence:** Vegetarianism stands for entire change.
+**Effect:** Food choice becomes shorthand for rebellion.
 
-### Prepositional Scope
-"in every way"—**universal spatial metaphor**. Syntax makes judgment total.
+---
 
-### Parenthetical Honesty
-"To be frank"—**infinitive of purpose** signaling confession. Syntax marks uncomfortable admission.
+## B) RHETORICAL SCHEMES USED
 
-### Temporal First Time
-"the first time I met her"—**definite temporal clause**. Syntax recalls initial encounter.
+### **Temporal subordination**
+**Evidence:** "Before my wife turned vegetarian."
+**Effect:** Marks clear before/after boundary.
 
-### Negative Passive
-"I wasn't even attracted to her"—**negative copula** with intensifier. Syntax emphasizes absence through double negation.
+### **Past perfect habitual**
+**Evidence:** "I'd always thought."
+**Effect:** Shows entrenched viewpoint.
 
-### Stylistic Effect
-Through temporal before-wife-turned subordination, past perfect always-thought prior state, copulative completely-unremarkable totality, universal in-every-way scope, parenthetical to-be-frank confession, temporal first-time recall, and negative wasn't-even-attracted double-negation, Han creates syntax of husbandly dismissal—grammar that opens with narrator's contemptuous assessment of wife as utterly ordinary and unattractive, establishing dramatic irony as vegetarianism will prove her radically otherwise.
+### **Adverbial intensifiers**
+**Evidence:** "completely," "in every way," "even."
+**Effect:** Pushes judgments to extremes.
+
+### **Infinitive disclosure**
+**Evidence:** "To be frank."
+**Effect:** Signals confessional aside while masking casual cruelty.
+
+---
+
+## C) MODERN SYNTACTICAL APPROACHES USED
+
+### **Confessional minimalism**
+**Signals:** Two sentences of plain diction.
+**Effect:** Cold tone underscores emotional absence.
+
+### **Evaluative copulas**
+**Signals:** "thought of her as…"; "wasn't…attracted."
+**Effect:** Reduces wife to assessments.
+
+### **Sequential framing**
+**Signals:** Sentence one sets context; sentence two revisits first encounter.
+**Effect:** Provides evidence for judgment.
+
+---
+
+## 1) EAR & PROSODY
+
+**Mouthfeel:** Flat vowels and hard consonants mimic dismissive tone.
+
+**Cadence:** First sentence long and level; second shorter but clipped by "wasn't even."
+
+**Music:** Unadorned rhythm mirrors narrator’s monotony.
+
+---
+
+## 2) SYNTAX AS STYLE (Tufte-grade)
+
+**Sentence shape:**
+- L1: Subordinate clause + main clause with predicate complement.
+- L2: Infinitive phrase opener → temporal clause → negative copular clause.
+
+**Modification choreography:**
+- **Preposed:** Temporal "Before" and "To be frank" prime perspective.
+- **Mid:** Intensifier "completely" loads predicate.
+- **Postposed:** "in every way" universalizes; "even" heightens negation.
+
+**Coordination/subordination ratio:** Subordination front-loaded; no coordination.
+
+**Information flow:** Establish timeline → express entrenched view → justify with anecdote → confess lack of desire.
+
+**Micro-rewrites:**
+- **Compressed:** *"I always thought my wife was ordinary and I wasn’t attracted to her."* — Lacks smug cadence.
+- **Dilated:** *"Before my wife ever swore off meat, I had long regarded her as utterly unremarkable in every conceivable respect; frankly, even at our first meeting she stirred no attraction in me whatsoever."* — Maintains disdain with richer texture.
+
+---
+
+## 3) DEIXIS, ASPECT, MODALITY
+
+**Deixis:** "my wife" personal yet possessive; no names given.
+
+**Aspect:** Past perfect indicates enduring perspective; simple past for first meeting.
+
+**Modality:** None—statements presented as fact, revealing certainty.
+
+**Temporal logic:** Narrative rooted in recollection before dramatic change.
+
+---
+
+## 4) IMAGE SYSTEM & FIELD
+
+**Metaphor families:** None overt; emphasis on evaluation language.
+
+**Lexical fields:** Domesticity, perception, attraction.
+
+**Image logic:** Wife depicted as object lacking qualities until rebellion.
+
+---
+
+## 5) NARRATIVE MECHANICS
+
+**Focalization:** First-person husband controlling early narrative.
+
+**Time:** Retrospective summary prior to inciting incident.
+
+**Beat structure:** Before-state description → initial encounter confession.
+
+**Subtext:** Patriarchal expectations; hints at oppressive marriage dynamic.
+
+---
+
+## 6) APPEALS & STRATEGY
+
+**Ethos:** Narrator claims honesty via "To be frank."
+
+**Pathos:** Generates reader sympathy for wife by showing husband’s coldness.
+
+**Logos:** Presents cause (perceived ordinariness) for later shock.
+
+---
+
+## 7) LINEAGE & KINSHIPS
+
+**Unreliable narrators:** Resonates with Nabokov’s Humbert in self-justification.
+
+**Domestic disquiet:** Aligns with Murakami’s cool male narrators confronting change.
+
+**Feminist critique:** Echoes Atwood’s depiction of male gaze misreading women.
+
+---
+
+## 8) HOTSPOTS & FAULTLINES
+
+### Hotspots
+1. **"Before my wife turned vegetarian"** — sets transformation boundary.
+2. **"completely unremarkable in every way"** — reveals narrator’s hyperbole.
+3. **"To be frank"** — faux candor exposing cruelty.
+
+### Faultlines
+- Narrator’s bias undermines credibility.
+- Lack of wife’s perspective invites reader skepticism.
+
+---
+
+## 9) REVISION STUDIO
+
+**Subtraction test:** Remove "in every way"—statement softens, losing totalizing arrogance.
+
+**Amplification test:** Add physical description—could show objectifying gaze but might slow brisk opening.
+
+**Register shift:**
+- **Formal:** *"Prior to my wife’s adoption of vegetarianism, I regarded her as devoid of distinguishing characteristics."*
+- **Colloquial:** *"Before she went veggie, I figured she was nothing special, honestly didn’t even feel a spark when we first met."*
+
+**Punctuation swap:** Insert comma after "To be frank"—adds brief pause, heightens confession tone (already implied).
+
+---
+
+## 10) IMITATIO / COUNTER-IMITATIO
+
+**Imitatio:** *Before my husband took up painting, I had always considered him forgettable. Honestly, that first blind date sparked zero interest.*
+
+**Counter-Imitatio:** *My wife became vegetarian. I didn’t like it.* — Misses dismissive texture.
+
+**Compression (≤25 words):** *Before she turned vegetarian I’d always thought her totally unremarkable; frankly, even at our first meeting I wasn’t attracted to her.*
+
+---
+
+## 11) STEAL THIS (Takeaways)
+
+1. Start with "Before" clause to set transformation arc.
+2. Use past perfect to show entrenched judgments.
+3. Pile intensifiers to reveal narrator’s absolutism.
+4. Deploy faux-confessional phrase to expose bias.
+5. Pair evaluation with anecdote for credibility.
+6. Keep diction plain to highlight emotional void.
+7. Signal unreliability through overconfidence.
+
+---
+
+## 12) MINI-GLOSSARY (Pronunciation Recap)
+
+**Litotes** — LIE-tuh-teez: Understatement via negation.
+**Past perfect** — Verb form "had" + past participle expressing prior state.
+**Infinitive of purpose** — "to" + verb indicating intent ("To be frank").
+**Hyperbole** — hy-PER-buh-lee: Deliberate exaggeration.
+**Focalization** — How narrative perspective filters events.
