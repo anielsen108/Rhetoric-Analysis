@@ -63,7 +63,7 @@ Each analysis file includes:
 
 ### Enlightenment (1700-1799)
 
-[026. **Thomas Jefferson** - *Declaration of Independence* - Opening (1776)](analyses/026_declaration_independence.md)<br>
+[⭐ 026. **Thomas Jefferson** - *Declaration of Independence* - Opening (1776)](analyses/026_declaration_independence.md)<br>
 [059. **Samuel Taylor Coleridge** - "The Rime of the Ancient Mariner" (1798)](analyses/059_rime_ancient_mariner.md)<br>
 [069. **Samuel Taylor Coleridge** - "Kubla Khan" (1797)](analyses/069_kubla_khan.md)
 
@@ -133,7 +133,7 @@ Each analysis file includes:
 **1910s:**<br>
 [149. **D.H. Lawrence** - *Sons and Lovers* (1913)](analyses/149_sons_lovers.md)<br>
 [065. **Marcel Proust** - *In Search of Lost Time* - Madeleine (1913)](analyses/065_in_search_lost_time.md)<br>
-[023. **James Joyce** - *Dubliners* - "The Dead" ending (1914)](analyses/023_dubliners_the_dead.md)<br>
+[⭐ 023. **James Joyce** - *Dubliners* - "The Dead" ending (1914)](analyses/023_dubliners_the_dead.md)<br>
 [151. **James Joyce** - *Dubliners* - "The Dead" (1914)](analyses/151_dubliners_dead.md)<br>
 [070. **T.S. Eliot** - "The Love Song of J. Alfred Prufrock" (1915)](analyses/070_love_song_prufrock.md)<br>
 [⭐ 019. **Franz Kafka** - *The Metamorphosis* - Opening (1915)](analyses/019_metamorphosis_opening.md)<br>
@@ -209,7 +209,7 @@ Each analysis file includes:
 [092. **Thomas Pynchon** - *Gravity's Rainbow* - Opening (1973)](analyses/092_gravitys_rainbow.md)<br>
 [098. **Michel Foucault** - *Discipline and Punish* - Panopticon (1975)](analyses/098_discipline_punish.md)<br>
 [082. **Elizabeth Bishop** - "One Art" (1976)](analyses/082_one_art.md)<br>
-[022. **Toni Morrison** - *Song of Solomon* - Flight opening (1977)](analyses/022_song_solomon_flight.md)<br>
+[⭐ 022. **Toni Morrison** - *Song of Solomon* - Flight opening (1977)](analyses/022_song_solomon_flight.md)<br>
 [080. **Maya Angelou** - "Still I Rise" (1978)](analyses/080_still_i_rise.md)<br>
 [099. **Edward Said** - *Orientalism* - "The Orient was almost" (1978)](analyses/099_orientalism.md)<br>
 [094. **Joan Didion** - *The White Album* - "We tell ourselves stories" (1979)](analyses/094_white_album.md)
@@ -281,8 +281,8 @@ Each analysis file includes:
 [048. **John Keats** - "Ode to a Nightingale" (1819)](analyses/048_ode_nightingale.md)<br>
 [072. **Walt Whitman** - *Leaves of Grass* - "Crossing Brooklyn Ferry" (1856)](analyses/072_leaves_grass_crossing_brooklyn.md)<br>
 [078. **Langston Hughes** - "The Negro Speaks of Rivers" (1921)](analyses/078_langston_hughes_rivers.md)<br>
-[024. **Edith Wharton** - *The Age of Innocence* - Opening (1920)](analyses/024_age_of_innocence.md)<br>
-[025. **Zora Neale Hurston** - *Their Eyes Were Watching God* - Opening (1937)](analyses/025_their_eyes_god.md)<br>
+[⭐ 024. **Edith Wharton** - *The Age of Innocence* - Opening (1920)](analyses/024_age_of_innocence.md)<br>
+[⭐ 025. **Zora Neale Hurston** - *Their Eyes Were Watching God* - Opening (1937)](analyses/025_their_eyes_god.md)<br>
 [052. **Athol Fugard** - *Master Harold and the Boys* (1982)](analyses/052_master_harold_boys.md)<br>
 [053. **Fyodor Dostoevsky** - *The Brothers Karamazov* (1880)](analyses/053_brothers_karamazov.md)<br>
 [095. **George Orwell** - "Politics and the English Language" (1946)](analyses/095_politics_english.md)
