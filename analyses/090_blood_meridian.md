@@ -151,6 +151,7 @@
 **Faulkner influence:** Long sentences, archaic diction describing violence.
 
 **American western myth critique:** Deconstructs heroic ride imagery.
+**Existential frontier literature:** Resonates with Camus-like absurd endurance set in the West.
 
 ---
 
