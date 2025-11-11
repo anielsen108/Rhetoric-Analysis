@@ -6,6 +6,8 @@ This repository contains comprehensive rhetorical and syntactic analyses of lite
 
 **Total Analyses: 196** (and growing)
 
+**⭐ = Premium Analysis** — Comprehensive "Rhetoric & Linguistic Craft Clinic" format with 12 analytical sections including full IPA pronunciations, near-miss distinctions, revision experiments, and imitatio exercises (300-370 lines each).
+
 ## Methodology
 
 Each analysis combines two complementary approaches:
@@ -47,8 +49,8 @@ Each analysis file includes:
 
 ### Renaissance (1500-1599)
 
-[005. **William Shakespeare** - *Hamlet* - "To be, or not to be" (1600)](analyses/005_hamlet_to_be.md)<br>
-[007. **William Shakespeare** - *Romeo and Juliet* - "Wherefore art thou Romeo" (1597)](analyses/007_romeo_juliet_wherefore.md)<br>
+[⭐ 005. **William Shakespeare** - *Hamlet* - "To be, or not to be" (1600)](analyses/005_hamlet_to_be.md)<br>
+[⭐ 007. **William Shakespeare** - *Romeo and Juliet* - "Wherefore art thou Romeo" (1597)](analyses/007_romeo_juliet_wherefore.md)<br>
 [066. **William Shakespeare** - *The Merchant of Venice* - Shylock's speech (1598)](analyses/066_merchant_venice_shylock.md)<br>
 [100. **William Shakespeare** - *Hamlet* - "To be, or not to be" (complete analysis) (1600)](analyses/100_hamlet_to_be.md)
 
@@ -56,7 +58,7 @@ Each analysis file includes:
 
 [039. **William Shakespeare** - *Macbeth* - "Tomorrow and tomorrow" (1606)](analyses/039_macbeth_tomorrow.md)<br>
 [051. **William Shakespeare** - *King Lear* - Storm scene (1606)](analyses/051_king_lear_storm.md)<br>
-[009. **John Milton** - *Paradise Lost* - Opening invocation (1667)](analyses/009_paradise_lost_opening.md)<br>
+[⭐ 009. **John Milton** - *Paradise Lost* - Opening invocation (1667)](analyses/009_paradise_lost_opening.md)<br>
 [071. **Miguel de Cervantes** - *Don Quixote* - Opening (1605)](analyses/071_don_quixote_opening.md)
 
 ### Enlightenment (1700-1799)
@@ -71,10 +73,10 @@ Each analysis file includes:
 [074. **Johann Wolfgang von Goethe** - *Faust* - Opening (1808)](analyses/074_faust_opening.md)
 
 **1810s:**<br>
-[002. **Jane Austen** - *Pride and Prejudice* - "It is a truth universally acknowledged" (1813)](analyses/002_pride_prejudice_opening.md)
+[⭐ 002. **Jane Austen** - *Pride and Prejudice* - "It is a truth universally acknowledged" (1813)](analyses/002_pride_prejudice_opening.md)
 
 **1820s:**<br>
-[012. **Mary Shelley** - *Frankenstein* - Birth of the creature (1818)](analyses/012_frankenstein_birth.md)
+[⭐ 012. **Mary Shelley** - *Frankenstein* - Birth of the creature (1818)](analyses/012_frankenstein_birth.md)
 
 **1840s:**<br>
 [073. **Emily Brontë** - *Wuthering Heights* (1847)](analyses/073_wuthering_heights.md)<br>
@@ -86,13 +88,13 @@ Each analysis file includes:
 [101. **Nathaniel Hawthorne** - *The Scarlet Letter* - Opening (1850)](analyses/101_scarlet_letter_opening.md)<br>
 [102. **Alfred, Lord Tennyson** - "In Memoriam A.H.H." (1850)](analyses/102_tennyson_memoriam.md)<br>
 [103. **Elizabeth Barrett Browning** - "How Do I Love Thee?" (1850)](analyses/103_browning_love_poems.md)<br>
-[001. **Herman Melville** - *Moby-Dick* - "Call me Ishmael" (1851)](analyses/001_moby_dick_opening.md)<br>
+[⭐ 001. **Herman Melville** - *Moby-Dick* - "Call me Ishmael" (1851)](analyses/001_moby_dick_opening.md)<br>
 [029. **Walt Whitman** - *Song of Myself* - "I celebrate myself" (1855)](analyses/029_song_myself_whitman.md)<br>
 [045. **Walt Whitman** - *Leaves of Grass* - "I Sing the Body Electric" (1855)](analyses/045_leaves_grass_body_electric.md)<br>
 [105. **Walt Whitman** - "I Sing the Body Electric" (Full Opening) (1855)](analyses/105_leaves_of_grass_i_sing.md)<br>
 [104. **Gustave Flaubert** - *Madame Bovary* (1856)](analyses/104_madame_bovary.md)<br>
 [106. **Charles Baudelaire** - *The Flowers of Evil* - "To the Reader" (1857)](analyses/106_baudelaire_flowers_evil.md)<br>
-[003. **Charles Dickens** - *A Tale of Two Cities* - "It was the best of times" (1859)](analyses/003_tale_two_cities_opening.md)
+[⭐ 003. **Charles Dickens** - *A Tale of Two Cities* - "It was the best of times" (1859)](analyses/003_tale_two_cities_opening.md)
 
 **1860s:**<br>
 [107. **Lewis Carroll** - *Alice's Adventures in Wonderland* (1865)](analyses/107_alice_wonderland.md)<br>
@@ -111,7 +113,7 @@ Each analysis file includes:
 
 **1880s:**<br>
 [113. **Henry James** - *The Portrait of a Lady* (1881)](analyses/113_portrait_of_lady.md)<br>
-[010. **Mark Twain** - *Adventures of Huckleberry Finn* - Opening (1884)](analyses/010_adventures_huckleberry_finn_opening.md)<br>
+[⭐ 010. **Mark Twain** - *Adventures of Huckleberry Finn* - Opening (1884)](analyses/010_adventures_huckleberry_finn_opening.md)<br>
 [114. **Robert Louis Stevenson** - *Strange Case of Dr Jekyll and Mr Hyde* (1886)](analyses/114_jekyll_hyde.md)<br>
 [067. **William Ernest Henley** - "Invictus" (1888)](analyses/067_invictus_henley.md)
 
@@ -134,7 +136,7 @@ Each analysis file includes:
 [023. **James Joyce** - *Dubliners* - "The Dead" ending (1914)](analyses/023_dubliners_the_dead.md)<br>
 [151. **James Joyce** - *Dubliners* - "The Dead" (1914)](analyses/151_dubliners_dead.md)<br>
 [070. **T.S. Eliot** - "The Love Song of J. Alfred Prufrock" (1915)](analyses/070_love_song_prufrock.md)<br>
-[019. **Franz Kafka** - *The Metamorphosis* - Opening (1915)](analyses/019_metamorphosis_opening.md)<br>
+[⭐ 019. **Franz Kafka** - *The Metamorphosis* - Opening (1915)](analyses/019_metamorphosis_opening.md)<br>
 [150. **Franz Kafka** - *The Metamorphosis* (1915)](analyses/150_metamorphosis.md)<br>
 [153. **Virginia Woolf** - *The Voyage Out* (1915)](analyses/153_voyage_out.md)<br>
 [044. **James Joyce** - *A Portrait of the Artist as a Young Man* (1916)](analyses/044_portrait_artist.md)<br>
@@ -143,14 +145,14 @@ Each analysis file includes:
 
 **1920s:**<br>
 [084. **Wallace Stevens** - "The Snow Man" (1921)](analyses/084_snow_man.md)<br>
-[016. **T.S. Eliot** - *The Waste Land* - "April is the cruellest month" (1922)](analyses/016_wasteland_april.md)<br>
+[⭐ 016. **T.S. Eliot** - *The Waste Land* - "April is the cruellest month" (1922)](analyses/016_wasteland_april.md)<br>
 [152. **T.S. Eliot** - *The Waste Land* (1922)](analyses/152_waste_land.md)<br>
 [085. **Pablo Neruda** - "Tonight I Can Write" (1924)](analyses/085_tonight_i_can_write.md)<br>
-[013. **Virginia Woolf** - *Mrs. Dalloway* - Opening (1925)](analyses/013_mrs_dalloway_opening.md)<br>
-[006. **F. Scott Fitzgerald** - *The Great Gatsby* - Green light passage (1925)](analyses/006_great_gatsby_green_light.md)<br>
-[018. **Ernest Hemingway** - *The Sun Also Rises* - Paris passage (1926)](analyses/018_sun_also_rises.md)<br>
+[⭐ 013. **Virginia Woolf** - *Mrs. Dalloway* - Opening (1925)](analyses/013_mrs_dalloway_opening.md)<br>
+[⭐ 006. **F. Scott Fitzgerald** - *The Great Gatsby* - Green light passage (1925)](analyses/006_great_gatsby_green_light.md)<br>
+[⭐ 018. **Ernest Hemingway** - *The Sun Also Rises* - Paris passage (1926)](analyses/018_sun_also_rises.md)<br>
 [068. **William Butler Yeats** - "Sailing to Byzantium" (1928)](analyses/068_sailing_byzantium.md)<br>
-[014. **William Faulkner** - *The Sound and the Fury* - Benjy's section (1929)](analyses/014_sound_fury_benjy.md)<br>
+[⭐ 014. **William Faulkner** - *The Sound and the Fury* - Benjy's section (1929)](analyses/014_sound_fury_benjy.md)<br>
 [155. **William Faulkner** - *The Sound and the Fury* (1929)](analyses/155_sound_fury.md)<br>
 [154. **Ernest Hemingway** - *A Farewell to Arms* (1929)](analyses/154_farewell_arms.md)<br>
 [096. **Virginia Woolf** - *A Room of One's Own* - Money and room (1929)](analyses/096_room_of_ones_own.md)
@@ -160,7 +162,7 @@ Each analysis file includes:
 [159. **William Faulkner** - *Absalom, Absalom!* (1936)](analyses/159_absalom_absalom.md)<br>
 [156. **Zora Neale Hurston** - *Their Eyes Were Watching God* (1937)](analyses/156_their_eyes.md)<br>
 [077. **W.H. Auden** - "Musée des Beaux Arts" (1938)](analyses/077_musee_beaux_arts.md)<br>
-[021. **John Steinbeck** - *The Grapes of Wrath* - Turtle chapter (1939)](analyses/021_grapes_wrath_turtle.md)<br>
+[⭐ 021. **John Steinbeck** - *The Grapes of Wrath* - Turtle chapter (1939)](analyses/021_grapes_wrath_turtle.md)<br>
 [157. **John Steinbeck** - *The Grapes of Wrath* (1939)](analyses/157_grapes_wrath.md)<br>
 [158. **Raymond Chandler** - *The Big Sleep* (1939)](analyses/158_big_sleep.md)
 
@@ -172,22 +174,22 @@ Each analysis file includes:
 [161. **Robert Penn Warren** - *All the King's Men* (1946)](analyses/161_all_kings_men.md)<br>
 [162. **W.H. Auden** - *The Age of Anxiety* (1947)](analyses/162_age_anxiety.md)<br>
 [097. **Simone de Beauvoir** - *The Second Sex* - "One is not born" (1949)](analyses/097_second_sex.md)<br>
-[004. **George Orwell** - *1984* - "It was a bright cold day in April" (1949)](analyses/004_1984_opening.md)
+[⭐ 004. **George Orwell** - *1984* - "It was a bright cold day in April" (1949)](analyses/004_1984_opening.md)
 
 ### Mid-20th Century (1950-1979)
 
 **1950s:**<br>
-[008. **J.D. Salinger** - *The Catcher in the Rye* - Opening (1951)](analyses/008_catcher_rye_opening.md)<br>
-[011. **Ralph Ellison** - *Invisible Man* - Opening (1952)](analyses/011_invisible_man_opening.md)<br>
+[⭐ 008. **J.D. Salinger** - *The Catcher in the Rye* - Opening (1951)](analyses/008_catcher_rye_opening.md)<br>
+[⭐ 011. **Ralph Ellison** - *Invisible Man* - Opening (1952)](analyses/011_invisible_man_opening.md)<br>
 [164. **Ralph Ellison** - *Invisible Man* (1952)](analyses/164_invisible_man.md)<br>
 [049. **Ernest Hemingway** - *The Old Man and the Sea* (1952)](analyses/049_old_man_sea.md)<br>
 [055. **Samuel Beckett** - *Waiting for Godot* (1953)](analyses/055_waiting_godot.md)<br>
 [165. **William Golding** - *Lord of the Flies* (1954)](analyses/165_lord_flies.md)<br>
-[017. **Vladimir Nabokov** - *Lolita* - Opening (1955)](analyses/017_lolita_opening.md)<br>
+[⭐ 017. **Vladimir Nabokov** - *Lolita* - Opening (1955)](analyses/017_lolita_opening.md)<br>
 [093. **James Baldwin** - *Notes of a Native Son* (1955)](analyses/093_notes_native_son.md)<br>
 [038. **Allen Ginsberg** - *Howl* - Opening (1956)](analyses/038_howl_ginsberg.md)<br>
 [166. **Jack Kerouac** - *On the Road* (1957)](analyses/166_on_road.md)<br>
-[020. **Chinua Achebe** - *Things Fall Apart* - Okonkwo introduction (early version) (1958)](analyses/020_things_fall_apart.md)<br>
+[⭐ 020. **Chinua Achebe** - *Things Fall Apart* - Okonkwo introduction (early version) (1958)](analyses/020_things_fall_apart.md)<br>
 [087. **Chinua Achebe** - *Things Fall Apart* - Okonkwo passage (1958)](analyses/087_things_fall_apart.md)<br>
 [172. **Chinua Achebe** - *Things Fall Apart* (1958)](analyses/172_things_fall_apart.md)
 
@@ -223,7 +225,7 @@ Each analysis file includes:
 [090. **Cormac McCarthy** - *Blood Meridian* - "They rode on" (1985)](analyses/090_blood_meridian.md)<br>
 [091. **Don DeLillo** - *White Noise* - Smoke alarm passage (1985)](analyses/091_white_noise.md)<br>
 [171. **Don DeLillo** - *White Noise* (1985)](analyses/171_white_noise.md)<br>
-[015. **Toni Morrison** - *Beloved* - "124 was spiteful" (1987)](analyses/015_beloved_opening.md)<br>
+[⭐ 015. **Toni Morrison** - *Beloved* - "124 was spiteful" (1987)](analyses/015_beloved_opening.md)<br>
 [169. **Toni Morrison** - *Beloved* (1987)](analyses/169_beloved.md)<br>
 [063. **Toni Morrison** - *Beloved* - "Sixty Million and more" (1987)](analyses/063_beloved_60_million.md)<br>
 [175. **Kazuo Ishiguro** - *The Remains of the Day* (1989)](analyses/175_remains_day.md)
