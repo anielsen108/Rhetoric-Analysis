@@ -1,0 +1,7 @@
+[build]
+  # Regenerate the site from analyses/*.md on every deploy
+  command = "node site/build.js"
+  publish = "docs"
+
+[build.environment]
+  NODE_VERSION = "22"
