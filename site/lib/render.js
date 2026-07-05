@@ -211,12 +211,14 @@ function renderEntry(a) {
 // --- shared layout ---------------------------------------------------------------
 
 function layout(title, body, cssPath) {
+  const faviconPath = cssPath.replace(/site\.css$/, 'favicon.png');
   return `<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${esc(title)}</title>
+<link rel="icon" type="image/png" href="${faviconPath}">
 <link rel="stylesheet" href="${cssPath}">
 </head>
 <body>

@@ -53,6 +53,7 @@ const stats = { files: analyses.length, devices: deviceCount, anchored: anchored
 writeFileSync(join(outDir, 'index.html'), renderIndex(analyses, stats));
 copyFileSync(join(here, 'assets', 'site.css'), join(outDir, 'assets', 'site.css'));
 copyFileSync(join(here, 'assets', 'reader.js'), join(outDir, 'assets', 'reader.js'));
+copyFileSync(join(here, 'assets', 'favicon.png'), join(outDir, 'assets', 'favicon.png'));
 writeFileSync(join(outDir, '.nojekyll'), '');
 
 console.log(`built ${stats.files} passage pages → docs/`);
