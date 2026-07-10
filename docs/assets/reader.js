@@ -11,6 +11,7 @@
   var popEl = document.getElementById('pop');
   var famOn = { trope: true, scheme: true, syntax: true };
   var pinned = null, pinAnchor = null;
+  var clearTimer = null;
 
   function famColor(f) { return 'var(--' + f + ')'; }
   function visibleIds(ids) {
@@ -62,10 +63,26 @@
   }
 
   function clearActive() {
+    cancelScheduledClear();
     passageEl.classList.remove('dimmed');
     forEach('.seg', function (s) { s.classList.remove('lit'); s.style.backgroundColor = ''; });
     forEach('.dev', function (d) { d.style.borderColor = ''; });
     popEl.classList.remove('show');
+  }
+
+  function cancelScheduledClear() {
+    if (clearTimer !== null) {
+      window.clearTimeout(clearTimer);
+      clearTimer = null;
+    }
+  }
+
+  function scheduleClear() {
+    cancelScheduledClear();
+    clearTimer = window.setTimeout(function () {
+      clearTimer = null;
+      if (!pinned && !popEl.matches(':hover')) clearActive();
+    }, 300);
   }
 
   function unpin() { pinned = null; pinAnchor = null; clearActive(); }
@@ -117,10 +134,16 @@
   // ---- wiring ----
   forEach('.seg.tagged', function (span) {
     function ids() { return visibleIds(span.dataset.ids.split(',')); }
-    span.addEventListener('mouseenter', function () { if (!pinned) activate(ids(), span); });
-    span.addEventListener('mouseleave', function () { if (!pinned) clearActive(); });
-    span.addEventListener('focus', function () { if (!pinned) activate(ids(), span); });
-    span.addEventListener('blur', function () { if (!pinned) clearActive(); });
+    span.addEventListener('mouseenter', function () {
+      cancelScheduledClear();
+      if (!pinned) activate(ids(), span);
+    });
+    span.addEventListener('mouseleave', function () { if (!pinned) scheduleClear(); });
+    span.addEventListener('focus', function () {
+      cancelScheduledClear();
+      if (!pinned) activate(ids(), span);
+    });
+    span.addEventListener('blur', function () { if (!pinned) scheduleClear(); });
     span.addEventListener('click', function (e) {
       e.stopPropagation();
       var v = ids();
@@ -132,10 +155,16 @@
 
   forEach('.dev', function (card) {
     var id = card.dataset.id;
-    card.addEventListener('mouseenter', function () { if (!pinned) activate([id], card); });
-    card.addEventListener('mouseleave', function () { if (!pinned) clearActive(); });
-    card.addEventListener('focus', function () { if (!pinned) activate([id], card); });
-    card.addEventListener('blur', function () { if (!pinned) clearActive(); });
+    card.addEventListener('mouseenter', function () {
+      cancelScheduledClear();
+      if (!pinned) activate([id], card);
+    });
+    card.addEventListener('mouseleave', function () { if (!pinned) scheduleClear(); });
+    card.addEventListener('focus', function () {
+      cancelScheduledClear();
+      if (!pinned) activate([id], card);
+    });
+    card.addEventListener('blur', function () { if (!pinned) scheduleClear(); });
     card.addEventListener('click', function (e) {
       e.stopPropagation();
       if (!famOn[CARDS[id].family]) return;
@@ -146,6 +175,9 @@
       if (target) target.scrollIntoView({ block: 'center', behavior: 'smooth' });
     });
   });
+
+  popEl.addEventListener('mouseenter', cancelScheduledClear);
+  popEl.addEventListener('mouseleave', function () { if (!pinned) scheduleClear(); });
 
   forEach('.chip', function (chip) {
     chip.addEventListener('click', function () {
