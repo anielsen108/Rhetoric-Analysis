@@ -12,6 +12,8 @@
   var famOn = { trope: true, scheme: true, syntax: true };
   var pinned = null, pinAnchor = null;
   var clearTimer = null;
+  var popIds = [], popAnchor = null;
+  var suppressPreview = false;
 
   function famColor(f) { return 'var(--' + f + ')'; }
   function visibleIds(ids) {
@@ -92,7 +94,8 @@
     var c = CARDS[id];
     var col = famColor(c.family);
     var h = '<div class="pop-dev"><div class="pop-head" style="--c:' + col + '">' +
-      '<span class="dot"></span><b>' + escapeHtml(c.name) + '</b>' +
+      '<span class="dot"></span><b><a class="pop-term" href="#device-' + encodeURIComponent(id) +
+      '" data-id="' + encodeURIComponent(id) + '">' + escapeHtml(c.name) + '</a></b>' +
       (c.pron ? '<span class="pron">' + escapeHtml(c.pron) + '</span>' : '') +
       (c.linesRef ? '<span class="lines-tag">' + escapeHtml(c.linesRef) + '</span>' : '') +
       '<span class="fam-tag" style="--c:' + col + '">' + FAMILY_LABEL[c.family] + '</span></div>';
@@ -113,9 +116,11 @@
   }
 
   function showPop(ids, anchor, isPin) {
+    popIds = ids.slice();
+    popAnchor = anchor;
     popEl.innerHTML = ids.map(cardHtml).join('') +
-      '<div class="pop-pin">' + (isPin ? 'pinned — click again or press Esc to release'
-        : 'click to pin this card') + '</div>';
+      '<button type="button" class="pop-pin" data-action="pin" aria-pressed="' +
+      String(!!isPin) + '">' + (isPin ? 'Release this Card' : 'Pin this Card') + '</button>';
     var ref = anchor && anchor.getBoundingClientRect ? anchor : passageEl;
     var r = ref.getBoundingClientRect();
     popEl.classList.add('show');
@@ -141,7 +146,7 @@
     span.addEventListener('mouseleave', function () { if (!pinned) scheduleClear(); });
     span.addEventListener('focus', function () {
       cancelScheduledClear();
-      if (!pinned) activate(ids(), span);
+      if (!pinned && !suppressPreview) activate(ids(), span);
     });
     span.addEventListener('blur', function () { if (!pinned) scheduleClear(); });
     span.addEventListener('click', function (e) {
@@ -162,7 +167,7 @@
     card.addEventListener('mouseleave', function () { if (!pinned) scheduleClear(); });
     card.addEventListener('focus', function () {
       cancelScheduledClear();
-      if (!pinned) activate([id], card);
+      if (!pinned && !suppressPreview) activate([id], card);
     });
     card.addEventListener('blur', function () { if (!pinned) scheduleClear(); });
     card.addEventListener('click', function (e) {
@@ -178,6 +183,27 @@
 
   popEl.addEventListener('mouseenter', cancelScheduledClear);
   popEl.addEventListener('mouseleave', function () { if (!pinned) scheduleClear(); });
+  popEl.addEventListener('click', function (e) {
+    var term = e.target.closest ? e.target.closest('.pop-term') : null;
+    if (term) {
+      e.preventDefault();
+      e.stopPropagation();
+      jumpToDevice(decodeURIComponent(term.dataset.id));
+      return;
+    }
+
+    var pinButton = e.target.closest ? e.target.closest('[data-action="pin"]') : null;
+    if (!pinButton) return;
+    e.preventDefault();
+    e.stopPropagation();
+    if (pinned) {
+      unpin();
+    } else if (popIds.length) {
+      pinned = popIds.slice();
+      pinAnchor = popAnchor;
+      activate(pinned, pinAnchor, true);
+    }
+  });
 
   forEach('.chip', function (chip) {
     chip.addEventListener('click', function () {
@@ -206,6 +232,24 @@
       if (segs[i].dataset.ids.split(',').indexOf(id) !== -1) return segs[i];
     }
     return null;
+  }
+  function deviceCardFor(id) {
+    var cards = document.querySelectorAll('.dev');
+    for (var i = 0; i < cards.length; i++) {
+      if (cards[i].dataset.id === id) return cards[i];
+    }
+    return null;
+  }
+  function jumpToDevice(id) {
+    var card = deviceCardFor(id);
+    if (!card) return;
+    pinned = null;
+    pinAnchor = null;
+    clearActive();
+    suppressPreview = true;
+    card.focus({ preventScroll: true });
+    suppressPreview = false;
+    card.scrollIntoView({ block: 'center', behavior: 'smooth' });
   }
   function forEach(sel, fn) {
     Array.prototype.forEach.call(document.querySelectorAll(sel), fn);

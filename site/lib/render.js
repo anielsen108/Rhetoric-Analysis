@@ -92,7 +92,7 @@ export function renderPassagePage(a, glossary, { prev = null, next = null } = {}
 <div class="dev-grid">` + devs.map(d => {
       const c = cards[d.key];
       const teaser = c.definition || c.effect || '';
-      return `<div class="dev${c.anchored ? '' : ' unanchored'}" data-id="${esc(d.key)}" tabindex="0" role="button" style="--c:var(--${f})">
+      return `<div class="dev${c.anchored ? '' : ' unanchored'}" id="device-${esc(d.key)}" data-id="${esc(d.key)}" tabindex="0" role="button" style="--c:var(--${f})">
 <b>${esc(c.name)}</b>${c.pron ? `<span class="pron">${esc(c.pron)}</span>` : ''}<p>${esc(teaser)}</p>${c.anchored ? '' : '<span class="nospan">not span-anchored</span>'}</div>`;
     }).join('') + '</div>';
   }).join('\n');

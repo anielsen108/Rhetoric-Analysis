@@ -71,6 +71,7 @@ test('passage page embeds annotated spans and card data', () => {
   assert.equal(cards.litotes.anchored, true);
   assert.equal(cards['bespoke-scheme-nobody-knows'].anchored, false);
   assert.equal(cards['end-weight'].signals.length, 1);
+  assert.match(html, /id="device-litotes" data-id="litotes"/);
 });
 
 test('glossary supplies "confuse" fallback when file lacks near-miss', () => {

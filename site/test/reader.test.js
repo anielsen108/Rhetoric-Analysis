@@ -33,15 +33,28 @@ class FakeElement {
   addEventListener(type, listener) {
     (this.listeners[type] ||= []).push(listener);
   }
-  dispatch(type) {
-    const event = { target: this, stopPropagation() {} };
+  dispatch(type, target = this) {
+    const event = {
+      target,
+      defaultPrevented: false,
+      propagationStopped: false,
+      preventDefault() { this.defaultPrevented = true; },
+      stopPropagation() { this.propagationStopped = true; }
+    };
     for (const listener of this.listeners[type] || []) listener(event);
+    return event;
   }
   getBoundingClientRect() {
     return { left: 100, top: 100, bottom: 120 };
   }
   matches(selector) { return selector === ':hover' && this.hovered; }
   contains(target) { return target === this; }
+  focus(options) {
+    this.focused = true;
+    this.focusOptions = options;
+    this.dispatch('focus');
+  }
+  scrollIntoView(options) { this.scrollOptions = options; }
 }
 
 function makeHarness() {
@@ -49,6 +62,8 @@ function makeHarness() {
   const pop = new FakeElement();
   const span = new FakeElement();
   span.dataset.ids = 'device-1';
+  const card = new FakeElement();
+  card.dataset.id = 'device-1';
 
   const cards = {
     'device-1': { family: 'trope', name: 'Metaphor', definition: 'A comparison.' }
@@ -62,6 +77,7 @@ function makeHarness() {
     },
     querySelectorAll(selector) {
       if (selector === '.seg.tagged' || selector === '.seg') return [span];
+      if (selector === '.dev') return [card];
       return [];
     },
     addEventListener(type, listener) {
@@ -77,10 +93,14 @@ function makeHarness() {
   };
 
   runInNewContext(readerSource, { document, window, console });
-  return { pop, span };
+  return { card, pop, span };
 }
 
 const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
+const clickTarget = (selector, dataset = {}) => ({
+  dataset,
+  closest(candidate) { return candidate === selector ? this : null; }
+});
 
 test('hover card stays open while the pointer moves from its trigger into the card', async () => {
   const { pop, span } = makeHarness();
@@ -104,16 +124,34 @@ test('hover card stays open while the pointer moves from its trigger into the ca
   assert.equal(pop.classList.contains('show'), false);
 });
 
-test('a pinned hover card ignores pointer exits until it is released', async () => {
+test('the hover card Pin button pins and releases the card', async () => {
   const { pop, span } = makeHarness();
 
   span.dispatch('mouseenter');
-  span.dispatch('click');
+  assert.match(pop.innerHTML, />Pin this Card<\/button>/);
+  pop.dispatch('click', clickTarget('[data-action="pin"]'));
+  assert.match(pop.innerHTML, />Release this Card<\/button>/);
   span.dispatch('mouseleave');
   pop.dispatch('mouseleave');
   await wait(320);
 
   assert.equal(pop.classList.contains('show'), true);
-  span.dispatch('click');
+  pop.dispatch('click', clickTarget('[data-action="pin"]'));
   assert.equal(pop.classList.contains('show'), false);
+});
+
+test('clicking a hover-card term jumps to its definition card', () => {
+  const { card, pop, span } = makeHarness();
+
+  span.dispatch('mouseenter');
+  assert.match(pop.innerHTML, /class="pop-term" href="#device-device-1"/);
+  const event = pop.dispatch('click', clickTarget('.pop-term', { id: 'device-1' }));
+
+  assert.equal(event.defaultPrevented, true);
+  assert.equal(event.propagationStopped, true);
+  assert.equal(pop.classList.contains('show'), false);
+  assert.equal(card.focused, true);
+  assert.equal(card.focusOptions.preventScroll, true);
+  assert.equal(card.scrollOptions.block, 'center');
+  assert.equal(card.scrollOptions.behavior, 'smooth');
 });
