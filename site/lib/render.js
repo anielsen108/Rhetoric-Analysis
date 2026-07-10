@@ -111,6 +111,7 @@ export function renderPassagePage(a, glossary, { prev = null, next = null } = {}
   ].filter(Boolean).join('');
 
   const body = `
+${siteNav('analysis', '..')}
 <header class="crumbs"><a href="../index.html">← All passages</a><span class="crumb-title">The Rhetoric Reader</span></header>
 <main>
   <p class="eyebrow">Passage ${esc(a.id)}${a.year ? ` · ${esc(String(a.year))}` : ''}</p>
@@ -179,8 +180,9 @@ export function renderIndex(analyses, stats) {
   </section>`).join('\n');
 
   const body = `
+${siteNav('analysis', '.')}
 <main class="home">
-  <p class="eyebrow">Rhetoric &amp; Linguistic Craft Clinic</p>
+  <p class="eyebrow">Rhetorical Analysis</p>
   <h1>The Rhetoric Reader</h1>
   <p class="lede">Close readings of ${stats.files} passages from world literature, annotated inside the text itself.
   Every underline is a rhetorical device — <b>hover to open its dossier card</b>: tropes in rose, schemes in indigo,
@@ -191,6 +193,117 @@ export function renderIndex(analyses, stats) {
 </main>`;
 
   return layout('The Rhetoric Reader', body, 'assets/site.css');
+}
+
+// --- practice studio ---------------------------------------------------------
+
+export function renderPracticePage(curriculum) {
+  const exercises = curriculum.sets.flatMap(set => set.exercises);
+  const setNav = curriculum.sets.map(set =>
+    `<a href="#set-${set.number}"><span>${set.number}</span>${esc(set.title)}</a>`
+  ).join('');
+
+  const sets = curriculum.sets.map(set => `
+  <section class="practice-set" id="set-${set.number}">
+    <header class="set-head">
+      <div class="set-number" aria-hidden="true">${String(set.number).padStart(2, '0')}</div>
+      <div><p class="eyebrow">Set ${set.number} of ${curriculum.sets.length}</p><h2>${esc(set.title)}</h2>
+      <p>${esc(set.intro)}</p></div>
+    </header>
+    <div class="exercise-list">
+      ${set.exercises.map(renderExercise).join('\n      ')}
+    </div>
+${set.source ? `    <p class="set-source"><b>Source thread</b> ${esc(set.source)}</p>` : ''}
+  </section>`).join('\n');
+
+  const signalCards = curriculum.overview.signals.map(signal => {
+    const [name, description = ''] = signal.split(/\s+[—–-]\s+/, 2);
+    return `<div><span class="signal-label">${renderInline(name)}</span><span>${renderInline(description)}</span></div>`;
+  }).join('');
+
+  const techniqueReference = curriculum.techniques.map(technique =>
+    `<div class="technique-item"><span>Set ${technique.set}</span><b>${esc(technique.name)}</b><p>${esc(technique.definition)}</p></div>`
+  ).join('');
+
+  const body = `
+${siteNav('practice', '..')}
+<main class="practice-home">
+  <section class="practice-hero">
+    <div>
+      <p class="eyebrow">Practicing Rhetoric</p>
+      <h1>The Rhetoric Lab</h1>
+      <p class="lede">Turn rhetorical knowledge into real-time control. Work through ${exercises.length} live drills in pairs: one <b>Speaker</b> performs while one <b>Director</b> steers with simple visual signals.</p>
+      <div class="hero-actions">
+        <a class="primary-action" href="#set-1">Begin with Set 1 <span>↓</span></a>
+        <button class="quiet-action" id="random-exercise" type="button">Choose a drill for me</button>
+      </div>
+    </div>
+    <aside class="progress-card" aria-label="Curriculum progress">
+      <span class="progress-kicker">Your practice record</span>
+      <strong><span id="progress-count">0</span><small> / ${exercises.length}</small></strong>
+      <div class="progress-track"><span id="progress-bar"></span></div>
+      <p>Exercises marked complete are saved in this browser.</p>
+    </aside>
+  </section>
+
+  <section class="lab-brief" aria-labelledby="how-it-works">
+    <div class="brief-copy">
+      <p class="eyebrow">The practice loop</p>
+      <h2 id="how-it-works">Speak. Signal. Adjust. Switch.</h2>
+      <p>${renderInline(curriculum.overview.format)}</p>
+      <p>${renderInline(curriculum.overview.progression)}</p>
+      <p class="timing-note">${renderInline(curriculum.overview.timing)}</p>
+    </div>
+    <div class="signal-board">
+      <p class="signal-title">Shared signal language</p>
+      ${signalCards}
+    </div>
+  </section>
+
+  <nav class="set-nav" aria-label="Practice sets">${setNav}</nav>
+${sets}
+  <details class="technique-reference">
+    <summary><span><small>Appendix</small><b>Technique quick reference</b></span><span>${curriculum.techniques.length} techniques +</span></summary>
+    <div class="technique-grid">${techniqueReference}</div>
+  </details>
+  <footer class="foot practice-foot">Adapted from the complete <i>Rhetoric Lab Curriculum</i> · inspired by game-based speaking practice and the techniques catalogued in Ward Farnsworth’s works on rhetoric, style, metaphor, and argument.</footer>
+</main>
+<script src="../assets/practice.js"></script>`;
+
+  return layout('The Rhetoric Lab — Practicing Rhetoric', body, '../assets/site.css');
+}
+
+function renderExercise(exercise) {
+  const minutes = Number((exercise.duration || '').match(/\d+/)?.[0] || 5);
+  return `<details class="exercise" id="exercise-${exercise.id.replace('.', '-')}" data-exercise="${esc(exercise.id)}" data-minutes="${minutes}">
+  <summary>
+    <span class="exercise-id">${esc(exercise.id)}</span>
+    <span class="exercise-name"><b>${esc(exercise.title)}</b><span>${renderInline(exercise.capability)}</span></span>
+    <span class="exercise-duration">${esc(exercise.duration || `${minutes} minutes`)}</span>
+    <span class="completion-mark" aria-label="Not completed">✓</span>
+  </summary>
+  <div class="exercise-body">
+    <div class="exercise-rationale"><span>Why it matters</span>${renderMd(exercise.why)}</div>
+    <div class="exercise-grid">
+      <section><h3>Set the stage</h3>${renderMd(exercise.setup)}</section>
+      <section><h3>Director signals</h3>${renderMd(exercise.signals)}</section>
+    </div>
+    <section class="exercise-rules"><h3>Run the drill</h3>${renderMd(exercise.rules)}</section>
+    <section class="success-criteria"><h3>Listen for this</h3>${renderMd(exercise.good)}</section>
+    <div class="exercise-controls">
+      <div class="timer" aria-label="Exercise timer">
+        <span class="timer-display">${String(minutes).padStart(2, '0')}:00</span>
+        <button type="button" data-action="timer">Start timer</button>
+        <button type="button" data-action="reset-timer">Reset</button>
+      </div>
+      <button class="complete-toggle" type="button" aria-pressed="false">Mark complete</button>
+    </div>
+  </div>
+</details>`;
+}
+
+function renderInline(s = '') {
+  return inline(s);
 }
 
 function renderEntry(a) {
@@ -209,6 +322,18 @@ function renderEntry(a) {
 }
 
 // --- shared layout ---------------------------------------------------------------
+
+function siteNav(active, root) {
+  const analysisHref = `${root}/index.html`;
+  const practiceHref = `${root}/practice/index.html`;
+  return `<header class="site-head">
+  <a class="site-brand" href="${analysisHref}" aria-label="Rhetoric home"><span>R</span><b>Rhetoric</b></a>
+  <nav class="part-nav" aria-label="Primary">
+    <a href="${analysisHref}"${active === 'analysis' ? ' aria-current="page"' : ''}><span>01</span> Analyze</a>
+    <a href="${practiceHref}"${active === 'practice' ? ' aria-current="page"' : ''}><span>02</span> Practice</a>
+  </nav>
+</header>`;
+}
 
 function layout(title, body, cssPath) {
   const faviconPath = cssPath.replace(/site\.css$/, 'favicon.png');

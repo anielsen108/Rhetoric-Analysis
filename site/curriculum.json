@@ -1,0 +1,839 @@
+{
+  "title": "Rhetoric Lab Curriculum",
+  "overview": {
+    "format": "Each exercise is for two people on a video call. The **Speaker** performs the exercise. The **Director** gives simple visual signals — hand positions, finger counts, thumbs — to steer the exercise in real time. No special materials needed beyond a timer.",
+    "progression": "Sets 1-3 build foundational control. Sets 4-6 develop figurative and argumentative power. Sets 7-9 refine voice, structure, and compression. Set 10 integrates everything.",
+    "timing": "Each exercise runs 5-8 minutes unless otherwise noted. Switch Speaker and Director roles after each exercise.",
+    "signals": [
+      "**Hand height:** High / Middle / Low — indicates level, intensity, or register",
+      "**Finger count:** 1-5 — indicates quantity, length, or scale",
+      "**Thumbs up / down** — indicates success or miss",
+      "**Open palm** — stop or hold",
+      "**Fist** — go or begin"
+    ]
+  },
+  "sets": [
+    {
+      "number": 1,
+      "title": "Sentence Control",
+      "intro": "The sentence is the fundamental unit of rhetoric. Before you can do anything sophisticated, you must be able to control what your sentences do — their length, their diction, their architecture.",
+      "source": "Farnsworth's Classical English Style — chapters on sentence length, Saxon vs. Latinate diction, cumulative sentences, periodic sentences.",
+      "exercises": [
+        {
+          "id": "1.1",
+          "title": "The Length Dial",
+          "capability": "Controlling sentence length at will.",
+          "why": "Most speakers have one default sentence length — usually medium-long and meandering. Varying sentence length is the simplest way to change the rhythm, emphasis, and energy of speech. A short sentence after a long one hits like a punch.",
+          "setup": "Speaker talks on any topic. Director holds hand at three heights.",
+          "signals": "- **Low** = short (1-7 words). Terse. Punchy.\n- **Middle** = medium (8-20 words). Conversational.\n- **High** = long (25+ words). Extended, flowing, subordinate clauses welcome.",
+          "rules": "1. Speaker begins on any topic and speaks in complete sentences.\n2. Director sets hand position before or during speech.\n3. Speaker must adjust the *next* sentence to match the signal. No finishing a long sentence when the hand drops low.\n4. Director changes signal every 10-20 seconds, sometimes rapidly, sometimes holding.",
+          "duration": "5 minutes per speaker.",
+          "good": "The short sentences are genuinely short — not truncated thoughts but complete, forceful statements. The long sentences are controlled, not rambling — they have architecture, not just length. Transitions between lengths feel musical, not mechanical."
+        },
+        {
+          "id": "1.2",
+          "title": "Saxon and Latin",
+          "capability": "Toggling between Anglo-Saxon and Latinate diction.",
+          "why": "English has two great word-streams. Saxon words (get, make, start, cut, hold, break) are concrete, physical, blunt. Latinate words (acquire, fabricate, initiate, diminish, maintain, fracture) are abstract, formal, distanced. Command of both — and the ability to shift between them — gives a speaker two entirely different textures of language.",
+          "setup": "Speaker discusses any topic. Director signals which register to use.",
+          "signals": "- **Low hand** = Saxon. Short, concrete, physical words. One and two syllables. The language of the body and the earth.\n- **High hand** = Latinate. Longer, abstract, formal words. The language of institutions and ideas.",
+          "rules": "1. Speaker begins on a topic and delivers it in their natural diction.\n2. When Director signals low, Speaker shifts to Saxon diction as completely as possible. \"We need to get rid of the problem\" not \"We must eliminate the difficulty.\"\n3. When Director signals high, Speaker shifts to Latinate diction. \"One might consider the implications of such a determination\" not \"Think about what that choice means.\"\n4. Director toggles every 15-20 seconds.\n5. The *content* stays the same. Only the vocabulary changes.",
+          "duration": "5 minutes per speaker.",
+          "good": "The Saxon passages feel visceral, grounded, urgent. The Latinate passages feel elevated, precise, authoritative. The speaker can feel the difference in their mouth — the Saxon words are blunt and physical; the Latinate words are smooth and measured. Neither register sounds forced."
+        },
+        {
+          "id": "1.3",
+          "title": "The Cumulative Builder",
+          "capability": "Constructing right-branching (cumulative/loose) sentences.",
+          "why": "The cumulative sentence begins with a short, clear main clause, then adds modifying phrases that extend, specify, and enrich. It is the most natural sentence pattern in English and the workhorse of good prose. Mastering it means you can always elaborate without losing your reader.",
+          "setup": "Speaker constructs cumulative sentences. Director controls when to extend and when to close.",
+          "signals": "- **Fist** = Start a new base clause (short, clear, complete).\n- **Open palm pushing forward** = Add another modifying phrase. Keep building.\n- **Open palm facing down** = Land the sentence. Close it now.",
+          "rules": "1. Director signals Fist. Speaker produces a short base clause: \"The city woke up.\"\n2. Director signals forward. Speaker adds a modifying phrase: \"...its streets still wet from the night's rain.\"\n3. Director signals forward again. Speaker adds more: \"...vendors dragging carts to their stations, steam rising from grates.\"\n4. Director signals down. Speaker must close the sentence immediately and gracefully.\n5. Repeat. Each sentence starts fresh.",
+          "duration": "6 minutes per speaker.",
+          "good": "The base clause is genuinely short and independent — it could stand alone. Each addition is a new phrase, not just more words bolted on with \"and.\" The modifiers are concrete and specific — images, details, qualifications. The landing is clean, not trailing off."
+        },
+        {
+          "id": "1.4",
+          "title": "The Periodic Hold",
+          "capability": "Constructing left-branching (periodic) sentences that delay the main point.",
+          "why": "The periodic sentence is the opposite of the cumulative: it piles up conditions, qualifications, and subordinate clauses *before* delivering the main verb or point. It creates suspense. It makes the audience wait. When the main clause finally arrives, it lands with force.",
+          "setup": "Speaker constructs periodic sentences. Director evaluates each one.",
+          "signals": "- **Thumbs up** = Main point was successfully delayed. The sentence built real suspense.\n- **Flat hand / so-so** = Partial success. The delay existed but didn't create tension.\n- **Thumbs down** = Main point came too early. The sentence was cumulative, not periodic.",
+          "rules": "1. Director names a topic or claim.\n2. Speaker must deliver that claim as a periodic sentence — subordinate clauses first, main clause last.\n3. Speaker should aim for at least three subordinate elements before the main clause.\n4. Example: \"After years of effort, through setbacks that would have broken lesser teams, against the advice of every expert in the field — they succeeded.\"\n5. Director evaluates and signals. Ten attempts in the round.",
+          "duration": "5 minutes per speaker.",
+          "good": "The subordinate clauses build genuine expectation — each one adds weight to what's coming. The main clause, when it arrives, feels like a resolution. The sentence doesn't cheat by being vague about what's coming; the audience knows something important is about to land but doesn't know exactly what."
+        },
+        {
+          "id": "1.5",
+          "title": "The Tempo Map",
+          "capability": "Using sentence-length variation as rhythm and emphasis.",
+          "why": "A passage of all long sentences is soporific. A passage of all short sentences is exhausting. The music of rhetoric lives in the variation — a long sentence that builds, followed by a short sentence that strikes. This exercise trains the ear for that rhythm.",
+          "setup": "Speaker delivers a sustained passage. Director controls the pacing pattern.",
+          "signals": "Fingers 1-5:\n- **1** = Staccato. All short sentences. Percussive.\n- **2** = Mostly short with one medium sentence per breath.\n- **3** = Mixed. Natural variation. Let the content dictate.\n- **4** = Mostly long with one short sentence for punch.\n- **5** = Legato. All long, flowing sentences. No sentence under 20 words.",
+          "rules": "1. Speaker begins on a topic.\n2. Director holds up a number. Speaker adjusts their sentence pattern to match.\n3. Director changes the number every 15-20 seconds.\n4. The *content* must remain coherent — this is not just an abstract drill. The speaker is making a real argument or telling a real story, and the sentence pattern must serve it.",
+          "duration": "5 minutes per speaker. For an advanced variant, Director changes the number every 5-10 seconds.",
+          "good": "The speaker's staccato mode sounds deliberate, not choppy. Their legato mode sounds expansive, not lost. The transitions between modes feel motivated by the content — as if the speaker *chose* to shift, even though they were directed to. The audience feels the rhythm shift without being able to explain why."
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Repetition Structures",
+      "intro": "Repetition is the most powerful rhetorical device and the most underused in ordinary speech. The classical figures of repetition — anaphora, epistrophe, anadiplosis, tricolon, polyptoton — are not ornaments. They are structural tools that create rhythm, emphasis, and momentum.",
+      "source": "Farnsworth's Classical English Rhetoric — Part One: Repetition (chapters on anaphora, epistrophe, anadiplosis, isocolon, polyptoton).",
+      "exercises": [
+        {
+          "id": "2.1",
+          "title": "Anaphora Surge",
+          "capability": "Beginning successive clauses with the same word or phrase.",
+          "why": "Anaphora — repeating the opening — is the figure behind some of the most memorable passages in English: \"We shall fight on the beaches, we shall fight on the landing grounds, we shall fight in the fields...\" It creates momentum, builds emotional intensity, and gives the audience a rhythmic expectation that makes each new variation land harder.",
+          "setup": "Speaker delivers a passage using anaphora. Director controls the anchor phrase.",
+          "signals": "- **Fist** = Begin a new anchor phrase. Director may name it, or Speaker may choose.\n- **Open palm forward** = Continue with the current anchor phrase. Keep building the series.\n- **Open palm down** = Release. End the anaphoric run and close the passage.",
+          "rules": "1. Director signals Fist and names an opening phrase (e.g., \"There is no...\" or \"We have...\" or \"I remember...\").\n2. Speaker delivers a series of clauses, each beginning with that phrase: \"There is no shortcut to mastery. There is no substitute for the work itself. There is no moment when the struggle becomes easy.\"\n3. Each clause after the first must *escalate* — go further, get more specific, raise the stakes.\n4. When Director signals down, Speaker must close the passage with one final, landing sentence that does NOT use the anchor phrase.\n5. Three to four runs per round.",
+          "duration": "5 minutes per speaker.",
+          "good": "The repetition builds genuine momentum — each clause feels necessary, not padded. The content escalates rather than merely repeats. The closing sentence (which breaks the pattern) feels like a resolution or a punch. The speaker's voice naturally rises in intensity with each repetition."
+        },
+        {
+          "id": "2.2",
+          "title": "Epistrophe Lock",
+          "capability": "Ending successive clauses with the same word or phrase.",
+          "why": "Epistrophe — repeating the ending — is subtler than anaphora but equally powerful. Where anaphora creates a drumbeat at the start, epistrophe creates a refrain at the close. \"...of the people, by the people, for the people.\" It gives each clause a destination and makes the final word ring.",
+          "setup": "Speaker delivers a passage where every clause ends on the same word or phrase. Director provides the lock-word.",
+          "signals": "- Director holds up a written word on paper/screen or simply says the lock-word aloud.\n- **Thumbs up** = Good execution. The landing on the lock-word felt natural.\n- **Thumbs down** = Forced. The sentence was contorted to reach the lock-word.",
+          "rules": "1. Director gives a lock-word (e.g., \"free,\" \"enough,\" \"home,\" \"time\").\n2. Speaker must deliver 4-6 sentences in a row, each ending on that word.\n3. The sentences must be about the same topic and must form a coherent passage — not a random list.\n4. The lock-word should feel like a natural conclusion to each sentence, not a forced landing.\n5. Director changes the lock-word after each run. Three runs per round.",
+          "duration": "5 minutes per speaker.",
+          "good": "Each sentence feels complete and natural, as if the lock-word is where the thought genuinely wanted to end up. The passage as a whole has a refrain-like quality — the repeated word accumulates meaning with each use. No sentence sounds contorted or backwards."
+        },
+        {
+          "id": "2.3",
+          "title": "The Chain (Anadiplosis)",
+          "capability": "Ending one clause with a word that begins the next.",
+          "why": "Anadiplosis creates a chain of thought where each idea hands off to the next: \"Fear leads to anger. Anger leads to hate. Hate leads to suffering.\" It gives speech an irresistible forward momentum — each sentence seems to generate the next inevitably. It is the rhetorical equivalent of a logical proof.",
+          "setup": "Speaker builds a chain of linked sentences. No Director signals during the run — this is pure Speaker discipline.",
+          "signals": "- **Fist** = Begin the chain.\n- Director counts the links on their fingers.\n- **Open palm** = Stop. Evaluate.",
+          "rules": "1. Director signals Fist and gives a starting word or topic.\n2. Speaker produces a sentence ending with a significant word.\n3. The next sentence must BEGIN with that word (or a close form of it).\n4. Continue the chain as long as possible while maintaining coherent, meaningful content.\n5. No filler sentences. Each link must say something worth saying.\n6. Director counts links. Aim for 8+ in a good run.\n\n**Example chain:**\n\"Every great project begins with *commitment*. Commitment requires *sacrifice*. Sacrifice is only meaningful when it costs something you actually *value*. Value is not what you say matters — it's what you do when no one is *watching*. Watching yourself honestly is the beginning of *wisdom*.\"",
+          "duration": "5 minutes per speaker. Multiple chains.",
+          "good": "The chain doesn't feel mechanical — it feels like the speaker is discovering each link in real time, and each transition seems inevitable rather than forced. The content deepens or develops with each link rather than wandering randomly. The chain *goes somewhere.*"
+        },
+        {
+          "id": "2.4",
+          "title": "Tricolon Sprint",
+          "capability": "Producing parallel groups of three.",
+          "why": "The tricolon — three parallel elements — is the most fundamental structure of rhetorical emphasis. Two elements feel incomplete. Four feel excessive. Three feels right. \"Government of the people, by the people, for the people.\" \"Life, liberty, and the pursuit of happiness.\" The tricolon is the rhetorical sweet spot.",
+          "setup": "Director gives rapid-fire one-word prompts. Speaker must respond to each with a tricolon.",
+          "signals": "- Director says a word every 20 seconds.\n- **Thumbs up** = The three elements were genuinely parallel in structure and roughly equal in length.\n- **Flat hand** = Close, but the parallelism broke or one element was significantly longer/shorter.\n- **Thumbs down** = Not parallel. Restate.",
+          "rules": "1. Director gives a one-word prompt: \"Leadership.\"\n2. Speaker responds with a tricolon: \"Leadership is seeing what others miss, saying what others won't, and doing what others can't.\"\n3. The three elements must be grammatically parallel (same structure) and roughly equal in length.\n4. Each tricolon must be about the prompt, not generic filler.\n5. Twelve prompts per round.",
+          "duration": "5 minutes per speaker.",
+          "good": "The three elements are tightly parallel — same grammatical form, similar syllable count. They escalate (each more intense than the last) or complete each other (each covering a different dimension). The tricolon sounds like it was prepared, even though it was improvised."
+        },
+        {
+          "id": "2.5",
+          "title": "The Root Variations (Polyptoton)",
+          "capability": "Using different forms of the same root word within a passage.",
+          "why": "Polyptoton — varying the form of a word — creates a sense of exhaustive exploration of an idea: \"The judge was harsh in his *judgment*, but who are we to *judge*?\" It suggests you've turned the concept over in your hands, examined every facet. It makes language feel richer and more interconnected.",
+          "setup": "Director provides root words. Speaker must use as many forms as possible.",
+          "signals": "- Director gives a root word at the start of each round.\n- Director counts distinct forms on fingers.\n- **High hand** after the round = impressive range.\n- **Low hand** = too few forms or too forced.",
+          "rules": "1. Director names a root word (e.g., \"judge\").\n2. Speaker has 30 seconds to deliver a coherent passage using as many forms of that word as possible: judge, judgment, judging, judged, judicial, judiciary, misjudge, prejudge, adjudicate.\n3. The passage must make sense — not just a word list. Each form must appear in a real sentence that contributes to an argument or narrative.\n4. Score is the number of distinct forms used meaningfully.\n5. Six root words per round.\n\n**Suggested root words:** free, just, power, true, reason, act, human, create, serve, rule, know, right.",
+          "duration": "5 minutes per speaker.",
+          "good": "The different word forms feel like a natural exploration of the concept, not a vocabulary exercise. The passage develops an idea, and the shifting forms of the word track the development — each form illuminates a different angle."
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Antithesis and Contrast",
+      "intro": "The most persuasive rhetorical structures are built on opposition. Antithesis, chiasmus, concession-and-reply, the dilemma — all of these gain their power from juxtaposing one thing against another. This set trains the speaker to think in contrasts and build arguments on the architecture of opposition.",
+      "source": "Farnsworth's Classical English Rhetoric — chapters on antithesis, chiasmus. Farnsworth's Classical English Argument — chapters on concession, the dilemma, reductio.",
+      "exercises": [
+        {
+          "id": "3.1",
+          "title": "Antithesis Engine",
+          "capability": "Constructing balanced opposing phrases.",
+          "why": "Antithesis sets two ideas against each other in parallel structure: \"It was the best of times, it was the worst of times.\" The contrast makes both sides sharper. It forces precision — you can't be vague when you're constructing a mirror.",
+          "setup": "Director gives simple statements. Speaker must immediately reformulate them as antitheses.",
+          "signals": "- Director states a claim every 15 seconds.\n- **Thumbs up** = Strong antithesis. Balanced, parallel, illuminating.\n- **Flat hand** = Weak. The contrast existed but the structure wasn't balanced.\n- **Thumbs down** = Not antithetical. Try again.",
+          "rules": "1. Director gives a plain statement: \"Good leaders listen to their team.\"\n2. Speaker must immediately restate it as an antithesis: \"A good leader listens more than they speak; a poor leader speaks more than they listen.\"\n3. The antithesis must have balanced structure — the two halves should mirror each other grammatically.\n4. Aim for the antithesis to *deepen* the original statement, not just negate it.\n5. Ten statements per round.\n\n**Patterns to use:**\n- \"Not X, but Y\"\n- \"It is X, not Y\"\n- \"Where there is X, there is Y; where there is no X, there is no Y\"\n- \"The wise do X; the foolish do Y\"",
+          "duration": "5 minutes per speaker.",
+          "good": "The antitheses snap into place — the two halves feel like they were made for each other. The contrast illuminates both sides, making the speaker's point clearer than the original plain statement did. The structure is genuinely balanced, not lopsided."
+        },
+        {
+          "id": "3.2",
+          "title": "Chiasmus Forge",
+          "capability": "Creating ABBA reversal patterns.",
+          "why": "Chiasmus reverses the order of terms in two parallel phrases: \"Ask not what your country can do for you — ask what you can do for your country.\" The reversal makes the listener feel the second phrase as a mirror of the first, creating a sense of completeness and wit. It's one of the most memorable figures in English.",
+          "setup": "Director provides A-B phrases. Speaker must reverse them to B-A.",
+          "signals": "- Director gives a phrase.\n- **Thumbs up** = The reversal works. The chiasmus creates genuine insight.\n- **Thumbs down** = Mechanical reversal without added meaning.",
+          "rules": "1. **Warm-up (2 minutes).** Director gives well-known chiasmi with the second half missing. Speaker completes them.\n   - \"It's not the size of the dog in the fight...\" → \"...it's the size of the fight in the dog.\"\n   - \"You don't write because you have something to say...\" → \"...you have something to say because you write.\"\n2. **Live fire (3 minutes).** Director gives any simple statement. Speaker must construct an original chiasmus from it.\n   - Input: \"People should work to live.\" → \"We should work to live, not live to work.\"\n   - Input: \"Plans often fail.\" → \"We don't fail to plan — we plan to fail.\"\n3. The reversal must produce genuine insight or wit, not just mechanical word-swapping.",
+          "duration": "5 minutes per speaker.",
+          "good": "The chiasmus produces an \"aha\" moment — the reversal reveals something the original phrasing concealed. The two halves have matching structure. The chiasmus sounds quotable."
+        },
+        {
+          "id": "3.3",
+          "title": "The Concession Pivot",
+          "capability": "Genuinely conceding an opponent's strongest point, then turning it to your advantage.",
+          "why": "The weakest rhetoric denies everything the opponent says. The strongest rhetoric *concedes* the opponent's best point — genuinely, not dismissively — and then shows why it doesn't change the conclusion. Concession builds credibility, disarms the audience, and makes your remaining argument feel more honest.",
+          "setup": "Director plays the opponent, stating a strong argument. Speaker must concede, then pivot.",
+          "signals": "- **Thumbs up** = The concession was genuine and the pivot was strong.\n- **Flat hand** = The concession was fake (\"Yes, but actually no...\") or the pivot was weak.\n- **Thumbs down** = Speaker denied the point instead of conceding it.",
+          "rules": "1. Director states a strong argument for a position: \"Remote work clearly reduces collaboration. The best ideas come from hallway conversations.\"\n2. Speaker must spend their first 2-3 sentences genuinely conceding the point. No hedging, no \"well, some people think...\" The concession must be full-throated.\n3. Then the pivot. Speaker uses a transition — \"And yet,\" \"But this concedes too much,\" \"What this argument misses is\" — and turns to their own position.\n4. The pivot must not contradict the concession. Both must remain true simultaneously.\n5. Six exchanges per round.",
+          "duration": "6 minutes per speaker.",
+          "good": "The concession sounds like the speaker genuinely believes the opponent has a point — because they do. An observer couldn't tell whether the speaker is about to agree or disagree. The pivot doesn't negate the concession; it recontextualizes it. The overall effect is: \"You're right about X, and precisely *because* you're right about X, Y follows.\""
+        },
+        {
+          "id": "3.4",
+          "title": "The Two-Handed Speaker",
+          "capability": "Arguing both sides of a question with equal conviction.",
+          "why": "The ability to argue any side — *ad utramque partem* — was the foundation of classical rhetorical training. It builds flexibility, empathy for opposing views, and the ability to anticipate counterarguments. A speaker who can only argue their own side is always half-prepared.",
+          "setup": "Speaker argues one side, then flips on Director's signal.",
+          "signals": "- **Right hand raised** = Argue the affirmative position.\n- **Left hand raised** = Argue the negative position.\n- Director switches hands every 30 seconds.",
+          "rules": "1. Director names a debatable proposition: \"Social media has made society worse.\"\n2. Director raises right hand. Speaker argues the affirmative with full conviction for 30 seconds.\n3. Director switches to left hand. Speaker *immediately* — no pause, no \"on the other hand\" — switches to the opposing position with equal conviction.\n4. Director switches back. Speaker returns to the original position, picking up new arguments (not repeating old ones).\n5. Three full cycles (six 30-second segments) per topic. Two topics per round.",
+          "duration": "6 minutes per speaker.",
+          "good": "Both sides sound equally sincere. A new listener dropping in at any point couldn't tell which side the speaker actually believes. The arguments on each side don't repeat — the speaker finds new material each time they flip. The transitions are instantaneous and seamless."
+        },
+        {
+          "id": "3.5",
+          "title": "The Dilemma Constructor",
+          "capability": "Framing any situation as a two-horned dilemma.",
+          "why": "The dilemma is one of the most devastating argument structures: \"If you do X, then this bad thing follows. If you don't do X, then this other bad thing follows. Either way, you're stuck.\" It's the rhetorical fork. Constructing one requires identifying the real costs on both sides of any decision.",
+          "setup": "Director names topics. Speaker must frame each as a dilemma.",
+          "signals": "- **Thumbs up** = Both horns are genuinely sharp. The dilemma feels real.\n- **Flat hand** = One horn is sharp, but the other is dull. Not a real dilemma.\n- **Thumbs down** = The dilemma is easily escaped. There's an obvious third option.",
+          "rules": "1. Director names a topic or decision: \"Whether to regulate AI.\"\n2. Speaker must frame it as a dilemma with two horns: \"If we regulate AI heavily, we strangle innovation and cede leadership to countries that don't. If we don't regulate it, we risk harms we can't predict and can't reverse.\"\n3. Both horns must be genuinely threatening — not one real problem and one trivial one.\n4. The dilemma must feel inescapable — no obvious third path.\n5. Advanced variant: After constructing the dilemma, Speaker must then *escape* it — find the narrow path between the horns.\n6. Eight topics per round.",
+          "duration": "5 minutes per speaker.",
+          "good": "An audience hearing the dilemma feels genuinely stuck. Both options sound bad. Neither horn is a straw man — both represent real, substantial costs. If the speaker escapes the dilemma, it's through genuine insight, not by pretending one horn isn't sharp."
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Metaphor and Image",
+      "intro": "Metaphor is not decoration. It is the primary mechanism by which we understand abstract concepts through concrete experience. A good metaphor doesn't just illustrate an idea — it shapes how the audience thinks about it. This set trains the speaker to generate, extend, and control figurative language.",
+      "source": "Farnsworth's Classical English Metaphor — chapters on types of metaphor, extended metaphor, personification, analogy.",
+      "exercises": [
+        {
+          "id": "4.1",
+          "title": "Metaphor Roulette",
+          "capability": "Generating metaphors from random source domains on demand.",
+          "why": "Most speakers reach for the same tired metaphors — journey, battle, building. The ability to map any topic onto any concrete domain unlocks vivid, original figurative language. It also reveals hidden structure: mapping \"a career\" onto \"a garden\" highlights different features than mapping it onto \"a war.\"",
+          "setup": "Speaker discusses a fixed topic. Director calls out random concrete domains.",
+          "signals": "- Director says a domain word every 20 seconds: \"cooking,\" \"weather,\" \"surgery,\" \"architecture,\" \"chess,\" \"ocean,\" \"fire,\" \"machinery.\"\n- Speaker must immediately map the current topic onto the new domain.",
+          "rules": "1. Director and Speaker agree on a topic: \"building a startup.\"\n2. Director calls a domain: \"cooking.\"\n3. Speaker must immediately deliver the topic through that metaphor: \"A startup is a kitchen in the first hour of dinner service — you're working with raw ingredients, the heat is already too high, and you won't know if the dish works until someone tastes it.\"\n4. Director calls a new domain: \"weather.\" Speaker shifts: \"A startup is a storm system forming off the coast — all the conditions are gathering, but no one can tell yet whether it'll be a hurricane or whether it'll dissipate before it makes landfall.\"\n5. No transition sentences. Just cut directly to the new domain.\n6. Each metaphor must map at least two features — not just \"X is like Y\" but showing how specific parts of X correspond to specific parts of Y.",
+          "duration": "5 minutes per speaker. Suggested topic list: a career, a relationship, a political campaign, learning a skill, a company's culture.",
+          "good": "The metaphors are specific, not generic. They map real structure — the audience learns something about the topic through the metaphor that they wouldn't see otherwise. The speaker doesn't just name the domain (\"it's like cooking\") but actually develops the mapping (\"the seed round is mise en place — everything has to be prepared before the real work begins\")."
+        },
+        {
+          "id": "4.2",
+          "title": "The Sustained Metaphor",
+          "capability": "Maintaining a single metaphor over an extended passage without mixing or breaking.",
+          "why": "Anyone can drop a metaphor into a sentence. Sustaining one across a full minute — mapping every element of your argument onto the same figurative domain — requires genuine structural thinking. It's also far more persuasive: a sustained metaphor makes the audience *live inside* the comparison rather than just glimpsing it.",
+          "setup": "Speaker picks one metaphor and sustains it. Director polices coherence.",
+          "signals": "- **Thumbs up** = The metaphor is holding. Keep going.\n- **Flat hand** = The metaphor is straining. You're forcing an element that doesn't map.\n- **Thumbs down** = Broken. You mixed metaphors or dropped back to literal language.",
+          "rules": "1. Speaker chooses a topic and a metaphorical domain: \"The education system is a factory.\"\n2. Speaker must sustain the metaphor for 90 seconds, mapping every element of their argument onto the domain.\n   - Students = raw material on the assembly line.\n   - Teachers = line workers.\n   - Standardized tests = quality control inspection.\n   - Graduation = the finished product rolling off the line.\n   - Etc.\n3. No literal language about the topic. Everything must be expressed through the metaphor.\n4. No mixing — you can't suddenly introduce a gardening metaphor mid-factory.\n5. Director monitors and signals in real time.",
+          "duration": "6 minutes per speaker. Three or four sustained runs.",
+          "good": "The metaphor deepens as it extends — the later mappings reveal things the early ones didn't. The speaker discovers connections they didn't plan. The metaphor never breaks or mixes. At 90 seconds, the audience has a rich, coherent alternative picture of the topic that illuminates real features."
+        },
+        {
+          "id": "4.3",
+          "title": "Personification Engine",
+          "capability": "Giving abstract concepts character, motive, and behavior.",
+          "why": "Personification transforms abstractions into agents — and we understand agents intuitively. \"Inflation *erodes* purchasing power\" is analysis. \"Inflation is a pickpocket — it doesn't take your wallet, it just empties it, coin by coin, so slowly you don't notice until you reach for something and it's gone\" is personification that makes the abstract visceral.",
+          "setup": "Director names abstract concepts. Speaker must bring them to life as characters.",
+          "signals": "- Director names a concept every 40 seconds.\n- **High hand** = More character development. Give it personality, quirks, habits.\n- **Low hand** = Pull back. Too much — it's becoming a children's story.",
+          "rules": "1. Director names an abstraction: \"Bureaucracy.\"\n2. Speaker must talk about it as if it were a person. What does it want? What does it fear? How does it dress? How does it spend its weekends? What's its relationship to other abstractions?\n3. The personification must illuminate the real nature of the concept. It shouldn't be cute for its own sake — it should make the audience understand bureaucracy better.\n4. Speaker should give the character at least: a motive, a behavior pattern, and a relationship to something else.\n5. Director names new concepts: \"Innovation,\" \"Tradition,\" \"Justice,\" \"Nostalgia,\" \"Ambition.\"",
+          "duration": "5 minutes per speaker.",
+          "good": "The character feels recognizable — the audience goes \"yes, that IS what bureaucracy is like.\" The personification reveals something about the concept's inner logic that analysis alone wouldn't capture. The character is specific enough to be vivid but not so elaborate that it overwhelms the point."
+        },
+        {
+          "id": "4.4",
+          "title": "The Analogy Bridge",
+          "capability": "Drawing structural parallels between unlike things to illuminate both.",
+          "why": "Analogy is the engine of thought. We understand the unfamiliar by mapping it onto the familiar. But a good analogy isn't just \"X is like Y\" — it's a structural claim: \"X has the same relationship between its parts as Y has between its parts.\" Building a detailed analogy on the spot requires real-time structural analysis.",
+          "setup": "Director gives two unrelated things. Speaker must bridge them.",
+          "signals": "- Director names two things (e.g., \"a cathedral and a database\").\n- **Fingers 1-5** after the attempt = how many structural parallels the Director counted.",
+          "rules": "1. Director names two things that seem unrelated: \"a jazz quartet and an emergency room.\"\n2. Speaker has 60 seconds to build a detailed analogy between them.\n3. The analogy must identify at least three structural parallels — not surface similarities (\"they're both loud\") but structural ones (\"the lead musician's role maps onto the attending physician's: they set the direction, but the performance depends on everyone improvising competently within their role\").\n4. The analogy should illuminate *both* things, not just use one to explain the other.\n5. Six pairs per round.\n\n**Suggested pairs:** A library and a marketplace. A river and a conversation. A chess game and a negotiation. A garden and a community. An immune system and a legal system.",
+          "duration": "6 minutes per speaker.",
+          "good": "The parallels are structural and specific. The analogy holds under scrutiny — if you pushed on it, more parallels would emerge. The audience sees both things differently after hearing the analogy. The speaker doesn't just assert similarity but demonstrates it with specific mapped features."
+        },
+        {
+          "id": "4.5",
+          "title": "The Metaphor Ladder",
+          "capability": "Producing increasingly vivid and original figurative language.",
+          "why": "Most speakers' metaphors are dead — so familiar they've lost all figurative force. \"The tip of the iceberg.\" \"A level playing field.\" \"Moving the needle.\" This exercise trains the speaker to climb from dead language through conventional metaphor to genuinely original figuration.",
+          "setup": "Speaker restates the same idea at escalating levels of vividness. Director signals each escalation.",
+          "signals": "- **Finger 1** = Literal. Plain factual statement. No metaphor.\n- **Finger 2** = Dead metaphor. Use a common, conventional figure.\n- **Finger 3** = Fresh metaphor. Conventional domain but original execution.\n- **Finger 4** = Vivid metaphor. Unusual domain, concrete detail, surprising mapping.\n- **Finger 5** = Wild. The most extreme, original, boundary-pushing figure you can create.",
+          "rules": "1. Director gives a simple factual statement: \"The company is growing quickly.\"\n2. Director shows 1. Speaker restates literally: \"Revenue has increased 40% year over year.\"\n3. Director shows 2. Dead metaphor: \"The company is skyrocketing.\"\n4. Director shows 3. Fresh: \"The company is a vine that found sunlight — every branch is reaching in a different direction at once.\"\n5. Director shows 4. Vivid: \"The company is a controlled detonation — the blast radius keeps expanding, and the engineers are building the building while the foundation is still shaking.\"\n6. Director shows 5. Wild: the speaker's most daring, original image.\n7. Then Director jumps around randomly: \"4. 2. 5. 1. 3.\" Speaker must hit the right level each time.",
+          "duration": "6 minutes per speaker.",
+          "good": "Each level is clearly distinct from the others. The dead metaphors are genuinely dead. The vivid ones are genuinely vivid. Level 5 is surprising and original — something the audience has never heard before. When jumping between levels, the speaker can accurately calibrate."
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Rhythm and Conjunction",
+      "intro": "The connective tissue of speech — the ands, buts, ors, or their absence — controls pacing, weight, and energy in ways most speakers never notice. Asyndeton (dropping conjunctions) creates speed and urgency. Polysyndeton (multiplying conjunctions) creates weight and accumulation. Isocolon (parallel structure) creates power and balance. This set trains the ear.",
+      "source": "Farnsworth's Classical English Rhetoric — chapters on asyndeton, polysyndeton, isocolon.",
+      "exercises": [
+        {
+          "id": "5.1",
+          "title": "Asyndeton Rush",
+          "capability": "Removing conjunctions to create speed, urgency, and force.",
+          "why": "\"I came, I saw, I conquered.\" Not \"I came, and then I saw, and then I conquered.\" Dropping the conjunctions makes prose feel fast, decisive, unstoppable. It's the rhetoric of action — each clause lands like a hammer blow with nothing to soften it.",
+          "setup": "Speaker delivers a passage with no conjunctions between clauses. Director polices.",
+          "signals": "- **Thumbs down** = A conjunction slipped in. Speaker was caught using \"and,\" \"but,\" \"or,\" \"so,\" or \"then\" to connect clauses.\n- **Thumbs up** = Clean. No conjunctions.",
+          "rules": "1. Speaker picks a topic and delivers a passage of at least six clauses with no coordinating conjunctions.\n2. Clauses are separated only by pauses (the spoken equivalent of commas or semicolons).\n3. \"The project failed. The team scattered. The investors called. The board convened. A decision was made. No one was satisfied.\"\n4. Director signals thumbs down whenever a conjunction appears. Speaker must restart the current sentence without the conjunction.\n5. Content should be energetic and urgent — the asyndeton should serve the feeling, not fight it.\n6. Four runs per round.",
+          "duration": "5 minutes per speaker.",
+          "good": "The passage feels fast and forceful. Each clause is a complete unit that lands on its own. The lack of conjunctions creates a sense of inevitability — one thing after another, no commentary, no hesitation. The speaker's delivery naturally becomes more clipped and decisive."
+        },
+        {
+          "id": "5.2",
+          "title": "Polysyndeton Weight",
+          "capability": "Multiplying conjunctions to create weight, accumulation, and emotional density.",
+          "why": "\"And the rain came down and the rivers rose and the bridges washed away and still they waited.\" Polysyndeton — repeating \"and\" — makes a list feel like it will never end. It creates a sense of overwhelming accumulation. Each \"and\" says: \"there's more. There's still more.\"",
+          "setup": "Speaker delivers a passage with conjunctions between every clause and every item. Director counts.",
+          "signals": "- Director counts conjunctions on fingers (resetting at five).\n- **High hand** = More. Pack in more conjunctions.\n- **Low hand** = Good density. Maintain.",
+          "rules": "1. Speaker picks a topic and delivers a passage where every clause is connected by \"and,\" \"or,\" or \"but.\"\n2. Every list item also gets a conjunction: \"They brought bread and cheese and wine and fruit and cold meats and three kinds of mustard.\"\n3. Aim for at least 8 conjunctions in a 30-second passage.\n4. The passage should feel heavy, accumulating, relentless — the conjunctions should build emotional weight.\n5. Content should suit the form: lists of evidence, catalogs of damage, inventories of experience.\n6. Four runs per round.",
+          "duration": "5 minutes per speaker.",
+          "good": "The repeated \"and\" creates a rhythm that pulls the listener along. The passage feels like testimony — an overwhelming catalog that can't be dismissed because each \"and\" insists there's more. The weight builds. By the end, the accumulation itself is the argument."
+        },
+        {
+          "id": "5.3",
+          "title": "The Conjunction Toggle",
+          "capability": "Switching between asyndeton and polysyndeton to control pacing.",
+          "why": "The real power is in the contrast. A passage of asyndeton — fast, clipped, urgent — followed by polysyndeton — heavy, accumulating, relentless — creates a dramatic shift that the audience feels in their chest even if they can't name it. This exercise trains the speaker to wield both as pacing tools.",
+          "setup": "Speaker maintains one topic. Director toggles the mode.",
+          "signals": "- **Low hand** = Asyndeton. No conjunctions. Fast. Clipped.\n- **High hand** = Polysyndeton. Conjunctions everywhere. Heavy. Accumulating.",
+          "rules": "1. Speaker begins on a topic.\n2. Director signals low. Speaker delivers in asyndeton: \"The walls cracked. The ceiling buckled. Plaster fell. Dust filled the air.\"\n3. Director signals high. Speaker shifts to polysyndeton on the same topic: \"And the walls cracked and the ceiling buckled and the plaster fell and the dust filled the air and still the building stood.\"\n4. Director toggles every 15-20 seconds.\n5. The topic and narrative must remain continuous across toggles.",
+          "duration": "5 minutes per speaker.",
+          "good": "The tonal shift between modes is dramatic and immediate. The asyndeton passages feel fast and controlled. The polysyndeton passages feel heavy and inexorable. The transitions are clean — the speaker doesn't take a beat to adjust, they just shift. The audience can feel the mode change like a gear shift."
+        },
+        {
+          "id": "5.4",
+          "title": "Isocolon Drill",
+          "capability": "Producing phrases of matching length and grammatical structure.",
+          "why": "Isocolon — parallel structure with parallel length — is what gives famous phrases their ring: \"Veni, vidi, vici.\" \"Easy come, easy go.\" \"Out of sight, out of mind.\" When clauses match in structure and length, they feel balanced, authoritative, and inevitable.",
+          "setup": "Director specifies the number of parallel elements. Speaker produces them.",
+          "signals": "- **2 fingers** = Produce two parallel phrases.\n- **3 fingers** = Produce three parallel phrases (tricolon).\n- **4 fingers** = Produce four parallel phrases (tetracolon).\n- **Thumbs up** = Structures matched. Good parallelism.\n- **Thumbs down** = Structures didn't match. One element broke the pattern.",
+          "rules": "1. Director holds up a number and names a topic.\n2. Speaker must produce that many phrases that are:\n   - Grammatically identical in structure\n   - Approximately equal in syllable count (within 2-3 syllables of each other)\n   - Substantively related (all about the same topic)\n3. Example (3 fingers, topic \"ambition\"): \"It drives the young to dream. | It drives the old to remember. | It drives the restless to act.\"\n4. Director evaluates parallelism and signals.\n5. Ten prompts per round.",
+          "duration": "5 minutes per speaker.",
+          "good": "The phrases feel like they were carved from the same block — identical structure, matching rhythm. If you tapped the rhythm of one phrase, the others would fit the same beat. The content isn't sacrificed for the form — each phrase says something meaningful, not just something that fits the pattern."
+        },
+        {
+          "id": "5.5",
+          "title": "The Cadence Close",
+          "capability": "Crafting powerful sentence endings through rhythm.",
+          "why": "The end of a sentence is the position of maximum emphasis. The end of a passage even more so. A strong cadence close — the right rhythm at the right moment — is what makes an audience feel that a point has been *made.* Whether it's a short punch after a long build, a tricolon that clicks shut, or a periodic sentence that finally delivers its verb — the close is everything.",
+          "setup": "Speaker delivers 30-second passages. Director evaluates the landing.",
+          "signals": "After each passage, Director holds up 1-5 fingers:\n- **1** = Flat landing. The passage trailed off or ended arbitrarily.\n- **2** = The ending existed but lacked force.\n- **3** = Competent close. Clear endpoint but not memorable.\n- **4** = Strong close. The audience would have felt that land.\n- **5** = Devastating. Quotable. The kind of ending that produces a beat of silence.",
+          "rules": "1. Speaker delivers a 30-second passage on any topic.\n2. The passage can be any style, any structure — but the final sentence must *land.*\n3. After each attempt, Director rates it and explains (briefly) what worked or didn't.\n4. Speaker tries again on the same topic, aiming for a higher rating.\n5. Techniques that help: short sentence after long buildup, tricolon close, periodic sentence, unexpected image, callback to the opening.\n6. Six attempts per round.",
+          "duration": "5 minutes per speaker.",
+          "good": "Rating 5 moments: the room goes quiet for a beat after the last sentence. The final sentence feels inevitable in retrospect but wasn't predictable in advance. It carries the weight of everything that came before it. If someone quoted only that last sentence, it would still have force."
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "title": "Argument Moves",
+      "intro": "Argument is not just logic — it is a set of strategic moves, each with its own structure and its own force. Reductio, a fortiori, the distinction, the steelman — these are not just debate techniques. They are ways of thinking that make your reasoning visible and your positions stronger.",
+      "source": "Farnsworth's Classical English Argument — chapters on reductio ad absurdum, a fortiori, distinguishing cases, concession, tu quoque.",
+      "exercises": [
+        {
+          "id": "6.1",
+          "title": "Reductio Sprint",
+          "capability": "Extending an opponent's logic to its absurd conclusion.",
+          "why": "Reductio ad absurdum doesn't attack the opponent's position — it *extends* it, showing where the logic leads if taken to its end. \"If your principle is true, then we must also accept that...\" It's devastating because you're using the opponent's own logic against them.",
+          "setup": "Director states positions. Speaker extends them to absurdity.",
+          "signals": "- **Thumbs up** = The reductio was fair — it followed the logic honestly.\n- **Thumbs down** = Straw man. The speaker distorted the logic to reach the absurdity.",
+          "rules": "1. Director states a reasonable-sounding position: \"We should always defer to expert opinion.\"\n2. Speaker has 45 seconds to take it to its logical extreme: \"If we always defer to expert opinion, then no expert was ever justified in disagreeing with the consensus of their time. Galileo should have stayed quiet. Darwin should have deferred. Every breakthrough in human history began with someone who refused to defer.\"\n3. The extension must be *honest* — it must genuinely follow from the stated principle. No distortion.\n4. The absurdity should be undeniable — the audience should feel the force of the conclusion.\n5. Director evaluates fairness. If the reductio relied on a straw man, it doesn't count.\n6. Eight positions per round.",
+          "duration": "6 minutes per speaker.",
+          "good": "The opponent would have to concede that the logic holds — the absurd conclusion really does follow from their premise. The reductio doesn't feel mean-spirited or unfair; it feels illuminating. The speaker's extension reveals a genuine problem with the original position."
+        },
+        {
+          "id": "6.2",
+          "title": "The A Fortiori Ladder",
+          "capability": "Arguing from lesser to greater cases.",
+          "why": "A fortiori — \"from the stronger\" — is the argument that says: \"If this is true even in the easy case, how much more must it be true in the hard case?\" It creates an ascending staircase of persuasion where each step makes the next seem inevitable.",
+          "setup": "Speaker builds a three-rung ladder of increasingly compelling cases.",
+          "signals": "- Director names a claim or principle.\n- **Finger 1** = First rung. The easiest, most obvious case.\n- **Finger 2** = Second rung. A harder, more impressive case.\n- **Finger 3** = Third rung. The case that clinches the argument.",
+          "rules": "1. Director states a principle: \"Preparation matters more than talent.\"\n2. Speaker builds the ladder:\n   - Rung 1 (easiest case): \"If preparation matters in a college exam — where the material is well-defined and the format is predictable — \"\n   - Rung 2 (harder case): \"then how much more does it matter in a startup — where nothing is predictable and the stakes are your livelihood — \"\n   - Rung 3 (clinching case): \"then how much more still in a crisis — where there is no second attempt, no curve, and the cost of failure is measured in lives?\"\n3. Each rung must be a *genuinely harder* case — not just a restatement with different words.\n4. The final rung should feel undeniable.\n5. Six ladders per round.",
+          "duration": "5 minutes per speaker.",
+          "good": "Each rung is clearly a harder case than the last. The audience feels the argument building in force. The final rung produces a \"how much more so!\" feeling that makes the original principle seem unassailable. The ladder structure is explicit — the audience can follow the logic step by step."
+        },
+        {
+          "id": "6.3",
+          "title": "The Distinction",
+          "capability": "Showing precisely why an apparent precedent doesn't apply.",
+          "why": "One of the most common argument moves is the appeal to precedent or analogy: \"We did X last time, so we should do X this time.\" The distinction is the counter-move: \"This case is different because...\" It requires identifying the specific features that make two apparently similar situations fundamentally different.",
+          "setup": "Director offers precedents. Speaker must distinguish them.",
+          "signals": "- **Thumbs up** = The distinction is real and substantive.\n- **Flat hand** = The distinction exists but is trivial.\n- **Thumbs down** = The distinction is forced. The cases really are analogous.",
+          "rules": "1. Director states a precedent case and applies it: \"We banned lead paint because it was dangerous. AI is dangerous too, so we should ban AI.\"\n2. Speaker has 30 seconds to identify and articulate the distinctions — the specific features that make this case different from the precedent.\n3. The distinctions must be *relevant* — they must explain why the difference matters, not just that a difference exists.\n4. Speaker should aim for at least two substantive distinctions per precedent.\n5. Eight precedents per round.",
+          "duration": "5 minutes per speaker.",
+          "good": "The distinctions are sharp and specific — not \"well, they're different things\" but \"lead paint has no beneficial use, while AI has transformative beneficial uses, which means the cost-benefit calculation is fundamentally different.\" The audience feels that the precedent, which seemed airtight, has been honestly and precisely taken apart."
+        },
+        {
+          "id": "6.4",
+          "title": "The Steelman Demolition",
+          "capability": "Building the strongest version of an opposing argument before dismantling it.",
+          "why": "Attacking a weak version of your opponent's argument convinces no one who doesn't already agree. Attacking the *strongest* version demonstrates intellectual honesty, earns the audience's trust, and — if you succeed — leaves no escape route. This is the highest-difficulty argument move.",
+          "setup": "Director gives a position the Speaker disagrees with. Speaker must steelman, then demolish.",
+          "signals": "- After the steelman phase: **Thumbs up** = The opponent would recognize and accept this as their argument. **Thumbs down** = Straw man in disguise.\n- After the demolition phase: **Thumbs up** = The demolition addressed the steelman, not a weaker version. **Thumbs down** = The speaker demolished a different argument than the one they built.",
+          "rules": "1. Director names a position the Speaker disagrees with: \"Colleges should eliminate standardized testing.\"\n2. **Phase 1 — Steelman (30 seconds).** Speaker constructs the strongest, most persuasive version of this argument. Must include the best evidence, the strongest reasoning, and the most sympathetic framing.\n3. Director evaluates: would a genuine proponent accept this as a fair (even generous) version of their argument?\n4. **Phase 2 — Demolition (30 seconds).** Speaker dismantles the argument they just built. The demolition must address the *strong* version — not slide back to attacking a weaker one.\n5. Four positions per round.",
+          "duration": "6 minutes per speaker.",
+          "good": "The steelman is so good that the audience isn't sure the speaker actually disagrees. The demolition is precise — it identifies the specific load-bearing assumption in the strong argument and shows why it fails. The overall effect is: \"This is the best version of the argument, I've given it every advantage, and it still doesn't hold.\""
+        },
+        {
+          "id": "6.5",
+          "title": "The Tu Quoque Flip",
+          "capability": "Turning an argument back on the person making it.",
+          "why": "Tu quoque — \"you do it too\" — is often dismissed as a fallacy, but as Farnsworth shows, it has legitimate rhetorical force. If someone accuses you of inconsistency, showing that they are guilty of the same inconsistency doesn't prove you're right — but it does neutralize their authority to make the accusation. Used well, it reframes the entire exchange.",
+          "setup": "Director makes accusations. Speaker flips them.",
+          "signals": "- **Thumbs up** = The flip was fair and landed.\n- **Flat hand** = The flip was technically valid but forced.\n- **Thumbs down** = The flip relied on a false equivalence.",
+          "rules": "1. Director adopts a role and makes an accusation: \"Your company talks about sustainability but still uses plastic packaging.\"\n2. Speaker has 20 seconds to flip it: \"The very industry making this accusation produces ten times the plastic waste we do. If this standard applies to us, it applies to you first.\"\n3. The tu quoque must be *fair* — the equivalence must be genuine, not manufactured.\n4. Advanced variant: after the flip, the Speaker must then rise above it — \"But let's not argue about who's worse. Let's talk about what we're both going to do about it.\"\n5. Eight accusations per round.",
+          "duration": "5 minutes per speaker.",
+          "good": "The flip feels earned, not petty. The equivalence is genuine — the audience goes \"that's true, they do the same thing.\" The speaker doesn't dwell on the flip but uses it as a stepping stone to a stronger position. The overall effect is: \"Your objection has no authority\" — not \"no, you're bad.\""
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "title": "Register and Persona",
+      "intro": "The same content delivered in different registers can persuade, intimidate, soothe, or enrage. This set trains the speaker to control the meta-level of communication — not what you say, but how your voice, vocabulary, and posture frame what you say.",
+      "source": "Farnsworth's Classical English Style — diction, point of view, tone. Farnsworth's Classical English Rhetoric — ethopoeia.",
+      "exercises": [
+        {
+          "id": "7.1",
+          "title": "The Register Elevator",
+          "capability": "Moving fluidly between formal, conversational, and colloquial registers.",
+          "why": "Most speakers are stuck in one register — usually conversational. But the ability to shift up into formal authority or down into colloquial intimacy is a powerful tool. A formal passage that suddenly drops into a colloquial sentence (\"Look, here's the thing\") feels like someone taking off a mask. A casual passage that suddenly rises into formal language (\"Let us not deceive ourselves\") signals gravity.",
+          "setup": "Speaker discusses one topic. Director controls register.",
+          "signals": "- **High hand** = Formal. Elevated vocabulary. Complex sentences. Impersonal constructions. The language of law, ceremony, and institutions.\n- **Middle hand** = Conversational. Natural spoken English. \"I think,\" \"you know,\" contractions. The language of a thoughtful friend.\n- **Low hand** = Colloquial. Slang, blunt phrasing, short bursts. The language of the bar, the locker room, the kitchen table.",
+          "rules": "1. Speaker begins on a topic.\n2. Director sets hand position. Speaker adjusts register to match.\n3. The *content and argument* stay the same. Only the register changes.\n4. Director changes position every 15 seconds. Sometimes jumps from high to low with no middle stop.\n5. The transitions should not be announced (\"Now I'll be more formal\"). They should just happen.",
+          "duration": "5 minutes per speaker.",
+          "good": "Each register sounds natural, not parodic. The formal register sounds genuinely authoritative, not stuffy. The colloquial register sounds genuine, not performing folksiness. The content is recognizably the same argument at every level. The jumps between registers feel like deliberate rhetorical choices, not accidents."
+        },
+        {
+          "id": "7.2",
+          "title": "The Authority Spectrum",
+          "capability": "Delivering the same content through different personas.",
+          "why": "A professor explains. A preacher exhorts. A coach demands. A storyteller enchants. Each voice has its own sentence patterns, vocabulary, rhythm, and relationship to the audience. This exercise is not impersonation — it's about understanding that *the same information changes meaning depending on who seems to be delivering it.*",
+          "setup": "Speaker delivers the same content through different roles. Director calls roles.",
+          "signals": "- Director calls out a role every 30 seconds: \"professor,\" \"preacher,\" \"coach,\" \"stand-up comedian,\" \"documentary narrator,\" \"trial lawyer,\" \"grandmother,\" \"drill sergeant.\"",
+          "rules": "1. Director and Speaker agree on a topic: \"Why discipline matters.\"\n2. Director calls a role. Speaker delivers the topic in that voice.\n3. The *information* is the same, but the delivery, vocabulary, sentence patterns, and attitude shift completely.\n   - Professor: \"Research consistently demonstrates that disciplined practice, rather than innate ability, is the primary predictor of expertise.\"\n   - Coach: \"You think talent's gonna save you? Talent's worthless without the reps. Every. Single. Day.\"\n   - Grandmother: \"Let me tell you something, sweetheart. The people who make it aren't the smartest ones. They're the ones who kept showing up.\"\n4. The role should be recognizable within the first sentence.\n5. No parody. Aim for authentic inhabitation of each voice.",
+          "duration": "6 minutes per speaker.",
+          "good": "Each role is immediately recognizable — an audience could name it. The shift between roles changes not just vocabulary but sentence structure, pacing, emotional temperature, and implied relationship to the listener. The content is genuinely the same argument through genuinely different lenses."
+        },
+        {
+          "id": "7.3",
+          "title": "Emotional Coloring",
+          "capability": "Modulating emotional register while preserving logical content.",
+          "why": "Facts don't change, but how facts feel to an audience changes everything. The same data delivered with urgency, contempt, sorrow, or wonder produces entirely different responses. This exercise — inspired by Ultraspeaking's Conductor game — separates the emotional channel from the logical channel and gives the speaker independent control of each.",
+          "setup": "Speaker delivers factual content. Director signals emotional shifts.",
+          "signals": "Director names or signals an emotion:\n- \"Urgent\" (lean forward, pointed gesture)\n- \"Contemplative\" (chin on hand)\n- \"Sorrowful\" (hand over heart)\n- \"Defiant\" (fist raised)\n- \"Joyful\" (palms up, wide)\n- \"Ominous\" (finger to lips)",
+          "rules": "1. Speaker delivers a passage of factual content: statistics, a news summary, a process description. Something dry.\n2. Director signals an emotion. Speaker must deliver the same facts through that emotional lens.\n3. The facts cannot change. No adding information that fits the emotion. The *same* facts must simply feel different.\n4. Director shifts emotion every 20 seconds.\n5. The speaker's vocal tone, pacing, emphasis, and word choice (within the constraint of the same facts) must shift to match.",
+          "duration": "5 minutes per speaker.",
+          "good": "The same sentence sounds urgent, then contemplative, then sorrowful — and each version is convincing. The facts haven't changed, but the audience's emotional response has shifted completely. The speaker controls the emotional channel with the same precision as the logical channel."
+        },
+        {
+          "id": "7.4",
+          "title": "Distance Control",
+          "capability": "Shifting between intimate and analytical modes.",
+          "why": "Some arguments need closeness — vulnerability, personal experience, direct address. Others need distance — analysis, abstraction, impersonal observation. The best speakers move between these modes deliberately: pull the audience close for emotional impact, then push them back for intellectual clarity. This exercise trains the zoom.",
+          "setup": "Speaker discusses one topic. Director controls the emotional distance.",
+          "signals": "- **Close gesture** (hands close together, lean toward camera) = Intimate mode. First person. Personal experience. Direct address. \"I\" and \"you.\" Vulnerability.\n- **Far gesture** (hands wide apart, lean back) = Analytical mode. Third person. Abstraction. \"One observes that...\" Detachment. Data.",
+          "rules": "1. Speaker discusses a topic that can support both modes (e.g., failure, ambition, justice).\n2. Director signals close. Speaker shifts to personal, intimate mode: \"I remember the first time I failed at something that mattered. The feeling wasn't what I expected...\"\n3. Director signals far. Speaker shifts to analytical: \"Failure, viewed structurally, serves a corrective function in complex adaptive systems...\"\n4. Director toggles every 20 seconds.\n5. The transitions must be smooth — no \"Anyway, speaking analytically...\" Just shift.",
+          "duration": "5 minutes per speaker.",
+          "good": "The intimate mode feels genuinely vulnerable — not performed vulnerability. The analytical mode feels genuinely detached — not cold, but observing from altitude. The transitions feel like a camera zooming in and out. The same topic looks completely different from each distance, and both perspectives are enriching."
+        },
+        {
+          "id": "7.5",
+          "title": "The Ethopoeia Game",
+          "capability": "Adopting the rhetorical style of a specific known speaker or writer.",
+          "why": "Ethopoeia — speaking in another's voice — was a standard exercise in classical rhetorical education. It trains close observation of what makes a speaker distinctive: their sentence patterns, their favorite moves, their relationship to the audience. It also expands the speaker's own range by forcing them to inhabit styles very different from their own.",
+          "setup": "Director names a well-known speaker or writer. Speaker must argue their current point in that style.",
+          "signals": "- Director names a figure every 45 seconds.\n- **Thumbs up** = Recognizable. An audience could identify the style.\n- **Thumbs down** = Generic. Could be anyone.",
+          "rules": "1. Speaker is developing an argument on any topic.\n2. Director names a figure: \"Churchill.\"\n3. Speaker must continue the argument in Churchill's style: long periodic sentences, concrete imagery, antithesis, emotional crescendo, the rhythm of parliamentary oration.\n4. Director names another: \"Hemingway.\" Speaker shifts: short sentences, understated, concrete nouns, distrust of adjectives, the content implicit.\n5. It's not about imitating the voice — it's about deploying the *rhetorical patterns.* The sentence structures, the characteristic moves, the signature tricks.\n6. Suggested figures: Churchill, MLK, Lincoln, Obama, Hemingway, Hitchens, Austen, Orwell. Or: \"a TED talk speaker,\" \"a sports commentator,\" \"a nature documentary narrator.\"",
+          "duration": "6 minutes per speaker.",
+          "good": "The style is recognizable within two sentences. The speaker isn't parodying the figure — they're genuinely deploying that figure's rhetorical toolkit. The argument remains coherent and the speaker's own; only the *delivery system* is borrowed. The exercise reveals what's actually distinctive about each speaker's style."
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "title": "Arrangement and Structure",
+      "intro": "Arrangement — dispositio — is the art of deciding where things go. Which point comes first? Where do you put the strongest evidence? When do you digress? How do you begin? How do you end? These choices are invisible to the audience, but they determine whether a passage feels inevitable or arbitrary.",
+      "source": "Classical dispositio. Farnsworth's Classical English Rhetoric — parenthesis, ring structure, epanalepsis.",
+      "exercises": [
+        {
+          "id": "8.1",
+          "title": "In Medias Res",
+          "capability": "Opening with a dramatic moment and filling in context afterward.",
+          "why": "Most speakers begin at the beginning. This is usually a mistake. Beginning in the middle — at the moment of highest tension, the most dramatic image, the crucial decision — grabs the audience immediately and creates a question: \"How did we get here?\" Then the context becomes the answer, and the audience leans in instead of waiting for things to get interesting.",
+          "setup": "Director gives topics. Speaker must begin each one at the most dramatic moment.",
+          "signals": "- **Thumbs up** = Strong opening. The first sentence creates a question the audience needs answered.\n- **Flat hand** = The opening was interesting but not dramatic enough.\n- **Thumbs down** = Speaker started at the beginning. Chronological order.",
+          "rules": "1. Director gives a topic or story prompt: \"The founding of a company.\"\n2. Speaker must begin with the most dramatic, vivid, or tense moment: \"The phone rang at 3 AM, and I knew before I answered it that we were out of money.\"\n3. After the opening moment (2-3 sentences), Speaker loops back to provide context: who, what, where, how we got here.\n4. The opening must be specific and concrete — not abstract (\"Sometimes companies struggle\").\n5. Eight prompts per round.",
+          "duration": "5 minutes per speaker.",
+          "good": "The first sentence drops the audience into a moment that demands to know more. The transition to context feels natural — not \"let me back up\" but a smooth widening of the lens. The opening moment remains the emotional anchor even after the context is filled in."
+        },
+        {
+          "id": "8.2",
+          "title": "The Nested Digression",
+          "capability": "Departing from the main thread on purpose and returning seamlessly.",
+          "why": "Planned digression is one of the most sophisticated rhetorical tools. It says: \"I'm confident enough to leave my main thread because I know I can come back.\" When executed well, the digression enriches the main argument by introducing an unexpected connection. When executed poorly, it's just rambling.",
+          "setup": "Speaker develops a main thread. Director signals when to digress and when to return.",
+          "signals": "- **Palm rotating outward** = Digress. Leave the main thread. Go somewhere related but tangential.\n- **Palm rotating inward** = Return. Come back to exactly where you left off.",
+          "rules": "1. Speaker begins developing an argument or telling a story.\n2. Director signals outward. Speaker must depart from the main thread into a digression — an anecdote, a parallel, a tangential observation.\n3. Director signals inward. Speaker must return to the *exact* point where they left off — not to a new point, not to a summary of what came before, but to the precise place in the argument.\n4. The digression must be genuinely enriching — it should add something to the main thread that wasn't there before.\n5. Advanced variant: Director signals outward *during* a digression. Speaker must nest a digression within a digression, then return through both levels.\n6. Four digressions per round.",
+          "duration": "6 minutes per speaker.",
+          "good": "The return is seamless — the speaker picks up the *exact* phrase or idea they were developing, and the audience feels the click of reconnection. The digression wasn't random; it adds a dimension to the main argument. The speaker demonstrates total control of their narrative position."
+        },
+        {
+          "id": "8.3",
+          "title": "The Three-Movement Structure",
+          "capability": "Organizing any response into setup, development, and payoff.",
+          "why": "Three movements is the minimum viable structure. The setup establishes the territory. The development complicates, deepens, or challenges it. The payoff resolves, surprises, or reframes. Almost everything that feels well-structured — jokes, arguments, stories, essays — follows this pattern. This exercise makes it habitual.",
+          "setup": "Director gives prompts. Speaker must deliver each in exactly three movements.",
+          "signals": "- Director counts the movements on fingers: 1... 2... 3.\n- **Thumbs up** = All three movements were clear and distinct. The payoff resolved something.\n- **Thumbs down** = The movements blurred together, or there was no real payoff.",
+          "rules": "1. Director gives a prompt every 90 seconds: \"Why reading matters,\" \"The problem with social media,\" \"What travel teaches you.\"\n2. Speaker delivers a response in three clear movements:\n   - **Movement 1 (Setup):** Establish the terrain. What are we talking about? What's the conventional view? (~20 seconds)\n   - **Movement 2 (Development):** Complicate it. Add tension, contradiction, nuance, evidence. (~40 seconds)\n   - **Movement 3 (Payoff):** Resolve it. Deliver the insight, the turn, the reframe, the conclusion. (~30 seconds)\n3. The movements must be distinct — an audience member should be able to feel the shift.\n4. The payoff must respond to the complication introduced in movement 2. It can't just be a conclusion to movement 1.",
+          "duration": "6 minutes per speaker.",
+          "good": "The three movements are clearly felt, like acts in a play. Movement 2 genuinely complicates things — it's not just more information but a real challenge to the setup. Movement 3 resolves the tension in a way that feels earned and surprising. The overall effect is: \"I didn't expect to end up here, but now I see why we had to.\""
+        },
+        {
+          "id": "8.4",
+          "title": "The Ring Return",
+          "capability": "Ending where you began, but changed.",
+          "why": "Ring composition — returning to your opening image, phrase, or idea at the close — is one of the most satisfying structural devices in rhetoric. It creates closure. But the return must not be mere repetition: the opening element must *mean something different* after the journey. \"Home\" at the beginning of a speech and \"home\" at the end — same word, different weight.",
+          "setup": "Speaker delivers a 90-second passage. Must begin and end with the same image or phrase.",
+          "signals": "- **Thumbs up** = The repeated element means something different at the end. Genuine ring.\n- **Flat hand** = The element recurred but wasn't transformed.\n- **Thumbs down** = No return. The speaker forgot or abandoned the opening.",
+          "rules": "1. Speaker opens with a vivid image, phrase, or idea: \"The door was red.\"\n2. Speaker develops an argument, story, or exploration for roughly 70 seconds.\n3. Speaker returns to the opening element in the final sentence: \"And when I came back, the door was still red — but I was no longer the person who had first walked through it.\"\n4. The return must be *transformed by the middle.* The same words carry new weight.\n5. Director evaluates whether the ring was genuine.\n6. Four passages per round.",
+          "duration": "6 minutes per speaker.",
+          "good": "The return produces a physical sensation — a sense of closure, of the circle completing. The opening element has accumulated meaning through the middle section. The audience feels that everything in the passage was in service of this return — but they couldn't have predicted it. The transformation is the payoff."
+        },
+        {
+          "id": "8.5",
+          "title": "Chronological Scramble",
+          "capability": "Controlling temporal sequence — moving forward, backward, and holding still at will.",
+          "why": "Linear chronological narration is the weakest form of storytelling. The ability to jump forward (flash-forward), reach back (flashback), and freeze (close examination of a single moment) gives the speaker total control of how time is experienced. This is how the best stories and arguments are structured.",
+          "setup": "Speaker tells a story. Director controls the temporal direction.",
+          "signals": "- **Palm forward** = Move forward in time. Advance the story.\n- **Palm backward** = Go backward. Show something earlier that explains the present.\n- **Flat palm down** = Freeze. Stay in this exact moment. Describe it in granular detail. Slow time down.",
+          "rules": "1. Speaker begins telling a story or developing a chronological argument.\n2. Director signals forward: story advances.\n3. Director signals backward: speaker must reach back to an earlier moment that provides context, irony, or contrast.\n4. Director signals freeze: speaker must stop advancing time and zoom into the current moment — sensory detail, internal experience, the weight of the instant.\n5. Director changes signals every 15-20 seconds.\n6. The narrative must remain coherent despite the temporal jumps — the audience should always know where they are.",
+          "duration": "6 minutes per speaker.",
+          "good": "The backward reaches feel motivated — they provide something the audience needed to understand the present. The freeze moments are rich and detailed — time genuinely slows down. The forward motion resumes naturally. The overall narrative is clearer and more compelling than chronological order would have been."
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "title": "Precision and Compression",
+      "intro": "Brevity is not the same as compression. Brevity is just shortness. Compression is density — saying more with fewer words, stripping language to its load-bearing elements, making every word earn its place. These exercises train the speaker to cut without losing, to compress without crushing.",
+      "source": "Farnsworth's Classical English Rhetoric — chapters on ellipsis, zeugma. Farnsworth's Classical English Style — brevity, aphoristic style.",
+      "exercises": [
+        {
+          "id": "9.1",
+          "title": "The Half-Life",
+          "capability": "Distilling an argument to its essence under increasing pressure.",
+          "why": "If you can't say it in 60 seconds, you don't understand it well enough. If you can't say it in 15, you haven't found its core. This exercise — inspired by Ultraspeaking's Accordion method — forces progressive compression that strips away everything inessential and reveals the load-bearing structure of an argument.",
+          "setup": "Speaker delivers the same argument at progressively shorter durations.",
+          "signals": "- Director holds up time cards or calls out durations: \"60... 30... 15... 7.\"",
+          "rules": "1. Director gives a topic. Speaker delivers the argument in 60 seconds.\n2. Director says \"Half.\" Speaker delivers the *same argument* in 30 seconds. Not a different argument, not a summary — the same argument, compressed.\n3. \"Half.\" 15 seconds. The argument must still be persuasive and complete.\n4. \"Half.\" 7 seconds. One or two sentences. The absolute essence.\n5. After the 7-second version, Speaker goes back to 60 seconds and delivers a *new* version — which is almost always better than the first, because the compression revealed what matters.\n6. Three topics per round.",
+          "duration": "6 minutes per speaker.",
+          "good": "Each shorter version doesn't just drop sentences from the longer one — it restructures. The 15-second version isn't a fast-forward; it's a distillation. The 7-second version is a genuinely complete argument — an aphorism or thesis statement that a listener could act on. The final 60-second version is dramatically better than the first."
+        },
+        {
+          "id": "9.2",
+          "title": "Ellipsis Sculpting",
+          "capability": "Removing words to strengthen impact.",
+          "why": "Ellipsis — the strategic omission of words — makes the audience's mind fill in the gap, which creates engagement and force. \"The more you learn, the more — you don't know.\" The omitted words are felt but not heard, and the sentence moves faster without them.",
+          "setup": "Speaker delivers a passage, then Director removes elements. Speaker rebuilds.",
+          "signals": "- After Speaker delivers a passage, Director says \"cut\" and identifies one element to remove: a verb, a subject, a clause.\n- Speaker must rebuild the passage to work without that element.",
+          "rules": "1. Speaker delivers a 3-4 sentence passage on any topic.\n2. Director identifies a word or phrase to cut: \"Remove all instances of 'is' and 'are.'\"\n3. Speaker must rebuild the passage to work without those words — not by awkwardly rephrasing, but by restructuring so the omission feels natural or even stronger.\n4. Director cuts another element. Speaker rebuilds again.\n5. After 3-4 cuts, the passage should be noticeably shorter and stronger.\n6. Three passages per round.\n\n**Elements to cut:** forms of \"to be,\" hedging language (\"I think,\" \"sort of,\" \"basically\"), subordinating conjunctions, adjectives, adverbs.",
+          "duration": "6 minutes per speaker.",
+          "good": "Each cut makes the passage stronger, not weaker. The speaker discovers that many of their words were load-bearing nothing. The final version is tighter, more vivid, and more forceful than the original. The omissions feel deliberate, not accidental."
+        },
+        {
+          "id": "9.3",
+          "title": "The Aphorism Forge",
+          "capability": "Compressing complex insight into a single memorable sentence.",
+          "why": "The aphorism is the most compressed form of rhetoric. \"Power corrupts; absolute power corrupts absolutely.\" \"The map is not the territory.\" A good aphorism does in one sentence what an essay does in ten pages — it captures a principle so concisely that it becomes portable. This is the hardest exercise in the curriculum.",
+          "setup": "Director gives complex topics. Speaker must compress each to one sentence.",
+          "signals": "- **Thumbs up** = Quotable. Could appear in a book of aphorisms.\n- **Flat hand** = Close. Captures the idea but isn't memorable.\n- **Thumbs down** = Too long, too vague, or too generic.",
+          "rules": "1. Director gives a complex topic or argument: \"The relationship between expertise and overconfidence.\"\n2. Speaker has 20 seconds to compress it into a single sentence of no more than 15 words.\n3. The sentence must be specific (not \"things are complicated\"), memorable (it has a hook — rhythm, contrast, image), and true (it captures a genuine insight, not a cliche).\n4. If the first attempt gets flat hand or thumbs down, Speaker tries again with a completely different formulation. Up to three attempts per topic.\n5. Eight topics per round.\n\n**Techniques that help:** antithesis (\"Not X but Y\"), paradox (\"The more you Z, the less you Z\"), concrete image, surprising juxtaposition.",
+          "duration": "6 minutes per speaker.",
+          "good": "The audience hears the aphorism and wants to write it down. It feels like it's always existed. It's specific enough to be useful and general enough to be widely applicable. It passes the \"would someone put this on a poster?\" test."
+        },
+        {
+          "id": "9.4",
+          "title": "The Zeugma Sprint",
+          "capability": "Using one word to govern two very different objects or complements.",
+          "why": "Zeugma — using one verb to govern two wildly different objects — is compression at its wittiest: \"She lowered her standards and her neckline.\" It does double duty with a single word, creating surprise and efficiency. It's the figure of speech as punchline.",
+          "setup": "Director provides a verb. Speaker must construct a zeugma using it.",
+          "signals": "- Director gives a verb every 15 seconds.\n- **Thumbs up** = The two objects are genuinely from different domains and the zeugma creates wit or insight.\n- **Thumbs down** = The two objects are too similar. Not a real zeugma.",
+          "rules": "1. Director names a verb: \"broke.\"\n2. Speaker constructs a zeugma: \"He broke the window and the silence.\"\n3. The two objects must be from different domains — one literal, one figurative, or both figurative but from different categories.\n4. The zeugma should create surprise, humor, or insight — not just grammatical correctness.\n5. Twelve verbs per round.\n\n**Suggested verbs:** lost, caught, dropped, held, raised, left, opened, carried, burned, struck, ran, drew.",
+          "duration": "5 minutes per speaker.",
+          "good": "The zeugma produces a smile or a \"huh!\" The two objects are far enough apart that the single verb creates genuine surprise when it governs both. The sentence sounds effortless — not forced. The best zeugmas feel like they reveal a hidden connection between the two domains."
+        },
+        {
+          "id": "9.5",
+          "title": "The Via Negativa",
+          "capability": "Defining by negation — saying what something is by saying what it is not.",
+          "why": "Sometimes the most precise way to describe something is to rule out what it isn't. \"Love is not jealous, not boastful, not proud.\" Negative definition circles its target, each negation cutting away more of the surroundings until the shape of the thing itself emerges from the cleared space. It's the sculptor's method applied to language.",
+          "setup": "Director names a concept. Speaker must define it primarily through negation.",
+          "signals": "- Director counts the negations.\n- **Thumbs up** when the Speaker finally lands on the affirmative definition — signaling the via negativa has done its work.\n- **Flat hand** = The negations were too easy or obvious. Push harder.",
+          "rules": "1. Director names an abstract concept: \"Courage.\"\n2. Speaker defines it through negation: \"Courage is not the absence of fear. It is not recklessness. It is not bravado. It is not the loudest voice in the room. It is not the willingness to fight — sometimes it is the willingness not to.\"\n3. Each negation must rule out a *plausible* misunderstanding — not straw men.\n4. After 4-6 negations, the Speaker must deliver a single affirmative sentence that says what it *is.* This sentence should feel like a revelation after the negations.\n5. Six concepts per round.\n\n**Suggested concepts:** justice, intelligence, leadership, beauty, freedom, maturity, integrity, wisdom.",
+          "duration": "5 minutes per speaker.",
+          "good": "Each negation makes the audience rethink their assumptions. The negations aren't obvious — they rule out things the audience might actually have believed. The final affirmative definition lands with force precisely because of the clearing work the negations did. The overall effect is: \"I didn't know what this was, but now I do — and I understand it better because I first saw everything it's not.\""
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "title": "Integration and Mastery",
+      "intro": "These exercises combine techniques from all previous sets. They test whether the speaker can deploy specific techniques on demand, combine multiple techniques in a single passage, and select the right technique for a given rhetorical situation. This is where practice becomes craft.",
+      "source": "",
+      "exercises": [
+        {
+          "id": "10.1",
+          "title": "Rhetoric Roulette",
+          "capability": "Deploying any named technique within seconds.",
+          "why": "Knowing what anaphora is and being able to produce it on demand under time pressure are entirely different things. This exercise tests whether the techniques from Sets 1-9 have become available tools, not just concepts.",
+          "setup": "Speaker is mid-flow on a topic. Director calls out technique names.",
+          "signals": "- Director calls a technique name every 15 seconds.\n- **Thumbs up** = Correct technique, well-executed.\n- **Flat hand** = Correct technique, but weak execution.\n- **Thumbs down** = Wrong technique.",
+          "rules": "1. Speaker begins on any topic.\n2. Director calls: \"Anaphora.\" Speaker must immediately deploy anaphora — starting successive clauses with the same phrase.\n3. Director calls: \"Chiasmus.\" Speaker must produce a chiasmus.\n4. Director calls: \"Asyndeton.\" Speaker drops all conjunctions.\n5. The topic remains continuous — each technique must serve the argument, not interrupt it.\n6. Ten techniques per round.\n\n**Technique menu:** anaphora, epistrophe, anadiplosis, tricolon, antithesis, chiasmus, asyndeton, polysyndeton, reductio, a fortiori, concession-pivot, metaphor, personification, periodic sentence, cumulative sentence, via negativa, zeugma.",
+          "duration": "5 minutes per speaker.",
+          "good": "The speaker deploys each technique within 3 seconds of hearing its name. The technique is correctly executed — not just attempted. The topic continues to develop; the techniques serve it rather than derailing it. The overall passage, despite the rapid technique changes, is actually a coherent argument."
+        },
+        {
+          "id": "10.2",
+          "title": "The Layered Response",
+          "capability": "Combining multiple rhetorical techniques in a single passage.",
+          "why": "In real rhetoric, techniques don't appear one at a time. The best passages combine metaphor with antithesis, tricolon with anaphora, concession with periodic structure. This exercise trains the speaker to layer techniques — using each one to amplify the others.",
+          "setup": "Director specifies three techniques. Speaker must combine all three in a single passage.",
+          "signals": "- Director names three techniques before each round.\n- After the passage, Director identifies which techniques they spotted.\n- **Score** = number of specified techniques successfully deployed.",
+          "rules": "1. Director names three techniques: \"Antithesis + tricolon + metaphor.\"\n2. Speaker has 60 seconds to deliver a passage on any topic that deploys all three.\n3. Example: \"A nation is a garden. You can plant it in hope and harvest it in despair; you can water it with attention and starve it with neglect; you can grow it for a generation or destroy it in a season.\" (Metaphor: garden. Antithesis: each tricolon element contains an opposition. Tricolon: three parallel clauses.)\n4. The passage must sound *natural* — not like a demonstration of technique. The audience should feel the effect without seeing the machinery.\n5. Director scores. Six combinations per round.\n\n**Suggested combinations:**\n- Anaphora + metaphor + periodic sentence\n- Concession + antithesis + short sentence close\n- Polysyndeton + personification + a fortiori\n- Chiasmus + cumulative sentence + emotional coloring",
+          "duration": "6 minutes per speaker.",
+          "good": "All three techniques are clearly present, but the passage doesn't feel forced or mechanical. The techniques amplify each other — the antithesis gives the tricolon its edge, the metaphor gives the antithesis its image. The passage would be impressive to someone who couldn't name any of the techniques."
+        },
+        {
+          "id": "10.3",
+          "title": "The Shapeshifter",
+          "capability": "Transitioning between techniques mid-sentence without losing coherence.",
+          "why": "This tests the deepest level of rhetorical fluency — the ability to shift between modes of expression as naturally as a musician shifts between keys. The speaker who can shapeshifter has techniques available not as set pieces but as real-time options.",
+          "setup": "Speaker is mid-flow. Director signals technique changes.",
+          "signals": "- Director signals by holding up a card, a hand signal, or calling the technique softly.\n- The transition must happen within the *current* sentence or the very next one.",
+          "rules": "1. Speaker begins on a topic using any technique.\n2. Director signals a new technique. Speaker must transition to it within one sentence. No pausing, no \"okay, now...\"\n3. The transition must be *invisible* — an audience member who didn't see the signal shouldn't notice a break.\n4. If the Speaker has to stop and restart, the attempt doesn't count.\n5. Eight transitions per round.\n\n**Advanced variant.** Director signals at increasing speed — eventually one technique every 5 seconds.",
+          "duration": "5 minutes per speaker.",
+          "good": "The transitions are seamless. The audience experiences a shifting, dynamic passage that feels organic, not interrupted. The speaker moves from anaphora to metaphor to antithesis like water flowing around stones — no pause, no announcement, no visible effort."
+        },
+        {
+          "id": "10.4",
+          "title": "The Debate Decathlon",
+          "capability": "Selecting and executing the right technique for each rhetorical situation.",
+          "why": "All previous exercises tell you *which* technique to use. This one doesn't. Half the skill is choosing the right tool for the moment — reductio when the opponent's logic is vulnerable, concession when they're strongest, metaphor when the concept is abstract, antithesis when the contrast is clear. This exercise tests rhetorical judgment, not just execution.",
+          "setup": "Director gives ten rapid prompts. Speaker chooses and deploys the best technique for each.",
+          "signals": "- Director gives a prompt every 30 seconds: a question, a claim, a scenario, a challenge.\n- After each, Director names the technique the Speaker used and rates how well-matched it was to the situation.",
+          "rules": "1. Director gives a prompt: \"Your opponent says technology makes us less human.\"\n2. Speaker has 30 seconds to respond using whatever technique they think is most effective. They do not announce the technique.\n3. After the response, Director identifies the technique and evaluates: Was it the right tool? Was it well-executed?\n4. Score on two dimensions: **Selection** (1-5: was this the best technique for this prompt?) and **Execution** (1-5: was it well-done?).\n5. Ten prompts per round.\n\n**Suggested prompt types:** a strong opposing argument (steelman + demolish), an absurd claim (reductio), a complex abstraction (metaphor), an emotional appeal that needs countering (concession + pivot), a request to explain something simply (analogy), a need for decisive closing (tricolon + short sentence).",
+          "duration": "6 minutes per speaker.",
+          "good": "The speaker instinctively reaches for the right technique. Reductio against overextended logic, not against a strong point. Concession against a strong point, not against a weak one. Metaphor for abstraction, antithesis for contrast. The selection feels as skilled as the execution."
+        },
+        {
+          "id": "10.5",
+          "title": "The Masterclass Minute",
+          "capability": "Improvised rhetorical virtuosity.",
+          "why": "This is the final exam. Sixty seconds, no interruptions, no signals, no constraints. Just the speaker, a topic, and everything they've learned. The goal is not to cram in as many techniques as possible — it's to deliver a passage so compelling that the audience forgets they're watching an exercise.",
+          "setup": "Speaker delivers 60 seconds of uninterrupted speech. Director tallies techniques afterward.",
+          "signals": "None during the passage. Afterward:\n- Director names every technique they spotted.\n- Director rates the passage holistically: 1-5.",
+          "rules": "1. Director gives a topic. Speaker has 10 seconds to think.\n2. Speaker delivers 60 seconds of uninterrupted speech.\n3. No constraints, no signals, no required techniques. The speaker deploys whatever serves the topic and the moment.\n4. After the minute, Director identifies every technique used and rates the overall passage.\n5. Scoring:\n   - **Technique count** — how many distinct techniques were deployed\n   - **Coherence** (1-5) — did it hold together as a single argument/narrative?\n   - **Impact** (1-5) — would a non-expert audience have been moved?\n   - **Naturalness** (1-5) — did the techniques feel organic or displayed?\n6. Three topics per round. Aim for improvement across the three.",
+          "duration": "6 minutes per speaker.",
+          "good": "The passage is genuinely compelling. It has structure (setup/development/payoff). It uses figurative language that illuminates. It has rhythmic variety that serves the content. It builds to a close that lands. The techniques are invisible — present everywhere but visible nowhere. An audience member who knows nothing about rhetoric feels moved. An audience member who knows everything about rhetoric is impressed. This is what fluency sounds like."
+        }
+      ]
+    }
+  ],
+  "techniques": [
+    {
+      "name": "Sentence length control",
+      "set": 1,
+      "definition": "Varying sentence length for rhythm and emphasis"
+    },
+    {
+      "name": "Saxon/Latinate diction",
+      "set": 1,
+      "definition": "Toggling between concrete Anglo-Saxon and abstract Latinate vocabulary"
+    },
+    {
+      "name": "Cumulative sentence",
+      "set": 1,
+      "definition": "Main clause first, then modifying phrases added"
+    },
+    {
+      "name": "Periodic sentence",
+      "set": 1,
+      "definition": "Subordinate clauses first, main clause withheld until the end"
+    },
+    {
+      "name": "Anaphora",
+      "set": 2,
+      "definition": "Repeating words at the beginning of successive clauses"
+    },
+    {
+      "name": "Epistrophe",
+      "set": 2,
+      "definition": "Repeating words at the end of successive clauses"
+    },
+    {
+      "name": "Anadiplosis",
+      "set": 2,
+      "definition": "Ending a clause with a word that begins the next"
+    },
+    {
+      "name": "Tricolon",
+      "set": 2,
+      "definition": "Three parallel elements of similar length and structure"
+    },
+    {
+      "name": "Polyptoton",
+      "set": 2,
+      "definition": "Using different forms of the same root word"
+    },
+    {
+      "name": "Antithesis",
+      "set": 3,
+      "definition": "Juxtaposing contrasting ideas in balanced structure"
+    },
+    {
+      "name": "Chiasmus",
+      "set": 3,
+      "definition": "ABBA reversal pattern across two phrases"
+    },
+    {
+      "name": "Concession-pivot",
+      "set": 3,
+      "definition": "Genuinely conceding the opponent's point, then recontextualizing"
+    },
+    {
+      "name": "Dilemma",
+      "set": 3,
+      "definition": "Presenting two options, both with serious consequences"
+    },
+    {
+      "name": "Metaphor",
+      "set": 4,
+      "definition": "Mapping one domain onto another to illuminate structure"
+    },
+    {
+      "name": "Extended metaphor",
+      "set": 4,
+      "definition": "Sustaining a single metaphor over a long passage"
+    },
+    {
+      "name": "Personification",
+      "set": 4,
+      "definition": "Giving abstract concepts character and agency"
+    },
+    {
+      "name": "Analogy",
+      "set": 4,
+      "definition": "Drawing structural parallels between unlike things"
+    },
+    {
+      "name": "Asyndeton",
+      "set": 5,
+      "definition": "Omitting conjunctions for speed and force"
+    },
+    {
+      "name": "Polysyndeton",
+      "set": 5,
+      "definition": "Multiplying conjunctions for weight and accumulation"
+    },
+    {
+      "name": "Isocolon",
+      "set": 5,
+      "definition": "Parallel phrases of matching length and structure"
+    },
+    {
+      "name": "Reductio ad absurdum",
+      "set": 6,
+      "definition": "Extending an opponent's logic to absurdity"
+    },
+    {
+      "name": "A fortiori",
+      "set": 6,
+      "definition": "Arguing from a lesser to a greater case"
+    },
+    {
+      "name": "Distinguishing cases",
+      "set": 6,
+      "definition": "Showing why an apparent precedent doesn't apply"
+    },
+    {
+      "name": "Steelman",
+      "set": 6,
+      "definition": "Building the strongest version of the opposing argument"
+    },
+    {
+      "name": "Tu quoque",
+      "set": 6,
+      "definition": "Turning an argument back on the one making it"
+    },
+    {
+      "name": "Register shift",
+      "set": 7,
+      "definition": "Moving between formal, conversational, and colloquial levels"
+    },
+    {
+      "name": "Emotional coloring",
+      "set": 7,
+      "definition": "Changing emotional register without changing content"
+    },
+    {
+      "name": "Distance control",
+      "set": 7,
+      "definition": "Shifting between intimate/personal and analytical/detached"
+    },
+    {
+      "name": "Ethopoeia",
+      "set": 7,
+      "definition": "Speaking in another's characteristic rhetorical style"
+    },
+    {
+      "name": "In medias res",
+      "set": 8,
+      "definition": "Beginning at the dramatic moment, then providing context"
+    },
+    {
+      "name": "Nested digression",
+      "set": 8,
+      "definition": "Departing from and returning to the main thread"
+    },
+    {
+      "name": "Three-movement structure",
+      "set": 8,
+      "definition": "Setup, development, payoff"
+    },
+    {
+      "name": "Ring composition",
+      "set": 8,
+      "definition": "Returning to the opening image/phrase, now transformed"
+    },
+    {
+      "name": "Compression",
+      "set": 9,
+      "definition": "Progressive distillation to essential argument"
+    },
+    {
+      "name": "Ellipsis",
+      "set": 9,
+      "definition": "Strategic omission of words for strength"
+    },
+    {
+      "name": "Aphorism",
+      "set": 9,
+      "definition": "Compressing insight into a single memorable sentence"
+    },
+    {
+      "name": "Zeugma",
+      "set": 9,
+      "definition": "One word governing two objects from different domains"
+    },
+    {
+      "name": "Via negativa",
+      "set": 9,
+      "definition": "Defining by what something is not"
+    }
+  ]
+}

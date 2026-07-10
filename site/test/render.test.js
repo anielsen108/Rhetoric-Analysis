@@ -5,7 +5,7 @@ import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parseAnalysis } from '../lib/parse.js';
 import { extractFragments, locateDevice, buildLineSegments } from '../lib/segment.js';
-import { renderPassagePage, renderIndex, renderMd, deviceCardData } from '../lib/render.js';
+import { renderPassagePage, renderIndex, renderPracticePage, renderMd, deviceCardData } from '../lib/render.js';
 
 const glossary = JSON.parse(
   readFileSync(join(dirname(fileURLToPath(import.meta.url)), '..', 'glossary.json'), 'utf8')
@@ -105,4 +105,15 @@ test('renderMd handles headings, bold labels, lists, and escaping', () => {
   assert.match(html, /<h4>Hotspots<\/h4>/);
   assert.match(html, /<b>Mouthfeel:<\/b> a &lt; b/);
   assert.match(html, /<ul><li>one<\/li><li>two<\/li><\/ul>/);
+});
+
+test('practice page renders the full generated curriculum and two-part navigation', () => {
+  const curriculum = JSON.parse(readFileSync(join(dirname(fileURLToPath(import.meta.url)), '..', 'curriculum.json'), 'utf8'));
+  const html = renderPracticePage(curriculum);
+  assert.equal((html.match(/class="exercise"/g) || []).length, 50);
+  assert.match(html, /aria-current="page"><span>02<\/span> Practice/);
+  assert.match(html, /The Length Dial/);
+  assert.match(html, /The Masterclass Minute/);
+  assert.equal((html.match(/class="technique-item"/g) || []).length, 38);
+  assert.match(html, /assets\/practice\.js/);
 });

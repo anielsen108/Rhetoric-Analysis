@@ -4,7 +4,7 @@ import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parseAnalysis } from './lib/parse.js';
 import { extractFragments, locateDevice, buildLineSegments } from './lib/segment.js';
-import { renderPassagePage, renderIndex } from './lib/render.js';
+import { renderPassagePage, renderIndex, renderPracticePage } from './lib/render.js';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const root = join(here, '..');
@@ -12,6 +12,7 @@ const srcDir = join(root, 'analyses');
 const outDir = join(root, 'docs');
 
 const glossary = JSON.parse(readFileSync(join(here, 'glossary.json'), 'utf8'));
+const curriculum = JSON.parse(readFileSync(join(here, 'curriculum.json'), 'utf8'));
 
 const analyses = [];
 const problems = [];
@@ -36,6 +37,7 @@ for (const f of readdirSync(srcDir).filter(f => f.endsWith('.md')).sort()) {
 analyses.sort((x, y) => (x.year || 0) - (y.year || 0) || x.id.localeCompare(y.id));
 
 mkdirSync(join(outDir, 'passages'), { recursive: true });
+mkdirSync(join(outDir, 'practice'), { recursive: true });
 mkdirSync(join(outDir, 'assets'), { recursive: true });
 
 let deviceCount = 0, anchoredCount = 0;
@@ -51,8 +53,10 @@ analyses.forEach((a, i) => {
 
 const stats = { files: analyses.length, devices: deviceCount, anchored: anchoredCount };
 writeFileSync(join(outDir, 'index.html'), renderIndex(analyses, stats));
+writeFileSync(join(outDir, 'practice', 'index.html'), renderPracticePage(curriculum));
 copyFileSync(join(here, 'assets', 'site.css'), join(outDir, 'assets', 'site.css'));
 copyFileSync(join(here, 'assets', 'reader.js'), join(outDir, 'assets', 'reader.js'));
+copyFileSync(join(here, 'assets', 'practice.js'), join(outDir, 'assets', 'practice.js'));
 copyFileSync(join(here, 'assets', 'favicon.png'), join(outDir, 'assets', 'favicon.png'));
 writeFileSync(join(outDir, '.nojekyll'), '');
 
