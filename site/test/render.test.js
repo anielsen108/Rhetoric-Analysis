@@ -118,8 +118,10 @@ test('site home introduces and links the two fundamental parts', () => {
   assert.match(html, /Practicing Rhetoric/);
   assert.match(html, /href="analysis\/index\.html"/);
   assert.match(html, /href="practice\/index\.html"/);
-  assert.match(html, /Study 196 passages/);
-  assert.match(html, /3 partner drills in 2 progressive sets/);
+  assert.match(html, /196 annotated passages/);
+  assert.match(html, /3 partner drills in 2 sets/);
+  assert.doesNotMatch(html, /Learn to read the choices|Then learn to make them/);
+  assert.doesNotMatch(html, /One craft, two directions/);
 });
 
 test('renderMd handles headings, bold labels, lists, and escaping', () => {
@@ -138,4 +140,6 @@ test('practice page renders the full generated curriculum and two-part navigatio
   assert.match(html, /The Masterclass Minute/);
   assert.equal((html.match(/class="technique-item"/g) || []).length, 38);
   assert.match(html, /assets\/practice\.js/);
+  assert.match(html, /50 partner drills\. One speaks\. One directs\./);
+  assert.doesNotMatch(html, /Turn rhetorical knowledge into real-time control/);
 });

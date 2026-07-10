@@ -157,9 +157,8 @@ export function renderHome(stats, curriculum) {
 ${siteNav(null, '.')}
 <main class="gateway-home">
   <section class="gateway-hero">
-    <p class="eyebrow">Rhetoric</p>
-    <h1>Learn to read the choices.<br>Then learn to make them.</h1>
-    <p class="lede">Rhetoric is both a way of seeing language and a craft practiced in real time. This site joins those two kinds of learning: close analysis of accomplished writing, followed by structured exercises that put its techniques in your voice.</p>
+    <h1>Rhetoric</h1>
+    <p class="lede">Analysis and practice.</p>
   </section>
 
   <section class="part-choices" aria-label="The two parts of the site">
@@ -167,12 +166,7 @@ ${siteNav(null, '.')}
       <span class="choice-number">01</span>
       <p class="eyebrow">Rhetorical Analysis</p>
       <h2>The Rhetoric Reader</h2>
-      <p>Study ${stats.files} passages from world literature and public speech. Marked phrases open into concise dossiers on tropes, schemes, syntax, sound, stance, and strategy.</p>
-      <ul>
-        <li>Read devices inside the language that performs them</li>
-        <li>Browse chronologically across literary history</li>
-        <li>Open each passage's complete craft dossier</li>
-      </ul>
+      <p>${stats.files} annotated passages.</p>
       <span class="choice-action">Explore the analyses <b>→</b></span>
     </a>
 
@@ -180,20 +174,9 @@ ${siteNav(null, '.')}
       <span class="choice-number">02</span>
       <p class="eyebrow">Practicing Rhetoric</p>
       <h2>The Rhetoric Lab</h2>
-      <p>Turn recognition into control through ${exercises.length} partner drills in ${curriculum.sets.length} progressive sets. Speak, take a signal, adjust, and try again.</p>
-      <ul>
-        <li>Practice one rhetorical capability at a time</li>
-        <li>Use live director signals and short timers</li>
-        <li>Track completed exercises in your browser</li>
-      </ul>
+      <p>${exercises.length} partner drills in ${curriculum.sets.length} sets.</p>
       <span class="choice-action">Enter the practice lab <b>→</b></span>
     </a>
-  </section>
-
-  <section class="learning-loop">
-    <p class="eyebrow">One craft, two directions</p>
-    <h2>Analysis sharpens perception. Practice turns perception into choice.</h2>
-    <p>You can begin on either side. Move from a passage to a drill when you want to embody a technique; return from a drill to the Reader when you want to hear how accomplished writers solve the same problem.</p>
   </section>
 </main>`;
 
@@ -232,12 +215,8 @@ ${siteNav('analysis', '..')}
 <main class="home">
   <p class="eyebrow">Rhetorical Analysis</p>
   <h1>The Rhetoric Reader</h1>
-  <p class="lede">Close readings of ${stats.files} passages from world literature, annotated inside the text itself.
-  Every underline is a rhetorical device — <b>hover to open its dossier card</b>: tropes in rose, schemes in indigo,
-  modern syntax in green.</p>
+  <p class="lede">${stats.files} annotated passages. Select a marked phrase to open its device.</p>
 ${sections}
-  <footer class="foot">Sources: the <i>Rhetoric &amp; Linguistic Craft Clinic</i> dossiers in this repository ·
-  classical tropes &amp; schemes with Tufte-grade syntactic analysis.</footer>
 </main>`;
 
   return layout('The Rhetoric Reader — Rhetorical Analysis', body, '../assets/site.css');
@@ -280,30 +259,29 @@ ${siteNav('practice', '..')}
     <div>
       <p class="eyebrow">Practicing Rhetoric</p>
       <h1>The Rhetoric Lab</h1>
-      <p class="lede">Turn rhetorical knowledge into real-time control. Work through ${exercises.length} live drills in pairs: one <b>Speaker</b> performs while one <b>Director</b> steers with simple visual signals.</p>
+      <p class="lede">${exercises.length} partner drills. One speaks. One directs.</p>
       <div class="hero-actions">
         <a class="primary-action" href="#set-1">Begin with Set 1 <span>↓</span></a>
-        <button class="quiet-action" id="random-exercise" type="button">Choose a drill for me</button>
+        <button class="quiet-action" id="random-exercise" type="button">Random drill</button>
       </div>
     </div>
     <aside class="progress-card" aria-label="Curriculum progress">
-      <span class="progress-kicker">Your practice record</span>
+      <span class="progress-kicker">Progress</span>
       <strong><span id="progress-count">0</span><small> / ${exercises.length}</small></strong>
       <div class="progress-track"><span id="progress-bar"></span></div>
-      <p>Exercises marked complete are saved in this browser.</p>
+      <p>Saved in this browser.</p>
     </aside>
   </section>
 
   <section class="lab-brief" aria-labelledby="how-it-works">
     <div class="brief-copy">
-      <p class="eyebrow">The practice loop</p>
+      <p class="eyebrow">Practice loop</p>
       <h2 id="how-it-works">Speak. Signal. Adjust. Switch.</h2>
-      <p>${renderInline(curriculum.overview.format)}</p>
-      <p>${renderInline(curriculum.overview.progression)}</p>
-      <p class="timing-note">${renderInline(curriculum.overview.timing)}</p>
+      <p>Work in pairs. Switch roles after each drill.</p>
+      <p class="timing-note">Most drills take 5–7 minutes.</p>
     </div>
     <div class="signal-board">
-      <p class="signal-title">Shared signal language</p>
+      <p class="signal-title">Signals</p>
       ${signalCards}
     </div>
   </section>
@@ -314,7 +292,7 @@ ${sets}
     <summary><span><small>Appendix</small><b>Technique quick reference</b></span><span>${curriculum.techniques.length} techniques +</span></summary>
     <div class="technique-grid">${techniqueReference}</div>
   </details>
-  <footer class="foot practice-foot">Adapted from the complete <i>Rhetoric Lab Curriculum</i> · inspired by game-based speaking practice and the techniques catalogued in Ward Farnsworth’s works on rhetoric, style, metaphor, and argument.</footer>
+  <footer class="foot practice-foot">From the <i>Rhetoric Lab Curriculum</i>.</footer>
 </main>
 <script src="../assets/practice.js"></script>`;
 
