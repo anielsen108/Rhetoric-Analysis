@@ -158,7 +158,7 @@
 3. **"We're waiting for Godot."** — central mystery.
 
 ### Faultlines
-1. **Godot undefined**—audience left in ignorance intentionally.
+1. **Godot remains undefined**—the audience is left in ignorance intentionally.
 2. **Language minimalism** may frustrate; that’s the point.
 
 ---

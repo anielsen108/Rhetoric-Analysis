@@ -212,7 +212,7 @@ zed through temporal metaphor.
 
 ## 5) NARRATIVE MECHANICS
 
-**Focalization:** Zero focalization—omniscient narrator from undefined temporal vantage. No character consciousness; pure retrospective historical judgment.
+**Focalization:** Zero focalization—an omniscient narrator speaks from a retrospective temporal vantage. No character consciousness; pure retrospective historical judgment.
 
 **Psychic distance:** Maximal. Narrator surveys from Olympian remove; no granular detail, no individual experience. Gardner's ladder: this is #7 (pure summary, maximum distance).
 
