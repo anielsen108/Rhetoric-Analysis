@@ -4,7 +4,7 @@ import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parseAnalysis } from './lib/parse.js';
 import { extractFragments, locateDevice, buildLineSegments } from './lib/segment.js';
-import { renderPassagePage, renderIndex, renderPracticePage } from './lib/render.js';
+import { renderPassagePage, renderHome, renderIndex, renderPracticePage } from './lib/render.js';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const root = join(here, '..');
@@ -37,6 +37,7 @@ for (const f of readdirSync(srcDir).filter(f => f.endsWith('.md')).sort()) {
 analyses.sort((x, y) => (x.year || 0) - (y.year || 0) || x.id.localeCompare(y.id));
 
 mkdirSync(join(outDir, 'passages'), { recursive: true });
+mkdirSync(join(outDir, 'analysis'), { recursive: true });
 mkdirSync(join(outDir, 'practice'), { recursive: true });
 mkdirSync(join(outDir, 'assets'), { recursive: true });
 
@@ -52,7 +53,8 @@ analyses.forEach((a, i) => {
 });
 
 const stats = { files: analyses.length, devices: deviceCount, anchored: anchoredCount };
-writeFileSync(join(outDir, 'index.html'), renderIndex(analyses, stats));
+writeFileSync(join(outDir, 'index.html'), renderHome(stats, curriculum));
+writeFileSync(join(outDir, 'analysis', 'index.html'), renderIndex(analyses, stats));
 writeFileSync(join(outDir, 'practice', 'index.html'), renderPracticePage(curriculum));
 copyFileSync(join(here, 'assets', 'site.css'), join(outDir, 'assets', 'site.css'));
 copyFileSync(join(here, 'assets', 'reader.js'), join(outDir, 'assets', 'reader.js'));

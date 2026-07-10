@@ -5,7 +5,7 @@ import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parseAnalysis } from '../lib/parse.js';
 import { extractFragments, locateDevice, buildLineSegments } from '../lib/segment.js';
-import { renderPassagePage, renderIndex, renderPracticePage, renderMd, deviceCardData } from '../lib/render.js';
+import { renderPassagePage, renderHome, renderIndex, renderPracticePage, renderMd, deviceCardData } from '../lib/render.js';
 
 const glossary = JSON.parse(
   readFileSync(join(dirname(fileURLToPath(import.meta.url)), '..', 'glossary.json'), 'utf8')
@@ -96,8 +96,30 @@ test('dossier sections render as panels', () => {
 test('index page groups by period and links passages', () => {
   const a = prepare(MD, '001_test');
   const html = renderIndex([a], { files: 1, devices: 3, anchored: 1 });
-  assert.match(html, /Mid &amp; Late 19th Century/);
-  assert.match(html, /passages\/001_test\.html/);
+  assert.match(html, /Late 19th Century/);
+  assert.match(html, /\.\.\/passages\/001_test\.html/);
+  assert.doesNotMatch(html, /device analyses are anchored/);
+});
+
+test('analysis index keeps Shakespeare-era works in one period', () => {
+  const a = prepare(MD, '001_test');
+  const html = renderIndex([
+    { ...a, year: 1597, slug: 'merchant' },
+    { ...a, year: 1606, slug: 'macbeth' },
+  ], { files: 2, devices: 6, anchored: 2 });
+  assert.equal((html.match(/Renaissance &amp; Early Modern/g) || []).length, 1);
+  assert.doesNotMatch(html, />Renaissance<|>Early Modern</);
+});
+
+test('site home introduces and links the two fundamental parts', () => {
+  const curriculum = { sets: [{ exercises: [{}, {}] }, { exercises: [{}] }] };
+  const html = renderHome({ files: 196 }, curriculum);
+  assert.match(html, /Rhetorical Analysis/);
+  assert.match(html, /Practicing Rhetoric/);
+  assert.match(html, /href="analysis\/index\.html"/);
+  assert.match(html, /href="practice\/index\.html"/);
+  assert.match(html, /Study 196 passages/);
+  assert.match(html, /3 partner drills in 2 progressive sets/);
 });
 
 test('renderMd handles headings, bold labels, lists, and escaping', () => {

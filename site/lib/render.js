@@ -112,7 +112,7 @@ export function renderPassagePage(a, glossary, { prev = null, next = null } = {}
 
   const body = `
 ${siteNav('analysis', '..')}
-<header class="crumbs"><a href="../index.html">← All passages</a><span class="crumb-title">The Rhetoric Reader</span></header>
+<header class="crumbs"><a href="../analysis/index.html">← All passages</a><span class="crumb-title">The Rhetoric Reader</span></header>
 <main>
   <p class="eyebrow">Passage ${esc(a.id)}${a.year ? ` · ${esc(String(a.year))}` : ''}</p>
   <h1>${esc(a.title)}</h1>
@@ -149,15 +149,63 @@ function titleCase(s) {
   return s.toLowerCase().replace(/(^|[\s(&/])([a-z])/g, (m, p, c) => p + c.toUpperCase());
 }
 
-// --- index page ---------------------------------------------------------------
+// --- site home and analysis index ---------------------------------------------
+
+export function renderHome(stats, curriculum) {
+  const exercises = curriculum.sets.flatMap(set => set.exercises);
+  const body = `
+${siteNav(null, '.')}
+<main class="gateway-home">
+  <section class="gateway-hero">
+    <p class="eyebrow">Rhetoric</p>
+    <h1>Learn to read the choices.<br>Then learn to make them.</h1>
+    <p class="lede">Rhetoric is both a way of seeing language and a craft practiced in real time. This site joins those two kinds of learning: close analysis of accomplished writing, followed by structured exercises that put its techniques in your voice.</p>
+  </section>
+
+  <section class="part-choices" aria-label="The two parts of the site">
+    <a class="part-choice analysis-choice" href="analysis/index.html">
+      <span class="choice-number">01</span>
+      <p class="eyebrow">Rhetorical Analysis</p>
+      <h2>The Rhetoric Reader</h2>
+      <p>Study ${stats.files} passages from world literature and public speech. Marked phrases open into concise dossiers on tropes, schemes, syntax, sound, stance, and strategy.</p>
+      <ul>
+        <li>Read devices inside the language that performs them</li>
+        <li>Browse chronologically across literary history</li>
+        <li>Open each passage's complete craft dossier</li>
+      </ul>
+      <span class="choice-action">Explore the analyses <b>→</b></span>
+    </a>
+
+    <a class="part-choice practice-choice" href="practice/index.html">
+      <span class="choice-number">02</span>
+      <p class="eyebrow">Practicing Rhetoric</p>
+      <h2>The Rhetoric Lab</h2>
+      <p>Turn recognition into control through ${exercises.length} partner drills in ${curriculum.sets.length} progressive sets. Speak, take a signal, adjust, and try again.</p>
+      <ul>
+        <li>Practice one rhetorical capability at a time</li>
+        <li>Use live director signals and short timers</li>
+        <li>Track completed exercises in your browser</li>
+      </ul>
+      <span class="choice-action">Enter the practice lab <b>→</b></span>
+    </a>
+  </section>
+
+  <section class="learning-loop">
+    <p class="eyebrow">One craft, two directions</p>
+    <h2>Analysis sharpens perception. Practice turns perception into choice.</h2>
+    <p>You can begin on either side. Move from a passage to a drill when you want to embody a technique; return from a drill to the Reader when you want to hear how accomplished writers solve the same problem.</p>
+  </section>
+</main>`;
+
+  return layout('Rhetoric — Analysis and Practice', body, 'assets/site.css');
+}
 
 const PERIODS = [
   [0, 1500, 'Ancient & Medieval'],
-  [1500, 1600, 'Renaissance'],
-  [1600, 1700, 'Early Modern'],
+  [1500, 1700, 'Renaissance & Early Modern'],
   [1700, 1800, 'Enlightenment'],
   [1800, 1850, 'Early 19th Century'],
-  [1850, 1900, 'Mid & Late 19th Century'],
+  [1850, 1900, 'Late 19th Century'],
   [1900, 1950, 'Early 20th Century'],
   [1950, 1980, 'Mid-20th Century'],
   [1980, 2000, 'Late 20th Century'],
@@ -180,19 +228,19 @@ export function renderIndex(analyses, stats) {
   </section>`).join('\n');
 
   const body = `
-${siteNav('analysis', '.')}
+${siteNav('analysis', '..')}
 <main class="home">
   <p class="eyebrow">Rhetorical Analysis</p>
   <h1>The Rhetoric Reader</h1>
   <p class="lede">Close readings of ${stats.files} passages from world literature, annotated inside the text itself.
   Every underline is a rhetorical device — <b>hover to open its dossier card</b>: tropes in rose, schemes in indigo,
-  modern syntax in green. ${stats.anchored} of ${stats.devices} device analyses are anchored to the exact words that perform them.</p>
-  ${sections}
+  modern syntax in green.</p>
+${sections}
   <footer class="foot">Sources: the <i>Rhetoric &amp; Linguistic Craft Clinic</i> dossiers in this repository ·
   classical tropes &amp; schemes with Tufte-grade syntactic analysis.</footer>
 </main>`;
 
-  return layout('The Rhetoric Reader', body, 'assets/site.css');
+  return layout('The Rhetoric Reader — Rhetorical Analysis', body, '../assets/site.css');
 }
 
 // --- practice studio ---------------------------------------------------------
@@ -312,7 +360,7 @@ function renderEntry(a) {
   const dots = FAMILY_ORDER
     .filter(f => counts[f])
     .map(f => `<span class="count" style="--c:var(--${f})">${counts[f]}</span>`).join('');
-  return `<a class="entry" href="passages/${esc(a.slug)}.html">
+  return `<a class="entry" href="../passages/${esc(a.slug)}.html">
         <span class="entry-year">${a.year || '—'}</span>
         <span class="entry-main"><b>${esc(a.author || 'Unknown')}</b> — <i>${esc(a.work || '')}</i>
         <span class="entry-title">${esc(a.title)}</span>
@@ -324,10 +372,11 @@ function renderEntry(a) {
 // --- shared layout ---------------------------------------------------------------
 
 function siteNav(active, root) {
-  const analysisHref = `${root}/index.html`;
+  const homeHref = `${root}/index.html`;
+  const analysisHref = `${root}/analysis/index.html`;
   const practiceHref = `${root}/practice/index.html`;
   return `<header class="site-head">
-  <a class="site-brand" href="${analysisHref}" aria-label="Rhetoric home"><span>R</span><b>Rhetoric</b></a>
+  <a class="site-brand" href="${homeHref}" aria-label="Rhetoric home"><span>R</span><b>Rhetoric</b></a>
   <nav class="part-nav" aria-label="Primary">
     <a href="${analysisHref}"${active === 'analysis' ? ' aria-current="page"' : ''}><span>01</span> Analyze</a>
     <a href="${practiceHref}"${active === 'practice' ? ' aria-current="page"' : ''}><span>02</span> Practice</a>
