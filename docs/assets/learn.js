@@ -1,4 +1,4 @@
-// "Name That Device" quiz. Data comes from learn-data.js (window.RHETORIC_QUIZ):
+// The Rhetoric School's name-that-device quiz. Data comes from learn-data.js (window.RHETORIC_QUIZ):
 //   families: [{id, name, blurb, keys}]
 //   devices:  {key: {name, family, pron, plain, example, confuse, near}}
 //   items:    [{d: deviceKey, x: [{t, m?}], a: author, w: work, s: slug}]

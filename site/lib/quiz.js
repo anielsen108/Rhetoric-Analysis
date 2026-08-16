@@ -1,4 +1,4 @@
-// Builds the "Name That Device" quiz dataset from parsed analyses.
+// Builds the Rhetoric School's quiz dataset from parsed analyses.
 // Each anchored device annotation becomes one question: the passage lines it
 // spans, with the device's exact evidence marked, plus the canonical answer.
 

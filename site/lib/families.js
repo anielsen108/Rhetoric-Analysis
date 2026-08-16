@@ -1,4 +1,4 @@
-// Device families for the "Name That Device" quiz. Every glossary key belongs
+// Device families for the Rhetoric School quiz. Every glossary key belongs
 // to exactly one family; quiz distractors are drawn from within the family so
 // the choices are genuine near-misses (anaphora vs. epistrophe, not vs. simile).
 

@@ -171,7 +171,7 @@ ${siteNav(null, '.')}
 
     <a class="part-choice learn-choice" href="learn/index.html">
       <p class="eyebrow">Learn Rhetoric</p>
-      <h2>Name That Device</h2>
+      <h2>The Rhetoric School</h2>
       <p>${quiz.items.length} excerpts from the Reader. Read the marked phrase, name the device.</p>
       <span class="choice-action">Start a quiz <b>→</b></span>
     </a>
@@ -196,7 +196,7 @@ export function renderLearnPage(quiz, stats) {
 ${siteNav('learn', '..')}
 <main class="learn-home">
   <p class="eyebrow">Learn Rhetoric</p>
-  <h1>Name That Device</h1>
+  <h1>The Rhetoric School</h1>
   <p class="lede">${quiz.items.length} excerpts drawn from the Reader's ${stats.files} passages, covering ${deviceCount} devices in ${quiz.families.length} families. Read the <mark class="lede-mark">marked phrase</mark>, then name its device. All four choices come from the same family — the near misses are the point.</p>
 
   <section id="setup" class="quiz-setup" aria-label="Quiz setup">
@@ -235,7 +235,7 @@ ${siteNav('learn', '..')}
 <script src="../assets/learn-data.js"></script>
 <script src="../assets/learn.js"></script>`;
 
-  return layout('Name That Device — Learn Rhetoric', body, '../assets/site.css');
+  return layout('The Rhetoric School — Learn Rhetoric', body, '../assets/site.css');
 }
 
 const PERIODS = [
