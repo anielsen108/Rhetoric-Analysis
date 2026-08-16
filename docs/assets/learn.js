@@ -9,6 +9,7 @@
   if (!DATA) return;
   const $ = s => document.querySelector(s);
   const STORE = 'rhetoric-learn-stats-v1';
+  const SESSION = 'rhetoric-learn-session-v1';
 
   const famOf = key => DATA.devices[key].family;
   const famById = Object.fromEntries(DATA.families.map(f => [f.id, f]));
@@ -149,10 +150,45 @@
     return shuffle([answer, ...distractors]);
   }
 
+  // --- in-progress session --------------------------------------------------
+  // The quiz survives leaving the page (following a passage link, back button,
+  // refresh): its state is mirrored to sessionStorage and restored on load.
+
+  function saveSession() {
+    if (!quiz) { sessionStorage.removeItem(SESSION); return; }
+    try {
+      sessionStorage.setItem(SESSION, JSON.stringify({
+        i: quiz.i, right: quiz.right, famIds: quiz.famIds, count: quiz.count, perFam: quiz.perFam,
+        qs: quiz.qs.map(q => ({ item: DATA.items.indexOf(q.item), choices: q.choices, picked: q.picked || null })),
+      }));
+    } catch { /* storage unavailable: quiz still works, just won't survive navigation */ }
+  }
+
+  function restoreSession() {
+    let s;
+    try { s = JSON.parse(sessionStorage.getItem(SESSION)); } catch { return false; }
+    if (!s || !Array.isArray(s.qs) || !s.qs.length || !(s.i >= 0 && s.i < s.qs.length)) return false;
+    quiz = {
+      i: s.i, right: s.right || 0, famIds: s.famIds || [], count: s.count, perFam: s.perFam || {},
+      qs: s.qs.map(r => ({ item: DATA.items[r.item], choices: r.choices, picked: r.picked || undefined })),
+    };
+    if (quiz.qs.some(q => !q.item || !Array.isArray(q.choices))) { quiz = null; return false; }
+    $('#setup').hidden = true;
+    $('#quiz').hidden = false;
+    if (quiz.qs[quiz.i].picked) {
+      // they left after answering: resume just past that question
+      if (quiz.i >= quiz.qs.length - 1) { renderResults(); return true; }
+      quiz.i++;
+    }
+    renderQuestion();
+    return true;
+  }
+
   // --- quiz screens ---------------------------------------------------------
 
   function startQuiz(famIds, count) {
     quiz = { qs: buildQuestions(famIds, count), i: 0, right: 0, famIds, count, perFam: {} };
+    saveSession();
     $('#setup').hidden = true;
     $('#results').hidden = true;
     $('#quiz').hidden = false;
@@ -192,6 +228,7 @@
     bump(stats.fam, famOf(key), right);
     bump(stats.dev, key, right);
     saveStats();
+    saveSession();
 
     document.querySelectorAll('.q-option').forEach(btn => {
       btn.disabled = true;
@@ -208,7 +245,7 @@
         <p class="q-plain">${esc(d.plain)}</p>
         ${d.example ? `<p class="q-example">${esc(d.example)}</p>` : ''}
         ${d.confuse ? `<p class="q-confuse"><b>Don't confuse:</b> ${esc(d.confuse)}</p>` : ''}
-        <p class="q-context"><a href="../passages/${esc(q.item.s)}.html">See it in the full passage →</a></p>
+        <p class="q-context"><a href="../passages/${esc(q.item.s)}.html" target="_blank" rel="noopener">See it in the full passage →</a> <span class="q-context-hint">opens in a new tab; your quiz stays here</span></p>
       </div>
       <button type="button" class="primary-action learn-action" id="q-next">${last ? 'See results' : 'Next question'}</button>`;
     $('#q-next').addEventListener('click', next);
@@ -218,6 +255,7 @@
   function next() {
     if (quiz.i < quiz.qs.length - 1) {
       quiz.i++;
+      saveSession();
       renderQuestion();
       $('#quiz').scrollIntoView({ block: 'start' });
     } else {
@@ -226,6 +264,7 @@
   }
 
   function renderResults() {
+    sessionStorage.removeItem(SESSION);
     const total = quiz.qs.length;
     const famRows = Object.entries(quiz.perFam).map(([id, r]) =>
       `<div class="score-row">
@@ -267,6 +306,7 @@
     $('#quiz').hidden = true;
     $('#setup').hidden = false;
     quiz = null;
+    saveSession();
   }
 
   // re-render family cards (fresh mastery numbers) preserving checked state
@@ -294,6 +334,7 @@
 
   renderFamilies();
   renderScoreboard();
+  restoreSession();
   $('#family-grid').addEventListener('change', updatePoolNote);
   $('#pick-all').addEventListener('click', () => setAll(true));
   $('#pick-none').addEventListener('click', () => setAll(false));

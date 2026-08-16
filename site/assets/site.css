@@ -527,6 +527,7 @@ h2 { font-family: var(--serif); font-size: 1.25rem; font-weight: 600; margin: 2.
 .q-context { margin: .6rem 0 0; font-size: .8rem; }
 .q-context a { color: var(--learn); text-decoration: none; font-weight: 600; }
 .q-context a:hover { text-decoration: underline; }
+.q-context-hint { color: var(--ink-faint); font-size: .72rem; margin-left: .35rem; }
 
 .results-score { font-family: var(--serif); font-size: 2.2rem; margin: .3rem 0 1rem; }
 .results-score b { font-size: 3rem; }
