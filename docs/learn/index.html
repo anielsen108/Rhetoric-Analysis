@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Name That Device — Learn Rhetoric</title>
+<link rel="icon" type="image/png" href="../assets/favicon.png">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+
+<header class="site-head">
+  <a class="site-brand" href="../index.html" aria-label="Rhetoric home"><span>R</span><b>Rhetoric</b></a>
+  <nav class="part-nav" aria-label="Primary">
+    <a href="../analysis/index.html">Analyze</a>
+    <a href="../learn/index.html" aria-current="page">Learn</a>
+    <a href="../practice/index.html">Practice</a>
+  </nav>
+</header>
+<main class="learn-home">
+  <p class="eyebrow">Learn Rhetoric</p>
+  <h1>Name That Device</h1>
+  <p class="lede">933 excerpts drawn from the Reader's 196 passages, covering 84 devices in 9 families. Read the <mark class="lede-mark">marked phrase</mark>, then name its device. All four choices come from the same family — the near misses are the point.</p>
+
+  <section id="setup" class="quiz-setup" aria-label="Quiz setup">
+    <div class="setup-head">
+      <h2>Choose device families</h2>
+      <div class="setup-actions">
+        <button type="button" class="quiet-action" id="pick-all">All</button>
+        <button type="button" class="quiet-action" id="pick-none">None</button>
+        <button type="button" class="quiet-action" id="pick-weakest">My weakest</button>
+      </div>
+    </div>
+    <div id="family-grid" class="family-grid" role="group" aria-label="Device families"></div>
+    <div class="setup-row">
+      <label class="count-label">Questions
+        <select id="q-count">
+          <option>5</option>
+          <option selected>10</option>
+          <option>20</option>
+          <option>40</option>
+        </select>
+      </label>
+      <button type="button" class="primary-action learn-action" id="start-quiz">Start the quiz</button>
+      <span id="pool-note" class="pool-note" aria-live="polite"></span>
+    </div>
+  </section>
+
+  <section id="quiz" class="quiz-stage" hidden></section>
+  <section id="results" class="quiz-results" hidden></section>
+
+  <section class="scoreboard-wrap" aria-label="Your record">
+    <h2>Your record</h2>
+    <p class="index-hint">Accuracy by family, saved in this browser and used to suggest what to drill next. <button type="button" class="linklike" id="reset-stats">Reset record</button></p>
+    <div id="scoreboard" class="scoreboard"></div>
+  </section>
+</main>
+<script src="../assets/learn-data.js"></script>
+<script src="../assets/learn.js"></script>
+</body>
+</html>

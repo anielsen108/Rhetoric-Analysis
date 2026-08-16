@@ -4,7 +4,8 @@ import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parseAnalysis } from './lib/parse.js';
 import { extractFragments, locateDevice, buildLineSegments } from './lib/segment.js';
-import { renderPassagePage, renderHome, renderIndex, renderPracticePage } from './lib/render.js';
+import { renderPassagePage, renderHome, renderIndex, renderPracticePage, renderLearnPage } from './lib/render.js';
+import { buildQuizData } from './lib/quiz.js';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const root = join(here, '..');
@@ -38,6 +39,7 @@ analyses.sort((x, y) => (x.year || 0) - (y.year || 0) || x.id.localeCompare(y.id
 
 mkdirSync(join(outDir, 'passages'), { recursive: true });
 mkdirSync(join(outDir, 'analysis'), { recursive: true });
+mkdirSync(join(outDir, 'learn'), { recursive: true });
 mkdirSync(join(outDir, 'practice'), { recursive: true });
 mkdirSync(join(outDir, 'assets'), { recursive: true });
 
@@ -53,17 +55,23 @@ analyses.forEach((a, i) => {
 });
 
 const stats = { files: analyses.length, devices: deviceCount, anchored: anchoredCount };
-writeFileSync(join(outDir, 'index.html'), renderHome(stats, curriculum));
+const quiz = buildQuizData(analyses, glossary);
+writeFileSync(join(outDir, 'index.html'), renderHome(stats, curriculum, quiz));
 writeFileSync(join(outDir, 'analysis', 'index.html'), renderIndex(analyses, stats));
+writeFileSync(join(outDir, 'learn', 'index.html'), renderLearnPage(quiz, stats));
 writeFileSync(join(outDir, 'practice', 'index.html'), renderPracticePage(curriculum));
+writeFileSync(join(outDir, 'assets', 'learn-data.js'),
+  `window.RHETORIC_QUIZ = ${JSON.stringify(quiz).replace(/</g, '\\u003c')};\n`);
 copyFileSync(join(here, 'assets', 'site.css'), join(outDir, 'assets', 'site.css'));
 copyFileSync(join(here, 'assets', 'reader.js'), join(outDir, 'assets', 'reader.js'));
+copyFileSync(join(here, 'assets', 'learn.js'), join(outDir, 'assets', 'learn.js'));
 copyFileSync(join(here, 'assets', 'practice.js'), join(outDir, 'assets', 'practice.js'));
 copyFileSync(join(here, 'assets', 'favicon.png'), join(outDir, 'assets', 'favicon.png'));
 writeFileSync(join(outDir, '.nojekyll'), '');
 
 console.log(`built ${stats.files} passage pages → docs/`);
 console.log(`devices: ${stats.devices}, span-anchored: ${stats.anchored} (${(stats.anchored / stats.devices * 100).toFixed(1)}%)`);
+console.log(`quiz: ${quiz.items.length} excerpts across ${new Set(quiz.items.map(i => i.d)).size} devices`);
 if (problems.length) {
   console.log(`\nPROBLEMS:\n${problems.join('\n')}`);
   process.exitCode = 1;

@@ -151,27 +151,32 @@ function titleCase(s) {
 
 // --- site home and analysis index ---------------------------------------------
 
-export function renderHome(stats, curriculum) {
+export function renderHome(stats, curriculum, quiz) {
   const exercises = curriculum.sets.flatMap(set => set.exercises);
   const body = `
 ${siteNav(null, '.')}
 <main class="gateway-home">
   <section class="gateway-hero">
     <h1>Rhetoric</h1>
-    <p class="lede">Analysis and practice.</p>
+    <p class="lede">Analysis, learning, and practice.</p>
   </section>
 
-  <section class="part-choices" aria-label="The two parts of the site">
+  <section class="part-choices" aria-label="The three parts of the site">
     <a class="part-choice analysis-choice" href="analysis/index.html">
-      <span class="choice-number">01</span>
       <p class="eyebrow">Rhetorical Analysis</p>
       <h2>The Rhetoric Reader</h2>
       <p>${stats.files} annotated passages.</p>
       <span class="choice-action">Explore the analyses <b>→</b></span>
     </a>
 
+    <a class="part-choice learn-choice" href="learn/index.html">
+      <p class="eyebrow">Learn Rhetoric</p>
+      <h2>Name That Device</h2>
+      <p>${quiz.items.length} excerpts from the Reader. Read the marked phrase, name the device.</p>
+      <span class="choice-action">Start a quiz <b>→</b></span>
+    </a>
+
     <a class="part-choice practice-choice" href="practice/index.html">
-      <span class="choice-number">02</span>
       <p class="eyebrow">Practicing Rhetoric</p>
       <h2>The Rhetoric Lab</h2>
       <p>${exercises.length} partner drills in ${curriculum.sets.length} sets.</p>
@@ -180,7 +185,57 @@ ${siteNav(null, '.')}
   </section>
 </main>`;
 
-  return layout('Rhetoric — Analysis and Practice', body, 'assets/site.css');
+  return layout('Rhetoric — Analysis, Learning, and Practice', body, 'assets/site.css');
+}
+
+// --- learn / name-that-device quiz -----------------------------------------
+
+export function renderLearnPage(quiz, stats) {
+  const deviceCount = Object.keys(quiz.devices).length;
+  const body = `
+${siteNav('learn', '..')}
+<main class="learn-home">
+  <p class="eyebrow">Learn Rhetoric</p>
+  <h1>Name That Device</h1>
+  <p class="lede">${quiz.items.length} excerpts drawn from the Reader's ${stats.files} passages, covering ${deviceCount} devices in ${quiz.families.length} families. Read the <mark class="lede-mark">marked phrase</mark>, then name its device. All four choices come from the same family — the near misses are the point.</p>
+
+  <section id="setup" class="quiz-setup" aria-label="Quiz setup">
+    <div class="setup-head">
+      <h2>Choose device families</h2>
+      <div class="setup-actions">
+        <button type="button" class="quiet-action" id="pick-all">All</button>
+        <button type="button" class="quiet-action" id="pick-none">None</button>
+        <button type="button" class="quiet-action" id="pick-weakest">My weakest</button>
+      </div>
+    </div>
+    <div id="family-grid" class="family-grid" role="group" aria-label="Device families"></div>
+    <div class="setup-row">
+      <label class="count-label">Questions
+        <select id="q-count">
+          <option>5</option>
+          <option selected>10</option>
+          <option>20</option>
+          <option>40</option>
+        </select>
+      </label>
+      <button type="button" class="primary-action learn-action" id="start-quiz">Start the quiz</button>
+      <span id="pool-note" class="pool-note" aria-live="polite"></span>
+    </div>
+  </section>
+
+  <section id="quiz" class="quiz-stage" hidden></section>
+  <section id="results" class="quiz-results" hidden></section>
+
+  <section class="scoreboard-wrap" aria-label="Your record">
+    <h2>Your record</h2>
+    <p class="index-hint">Accuracy by family, saved in this browser and used to suggest what to drill next. <button type="button" class="linklike" id="reset-stats">Reset record</button></p>
+    <div id="scoreboard" class="scoreboard"></div>
+  </section>
+</main>
+<script src="../assets/learn-data.js"></script>
+<script src="../assets/learn.js"></script>`;
+
+  return layout('Name That Device — Learn Rhetoric', body, '../assets/site.css');
 }
 
 const PERIODS = [
@@ -350,14 +405,14 @@ function renderEntry(a) {
 // --- shared layout ---------------------------------------------------------------
 
 function siteNav(active, root) {
-  const homeHref = `${root}/index.html`;
-  const analysisHref = `${root}/analysis/index.html`;
-  const practiceHref = `${root}/practice/index.html`;
+  const link = (href, key, label) =>
+    `<a href="${root}/${href}"${active === key ? ' aria-current="page"' : ''}>${label}</a>`;
   return `<header class="site-head">
-  <a class="site-brand" href="${homeHref}" aria-label="Rhetoric home"><span>R</span><b>Rhetoric</b></a>
+  <a class="site-brand" href="${root}/index.html" aria-label="Rhetoric home"><span>R</span><b>Rhetoric</b></a>
   <nav class="part-nav" aria-label="Primary">
-    <a href="${analysisHref}"${active === 'analysis' ? ' aria-current="page"' : ''}><span>01</span> Analyze</a>
-    <a href="${practiceHref}"${active === 'practice' ? ' aria-current="page"' : ''}><span>02</span> Practice</a>
+    ${link('analysis/index.html', 'analysis', 'Analyze')}
+    ${link('learn/index.html', 'learn', 'Learn')}
+    ${link('practice/index.html', 'practice', 'Practice')}
   </nav>
 </header>`;
 }

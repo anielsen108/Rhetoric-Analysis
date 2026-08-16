@@ -90,6 +90,11 @@ const EXTRA_STEMS = {
 };
 
 export function lookupGlossary(name, glossary) {
+  const key = lookupGlossaryKey(name, glossary);
+  return key ? glossary[key] : null;
+}
+
+export function lookupGlossaryKey(name, glossary) {
   const hay = ' ' + name.toLowerCase().replace(/[^a-z0-9]+/g, ' ') + ' ';
   let best = null;
   for (const key of Object.keys(glossary)) {
@@ -104,7 +109,7 @@ export function lookupGlossary(name, glossary) {
       }
     }
   }
-  return best ? glossary[best.key] : null;
+  return best ? best.key : null;
 }
 
 // allow stems to match as word prefixes ("foreshadow" in "foreshadowing")

@@ -112,15 +112,20 @@ test('analysis index keeps Shakespeare-era works in one period', () => {
   assert.doesNotMatch(html, />Renaissance<|>Early Modern</);
 });
 
-test('site home introduces and links the two fundamental parts', () => {
+test('site home introduces and links the three fundamental parts', () => {
   const curriculum = { sets: [{ exercises: [{}, {}] }, { exercises: [{}] }] };
-  const html = renderHome({ files: 196 }, curriculum);
+  const quiz = { items: [{}, {}, {}, {}, {}] };
+  const html = renderHome({ files: 196 }, curriculum, quiz);
   assert.match(html, /Rhetorical Analysis/);
+  assert.match(html, /Learn Rhetoric/);
   assert.match(html, /Practicing Rhetoric/);
   assert.match(html, /href="analysis\/index\.html"/);
+  assert.match(html, /href="learn\/index\.html"/);
   assert.match(html, /href="practice\/index\.html"/);
   assert.match(html, /196 annotated passages/);
+  assert.match(html, /5 excerpts from the Reader/);
   assert.match(html, /3 partner drills in 2 sets/);
+  assert.doesNotMatch(html, /choice-number/);
   assert.doesNotMatch(html, /Learn to read the choices|Then learn to make them/);
   assert.doesNotMatch(html, /One craft, two directions/);
 });
@@ -132,11 +137,12 @@ test('renderMd handles headings, bold labels, lists, and escaping', () => {
   assert.match(html, /<ul><li>one<\/li><li>two<\/li><\/ul>/);
 });
 
-test('practice page renders the full generated curriculum and two-part navigation', () => {
+test('practice page renders the full generated curriculum and site navigation', () => {
   const curriculum = JSON.parse(readFileSync(join(dirname(fileURLToPath(import.meta.url)), '..', 'curriculum.json'), 'utf8'));
   const html = renderPracticePage(curriculum);
   assert.equal((html.match(/class="exercise"/g) || []).length, 50);
-  assert.match(html, /aria-current="page"><span>02<\/span> Practice/);
+  assert.match(html, /aria-current="page">Practice/);
+  assert.match(html, /learn\/index\.html">Learn/);
   assert.match(html, /The Length Dial/);
   assert.match(html, /The Masterclass Minute/);
   assert.equal((html.match(/class="technique-item"/g) || []).length, 38);
