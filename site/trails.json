@@ -1,0 +1,80 @@
+{
+  "intro": "Guided sequences through the collection. Each trail is a short argument made of passages — read them in order and watch one idea develop.",
+  "trails": [
+    {
+      "id": "openings",
+      "title": "Openings that seduce",
+      "blurb": "How first sentences make contracts with readers.",
+      "stops": [
+        { "slug": "001_moby_dick_opening", "note": "Three words of command establish intimacy before the drifting begins." },
+        { "slug": "002_pride_prejudice_opening", "note": "Irony wearing the mask of a universal truth." },
+        { "slug": "003_tale_two_cities_opening", "note": "Antithesis stacked until a whole age balances on one sentence." },
+        { "slug": "004_1984_opening", "note": "One wrong detail — thirteen — and the world tilts." },
+        { "slug": "017_lolita_opening", "note": "Sound itself made complicit; alliteration as seduction." },
+        { "slug": "040_one_hundred_years_solitude", "note": "A sentence holding three tenses at once: firing squad, memory, ice." }
+      ]
+    },
+    {
+      "id": "protest",
+      "title": "The rhetoric of protest",
+      "blurb": "Public speech under pressure, from declaration to refusal.",
+      "stops": [
+        { "slug": "026_declaration_independence", "note": "The periodic sentence as a fuse: grievances accumulate toward detonation." },
+        { "slug": "027_gettysburg_address", "note": "Antithesis and epistrophe compress a war into 272 words." },
+        { "slug": "076_second_inaugural_lincoln", "note": "Balanced clauses refusing vengeance at the moment of victory." },
+        { "slug": "028_i_have_dream", "note": "Anaphora as engine: the dream clause returns until it becomes inevitable." },
+        { "slug": "061_letter_birmingham_jail", "note": "A single periodic sentence made to carry the whole weight of \"wait.\"" },
+        { "slug": "080_still_i_rise", "note": "Rhetorical questions and refrain as armor and ascent." }
+      ]
+    },
+    {
+      "id": "shakespeare",
+      "title": "Shakespeare's balance sheet",
+      "blurb": "Five speeches, five ways syntax carries a mind under strain.",
+      "stops": [
+        { "slug": "007_romeo_juliet_wherefore", "note": "Conditionals and alternatives — logic deployed against an illogical world." },
+        { "slug": "005_hamlet_to_be", "note": "Infinitives without subjects: grammar performing paralysis." },
+        { "slug": "039_macbeth_tomorrow", "note": "Repetition that goes nowhere, on purpose." },
+        { "slug": "051_king_lear_storm", "note": "Imperatives hurled at weather; apostrophe at full volume." },
+        { "slug": "066_merchant_venice_shylock", "note": "Identical structures asserting identical humanity." }
+      ]
+    },
+    {
+      "id": "grief",
+      "title": "Grief and consolation",
+      "blurb": "What form does when feeling would otherwise overwhelm it.",
+      "stops": [
+        { "slug": "035_because_not_stop_death", "note": "Death as courteous coachman; dashes as held breath." },
+        { "slug": "102_tennyson_memoriam", "note": "The quatrain as container: form holds the grief so the speaker can." },
+        { "slug": "077_musee_beaux_arts", "note": "Suffering placed in the corner of the canvas — understatement as devastation." },
+        { "slug": "033_do_not_go_gentle", "note": "The villanelle's returning refrains as refusal." },
+        { "slug": "082_one_art", "note": "Litotes rehearsed until it breaks: the art of losing isn't hard to master." }
+      ]
+    },
+    {
+      "id": "sentence",
+      "title": "The sentence as performance",
+      "blurb": "Five writers pushing syntax past what prose is supposed to do.",
+      "stops": [
+        { "slug": "065_in_search_lost_time", "note": "The long sentence as an instrument of memory." },
+        { "slug": "014_sound_fury_benjy", "note": "Syntax stripped of hierarchy: perception without interpretation." },
+        { "slug": "090_blood_meridian", "note": "Polysyndeton as landscape — and, and, and, without mercy." },
+        { "slug": "152_waste_land", "note": "Fragments doing the work sentences refuse." },
+        { "slug": "192_lincoln_bardo", "note": "A chorus of voices; the sentence dissolved into testimony." }
+      ]
+    },
+    {
+      "id": "voices",
+      "title": "First person, singular",
+      "blurb": "Six narrators whose grammar is their character.",
+      "stops": [
+        { "slug": "008_catcher_rye_opening", "note": "Digression as character: the voice that can't stay on topic." },
+        { "slug": "011_invisible_man_opening", "note": "Paradox announced in the first breath: invisible, and telling you." },
+        { "slug": "075_jane_eyre_reader", "note": "Direct address as claimed authority: \"Reader, I married him.\"" },
+        { "slug": "163_stranger", "note": "Flat parataxis: sentences refusing to feel." },
+        { "slug": "186_gilead", "note": "The cumulative sentence as a father's unhurried blessing." },
+        { "slug": "191_americanah", "note": "Observation sharpened into aphorism." }
+      ]
+    }
+  ]
+}

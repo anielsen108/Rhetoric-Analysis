@@ -9,18 +9,25 @@
 </head>
 <body>
 
+<a class="skip-link" href="#main">Skip to content</a>
 <header class="site-head">
   <a class="site-brand" href="../index.html" aria-label="Rhetoric home"><span>R</span><b>Rhetoric</b></a>
   <nav class="part-nav" aria-label="Primary">
     <a href="../analysis/index.html">Analyze</a>
     <a href="../learn/index.html" aria-current="page">Learn</a>
     <a href="../practice/index.html">Practice</a>
+    <a href="../course/index.html">Course</a>
   </nav>
 </header>
-<main class="learn-home">
+<main id="main" class="learn-home">
   <p class="eyebrow">Learn Rhetoric</p>
   <h1>The Rhetoric School</h1>
-  <p class="lede">933 excerpts drawn from the Reader's 196 passages, covering 84 devices in 9 families. Read the <mark class="lede-mark">marked phrase</mark>, then name its device. All four choices come from the same family — the near misses are the point.</p>
+  <p class="lede">933 excerpts drawn from the Reader's 196 passages, covering 84 devices in 9 families. Read the <mark class="lede-mark">marked phrase</mark>, then name its device. All four choices come from the same family — the near misses are the point. Prefer to study first? <a href="../devices/index.html">Browse the device guide</a>.</p>
+
+  <div id="placement" class="placement" hidden>
+    <p><b>New here?</b> Take the placement: two quick questions from each family to map where you stand. Your results seed the scoreboard and the "My weakest" preset.</p>
+    <button type="button" class="primary-action learn-action" id="start-placement">Start the placement</button>
+  </div>
 
   <section id="setup" class="quiz-setup" aria-label="Quiz setup">
     <div class="setup-head">
@@ -41,13 +48,20 @@
           <option>40</option>
         </select>
       </label>
+      <label class="count-label">Mode
+        <select id="q-mode">
+          <option value="name" selected>Name the device</option>
+          <option value="spot">Spot the device</option>
+          <option value="mix">Mix</option>
+        </select>
+      </label>
       <button type="button" class="primary-action learn-action" id="start-quiz">Start the quiz</button>
       <span id="pool-note" class="pool-note" aria-live="polite"></span>
     </div>
   </section>
 
-  <section id="quiz" class="quiz-stage" hidden></section>
-  <section id="results" class="quiz-results" hidden></section>
+  <section id="quiz" class="quiz-stage" tabindex="-1" hidden></section>
+  <section id="results" class="quiz-results" tabindex="-1" hidden></section>
 
   <section class="scoreboard-wrap" aria-label="Your record">
     <h2>Your record</h2>

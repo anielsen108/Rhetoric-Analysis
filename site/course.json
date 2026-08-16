@@ -1,0 +1,116 @@
+{
+  "title": "The Rhetoric Course",
+  "lede": "A guided ten-week path through all three rooms of the site. Each week: read two passages closely, pass a quiz on one device family, and run three drills aloud. Progress saves in this browser.",
+  "weeks": [
+    {
+      "n": 1,
+      "title": "Sentence Control",
+      "focus": "Length, diction, and the two great sentence shapes: cumulative and periodic.",
+      "read": [
+        { "slug": "090_blood_meridian", "note": "The cumulative sentence at full gallop — clause added to clause without mercy." },
+        { "slug": "026_declaration_independence", "note": "The periodic sentence as slow fuse: everything suspended until the main clause lands." }
+      ],
+      "quiz": { "fams": ["syntax"], "n": 10, "label": "Syntax & Word Order" },
+      "drills": ["1.1", "1.2", "1.3"]
+    },
+    {
+      "n": 2,
+      "title": "Repetition Structures",
+      "focus": "Anaphora, epistrophe, and their cousins — repetition as pressure, not redundancy.",
+      "read": [
+        { "slug": "028_i_have_dream", "note": "The most famous anaphora in American speech, building until the refrain feels inevitable." },
+        { "slug": "039_macbeth_tomorrow", "note": "Repetition drained of hope: the same word returning to say nothing changes." }
+      ],
+      "quiz": { "fams": ["repetition"], "n": 10, "label": "Repetition & Refrain" },
+      "drills": ["2.1", "2.2", "2.3"]
+    },
+    {
+      "n": 3,
+      "title": "Antithesis and Contrast",
+      "focus": "Balanced opposition: making two ideas clarify each other by collision.",
+      "read": [
+        { "slug": "003_tale_two_cities_opening", "note": "Antithesis stacked clause on clause until the whole age balances." },
+        { "slug": "076_second_inaugural_lincoln", "note": "Balance used for mercy — matched clauses refusing vengeance." }
+      ],
+      "quiz": { "fams": ["balance"], "n": 10, "label": "Balance & Opposition" },
+      "drills": ["3.1", "3.2", "3.3"]
+    },
+    {
+      "n": 4,
+      "title": "Metaphor and Image",
+      "focus": "Saying one thing by another — transfer, embodiment, the image that argues.",
+      "read": [
+        { "slug": "006_great_gatsby_green_light", "note": "A dock light made to carry a whole national longing." },
+        { "slug": "056_second_coming_yeats", "note": "Image escalating into prophecy: the falcon, the gyre, the rough beast." }
+      ],
+      "quiz": { "fams": ["figuration"], "n": 10, "label": "Metaphor & Figuration" },
+      "drills": ["4.1", "4.2", "4.3"]
+    },
+    {
+      "n": 5,
+      "title": "Rhythm and Conjunction",
+      "focus": "Asyndeton, polysyndeton, and the pulse of prose — what connectives do to time.",
+      "read": [
+        { "slug": "001_moby_dick_opening", "note": "Clipped command melting into meandering ands — both connective strategies in three lines." },
+        { "slug": "079_we_real_cool", "note": "Rhythm as the entire argument: enjambment and omission at maximum compression." }
+      ],
+      "quiz": { "fams": ["flow"], "n": 10, "label": "Omission & Flow" },
+      "drills": ["5.1", "5.2", "5.3"]
+    },
+    {
+      "n": 6,
+      "title": "Argument Moves",
+      "focus": "The speaker turning to face the audience: questions, appeals, pivots, maxims.",
+      "read": [
+        { "slug": "061_letter_birmingham_jail", "note": "Argument under pressure — concession, address, and the periodic case for urgency." },
+        { "slug": "066_merchant_venice_shylock", "note": "Rhetorical questions in parallel: identical structures asserting identical humanity." }
+      ],
+      "quiz": { "fams": ["address"], "n": 10, "label": "Address & Argument" },
+      "drills": ["6.1", "6.2", "6.3"]
+    },
+    {
+      "n": 7,
+      "title": "Register and Persona",
+      "focus": "Irony, understatement, and voice — controlling the distance between what is said and meant.",
+      "read": [
+        { "slug": "008_catcher_rye_opening", "note": "Persona built from digression, hedges, and refusals to say the expected thing." },
+        { "slug": "002_pride_prejudice_opening", "note": "Irony delivered deadpan as universal truth." }
+      ],
+      "quiz": { "fams": ["irony"], "n": 10, "label": "Irony & Understatement" },
+      "drills": ["7.1", "7.2", "7.3"]
+    },
+    {
+      "n": 8,
+      "title": "Arrangement and Structure",
+      "focus": "How telling handles time: where to begin, what to withhold, when to leap.",
+      "read": [
+        { "slug": "040_one_hundred_years_solitude", "note": "Three tenses in one sentence — prolepsis and analepsis fused." },
+        { "slug": "086_garden_forking_paths", "note": "Structure as subject: the story arranged like the labyrinth it describes." }
+      ],
+      "quiz": { "fams": ["narrative"], "n": 10, "label": "Narrative & Time" },
+      "drills": ["8.1", "8.2", "8.3"]
+    },
+    {
+      "n": 9,
+      "title": "Precision and Compression",
+      "focus": "Sound, diction, and the discipline of the exact word in the small space.",
+      "read": [
+        { "slug": "082_one_art", "note": "A villanelle compressing catastrophe into controlled understatement." },
+        { "slug": "084_snow_man", "note": "One sentence, one mind, nothing that is not there." }
+      ],
+      "quiz": { "fams": ["sound"], "n": 10, "label": "Sound & Diction" },
+      "drills": ["9.1", "9.2", "9.3"]
+    },
+    {
+      "n": 10,
+      "title": "Integration and Mastery",
+      "focus": "Everything at once — reading and speaking with the whole toolkit in hand.",
+      "read": [
+        { "slug": "027_gettysburg_address", "note": "Nearly every family in 272 words: the capstone text for close reading." },
+        { "slug": "192_lincoln_bardo", "note": "The modern answer: every device dissolved into a chorus of voices." }
+      ],
+      "quiz": { "fams": ["repetition", "balance", "figuration", "irony", "sound", "syntax", "flow", "address", "narrative"], "n": 20, "label": "All families" },
+      "drills": ["10.1", "10.3", "10.5"]
+    }
+  ]
+}

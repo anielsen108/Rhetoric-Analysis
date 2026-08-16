@@ -9,15 +9,17 @@
 </head>
 <body>
 
+<a class="skip-link" href="#main">Skip to content</a>
 <header class="site-head">
   <a class="site-brand" href="../index.html" aria-label="Rhetoric home"><span>R</span><b>Rhetoric</b></a>
   <nav class="part-nav" aria-label="Primary">
     <a href="../analysis/index.html">Analyze</a>
     <a href="../learn/index.html">Learn</a>
     <a href="../practice/index.html" aria-current="page">Practice</a>
+    <a href="../course/index.html">Course</a>
   </nav>
 </header>
-<main class="practice-home">
+<main id="main" class="practice-home">
   <section class="practice-hero">
     <div>
       <p class="eyebrow">Practicing Rhetoric</p>
@@ -49,6 +51,19 @@
     </div>
   </section>
 
+  <section class="prompt-deck" aria-label="Prompt deck">
+    <div class="deck-head">
+      <p class="eyebrow">Warm-up</p>
+      <h2>The Prompt Deck</h2>
+      <p>Deal a topic, an audience, and a constraint. Speak for two minutes. Re-deal any card you can't use twice in a row.</p>
+    </div>
+    <div class="deck-cards">
+      <div class="deck-card"><span class="deck-kicker">Topic</span><p id="deck-topic">—</p><button type="button" class="quiet-action" data-deal="topic">Re-deal</button></div>
+      <div class="deck-card"><span class="deck-kicker">Audience</span><p id="deck-audience">—</p><button type="button" class="quiet-action" data-deal="audience">Re-deal</button></div>
+      <div class="deck-card"><span class="deck-kicker">Constraint</span><p id="deck-constraint">—</p><button type="button" class="quiet-action" data-deal="constraint">Re-deal</button></div>
+    </div>
+    <button type="button" class="primary-action deck-deal" id="deal-all">Deal all three</button>
+  </section>
   <nav class="set-nav" aria-label="Practice sets"><a href="#set-1"><span>1</span>Sentence Control</a><a href="#set-2"><span>2</span>Repetition Structures</a><a href="#set-3"><span>3</span>Antithesis and Contrast</a><a href="#set-4"><span>4</span>Metaphor and Image</a><a href="#set-5"><span>5</span>Rhythm and Conjunction</a><a href="#set-6"><span>6</span>Argument Moves</a><a href="#set-7"><span>7</span>Register and Persona</a><a href="#set-8"><span>8</span>Arrangement and Structure</a><a href="#set-9"><span>9</span>Precision and Compression</a><a href="#set-10"><span>10</span>Integration and Mastery</a></nav>
 
   <section class="practice-set" id="set-1">
@@ -73,6 +88,17 @@
     </div>
     <section class="exercise-rules"><h3>Run the drill</h3><ol><li>Speaker begins on any topic and speaks in complete sentences.</li><li>Director sets hand position before or during speech.</li><li>Speaker must adjust the <i>next</i> sentence to match the signal. No finishing a long sentence when the hand drops low.</li><li>Director changes signal every 10-20 seconds, sometimes rapidly, sometimes holding.</li></ol></section>
     <section class="success-criteria"><h3>Listen for this</h3><p>The short sentences are genuinely short — not truncated thoughts but complete, forceful statements. The long sentences are controlled, not rambling — they have architecture, not just length. Transitions between lengths feel musical, not mechanical.</p></section>
+    <div class="solo">
+      <button type="button" class="solo-toggle" aria-expanded="false">Solo mode — the site plays Director</button>
+      <div class="solo-panel" hidden>
+        <p class="solo-hint">No partner? Start the signals and follow whichever appears. It changes on its own.</p>
+        <div class="solo-signal" role="status" aria-live="polite">Press start.</div>
+        <div class="solo-controls">
+          <label>Change every <select class="solo-interval"><option>10</option><option selected>15</option><option>20</option><option>30</option></select>s</label>
+          <button type="button" class="solo-start">Start signals</button>
+        </div>
+      </div>
+    </div>
     <div class="exercise-controls">
       <div class="timer" aria-label="Exercise timer">
         <span class="timer-display">05:00</span>
@@ -98,6 +124,17 @@
     </div>
     <section class="exercise-rules"><h3>Run the drill</h3><ol><li>Speaker begins on a topic and delivers it in their natural diction.</li><li>When Director signals low, Speaker shifts to Saxon diction as completely as possible. &quot;We need to get rid of the problem&quot; not &quot;We must eliminate the difficulty.&quot;</li><li>When Director signals high, Speaker shifts to Latinate diction. &quot;One might consider the implications of such a determination&quot; not &quot;Think about what that choice means.&quot;</li><li>Director toggles every 15-20 seconds.</li><li>The <i>content</i> stays the same. Only the vocabulary changes.</li></ol></section>
     <section class="success-criteria"><h3>Listen for this</h3><p>The Saxon passages feel visceral, grounded, urgent. The Latinate passages feel elevated, precise, authoritative. The speaker can feel the difference in their mouth — the Saxon words are blunt and physical; the Latinate words are smooth and measured. Neither register sounds forced.</p></section>
+    <div class="solo">
+      <button type="button" class="solo-toggle" aria-expanded="false">Solo mode — the site plays Director</button>
+      <div class="solo-panel" hidden>
+        <p class="solo-hint">No partner? Start the signals and follow whichever appears. It changes on its own.</p>
+        <div class="solo-signal" role="status" aria-live="polite">Press start.</div>
+        <div class="solo-controls">
+          <label>Change every <select class="solo-interval"><option>10</option><option selected>15</option><option>20</option><option>30</option></select>s</label>
+          <button type="button" class="solo-start">Start signals</button>
+        </div>
+      </div>
+    </div>
     <div class="exercise-controls">
       <div class="timer" aria-label="Exercise timer">
         <span class="timer-display">05:00</span>
@@ -123,6 +160,17 @@
     </div>
     <section class="exercise-rules"><h3>Run the drill</h3><ol><li>Director signals Fist. Speaker produces a short base clause: &quot;The city woke up.&quot;</li><li>Director signals forward. Speaker adds a modifying phrase: &quot;...its streets still wet from the night's rain.&quot;</li><li>Director signals forward again. Speaker adds more: &quot;...vendors dragging carts to their stations, steam rising from grates.&quot;</li><li>Director signals down. Speaker must close the sentence immediately and gracefully.</li><li>Repeat. Each sentence starts fresh.</li></ol></section>
     <section class="success-criteria"><h3>Listen for this</h3><p>The base clause is genuinely short and independent — it could stand alone. Each addition is a new phrase, not just more words bolted on with &quot;and.&quot; The modifiers are concrete and specific — images, details, qualifications. The landing is clean, not trailing off.</p></section>
+    <div class="solo">
+      <button type="button" class="solo-toggle" aria-expanded="false">Solo mode — the site plays Director</button>
+      <div class="solo-panel" hidden>
+        <p class="solo-hint">No partner? Start the signals and follow whichever appears. It changes on its own.</p>
+        <div class="solo-signal" role="status" aria-live="polite">Press start.</div>
+        <div class="solo-controls">
+          <label>Change every <select class="solo-interval"><option>10</option><option selected>15</option><option>20</option><option>30</option></select>s</label>
+          <button type="button" class="solo-start">Start signals</button>
+        </div>
+      </div>
+    </div>
     <div class="exercise-controls">
       <div class="timer" aria-label="Exercise timer">
         <span class="timer-display">06:00</span>
@@ -148,6 +196,17 @@
     </div>
     <section class="exercise-rules"><h3>Run the drill</h3><ol><li>Director names a topic or claim.</li><li>Speaker must deliver that claim as a periodic sentence — subordinate clauses first, main clause last.</li><li>Speaker should aim for at least three subordinate elements before the main clause.</li><li>Example: &quot;After years of effort, through setbacks that would have broken lesser teams, against the advice of every expert in the field — they succeeded.&quot;</li><li>Director evaluates and signals. Ten attempts in the round.</li></ol></section>
     <section class="success-criteria"><h3>Listen for this</h3><p>The subordinate clauses build genuine expectation — each one adds weight to what's coming. The main clause, when it arrives, feels like a resolution. The sentence doesn't cheat by being vague about what's coming; the audience knows something important is about to land but doesn't know exactly what.</p></section>
+    <div class="solo">
+      <button type="button" class="solo-toggle" aria-expanded="false">Solo mode — the site plays Director</button>
+      <div class="solo-panel" hidden>
+        <p class="solo-hint">No partner? Start the signals and follow whichever appears. It changes on its own.</p>
+        <div class="solo-signal" role="status" aria-live="polite">Press start.</div>
+        <div class="solo-controls">
+          <label>Change every <select class="solo-interval"><option>10</option><option selected>15</option><option>20</option><option>30</option></select>s</label>
+          <button type="button" class="solo-start">Start signals</button>
+        </div>
+      </div>
+    </div>
     <div class="exercise-controls">
       <div class="timer" aria-label="Exercise timer">
         <span class="timer-display">05:00</span>
@@ -173,6 +232,17 @@
     </div>
     <section class="exercise-rules"><h3>Run the drill</h3><ol><li>Speaker begins on a topic.</li><li>Director holds up a number. Speaker adjusts their sentence pattern to match.</li><li>Director changes the number every 15-20 seconds.</li><li>The <i>content</i> must remain coherent — this is not just an abstract drill. The speaker is making a real argument or telling a real story, and the sentence pattern must serve it.</li></ol></section>
     <section class="success-criteria"><h3>Listen for this</h3><p>The speaker's staccato mode sounds deliberate, not choppy. Their legato mode sounds expansive, not lost. The transitions between modes feel motivated by the content — as if the speaker <i>chose</i> to shift, even though they were directed to. The audience feels the rhythm shift without being able to explain why.</p></section>
+    <div class="solo">
+      <button type="button" class="solo-toggle" aria-expanded="false">Solo mode — the site plays Director</button>
+      <div class="solo-panel" hidden>
+        <p class="solo-hint">No partner? Start the signals and follow whichever appears. It changes on its own.</p>
+        <div class="solo-signal" role="status" aria-live="polite">Press start.</div>
+        <div class="solo-controls">
+          <label>Change every <select class="solo-interval"><option>10</option><option selected>15</option><option>20</option><option>30</option></select>s</label>
+          <button type="button" class="solo-start">Start signals</button>
+        </div>
+      </div>
+    </div>
     <div class="exercise-controls">
       <div class="timer" aria-label="Exercise timer">
         <span class="timer-display">05:00</span>
@@ -209,6 +279,17 @@
     </div>
     <section class="exercise-rules"><h3>Run the drill</h3><ol><li>Director signals Fist and names an opening phrase (e.g., &quot;There is no...&quot; or &quot;We have...&quot; or &quot;I remember...&quot;).</li><li>Speaker delivers a series of clauses, each beginning with that phrase: &quot;There is no shortcut to mastery. There is no substitute for the work itself. There is no moment when the struggle becomes easy.&quot;</li><li>Each clause after the first must <i>escalate</i> — go further, get more specific, raise the stakes.</li><li>When Director signals down, Speaker must close the passage with one final, landing sentence that does NOT use the anchor phrase.</li><li>Three to four runs per round.</li></ol></section>
     <section class="success-criteria"><h3>Listen for this</h3><p>The repetition builds genuine momentum — each clause feels necessary, not padded. The content escalates rather than merely repeats. The closing sentence (which breaks the pattern) feels like a resolution or a punch. The speaker's voice naturally rises in intensity with each repetition.</p></section>
+    <div class="solo">
+      <button type="button" class="solo-toggle" aria-expanded="false">Solo mode — the site plays Director</button>
+      <div class="solo-panel" hidden>
+        <p class="solo-hint">No partner? Start the signals and follow whichever appears. It changes on its own.</p>
+        <div class="solo-signal" role="status" aria-live="polite">Press start.</div>
+        <div class="solo-controls">
+          <label>Change every <select class="solo-interval"><option>10</option><option selected>15</option><option>20</option><option>30</option></select>s</label>
+          <button type="button" class="solo-start">Start signals</button>
+        </div>
+      </div>
+    </div>
     <div class="exercise-controls">
       <div class="timer" aria-label="Exercise timer">
         <span class="timer-display">05:00</span>
@@ -234,6 +315,17 @@
     </div>
     <section class="exercise-rules"><h3>Run the drill</h3><ol><li>Director gives a lock-word (e.g., &quot;free,&quot; &quot;enough,&quot; &quot;home,&quot; &quot;time&quot;).</li><li>Speaker must deliver 4-6 sentences in a row, each ending on that word.</li><li>The sentences must be about the same topic and must form a coherent passage — not a random list.</li><li>The lock-word should feel like a natural conclusion to each sentence, not a forced landing.</li><li>Director changes the lock-word after each run. Three runs per round.</li></ol></section>
     <section class="success-criteria"><h3>Listen for this</h3><p>Each sentence feels complete and natural, as if the lock-word is where the thought genuinely wanted to end up. The passage as a whole has a refrain-like quality — the repeated word accumulates meaning with each use. No sentence sounds contorted or backwards.</p></section>
+    <div class="solo">
+      <button type="button" class="solo-toggle" aria-expanded="false">Solo mode — the site plays Director</button>
+      <div class="solo-panel" hidden>
+        <p class="solo-hint">No partner? Start the signals and follow whichever appears. It changes on its own.</p>
+        <div class="solo-signal" role="status" aria-live="polite">Press start.</div>
+        <div class="solo-controls">
+          <label>Change every <select class="solo-interval"><option>10</option><option selected>15</option><option>20</option><option>30</option></select>s</label>
+          <button type="button" class="solo-start">Start signals</button>
+        </div>
+      </div>
+    </div>
     <div class="exercise-controls">
       <div class="timer" aria-label="Exercise timer">
         <span class="timer-display">05:00</span>
@@ -260,6 +352,17 @@
     <section class="exercise-rules"><h3>Run the drill</h3><ol><li>Director signals Fist and gives a starting word or topic.</li><li>Speaker produces a sentence ending with a significant word.</li><li>The next sentence must BEGIN with that word (or a close form of it).</li><li>Continue the chain as long as possible while maintaining coherent, meaningful content.</li><li>No filler sentences. Each link must say something worth saying.</li><li>Director counts links. Aim for 8+ in a good run.</li></ol>
 <p><b>Example chain:</b><br>&quot;Every great project begins with <i>commitment</i>. Commitment requires <i>sacrifice</i>. Sacrifice is only meaningful when it costs something you actually <i>value</i>. Value is not what you say matters — it's what you do when no one is <i>watching</i>. Watching yourself honestly is the beginning of <i>wisdom</i>.&quot;</p></section>
     <section class="success-criteria"><h3>Listen for this</h3><p>The chain doesn't feel mechanical — it feels like the speaker is discovering each link in real time, and each transition seems inevitable rather than forced. The content deepens or develops with each link rather than wandering randomly. The chain <i>goes somewhere.</i></p></section>
+    <div class="solo">
+      <button type="button" class="solo-toggle" aria-expanded="false">Solo mode — the site plays Director</button>
+      <div class="solo-panel" hidden>
+        <p class="solo-hint">No partner? Start the signals and follow whichever appears. It changes on its own.</p>
+        <div class="solo-signal" role="status" aria-live="polite">Press start.</div>
+        <div class="solo-controls">
+          <label>Change every <select class="solo-interval"><option>10</option><option selected>15</option><option>20</option><option>30</option></select>s</label>
+          <button type="button" class="solo-start">Start signals</button>
+        </div>
+      </div>
+    </div>
     <div class="exercise-controls">
       <div class="timer" aria-label="Exercise timer">
         <span class="timer-display">05:00</span>
@@ -285,6 +388,17 @@
     </div>
     <section class="exercise-rules"><h3>Run the drill</h3><ol><li>Director gives a one-word prompt: &quot;Leadership.&quot;</li><li>Speaker responds with a tricolon: &quot;Leadership is seeing what others miss, saying what others won't, and doing what others can't.&quot;</li><li>The three elements must be grammatically parallel (same structure) and roughly equal in length.</li><li>Each tricolon must be about the prompt, not generic filler.</li><li>Twelve prompts per round.</li></ol></section>
     <section class="success-criteria"><h3>Listen for this</h3><p>The three elements are tightly parallel — same grammatical form, similar syllable count. They escalate (each more intense than the last) or complete each other (each covering a different dimension). The tricolon sounds like it was prepared, even though it was improvised.</p></section>
+    <div class="solo">
+      <button type="button" class="solo-toggle" aria-expanded="false">Solo mode — the site plays Director</button>
+      <div class="solo-panel" hidden>
+        <p class="solo-hint">No partner? Start the signals and follow whichever appears. It changes on its own.</p>
+        <div class="solo-signal" role="status" aria-live="polite">Press start.</div>
+        <div class="solo-controls">
+          <label>Change every <select class="solo-interval"><option>10</option><option selected>15</option><option>20</option><option>30</option></select>s</label>
+          <button type="button" class="solo-start">Start signals</button>
+        </div>
+      </div>
+    </div>
     <div class="exercise-controls">
       <div class="timer" aria-label="Exercise timer">
         <span class="timer-display">05:00</span>
@@ -311,6 +425,17 @@
     <section class="exercise-rules"><h3>Run the drill</h3><ol><li>Director names a root word (e.g., &quot;judge&quot;).</li><li>Speaker has 30 seconds to deliver a coherent passage using as many forms of that word as possible: judge, judgment, judging, judged, judicial, judiciary, misjudge, prejudge, adjudicate.</li><li>The passage must make sense — not just a word list. Each form must appear in a real sentence that contributes to an argument or narrative.</li><li>Score is the number of distinct forms used meaningfully.</li><li>Six root words per round.</li></ol>
 <p><b>Suggested root words:</b> free, just, power, true, reason, act, human, create, serve, rule, know, right.</p></section>
     <section class="success-criteria"><h3>Listen for this</h3><p>The different word forms feel like a natural exploration of the concept, not a vocabulary exercise. The passage develops an idea, and the shifting forms of the word track the development — each form illuminates a different angle.</p></section>
+    <div class="solo">
+      <button type="button" class="solo-toggle" aria-expanded="false">Solo mode — the site plays Director</button>
+      <div class="solo-panel" hidden>
+        <p class="solo-hint">No partner? Start the signals and follow whichever appears. It changes on its own.</p>
+        <div class="solo-signal" role="status" aria-live="polite">Press start.</div>
+        <div class="solo-controls">
+          <label>Change every <select class="solo-interval"><option>10</option><option selected>15</option><option>20</option><option>30</option></select>s</label>
+          <button type="button" class="solo-start">Start signals</button>
+        </div>
+      </div>
+    </div>
     <div class="exercise-controls">
       <div class="timer" aria-label="Exercise timer">
         <span class="timer-display">05:00</span>
@@ -348,6 +473,17 @@
     <section class="exercise-rules"><h3>Run the drill</h3><ol><li>Director gives a plain statement: &quot;Good leaders listen to their team.&quot;</li><li>Speaker must immediately restate it as an antithesis: &quot;A good leader listens more than they speak; a poor leader speaks more than they listen.&quot;</li><li>The antithesis must have balanced structure — the two halves should mirror each other grammatically.</li><li>Aim for the antithesis to <i>deepen</i> the original statement, not just negate it.</li><li>Ten statements per round.</li></ol>
 <p><b>Patterns to use:</b><br>- &quot;Not X, but Y&quot;<br>- &quot;It is X, not Y&quot;<br>- &quot;Where there is X, there is Y; where there is no X, there is no Y&quot;<br>- &quot;The wise do X; the foolish do Y&quot;</p></section>
     <section class="success-criteria"><h3>Listen for this</h3><p>The antitheses snap into place — the two halves feel like they were made for each other. The contrast illuminates both sides, making the speaker's point clearer than the original plain statement did. The structure is genuinely balanced, not lopsided.</p></section>
+    <div class="solo">
+      <button type="button" class="solo-toggle" aria-expanded="false">Solo mode — the site plays Director</button>
+      <div class="solo-panel" hidden>
+        <p class="solo-hint">No partner? Start the signals and follow whichever appears. It changes on its own.</p>
+        <div class="solo-signal" role="status" aria-live="polite">Press start.</div>
+        <div class="solo-controls">
+          <label>Change every <select class="solo-interval"><option>10</option><option selected>15</option><option>20</option><option>30</option></select>s</label>
+          <button type="button" class="solo-start">Start signals</button>
+        </div>
+      </div>
+    </div>
     <div class="exercise-controls">
       <div class="timer" aria-label="Exercise timer">
         <span class="timer-display">05:00</span>
@@ -373,6 +509,17 @@
     </div>
     <section class="exercise-rules"><h3>Run the drill</h3><ol><li><b>Warm-up (2 minutes).</b> Director gives well-known chiasmi with the second half missing. Speaker completes them.</li><li>   - &quot;It's not the size of the dog in the fight...&quot; → &quot;...it's the size of the fight in the dog.&quot;</li><li>   - &quot;You don't write because you have something to say...&quot; → &quot;...you have something to say because you write.&quot;</li><li><b>Live fire (3 minutes).</b> Director gives any simple statement. Speaker must construct an original chiasmus from it.</li><li>   - Input: &quot;People should work to live.&quot; → &quot;We should work to live, not live to work.&quot;</li><li>   - Input: &quot;Plans often fail.&quot; → &quot;We don't fail to plan — we plan to fail.&quot;</li><li>The reversal must produce genuine insight or wit, not just mechanical word-swapping.</li></ol></section>
     <section class="success-criteria"><h3>Listen for this</h3><p>The chiasmus produces an &quot;aha&quot; moment — the reversal reveals something the original phrasing concealed. The two halves have matching structure. The chiasmus sounds quotable.</p></section>
+    <div class="solo">
+      <button type="button" class="solo-toggle" aria-expanded="false">Solo mode — the site plays Director</button>
+      <div class="solo-panel" hidden>
+        <p class="solo-hint">No partner? Start the signals and follow whichever appears. It changes on its own.</p>
+        <div class="solo-signal" role="status" aria-live="polite">Press start.</div>
+        <div class="solo-controls">
+          <label>Change every <select class="solo-interval"><option>10</option><option selected>15</option><option>20</option><option>30</option></select>s</label>
+          <button type="button" class="solo-start">Start signals</button>
+        </div>
+      </div>
+    </div>
     <div class="exercise-controls">
       <div class="timer" aria-label="Exercise timer">
         <span class="timer-display">05:00</span>
@@ -398,6 +545,17 @@
     </div>
     <section class="exercise-rules"><h3>Run the drill</h3><ol><li>Director states a strong argument for a position: &quot;Remote work clearly reduces collaboration. The best ideas come from hallway conversations.&quot;</li><li>Speaker must spend their first 2-3 sentences genuinely conceding the point. No hedging, no &quot;well, some people think...&quot; The concession must be full-throated.</li><li>Then the pivot. Speaker uses a transition — &quot;And yet,&quot; &quot;But this concedes too much,&quot; &quot;What this argument misses is&quot; — and turns to their own position.</li><li>The pivot must not contradict the concession. Both must remain true simultaneously.</li><li>Six exchanges per round.</li></ol></section>
     <section class="success-criteria"><h3>Listen for this</h3><p>The concession sounds like the speaker genuinely believes the opponent has a point — because they do. An observer couldn't tell whether the speaker is about to agree or disagree. The pivot doesn't negate the concession; it recontextualizes it. The overall effect is: &quot;You're right about X, and precisely <i>because</i> you're right about X, Y follows.&quot;</p></section>
+    <div class="solo">
+      <button type="button" class="solo-toggle" aria-expanded="false">Solo mode — the site plays Director</button>
+      <div class="solo-panel" hidden>
+        <p class="solo-hint">No partner? Start the signals and follow whichever appears. It changes on its own.</p>
+        <div class="solo-signal" role="status" aria-live="polite">Press start.</div>
+        <div class="solo-controls">
+          <label>Change every <select class="solo-interval"><option>10</option><option selected>15</option><option>20</option><option>30</option></select>s</label>
+          <button type="button" class="solo-start">Start signals</button>
+        </div>
+      </div>
+    </div>
     <div class="exercise-controls">
       <div class="timer" aria-label="Exercise timer">
         <span class="timer-display">06:00</span>
@@ -423,6 +581,17 @@
     </div>
     <section class="exercise-rules"><h3>Run the drill</h3><ol><li>Director names a debatable proposition: &quot;Social media has made society worse.&quot;</li><li>Director raises right hand. Speaker argues the affirmative with full conviction for 30 seconds.</li><li>Director switches to left hand. Speaker <i>immediately</i> — no pause, no &quot;on the other hand&quot; — switches to the opposing position with equal conviction.</li><li>Director switches back. Speaker returns to the original position, picking up new arguments (not repeating old ones).</li><li>Three full cycles (six 30-second segments) per topic. Two topics per round.</li></ol></section>
     <section class="success-criteria"><h3>Listen for this</h3><p>Both sides sound equally sincere. A new listener dropping in at any point couldn't tell which side the speaker actually believes. The arguments on each side don't repeat — the speaker finds new material each time they flip. The transitions are instantaneous and seamless.</p></section>
+    <div class="solo">
+      <button type="button" class="solo-toggle" aria-expanded="false">Solo mode — the site plays Director</button>
+      <div class="solo-panel" hidden>
+        <p class="solo-hint">No partner? Start the signals and follow whichever appears. It changes on its own.</p>
+        <div class="solo-signal" role="status" aria-live="polite">Press start.</div>
+        <div class="solo-controls">
+          <label>Change every <select class="solo-interval"><option>10</option><option selected>15</option><option>20</option><option>30</option></select>s</label>
+          <button type="button" class="solo-start">Start signals</button>
+        </div>
+      </div>
+    </div>
     <div class="exercise-controls">
       <div class="timer" aria-label="Exercise timer">
         <span class="timer-display">06:00</span>
@@ -448,6 +617,17 @@
     </div>
     <section class="exercise-rules"><h3>Run the drill</h3><ol><li>Director names a topic or decision: &quot;Whether to regulate AI.&quot;</li><li>Speaker must frame it as a dilemma with two horns: &quot;If we regulate AI heavily, we strangle innovation and cede leadership to countries that don't. If we don't regulate it, we risk harms we can't predict and can't reverse.&quot;</li><li>Both horns must be genuinely threatening — not one real problem and one trivial one.</li><li>The dilemma must feel inescapable — no obvious third path.</li><li>Advanced variant: After constructing the dilemma, Speaker must then <i>escape</i> it — find the narrow path between the horns.</li><li>Eight topics per round.</li></ol></section>
     <section class="success-criteria"><h3>Listen for this</h3><p>An audience hearing the dilemma feels genuinely stuck. Both options sound bad. Neither horn is a straw man — both represent real, substantial costs. If the speaker escapes the dilemma, it's through genuine insight, not by pretending one horn isn't sharp.</p></section>
+    <div class="solo">
+      <button type="button" class="solo-toggle" aria-expanded="false">Solo mode — the site plays Director</button>
+      <div class="solo-panel" hidden>
+        <p class="solo-hint">No partner? Start the signals and follow whichever appears. It changes on its own.</p>
+        <div class="solo-signal" role="status" aria-live="polite">Press start.</div>
+        <div class="solo-controls">
+          <label>Change every <select class="solo-interval"><option>10</option><option selected>15</option><option>20</option><option>30</option></select>s</label>
+          <button type="button" class="solo-start">Start signals</button>
+        </div>
+      </div>
+    </div>
     <div class="exercise-controls">
       <div class="timer" aria-label="Exercise timer">
         <span class="timer-display">05:00</span>
@@ -484,6 +664,17 @@
     </div>
     <section class="exercise-rules"><h3>Run the drill</h3><ol><li>Director and Speaker agree on a topic: &quot;building a startup.&quot;</li><li>Director calls a domain: &quot;cooking.&quot;</li><li>Speaker must immediately deliver the topic through that metaphor: &quot;A startup is a kitchen in the first hour of dinner service — you're working with raw ingredients, the heat is already too high, and you won't know if the dish works until someone tastes it.&quot;</li><li>Director calls a new domain: &quot;weather.&quot; Speaker shifts: &quot;A startup is a storm system forming off the coast — all the conditions are gathering, but no one can tell yet whether it'll be a hurricane or whether it'll dissipate before it makes landfall.&quot;</li><li>No transition sentences. Just cut directly to the new domain.</li><li>Each metaphor must map at least two features — not just &quot;X is like Y&quot; but showing how specific parts of X correspond to specific parts of Y.</li></ol></section>
     <section class="success-criteria"><h3>Listen for this</h3><p>The metaphors are specific, not generic. They map real structure — the audience learns something about the topic through the metaphor that they wouldn't see otherwise. The speaker doesn't just name the domain (&quot;it's like cooking&quot;) but actually develops the mapping (&quot;the seed round is mise en place — everything has to be prepared before the real work begins&quot;).</p></section>
+    <div class="solo">
+      <button type="button" class="solo-toggle" aria-expanded="false">Solo mode — the site plays Director</button>
+      <div class="solo-panel" hidden>
+        <p class="solo-hint">No partner? Start the signals and follow whichever appears. It changes on its own.</p>
+        <div class="solo-signal" role="status" aria-live="polite">Press start.</div>
+        <div class="solo-controls">
+          <label>Change every <select class="solo-interval"><option>10</option><option selected>15</option><option>20</option><option>30</option></select>s</label>
+          <button type="button" class="solo-start">Start signals</button>
+        </div>
+      </div>
+    </div>
     <div class="exercise-controls">
       <div class="timer" aria-label="Exercise timer">
         <span class="timer-display">05:00</span>
@@ -509,6 +700,17 @@
     </div>
     <section class="exercise-rules"><h3>Run the drill</h3><ol><li>Speaker chooses a topic and a metaphorical domain: &quot;The education system is a factory.&quot;</li><li>Speaker must sustain the metaphor for 90 seconds, mapping every element of their argument onto the domain.</li><li>   - Students = raw material on the assembly line.</li><li>   - Teachers = line workers.</li><li>   - Standardized tests = quality control inspection.</li><li>   - Graduation = the finished product rolling off the line.</li><li>   - Etc.</li><li>No literal language about the topic. Everything must be expressed through the metaphor.</li><li>No mixing — you can't suddenly introduce a gardening metaphor mid-factory.</li><li>Director monitors and signals in real time.</li></ol></section>
     <section class="success-criteria"><h3>Listen for this</h3><p>The metaphor deepens as it extends — the later mappings reveal things the early ones didn't. The speaker discovers connections they didn't plan. The metaphor never breaks or mixes. At 90 seconds, the audience has a rich, coherent alternative picture of the topic that illuminates real features.</p></section>
+    <div class="solo">
+      <button type="button" class="solo-toggle" aria-expanded="false">Solo mode — the site plays Director</button>
+      <div class="solo-panel" hidden>
+        <p class="solo-hint">No partner? Start the signals and follow whichever appears. It changes on its own.</p>
+        <div class="solo-signal" role="status" aria-live="polite">Press start.</div>
+        <div class="solo-controls">
+          <label>Change every <select class="solo-interval"><option>10</option><option selected>15</option><option>20</option><option>30</option></select>s</label>
+          <button type="button" class="solo-start">Start signals</button>
+        </div>
+      </div>
+    </div>
     <div class="exercise-controls">
       <div class="timer" aria-label="Exercise timer">
         <span class="timer-display">06:00</span>
@@ -534,6 +736,17 @@
     </div>
     <section class="exercise-rules"><h3>Run the drill</h3><ol><li>Director names an abstraction: &quot;Bureaucracy.&quot;</li><li>Speaker must talk about it as if it were a person. What does it want? What does it fear? How does it dress? How does it spend its weekends? What's its relationship to other abstractions?</li><li>The personification must illuminate the real nature of the concept. It shouldn't be cute for its own sake — it should make the audience understand bureaucracy better.</li><li>Speaker should give the character at least: a motive, a behavior pattern, and a relationship to something else.</li><li>Director names new concepts: &quot;Innovation,&quot; &quot;Tradition,&quot; &quot;Justice,&quot; &quot;Nostalgia,&quot; &quot;Ambition.&quot;</li></ol></section>
     <section class="success-criteria"><h3>Listen for this</h3><p>The character feels recognizable — the audience goes &quot;yes, that IS what bureaucracy is like.&quot; The personification reveals something about the concept's inner logic that analysis alone wouldn't capture. The character is specific enough to be vivid but not so elaborate that it overwhelms the point.</p></section>
+    <div class="solo">
+      <button type="button" class="solo-toggle" aria-expanded="false">Solo mode — the site plays Director</button>
+      <div class="solo-panel" hidden>
+        <p class="solo-hint">No partner? Start the signals and follow whichever appears. It changes on its own.</p>
+        <div class="solo-signal" role="status" aria-live="polite">Press start.</div>
+        <div class="solo-controls">
+          <label>Change every <select class="solo-interval"><option>10</option><option selected>15</option><option>20</option><option>30</option></select>s</label>
+          <button type="button" class="solo-start">Start signals</button>
+        </div>
+      </div>
+    </div>
     <div class="exercise-controls">
       <div class="timer" aria-label="Exercise timer">
         <span class="timer-display">05:00</span>
@@ -560,6 +773,17 @@
     <section class="exercise-rules"><h3>Run the drill</h3><ol><li>Director names two things that seem unrelated: &quot;a jazz quartet and an emergency room.&quot;</li><li>Speaker has 60 seconds to build a detailed analogy between them.</li><li>The analogy must identify at least three structural parallels — not surface similarities (&quot;they're both loud&quot;) but structural ones (&quot;the lead musician's role maps onto the attending physician's: they set the direction, but the performance depends on everyone improvising competently within their role&quot;).</li><li>The analogy should illuminate <i>both</i> things, not just use one to explain the other.</li><li>Six pairs per round.</li></ol>
 <p><b>Suggested pairs:</b> A library and a marketplace. A river and a conversation. A chess game and a negotiation. A garden and a community. An immune system and a legal system.</p></section>
     <section class="success-criteria"><h3>Listen for this</h3><p>The parallels are structural and specific. The analogy holds under scrutiny — if you pushed on it, more parallels would emerge. The audience sees both things differently after hearing the analogy. The speaker doesn't just assert similarity but demonstrates it with specific mapped features.</p></section>
+    <div class="solo">
+      <button type="button" class="solo-toggle" aria-expanded="false">Solo mode — the site plays Director</button>
+      <div class="solo-panel" hidden>
+        <p class="solo-hint">No partner? Start the signals and follow whichever appears. It changes on its own.</p>
+        <div class="solo-signal" role="status" aria-live="polite">Press start.</div>
+        <div class="solo-controls">
+          <label>Change every <select class="solo-interval"><option>10</option><option selected>15</option><option>20</option><option>30</option></select>s</label>
+          <button type="button" class="solo-start">Start signals</button>
+        </div>
+      </div>
+    </div>
     <div class="exercise-controls">
       <div class="timer" aria-label="Exercise timer">
         <span class="timer-display">06:00</span>
@@ -585,6 +809,17 @@
     </div>
     <section class="exercise-rules"><h3>Run the drill</h3><ol><li>Director gives a simple factual statement: &quot;The company is growing quickly.&quot;</li><li>Director shows 1. Speaker restates literally: &quot;Revenue has increased 40% year over year.&quot;</li><li>Director shows 2. Dead metaphor: &quot;The company is skyrocketing.&quot;</li><li>Director shows 3. Fresh: &quot;The company is a vine that found sunlight — every branch is reaching in a different direction at once.&quot;</li><li>Director shows 4. Vivid: &quot;The company is a controlled detonation — the blast radius keeps expanding, and the engineers are building the building while the foundation is still shaking.&quot;</li><li>Director shows 5. Wild: the speaker's most daring, original image.</li><li>Then Director jumps around randomly: &quot;4. 2. 5. 1. 3.&quot; Speaker must hit the right level each time.</li></ol></section>
     <section class="success-criteria"><h3>Listen for this</h3><p>Each level is clearly distinct from the others. The dead metaphors are genuinely dead. The vivid ones are genuinely vivid. Level 5 is surprising and original — something the audience has never heard before. When jumping between levels, the speaker can accurately calibrate.</p></section>
+    <div class="solo">
+      <button type="button" class="solo-toggle" aria-expanded="false">Solo mode — the site plays Director</button>
+      <div class="solo-panel" hidden>
+        <p class="solo-hint">No partner? Start the signals and follow whichever appears. It changes on its own.</p>
+        <div class="solo-signal" role="status" aria-live="polite">Press start.</div>
+        <div class="solo-controls">
+          <label>Change every <select class="solo-interval"><option>10</option><option selected>15</option><option>20</option><option>30</option></select>s</label>
+          <button type="button" class="solo-start">Start signals</button>
+        </div>
+      </div>
+    </div>
     <div class="exercise-controls">
       <div class="timer" aria-label="Exercise timer">
         <span class="timer-display">06:00</span>
@@ -621,6 +856,17 @@
     </div>
     <section class="exercise-rules"><h3>Run the drill</h3><ol><li>Speaker picks a topic and delivers a passage of at least six clauses with no coordinating conjunctions.</li><li>Clauses are separated only by pauses (the spoken equivalent of commas or semicolons).</li><li>&quot;The project failed. The team scattered. The investors called. The board convened. A decision was made. No one was satisfied.&quot;</li><li>Director signals thumbs down whenever a conjunction appears. Speaker must restart the current sentence without the conjunction.</li><li>Content should be energetic and urgent — the asyndeton should serve the feeling, not fight it.</li><li>Four runs per round.</li></ol></section>
     <section class="success-criteria"><h3>Listen for this</h3><p>The passage feels fast and forceful. Each clause is a complete unit that lands on its own. The lack of conjunctions creates a sense of inevitability — one thing after another, no commentary, no hesitation. The speaker's delivery naturally becomes more clipped and decisive.</p></section>
+    <div class="solo">
+      <button type="button" class="solo-toggle" aria-expanded="false">Solo mode — the site plays Director</button>
+      <div class="solo-panel" hidden>
+        <p class="solo-hint">No partner? Start the signals and follow whichever appears. It changes on its own.</p>
+        <div class="solo-signal" role="status" aria-live="polite">Press start.</div>
+        <div class="solo-controls">
+          <label>Change every <select class="solo-interval"><option>10</option><option selected>15</option><option>20</option><option>30</option></select>s</label>
+          <button type="button" class="solo-start">Start signals</button>
+        </div>
+      </div>
+    </div>
     <div class="exercise-controls">
       <div class="timer" aria-label="Exercise timer">
         <span class="timer-display">05:00</span>
@@ -646,6 +892,17 @@
     </div>
     <section class="exercise-rules"><h3>Run the drill</h3><ol><li>Speaker picks a topic and delivers a passage where every clause is connected by &quot;and,&quot; &quot;or,&quot; or &quot;but.&quot;</li><li>Every list item also gets a conjunction: &quot;They brought bread and cheese and wine and fruit and cold meats and three kinds of mustard.&quot;</li><li>Aim for at least 8 conjunctions in a 30-second passage.</li><li>The passage should feel heavy, accumulating, relentless — the conjunctions should build emotional weight.</li><li>Content should suit the form: lists of evidence, catalogs of damage, inventories of experience.</li><li>Four runs per round.</li></ol></section>
     <section class="success-criteria"><h3>Listen for this</h3><p>The repeated &quot;and&quot; creates a rhythm that pulls the listener along. The passage feels like testimony — an overwhelming catalog that can't be dismissed because each &quot;and&quot; insists there's more. The weight builds. By the end, the accumulation itself is the argument.</p></section>
+    <div class="solo">
+      <button type="button" class="solo-toggle" aria-expanded="false">Solo mode — the site plays Director</button>
+      <div class="solo-panel" hidden>
+        <p class="solo-hint">No partner? Start the signals and follow whichever appears. It changes on its own.</p>
+        <div class="solo-signal" role="status" aria-live="polite">Press start.</div>
+        <div class="solo-controls">
+          <label>Change every <select class="solo-interval"><option>10</option><option selected>15</option><option>20</option><option>30</option></select>s</label>
+          <button type="button" class="solo-start">Start signals</button>
+        </div>
+      </div>
+    </div>
     <div class="exercise-controls">
       <div class="timer" aria-label="Exercise timer">
         <span class="timer-display">05:00</span>
@@ -671,6 +928,17 @@
     </div>
     <section class="exercise-rules"><h3>Run the drill</h3><ol><li>Speaker begins on a topic.</li><li>Director signals low. Speaker delivers in asyndeton: &quot;The walls cracked. The ceiling buckled. Plaster fell. Dust filled the air.&quot;</li><li>Director signals high. Speaker shifts to polysyndeton on the same topic: &quot;And the walls cracked and the ceiling buckled and the plaster fell and the dust filled the air and still the building stood.&quot;</li><li>Director toggles every 15-20 seconds.</li><li>The topic and narrative must remain continuous across toggles.</li></ol></section>
     <section class="success-criteria"><h3>Listen for this</h3><p>The tonal shift between modes is dramatic and immediate. The asyndeton passages feel fast and controlled. The polysyndeton passages feel heavy and inexorable. The transitions are clean — the speaker doesn't take a beat to adjust, they just shift. The audience can feel the mode change like a gear shift.</p></section>
+    <div class="solo">
+      <button type="button" class="solo-toggle" aria-expanded="false">Solo mode — the site plays Director</button>
+      <div class="solo-panel" hidden>
+        <p class="solo-hint">No partner? Start the signals and follow whichever appears. It changes on its own.</p>
+        <div class="solo-signal" role="status" aria-live="polite">Press start.</div>
+        <div class="solo-controls">
+          <label>Change every <select class="solo-interval"><option>10</option><option selected>15</option><option>20</option><option>30</option></select>s</label>
+          <button type="button" class="solo-start">Start signals</button>
+        </div>
+      </div>
+    </div>
     <div class="exercise-controls">
       <div class="timer" aria-label="Exercise timer">
         <span class="timer-display">05:00</span>
@@ -696,6 +964,17 @@
     </div>
     <section class="exercise-rules"><h3>Run the drill</h3><ol><li>Director holds up a number and names a topic.</li><li>Speaker must produce that many phrases that are:</li><li>   - Grammatically identical in structure</li><li>   - Approximately equal in syllable count (within 2-3 syllables of each other)</li><li>   - Substantively related (all about the same topic)</li><li>Example (3 fingers, topic &quot;ambition&quot;): &quot;It drives the young to dream. | It drives the old to remember. | It drives the restless to act.&quot;</li><li>Director evaluates parallelism and signals.</li><li>Ten prompts per round.</li></ol></section>
     <section class="success-criteria"><h3>Listen for this</h3><p>The phrases feel like they were carved from the same block — identical structure, matching rhythm. If you tapped the rhythm of one phrase, the others would fit the same beat. The content isn't sacrificed for the form — each phrase says something meaningful, not just something that fits the pattern.</p></section>
+    <div class="solo">
+      <button type="button" class="solo-toggle" aria-expanded="false">Solo mode — the site plays Director</button>
+      <div class="solo-panel" hidden>
+        <p class="solo-hint">No partner? Start the signals and follow whichever appears. It changes on its own.</p>
+        <div class="solo-signal" role="status" aria-live="polite">Press start.</div>
+        <div class="solo-controls">
+          <label>Change every <select class="solo-interval"><option>10</option><option selected>15</option><option>20</option><option>30</option></select>s</label>
+          <button type="button" class="solo-start">Start signals</button>
+        </div>
+      </div>
+    </div>
     <div class="exercise-controls">
       <div class="timer" aria-label="Exercise timer">
         <span class="timer-display">05:00</span>
@@ -721,6 +1000,17 @@
     </div>
     <section class="exercise-rules"><h3>Run the drill</h3><ol><li>Speaker delivers a 30-second passage on any topic.</li><li>The passage can be any style, any structure — but the final sentence must <i>land.</i></li><li>After each attempt, Director rates it and explains (briefly) what worked or didn't.</li><li>Speaker tries again on the same topic, aiming for a higher rating.</li><li>Techniques that help: short sentence after long buildup, tricolon close, periodic sentence, unexpected image, callback to the opening.</li><li>Six attempts per round.</li></ol></section>
     <section class="success-criteria"><h3>Listen for this</h3><p>Rating 5 moments: the room goes quiet for a beat after the last sentence. The final sentence feels inevitable in retrospect but wasn't predictable in advance. It carries the weight of everything that came before it. If someone quoted only that last sentence, it would still have force.</p></section>
+    <div class="solo">
+      <button type="button" class="solo-toggle" aria-expanded="false">Solo mode — the site plays Director</button>
+      <div class="solo-panel" hidden>
+        <p class="solo-hint">No partner? Start the signals and follow whichever appears. It changes on its own.</p>
+        <div class="solo-signal" role="status" aria-live="polite">Press start.</div>
+        <div class="solo-controls">
+          <label>Change every <select class="solo-interval"><option>10</option><option selected>15</option><option>20</option><option>30</option></select>s</label>
+          <button type="button" class="solo-start">Start signals</button>
+        </div>
+      </div>
+    </div>
     <div class="exercise-controls">
       <div class="timer" aria-label="Exercise timer">
         <span class="timer-display">05:00</span>
@@ -757,6 +1047,17 @@
     </div>
     <section class="exercise-rules"><h3>Run the drill</h3><ol><li>Director states a reasonable-sounding position: &quot;We should always defer to expert opinion.&quot;</li><li>Speaker has 45 seconds to take it to its logical extreme: &quot;If we always defer to expert opinion, then no expert was ever justified in disagreeing with the consensus of their time. Galileo should have stayed quiet. Darwin should have deferred. Every breakthrough in human history began with someone who refused to defer.&quot;</li><li>The extension must be <i>honest</i> — it must genuinely follow from the stated principle. No distortion.</li><li>The absurdity should be undeniable — the audience should feel the force of the conclusion.</li><li>Director evaluates fairness. If the reductio relied on a straw man, it doesn't count.</li><li>Eight positions per round.</li></ol></section>
     <section class="success-criteria"><h3>Listen for this</h3><p>The opponent would have to concede that the logic holds — the absurd conclusion really does follow from their premise. The reductio doesn't feel mean-spirited or unfair; it feels illuminating. The speaker's extension reveals a genuine problem with the original position.</p></section>
+    <div class="solo">
+      <button type="button" class="solo-toggle" aria-expanded="false">Solo mode — the site plays Director</button>
+      <div class="solo-panel" hidden>
+        <p class="solo-hint">No partner? Start the signals and follow whichever appears. It changes on its own.</p>
+        <div class="solo-signal" role="status" aria-live="polite">Press start.</div>
+        <div class="solo-controls">
+          <label>Change every <select class="solo-interval"><option>10</option><option selected>15</option><option>20</option><option>30</option></select>s</label>
+          <button type="button" class="solo-start">Start signals</button>
+        </div>
+      </div>
+    </div>
     <div class="exercise-controls">
       <div class="timer" aria-label="Exercise timer">
         <span class="timer-display">06:00</span>
@@ -782,6 +1083,17 @@
     </div>
     <section class="exercise-rules"><h3>Run the drill</h3><ol><li>Director states a principle: &quot;Preparation matters more than talent.&quot;</li><li>Speaker builds the ladder:</li><li>   - Rung 1 (easiest case): &quot;If preparation matters in a college exam — where the material is well-defined and the format is predictable — &quot;</li><li>   - Rung 2 (harder case): &quot;then how much more does it matter in a startup — where nothing is predictable and the stakes are your livelihood — &quot;</li><li>   - Rung 3 (clinching case): &quot;then how much more still in a crisis — where there is no second attempt, no curve, and the cost of failure is measured in lives?&quot;</li><li>Each rung must be a <i>genuinely harder</i> case — not just a restatement with different words.</li><li>The final rung should feel undeniable.</li><li>Six ladders per round.</li></ol></section>
     <section class="success-criteria"><h3>Listen for this</h3><p>Each rung is clearly a harder case than the last. The audience feels the argument building in force. The final rung produces a &quot;how much more so!&quot; feeling that makes the original principle seem unassailable. The ladder structure is explicit — the audience can follow the logic step by step.</p></section>
+    <div class="solo">
+      <button type="button" class="solo-toggle" aria-expanded="false">Solo mode — the site plays Director</button>
+      <div class="solo-panel" hidden>
+        <p class="solo-hint">No partner? Start the signals and follow whichever appears. It changes on its own.</p>
+        <div class="solo-signal" role="status" aria-live="polite">Press start.</div>
+        <div class="solo-controls">
+          <label>Change every <select class="solo-interval"><option>10</option><option selected>15</option><option>20</option><option>30</option></select>s</label>
+          <button type="button" class="solo-start">Start signals</button>
+        </div>
+      </div>
+    </div>
     <div class="exercise-controls">
       <div class="timer" aria-label="Exercise timer">
         <span class="timer-display">05:00</span>
@@ -807,6 +1119,17 @@
     </div>
     <section class="exercise-rules"><h3>Run the drill</h3><ol><li>Director states a precedent case and applies it: &quot;We banned lead paint because it was dangerous. AI is dangerous too, so we should ban AI.&quot;</li><li>Speaker has 30 seconds to identify and articulate the distinctions — the specific features that make this case different from the precedent.</li><li>The distinctions must be <i>relevant</i> — they must explain why the difference matters, not just that a difference exists.</li><li>Speaker should aim for at least two substantive distinctions per precedent.</li><li>Eight precedents per round.</li></ol></section>
     <section class="success-criteria"><h3>Listen for this</h3><p>The distinctions are sharp and specific — not &quot;well, they're different things&quot; but &quot;lead paint has no beneficial use, while AI has transformative beneficial uses, which means the cost-benefit calculation is fundamentally different.&quot; The audience feels that the precedent, which seemed airtight, has been honestly and precisely taken apart.</p></section>
+    <div class="solo">
+      <button type="button" class="solo-toggle" aria-expanded="false">Solo mode — the site plays Director</button>
+      <div class="solo-panel" hidden>
+        <p class="solo-hint">No partner? Start the signals and follow whichever appears. It changes on its own.</p>
+        <div class="solo-signal" role="status" aria-live="polite">Press start.</div>
+        <div class="solo-controls">
+          <label>Change every <select class="solo-interval"><option>10</option><option selected>15</option><option>20</option><option>30</option></select>s</label>
+          <button type="button" class="solo-start">Start signals</button>
+        </div>
+      </div>
+    </div>
     <div class="exercise-controls">
       <div class="timer" aria-label="Exercise timer">
         <span class="timer-display">05:00</span>
@@ -832,6 +1155,17 @@
     </div>
     <section class="exercise-rules"><h3>Run the drill</h3><ol><li>Director names a position the Speaker disagrees with: &quot;Colleges should eliminate standardized testing.&quot;</li><li><b>Phase 1 — Steelman (30 seconds).</b> Speaker constructs the strongest, most persuasive version of this argument. Must include the best evidence, the strongest reasoning, and the most sympathetic framing.</li><li>Director evaluates: would a genuine proponent accept this as a fair (even generous) version of their argument?</li><li><b>Phase 2 — Demolition (30 seconds).</b> Speaker dismantles the argument they just built. The demolition must address the <i>strong</i> version — not slide back to attacking a weaker one.</li><li>Four positions per round.</li></ol></section>
     <section class="success-criteria"><h3>Listen for this</h3><p>The steelman is so good that the audience isn't sure the speaker actually disagrees. The demolition is precise — it identifies the specific load-bearing assumption in the strong argument and shows why it fails. The overall effect is: &quot;This is the best version of the argument, I've given it every advantage, and it still doesn't hold.&quot;</p></section>
+    <div class="solo">
+      <button type="button" class="solo-toggle" aria-expanded="false">Solo mode — the site plays Director</button>
+      <div class="solo-panel" hidden>
+        <p class="solo-hint">No partner? Start the signals and follow whichever appears. It changes on its own.</p>
+        <div class="solo-signal" role="status" aria-live="polite">Press start.</div>
+        <div class="solo-controls">
+          <label>Change every <select class="solo-interval"><option>10</option><option selected>15</option><option>20</option><option>30</option></select>s</label>
+          <button type="button" class="solo-start">Start signals</button>
+        </div>
+      </div>
+    </div>
     <div class="exercise-controls">
       <div class="timer" aria-label="Exercise timer">
         <span class="timer-display">06:00</span>
@@ -857,6 +1191,17 @@
     </div>
     <section class="exercise-rules"><h3>Run the drill</h3><ol><li>Director adopts a role and makes an accusation: &quot;Your company talks about sustainability but still uses plastic packaging.&quot;</li><li>Speaker has 20 seconds to flip it: &quot;The very industry making this accusation produces ten times the plastic waste we do. If this standard applies to us, it applies to you first.&quot;</li><li>The tu quoque must be <i>fair</i> — the equivalence must be genuine, not manufactured.</li><li>Advanced variant: after the flip, the Speaker must then rise above it — &quot;But let's not argue about who's worse. Let's talk about what we're both going to do about it.&quot;</li><li>Eight accusations per round.</li></ol></section>
     <section class="success-criteria"><h3>Listen for this</h3><p>The flip feels earned, not petty. The equivalence is genuine — the audience goes &quot;that's true, they do the same thing.&quot; The speaker doesn't dwell on the flip but uses it as a stepping stone to a stronger position. The overall effect is: &quot;Your objection has no authority&quot; — not &quot;no, you're bad.&quot;</p></section>
+    <div class="solo">
+      <button type="button" class="solo-toggle" aria-expanded="false">Solo mode — the site plays Director</button>
+      <div class="solo-panel" hidden>
+        <p class="solo-hint">No partner? Start the signals and follow whichever appears. It changes on its own.</p>
+        <div class="solo-signal" role="status" aria-live="polite">Press start.</div>
+        <div class="solo-controls">
+          <label>Change every <select class="solo-interval"><option>10</option><option selected>15</option><option>20</option><option>30</option></select>s</label>
+          <button type="button" class="solo-start">Start signals</button>
+        </div>
+      </div>
+    </div>
     <div class="exercise-controls">
       <div class="timer" aria-label="Exercise timer">
         <span class="timer-display">05:00</span>
@@ -893,6 +1238,17 @@
     </div>
     <section class="exercise-rules"><h3>Run the drill</h3><ol><li>Speaker begins on a topic.</li><li>Director sets hand position. Speaker adjusts register to match.</li><li>The <i>content and argument</i> stay the same. Only the register changes.</li><li>Director changes position every 15 seconds. Sometimes jumps from high to low with no middle stop.</li><li>The transitions should not be announced (&quot;Now I'll be more formal&quot;). They should just happen.</li></ol></section>
     <section class="success-criteria"><h3>Listen for this</h3><p>Each register sounds natural, not parodic. The formal register sounds genuinely authoritative, not stuffy. The colloquial register sounds genuine, not performing folksiness. The content is recognizably the same argument at every level. The jumps between registers feel like deliberate rhetorical choices, not accidents.</p></section>
+    <div class="solo">
+      <button type="button" class="solo-toggle" aria-expanded="false">Solo mode — the site plays Director</button>
+      <div class="solo-panel" hidden>
+        <p class="solo-hint">No partner? Start the signals and follow whichever appears. It changes on its own.</p>
+        <div class="solo-signal" role="status" aria-live="polite">Press start.</div>
+        <div class="solo-controls">
+          <label>Change every <select class="solo-interval"><option>10</option><option selected>15</option><option>20</option><option>30</option></select>s</label>
+          <button type="button" class="solo-start">Start signals</button>
+        </div>
+      </div>
+    </div>
     <div class="exercise-controls">
       <div class="timer" aria-label="Exercise timer">
         <span class="timer-display">05:00</span>
@@ -918,6 +1274,17 @@
     </div>
     <section class="exercise-rules"><h3>Run the drill</h3><ol><li>Director and Speaker agree on a topic: &quot;Why discipline matters.&quot;</li><li>Director calls a role. Speaker delivers the topic in that voice.</li><li>The <i>information</i> is the same, but the delivery, vocabulary, sentence patterns, and attitude shift completely.</li><li>   - Professor: &quot;Research consistently demonstrates that disciplined practice, rather than innate ability, is the primary predictor of expertise.&quot;</li><li>   - Coach: &quot;You think talent's gonna save you? Talent's worthless without the reps. Every. Single. Day.&quot;</li><li>   - Grandmother: &quot;Let me tell you something, sweetheart. The people who make it aren't the smartest ones. They're the ones who kept showing up.&quot;</li><li>The role should be recognizable within the first sentence.</li><li>No parody. Aim for authentic inhabitation of each voice.</li></ol></section>
     <section class="success-criteria"><h3>Listen for this</h3><p>Each role is immediately recognizable — an audience could name it. The shift between roles changes not just vocabulary but sentence structure, pacing, emotional temperature, and implied relationship to the listener. The content is genuinely the same argument through genuinely different lenses.</p></section>
+    <div class="solo">
+      <button type="button" class="solo-toggle" aria-expanded="false">Solo mode — the site plays Director</button>
+      <div class="solo-panel" hidden>
+        <p class="solo-hint">No partner? Start the signals and follow whichever appears. It changes on its own.</p>
+        <div class="solo-signal" role="status" aria-live="polite">Press start.</div>
+        <div class="solo-controls">
+          <label>Change every <select class="solo-interval"><option>10</option><option selected>15</option><option>20</option><option>30</option></select>s</label>
+          <button type="button" class="solo-start">Start signals</button>
+        </div>
+      </div>
+    </div>
     <div class="exercise-controls">
       <div class="timer" aria-label="Exercise timer">
         <span class="timer-display">06:00</span>
@@ -943,6 +1310,17 @@
     </div>
     <section class="exercise-rules"><h3>Run the drill</h3><ol><li>Speaker delivers a passage of factual content: statistics, a news summary, a process description. Something dry.</li><li>Director signals an emotion. Speaker must deliver the same facts through that emotional lens.</li><li>The facts cannot change. No adding information that fits the emotion. The <i>same</i> facts must simply feel different.</li><li>Director shifts emotion every 20 seconds.</li><li>The speaker's vocal tone, pacing, emphasis, and word choice (within the constraint of the same facts) must shift to match.</li></ol></section>
     <section class="success-criteria"><h3>Listen for this</h3><p>The same sentence sounds urgent, then contemplative, then sorrowful — and each version is convincing. The facts haven't changed, but the audience's emotional response has shifted completely. The speaker controls the emotional channel with the same precision as the logical channel.</p></section>
+    <div class="solo">
+      <button type="button" class="solo-toggle" aria-expanded="false">Solo mode — the site plays Director</button>
+      <div class="solo-panel" hidden>
+        <p class="solo-hint">No partner? Start the signals and follow whichever appears. It changes on its own.</p>
+        <div class="solo-signal" role="status" aria-live="polite">Press start.</div>
+        <div class="solo-controls">
+          <label>Change every <select class="solo-interval"><option>10</option><option selected>15</option><option>20</option><option>30</option></select>s</label>
+          <button type="button" class="solo-start">Start signals</button>
+        </div>
+      </div>
+    </div>
     <div class="exercise-controls">
       <div class="timer" aria-label="Exercise timer">
         <span class="timer-display">05:00</span>
@@ -968,6 +1346,17 @@
     </div>
     <section class="exercise-rules"><h3>Run the drill</h3><ol><li>Speaker discusses a topic that can support both modes (e.g., failure, ambition, justice).</li><li>Director signals close. Speaker shifts to personal, intimate mode: &quot;I remember the first time I failed at something that mattered. The feeling wasn't what I expected...&quot;</li><li>Director signals far. Speaker shifts to analytical: &quot;Failure, viewed structurally, serves a corrective function in complex adaptive systems...&quot;</li><li>Director toggles every 20 seconds.</li><li>The transitions must be smooth — no &quot;Anyway, speaking analytically...&quot; Just shift.</li></ol></section>
     <section class="success-criteria"><h3>Listen for this</h3><p>The intimate mode feels genuinely vulnerable — not performed vulnerability. The analytical mode feels genuinely detached — not cold, but observing from altitude. The transitions feel like a camera zooming in and out. The same topic looks completely different from each distance, and both perspectives are enriching.</p></section>
+    <div class="solo">
+      <button type="button" class="solo-toggle" aria-expanded="false">Solo mode — the site plays Director</button>
+      <div class="solo-panel" hidden>
+        <p class="solo-hint">No partner? Start the signals and follow whichever appears. It changes on its own.</p>
+        <div class="solo-signal" role="status" aria-live="polite">Press start.</div>
+        <div class="solo-controls">
+          <label>Change every <select class="solo-interval"><option>10</option><option selected>15</option><option>20</option><option>30</option></select>s</label>
+          <button type="button" class="solo-start">Start signals</button>
+        </div>
+      </div>
+    </div>
     <div class="exercise-controls">
       <div class="timer" aria-label="Exercise timer">
         <span class="timer-display">05:00</span>
@@ -993,6 +1382,17 @@
     </div>
     <section class="exercise-rules"><h3>Run the drill</h3><ol><li>Speaker is developing an argument on any topic.</li><li>Director names a figure: &quot;Churchill.&quot;</li><li>Speaker must continue the argument in Churchill's style: long periodic sentences, concrete imagery, antithesis, emotional crescendo, the rhythm of parliamentary oration.</li><li>Director names another: &quot;Hemingway.&quot; Speaker shifts: short sentences, understated, concrete nouns, distrust of adjectives, the content implicit.</li><li>It's not about imitating the voice — it's about deploying the <i>rhetorical patterns.</i> The sentence structures, the characteristic moves, the signature tricks.</li><li>Suggested figures: Churchill, MLK, Lincoln, Obama, Hemingway, Hitchens, Austen, Orwell. Or: &quot;a TED talk speaker,&quot; &quot;a sports commentator,&quot; &quot;a nature documentary narrator.&quot;</li></ol></section>
     <section class="success-criteria"><h3>Listen for this</h3><p>The style is recognizable within two sentences. The speaker isn't parodying the figure — they're genuinely deploying that figure's rhetorical toolkit. The argument remains coherent and the speaker's own; only the <i>delivery system</i> is borrowed. The exercise reveals what's actually distinctive about each speaker's style.</p></section>
+    <div class="solo">
+      <button type="button" class="solo-toggle" aria-expanded="false">Solo mode — the site plays Director</button>
+      <div class="solo-panel" hidden>
+        <p class="solo-hint">No partner? Start the signals and follow whichever appears. It changes on its own.</p>
+        <div class="solo-signal" role="status" aria-live="polite">Press start.</div>
+        <div class="solo-controls">
+          <label>Change every <select class="solo-interval"><option>10</option><option selected>15</option><option>20</option><option>30</option></select>s</label>
+          <button type="button" class="solo-start">Start signals</button>
+        </div>
+      </div>
+    </div>
     <div class="exercise-controls">
       <div class="timer" aria-label="Exercise timer">
         <span class="timer-display">06:00</span>
@@ -1029,6 +1429,17 @@
     </div>
     <section class="exercise-rules"><h3>Run the drill</h3><ol><li>Director gives a topic or story prompt: &quot;The founding of a company.&quot;</li><li>Speaker must begin with the most dramatic, vivid, or tense moment: &quot;The phone rang at 3 AM, and I knew before I answered it that we were out of money.&quot;</li><li>After the opening moment (2-3 sentences), Speaker loops back to provide context: who, what, where, how we got here.</li><li>The opening must be specific and concrete — not abstract (&quot;Sometimes companies struggle&quot;).</li><li>Eight prompts per round.</li></ol></section>
     <section class="success-criteria"><h3>Listen for this</h3><p>The first sentence drops the audience into a moment that demands to know more. The transition to context feels natural — not &quot;let me back up&quot; but a smooth widening of the lens. The opening moment remains the emotional anchor even after the context is filled in.</p></section>
+    <div class="solo">
+      <button type="button" class="solo-toggle" aria-expanded="false">Solo mode — the site plays Director</button>
+      <div class="solo-panel" hidden>
+        <p class="solo-hint">No partner? Start the signals and follow whichever appears. It changes on its own.</p>
+        <div class="solo-signal" role="status" aria-live="polite">Press start.</div>
+        <div class="solo-controls">
+          <label>Change every <select class="solo-interval"><option>10</option><option selected>15</option><option>20</option><option>30</option></select>s</label>
+          <button type="button" class="solo-start">Start signals</button>
+        </div>
+      </div>
+    </div>
     <div class="exercise-controls">
       <div class="timer" aria-label="Exercise timer">
         <span class="timer-display">05:00</span>
@@ -1054,6 +1465,17 @@
     </div>
     <section class="exercise-rules"><h3>Run the drill</h3><ol><li>Speaker begins developing an argument or telling a story.</li><li>Director signals outward. Speaker must depart from the main thread into a digression — an anecdote, a parallel, a tangential observation.</li><li>Director signals inward. Speaker must return to the <i>exact</i> point where they left off — not to a new point, not to a summary of what came before, but to the precise place in the argument.</li><li>The digression must be genuinely enriching — it should add something to the main thread that wasn't there before.</li><li>Advanced variant: Director signals outward <i>during</i> a digression. Speaker must nest a digression within a digression, then return through both levels.</li><li>Four digressions per round.</li></ol></section>
     <section class="success-criteria"><h3>Listen for this</h3><p>The return is seamless — the speaker picks up the <i>exact</i> phrase or idea they were developing, and the audience feels the click of reconnection. The digression wasn't random; it adds a dimension to the main argument. The speaker demonstrates total control of their narrative position.</p></section>
+    <div class="solo">
+      <button type="button" class="solo-toggle" aria-expanded="false">Solo mode — the site plays Director</button>
+      <div class="solo-panel" hidden>
+        <p class="solo-hint">No partner? Start the signals and follow whichever appears. It changes on its own.</p>
+        <div class="solo-signal" role="status" aria-live="polite">Press start.</div>
+        <div class="solo-controls">
+          <label>Change every <select class="solo-interval"><option>10</option><option selected>15</option><option>20</option><option>30</option></select>s</label>
+          <button type="button" class="solo-start">Start signals</button>
+        </div>
+      </div>
+    </div>
     <div class="exercise-controls">
       <div class="timer" aria-label="Exercise timer">
         <span class="timer-display">06:00</span>
@@ -1079,6 +1501,17 @@
     </div>
     <section class="exercise-rules"><h3>Run the drill</h3><ol><li>Director gives a prompt every 90 seconds: &quot;Why reading matters,&quot; &quot;The problem with social media,&quot; &quot;What travel teaches you.&quot;</li><li>Speaker delivers a response in three clear movements:</li><li>   - <b>Movement 1 (Setup):</b> Establish the terrain. What are we talking about? What's the conventional view? (~20 seconds)</li><li>   - <b>Movement 2 (Development):</b> Complicate it. Add tension, contradiction, nuance, evidence. (~40 seconds)</li><li>   - <b>Movement 3 (Payoff):</b> Resolve it. Deliver the insight, the turn, the reframe, the conclusion. (~30 seconds)</li><li>The movements must be distinct — an audience member should be able to feel the shift.</li><li>The payoff must respond to the complication introduced in movement 2. It can't just be a conclusion to movement 1.</li></ol></section>
     <section class="success-criteria"><h3>Listen for this</h3><p>The three movements are clearly felt, like acts in a play. Movement 2 genuinely complicates things — it's not just more information but a real challenge to the setup. Movement 3 resolves the tension in a way that feels earned and surprising. The overall effect is: &quot;I didn't expect to end up here, but now I see why we had to.&quot;</p></section>
+    <div class="solo">
+      <button type="button" class="solo-toggle" aria-expanded="false">Solo mode — the site plays Director</button>
+      <div class="solo-panel" hidden>
+        <p class="solo-hint">No partner? Start the signals and follow whichever appears. It changes on its own.</p>
+        <div class="solo-signal" role="status" aria-live="polite">Press start.</div>
+        <div class="solo-controls">
+          <label>Change every <select class="solo-interval"><option>10</option><option selected>15</option><option>20</option><option>30</option></select>s</label>
+          <button type="button" class="solo-start">Start signals</button>
+        </div>
+      </div>
+    </div>
     <div class="exercise-controls">
       <div class="timer" aria-label="Exercise timer">
         <span class="timer-display">06:00</span>
@@ -1104,6 +1537,17 @@
     </div>
     <section class="exercise-rules"><h3>Run the drill</h3><ol><li>Speaker opens with a vivid image, phrase, or idea: &quot;The door was red.&quot;</li><li>Speaker develops an argument, story, or exploration for roughly 70 seconds.</li><li>Speaker returns to the opening element in the final sentence: &quot;And when I came back, the door was still red — but I was no longer the person who had first walked through it.&quot;</li><li>The return must be <i>transformed by the middle.</i> The same words carry new weight.</li><li>Director evaluates whether the ring was genuine.</li><li>Four passages per round.</li></ol></section>
     <section class="success-criteria"><h3>Listen for this</h3><p>The return produces a physical sensation — a sense of closure, of the circle completing. The opening element has accumulated meaning through the middle section. The audience feels that everything in the passage was in service of this return — but they couldn't have predicted it. The transformation is the payoff.</p></section>
+    <div class="solo">
+      <button type="button" class="solo-toggle" aria-expanded="false">Solo mode — the site plays Director</button>
+      <div class="solo-panel" hidden>
+        <p class="solo-hint">No partner? Start the signals and follow whichever appears. It changes on its own.</p>
+        <div class="solo-signal" role="status" aria-live="polite">Press start.</div>
+        <div class="solo-controls">
+          <label>Change every <select class="solo-interval"><option>10</option><option selected>15</option><option>20</option><option>30</option></select>s</label>
+          <button type="button" class="solo-start">Start signals</button>
+        </div>
+      </div>
+    </div>
     <div class="exercise-controls">
       <div class="timer" aria-label="Exercise timer">
         <span class="timer-display">06:00</span>
@@ -1129,6 +1573,17 @@
     </div>
     <section class="exercise-rules"><h3>Run the drill</h3><ol><li>Speaker begins telling a story or developing a chronological argument.</li><li>Director signals forward: story advances.</li><li>Director signals backward: speaker must reach back to an earlier moment that provides context, irony, or contrast.</li><li>Director signals freeze: speaker must stop advancing time and zoom into the current moment — sensory detail, internal experience, the weight of the instant.</li><li>Director changes signals every 15-20 seconds.</li><li>The narrative must remain coherent despite the temporal jumps — the audience should always know where they are.</li></ol></section>
     <section class="success-criteria"><h3>Listen for this</h3><p>The backward reaches feel motivated — they provide something the audience needed to understand the present. The freeze moments are rich and detailed — time genuinely slows down. The forward motion resumes naturally. The overall narrative is clearer and more compelling than chronological order would have been.</p></section>
+    <div class="solo">
+      <button type="button" class="solo-toggle" aria-expanded="false">Solo mode — the site plays Director</button>
+      <div class="solo-panel" hidden>
+        <p class="solo-hint">No partner? Start the signals and follow whichever appears. It changes on its own.</p>
+        <div class="solo-signal" role="status" aria-live="polite">Press start.</div>
+        <div class="solo-controls">
+          <label>Change every <select class="solo-interval"><option>10</option><option selected>15</option><option>20</option><option>30</option></select>s</label>
+          <button type="button" class="solo-start">Start signals</button>
+        </div>
+      </div>
+    </div>
     <div class="exercise-controls">
       <div class="timer" aria-label="Exercise timer">
         <span class="timer-display">06:00</span>
@@ -1165,6 +1620,17 @@
     </div>
     <section class="exercise-rules"><h3>Run the drill</h3><ol><li>Director gives a topic. Speaker delivers the argument in 60 seconds.</li><li>Director says &quot;Half.&quot; Speaker delivers the <i>same argument</i> in 30 seconds. Not a different argument, not a summary — the same argument, compressed.</li><li>&quot;Half.&quot; 15 seconds. The argument must still be persuasive and complete.</li><li>&quot;Half.&quot; 7 seconds. One or two sentences. The absolute essence.</li><li>After the 7-second version, Speaker goes back to 60 seconds and delivers a <i>new</i> version — which is almost always better than the first, because the compression revealed what matters.</li><li>Three topics per round.</li></ol></section>
     <section class="success-criteria"><h3>Listen for this</h3><p>Each shorter version doesn't just drop sentences from the longer one — it restructures. The 15-second version isn't a fast-forward; it's a distillation. The 7-second version is a genuinely complete argument — an aphorism or thesis statement that a listener could act on. The final 60-second version is dramatically better than the first.</p></section>
+    <div class="solo">
+      <button type="button" class="solo-toggle" aria-expanded="false">Solo mode — the site plays Director</button>
+      <div class="solo-panel" hidden>
+        <p class="solo-hint">No partner? Start the signals and follow whichever appears. It changes on its own.</p>
+        <div class="solo-signal" role="status" aria-live="polite">Press start.</div>
+        <div class="solo-controls">
+          <label>Change every <select class="solo-interval"><option>10</option><option selected>15</option><option>20</option><option>30</option></select>s</label>
+          <button type="button" class="solo-start">Start signals</button>
+        </div>
+      </div>
+    </div>
     <div class="exercise-controls">
       <div class="timer" aria-label="Exercise timer">
         <span class="timer-display">06:00</span>
@@ -1191,6 +1657,17 @@
     <section class="exercise-rules"><h3>Run the drill</h3><ol><li>Speaker delivers a 3-4 sentence passage on any topic.</li><li>Director identifies a word or phrase to cut: &quot;Remove all instances of 'is' and 'are.'&quot;</li><li>Speaker must rebuild the passage to work without those words — not by awkwardly rephrasing, but by restructuring so the omission feels natural or even stronger.</li><li>Director cuts another element. Speaker rebuilds again.</li><li>After 3-4 cuts, the passage should be noticeably shorter and stronger.</li><li>Three passages per round.</li></ol>
 <p><b>Elements to cut:</b> forms of &quot;to be,&quot; hedging language (&quot;I think,&quot; &quot;sort of,&quot; &quot;basically&quot;), subordinating conjunctions, adjectives, adverbs.</p></section>
     <section class="success-criteria"><h3>Listen for this</h3><p>Each cut makes the passage stronger, not weaker. The speaker discovers that many of their words were load-bearing nothing. The final version is tighter, more vivid, and more forceful than the original. The omissions feel deliberate, not accidental.</p></section>
+    <div class="solo">
+      <button type="button" class="solo-toggle" aria-expanded="false">Solo mode — the site plays Director</button>
+      <div class="solo-panel" hidden>
+        <p class="solo-hint">No partner? Start the signals and follow whichever appears. It changes on its own.</p>
+        <div class="solo-signal" role="status" aria-live="polite">Press start.</div>
+        <div class="solo-controls">
+          <label>Change every <select class="solo-interval"><option>10</option><option selected>15</option><option>20</option><option>30</option></select>s</label>
+          <button type="button" class="solo-start">Start signals</button>
+        </div>
+      </div>
+    </div>
     <div class="exercise-controls">
       <div class="timer" aria-label="Exercise timer">
         <span class="timer-display">06:00</span>
@@ -1217,6 +1694,17 @@
     <section class="exercise-rules"><h3>Run the drill</h3><ol><li>Director gives a complex topic or argument: &quot;The relationship between expertise and overconfidence.&quot;</li><li>Speaker has 20 seconds to compress it into a single sentence of no more than 15 words.</li><li>The sentence must be specific (not &quot;things are complicated&quot;), memorable (it has a hook — rhythm, contrast, image), and true (it captures a genuine insight, not a cliche).</li><li>If the first attempt gets flat hand or thumbs down, Speaker tries again with a completely different formulation. Up to three attempts per topic.</li><li>Eight topics per round.</li></ol>
 <p><b>Techniques that help:</b> antithesis (&quot;Not X but Y&quot;), paradox (&quot;The more you Z, the less you Z&quot;), concrete image, surprising juxtaposition.</p></section>
     <section class="success-criteria"><h3>Listen for this</h3><p>The audience hears the aphorism and wants to write it down. It feels like it's always existed. It's specific enough to be useful and general enough to be widely applicable. It passes the &quot;would someone put this on a poster?&quot; test.</p></section>
+    <div class="solo">
+      <button type="button" class="solo-toggle" aria-expanded="false">Solo mode — the site plays Director</button>
+      <div class="solo-panel" hidden>
+        <p class="solo-hint">No partner? Start the signals and follow whichever appears. It changes on its own.</p>
+        <div class="solo-signal" role="status" aria-live="polite">Press start.</div>
+        <div class="solo-controls">
+          <label>Change every <select class="solo-interval"><option>10</option><option selected>15</option><option>20</option><option>30</option></select>s</label>
+          <button type="button" class="solo-start">Start signals</button>
+        </div>
+      </div>
+    </div>
     <div class="exercise-controls">
       <div class="timer" aria-label="Exercise timer">
         <span class="timer-display">06:00</span>
@@ -1243,6 +1731,17 @@
     <section class="exercise-rules"><h3>Run the drill</h3><ol><li>Director names a verb: &quot;broke.&quot;</li><li>Speaker constructs a zeugma: &quot;He broke the window and the silence.&quot;</li><li>The two objects must be from different domains — one literal, one figurative, or both figurative but from different categories.</li><li>The zeugma should create surprise, humor, or insight — not just grammatical correctness.</li><li>Twelve verbs per round.</li></ol>
 <p><b>Suggested verbs:</b> lost, caught, dropped, held, raised, left, opened, carried, burned, struck, ran, drew.</p></section>
     <section class="success-criteria"><h3>Listen for this</h3><p>The zeugma produces a smile or a &quot;huh!&quot; The two objects are far enough apart that the single verb creates genuine surprise when it governs both. The sentence sounds effortless — not forced. The best zeugmas feel like they reveal a hidden connection between the two domains.</p></section>
+    <div class="solo">
+      <button type="button" class="solo-toggle" aria-expanded="false">Solo mode — the site plays Director</button>
+      <div class="solo-panel" hidden>
+        <p class="solo-hint">No partner? Start the signals and follow whichever appears. It changes on its own.</p>
+        <div class="solo-signal" role="status" aria-live="polite">Press start.</div>
+        <div class="solo-controls">
+          <label>Change every <select class="solo-interval"><option>10</option><option selected>15</option><option>20</option><option>30</option></select>s</label>
+          <button type="button" class="solo-start">Start signals</button>
+        </div>
+      </div>
+    </div>
     <div class="exercise-controls">
       <div class="timer" aria-label="Exercise timer">
         <span class="timer-display">05:00</span>
@@ -1269,6 +1768,17 @@
     <section class="exercise-rules"><h3>Run the drill</h3><ol><li>Director names an abstract concept: &quot;Courage.&quot;</li><li>Speaker defines it through negation: &quot;Courage is not the absence of fear. It is not recklessness. It is not bravado. It is not the loudest voice in the room. It is not the willingness to fight — sometimes it is the willingness not to.&quot;</li><li>Each negation must rule out a <i>plausible</i> misunderstanding — not straw men.</li><li>After 4-6 negations, the Speaker must deliver a single affirmative sentence that says what it <i>is.</i> This sentence should feel like a revelation after the negations.</li><li>Six concepts per round.</li></ol>
 <p><b>Suggested concepts:</b> justice, intelligence, leadership, beauty, freedom, maturity, integrity, wisdom.</p></section>
     <section class="success-criteria"><h3>Listen for this</h3><p>Each negation makes the audience rethink their assumptions. The negations aren't obvious — they rule out things the audience might actually have believed. The final affirmative definition lands with force precisely because of the clearing work the negations did. The overall effect is: &quot;I didn't know what this was, but now I do — and I understand it better because I first saw everything it's not.&quot;</p></section>
+    <div class="solo">
+      <button type="button" class="solo-toggle" aria-expanded="false">Solo mode — the site plays Director</button>
+      <div class="solo-panel" hidden>
+        <p class="solo-hint">No partner? Start the signals and follow whichever appears. It changes on its own.</p>
+        <div class="solo-signal" role="status" aria-live="polite">Press start.</div>
+        <div class="solo-controls">
+          <label>Change every <select class="solo-interval"><option>10</option><option selected>15</option><option>20</option><option>30</option></select>s</label>
+          <button type="button" class="solo-start">Start signals</button>
+        </div>
+      </div>
+    </div>
     <div class="exercise-controls">
       <div class="timer" aria-label="Exercise timer">
         <span class="timer-display">05:00</span>
@@ -1306,6 +1816,17 @@
     <section class="exercise-rules"><h3>Run the drill</h3><ol><li>Speaker begins on any topic.</li><li>Director calls: &quot;Anaphora.&quot; Speaker must immediately deploy anaphora — starting successive clauses with the same phrase.</li><li>Director calls: &quot;Chiasmus.&quot; Speaker must produce a chiasmus.</li><li>Director calls: &quot;Asyndeton.&quot; Speaker drops all conjunctions.</li><li>The topic remains continuous — each technique must serve the argument, not interrupt it.</li><li>Ten techniques per round.</li></ol>
 <p><b>Technique menu:</b> anaphora, epistrophe, anadiplosis, tricolon, antithesis, chiasmus, asyndeton, polysyndeton, reductio, a fortiori, concession-pivot, metaphor, personification, periodic sentence, cumulative sentence, via negativa, zeugma.</p></section>
     <section class="success-criteria"><h3>Listen for this</h3><p>The speaker deploys each technique within 3 seconds of hearing its name. The technique is correctly executed — not just attempted. The topic continues to develop; the techniques serve it rather than derailing it. The overall passage, despite the rapid technique changes, is actually a coherent argument.</p></section>
+    <div class="solo">
+      <button type="button" class="solo-toggle" aria-expanded="false">Solo mode — the site plays Director</button>
+      <div class="solo-panel" hidden>
+        <p class="solo-hint">No partner? Start the signals and follow whichever appears. It changes on its own.</p>
+        <div class="solo-signal" role="status" aria-live="polite">Press start.</div>
+        <div class="solo-controls">
+          <label>Change every <select class="solo-interval"><option>10</option><option selected>15</option><option>20</option><option>30</option></select>s</label>
+          <button type="button" class="solo-start">Start signals</button>
+        </div>
+      </div>
+    </div>
     <div class="exercise-controls">
       <div class="timer" aria-label="Exercise timer">
         <span class="timer-display">05:00</span>
@@ -1332,6 +1853,17 @@
     <section class="exercise-rules"><h3>Run the drill</h3><ol><li>Director names three techniques: &quot;Antithesis + tricolon + metaphor.&quot;</li><li>Speaker has 60 seconds to deliver a passage on any topic that deploys all three.</li><li>Example: &quot;A nation is a garden. You can plant it in hope and harvest it in despair; you can water it with attention and starve it with neglect; you can grow it for a generation or destroy it in a season.&quot; (Metaphor: garden. Antithesis: each tricolon element contains an opposition. Tricolon: three parallel clauses.)</li><li>The passage must sound <i>natural</i> — not like a demonstration of technique. The audience should feel the effect without seeing the machinery.</li><li>Director scores. Six combinations per round.</li></ol>
 <p><b>Suggested combinations:</b><br>- Anaphora + metaphor + periodic sentence<br>- Concession + antithesis + short sentence close<br>- Polysyndeton + personification + a fortiori<br>- Chiasmus + cumulative sentence + emotional coloring</p></section>
     <section class="success-criteria"><h3>Listen for this</h3><p>All three techniques are clearly present, but the passage doesn't feel forced or mechanical. The techniques amplify each other — the antithesis gives the tricolon its edge, the metaphor gives the antithesis its image. The passage would be impressive to someone who couldn't name any of the techniques.</p></section>
+    <div class="solo">
+      <button type="button" class="solo-toggle" aria-expanded="false">Solo mode — the site plays Director</button>
+      <div class="solo-panel" hidden>
+        <p class="solo-hint">No partner? Start the signals and follow whichever appears. It changes on its own.</p>
+        <div class="solo-signal" role="status" aria-live="polite">Press start.</div>
+        <div class="solo-controls">
+          <label>Change every <select class="solo-interval"><option>10</option><option selected>15</option><option>20</option><option>30</option></select>s</label>
+          <button type="button" class="solo-start">Start signals</button>
+        </div>
+      </div>
+    </div>
     <div class="exercise-controls">
       <div class="timer" aria-label="Exercise timer">
         <span class="timer-display">06:00</span>
@@ -1358,6 +1890,17 @@
     <section class="exercise-rules"><h3>Run the drill</h3><ol><li>Speaker begins on a topic using any technique.</li><li>Director signals a new technique. Speaker must transition to it within one sentence. No pausing, no &quot;okay, now...&quot;</li><li>The transition must be <i>invisible</i> — an audience member who didn't see the signal shouldn't notice a break.</li><li>If the Speaker has to stop and restart, the attempt doesn't count.</li><li>Eight transitions per round.</li></ol>
 <p><b>Advanced variant.</b> Director signals at increasing speed — eventually one technique every 5 seconds.</p></section>
     <section class="success-criteria"><h3>Listen for this</h3><p>The transitions are seamless. The audience experiences a shifting, dynamic passage that feels organic, not interrupted. The speaker moves from anaphora to metaphor to antithesis like water flowing around stones — no pause, no announcement, no visible effort.</p></section>
+    <div class="solo">
+      <button type="button" class="solo-toggle" aria-expanded="false">Solo mode — the site plays Director</button>
+      <div class="solo-panel" hidden>
+        <p class="solo-hint">No partner? Start the signals and follow whichever appears. It changes on its own.</p>
+        <div class="solo-signal" role="status" aria-live="polite">Press start.</div>
+        <div class="solo-controls">
+          <label>Change every <select class="solo-interval"><option>10</option><option selected>15</option><option>20</option><option>30</option></select>s</label>
+          <button type="button" class="solo-start">Start signals</button>
+        </div>
+      </div>
+    </div>
     <div class="exercise-controls">
       <div class="timer" aria-label="Exercise timer">
         <span class="timer-display">05:00</span>
@@ -1384,6 +1927,17 @@
     <section class="exercise-rules"><h3>Run the drill</h3><ol><li>Director gives a prompt: &quot;Your opponent says technology makes us less human.&quot;</li><li>Speaker has 30 seconds to respond using whatever technique they think is most effective. They do not announce the technique.</li><li>After the response, Director identifies the technique and evaluates: Was it the right tool? Was it well-executed?</li><li>Score on two dimensions: <b>Selection</b> (1-5: was this the best technique for this prompt?) and <b>Execution</b> (1-5: was it well-done?).</li><li>Ten prompts per round.</li></ol>
 <p><b>Suggested prompt types:</b> a strong opposing argument (steelman + demolish), an absurd claim (reductio), a complex abstraction (metaphor), an emotional appeal that needs countering (concession + pivot), a request to explain something simply (analogy), a need for decisive closing (tricolon + short sentence).</p></section>
     <section class="success-criteria"><h3>Listen for this</h3><p>The speaker instinctively reaches for the right technique. Reductio against overextended logic, not against a strong point. Concession against a strong point, not against a weak one. Metaphor for abstraction, antithesis for contrast. The selection feels as skilled as the execution.</p></section>
+    <div class="solo">
+      <button type="button" class="solo-toggle" aria-expanded="false">Solo mode — the site plays Director</button>
+      <div class="solo-panel" hidden>
+        <p class="solo-hint">No partner? Start the signals and follow whichever appears. It changes on its own.</p>
+        <div class="solo-signal" role="status" aria-live="polite">Press start.</div>
+        <div class="solo-controls">
+          <label>Change every <select class="solo-interval"><option>10</option><option selected>15</option><option>20</option><option>30</option></select>s</label>
+          <button type="button" class="solo-start">Start signals</button>
+        </div>
+      </div>
+    </div>
     <div class="exercise-controls">
       <div class="timer" aria-label="Exercise timer">
         <span class="timer-display">06:00</span>
@@ -1409,6 +1963,17 @@
     </div>
     <section class="exercise-rules"><h3>Run the drill</h3><ol><li>Director gives a topic. Speaker has 10 seconds to think.</li><li>Speaker delivers 60 seconds of uninterrupted speech.</li><li>No constraints, no signals, no required techniques. The speaker deploys whatever serves the topic and the moment.</li><li>After the minute, Director identifies every technique used and rates the overall passage.</li><li>Scoring:</li><li>   - <b>Technique count</b> — how many distinct techniques were deployed</li><li>   - <b>Coherence</b> (1-5) — did it hold together as a single argument/narrative?</li><li>   - <b>Impact</b> (1-5) — would a non-expert audience have been moved?</li><li>   - <b>Naturalness</b> (1-5) — did the techniques feel organic or displayed?</li><li>Three topics per round. Aim for improvement across the three.</li></ol></section>
     <section class="success-criteria"><h3>Listen for this</h3><p>The passage is genuinely compelling. It has structure (setup/development/payoff). It uses figurative language that illuminates. It has rhythmic variety that serves the content. It builds to a close that lands. The techniques are invisible — present everywhere but visible nowhere. An audience member who knows nothing about rhetoric feels moved. An audience member who knows everything about rhetoric is impressed. This is what fluency sounds like.</p></section>
+    <div class="solo">
+      <button type="button" class="solo-toggle" aria-expanded="false">Solo mode — the site plays Director</button>
+      <div class="solo-panel" hidden>
+        <p class="solo-hint">No partner? Start the signals and follow whichever appears. It changes on its own.</p>
+        <div class="solo-signal" role="status" aria-live="polite">Press start.</div>
+        <div class="solo-controls">
+          <label>Change every <select class="solo-interval"><option>10</option><option selected>15</option><option>20</option><option>30</option></select>s</label>
+          <button type="button" class="solo-start">Start signals</button>
+        </div>
+      </div>
+    </div>
     <div class="exercise-controls">
       <div class="timer" aria-label="Exercise timer">
         <span class="timer-display">06:00</span>
@@ -1428,6 +1993,7 @@
   </details>
   <footer class="foot practice-foot">From the <i>Rhetoric Lab Curriculum</i>.</footer>
 </main>
+<script type="application/json" id="prompt-data">{"intro":"Deal a topic, an audience, and a constraint. Speak for two minutes. Re-deal any card you can't use twice in a row.","topics":["why mornings are better than evenings","the case for taking the stairs","what a city owes its pigeons","why every child should learn to cook one dish perfectly","the dignity of waiting in line","in defense of the voicemail","why maps are better than directions","the last bookstore in town","what handwriting reveals","the ethics of the snooze button","why rivers make better borders than walls","a eulogy for a household appliance","the case against motivational posters","what airports teach us about hope","why everyone should memorize one poem","the noble history of the pocket","in praise of doing things badly","what the moon is actually for","why weather small talk matters","the perfect sandwich, defended","what we lose when we lose winter","the case for mandatory naps","why museums should be louder","an argument for leaving the party early","what dogs know that we don't","the tyranny of the group photo","why the second draft is the real first draft","in defense of getting lost","what a handshake promises","why silence is a public good","the campaign speech of a benevolent tyrant","instructions for being a good neighbor","what the ocean thinks of us","why we should bring back the intermission","a toast at your rival's retirement","the case for one universal holiday"],"audiences":["a skeptical school board","your nine-year-old cousin","a jury on day five","investors who have lost patience","a stadium crowd in the rain","one tired friend at 2 a.m.","a panel of unimpressed scientists","the town council of a village you've never visited","new employees on their first morning","a room of retired teachers","someone about to give up","a wedding reception, glass in hand","your childhood self","an audience that disagrees but is listening","a late-night radio audience","posterity — no one alive today"],"constraints":["Begin three successive sentences with the same phrase (anaphora).","End three successive sentences on the same word (epistrophe).","Open and close your speech on the same word (epanalepsis).","Let each sentence pick up the last word of the one before (anadiplosis).","Build one contrast per sentence: not this, but that (antithesis).","Say something, reverse its terms, and land on the reversal (antimetabole).","One metaphor only — but extend it the entire time.","No metaphors at all. Only literal statements.","Ask at least three questions you never answer (rhetorical question).","Address someone or something that cannot answer (apostrophe).","Understate everything; nothing is allowed to be amazing (litotes and meiosis).","Overstate everything; nothing is allowed to be ordinary (hyperbole).","Deny that you will mention the very things you mention (apophasis).","Drop every 'and' and 'but' — pile clauses bare (asyndeton).","Use 'and' relentlessly — chain everything (polysyndeton).","No sentence longer than eight words.","Every sentence longer than twenty words, and under control.","Alternate one long sentence with one of three words or fewer.","Save the main clause of your first sentence for its very end (periodic).","Start plain, then add detail after detail after the main clause (cumulative).","Interrupt yourself twice — and recover — mid-sentence (parenthesis).","Correct yourself out loud at least twice: say it, take it back, say it better (correctio).","Break off one sentence in the middle and leave it broken (aposiopesis).","Only words a ten-year-old knows.","Only Saxon words: short, blunt, physical. No Latinate polish.","Repeat one word three times in a row at your moment of peak feeling (epizeuxis).","Give everything you mention a fixed descriptive tag, Homer-style (epithet).","End on an aphorism you invent on the spot."]}</script>
 <script src="../assets/practice.js"></script>
 </body>
 </html>

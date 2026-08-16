@@ -112,6 +112,12 @@
     if (c.confuse) h += '<p><b>Don’t confuse it with.</b> ' + escapeHtml(c.confuse) + '</p>';
     if (c.kin) h += '<p><b>Classical kin.</b> ' + escapeHtml(c.kin) + '</p>';
     if (c.risk) h += '<p><b>Risk.</b> ' + escapeHtml(c.risk) + '</p>';
+    if (c.gkey) {
+      var moreText = c.others > 0
+        ? 'Seen in ' + c.others + ' other passage' + (c.others === 1 ? '' : 's') + ' →'
+        : 'Open the device guide →';
+      h += '<p class="pop-more"><a href="../devices/' + encodeURIComponent(c.gkey) + '.html">' + moreText + '</a></p>';
+    }
     return h + '</div>';
   }
 
@@ -256,6 +262,130 @@
   }
   function escapeHtml(s) {
     return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  }
+
+  // ---- print handout ----
+  var printBtn = document.getElementById('print-page');
+  if (printBtn) printBtn.addEventListener('click', function () { window.print(); });
+
+  // ---- "test yourself" mode ----
+  // Swap the annotated passage for a word-by-word view, let the reader mark
+  // the words they believe sit inside a device, then score the marks against
+  // the anchored spans. Original nodes are kept (not re-parsed) so all the
+  // hover/pin wiring survives the round trip.
+  var testBtn = document.getElementById('self-test');
+  var testState = null;
+  if (testBtn) testBtn.addEventListener('click', function () {
+    if (testState) exitTest(); else enterTest();
+  });
+
+  function enterTest() {
+    if (pinned) unpin(); else clearActive();
+    var view = document.createElement('div');
+    view.className = 'test-view';
+    forEachNode(passageEl.querySelectorAll('.pline'), function (pl) {
+      var line = document.createElement('div');
+      line.className = 'pline';
+      var ln = pl.querySelector('.ln');
+      if (ln) {
+        var g = document.createElement('span');
+        g.className = 'ln';
+        g.setAttribute('aria-hidden', 'true');
+        g.textContent = ln.textContent;
+        line.appendChild(g);
+      }
+      var ltext = document.createElement('span');
+      ltext.className = 'ltext';
+      forEachNode(pl.querySelectorAll('.seg'), function (seg) {
+        var ids = seg.classList.contains('tagged') ? (seg.dataset.ids || '') : '';
+        String(seg.textContent).split(/(\s+)/).forEach(function (tok) {
+          if (!tok) return;
+          if (/^\s+$/.test(tok)) { ltext.appendChild(document.createTextNode(tok)); return; }
+          var w = document.createElement('button');
+          w.type = 'button';
+          w.className = 'w';
+          w.dataset.ids = ids;
+          w.setAttribute('aria-pressed', 'false');
+          w.textContent = tok;
+          w.addEventListener('click', function () {
+            w.classList.toggle('picked');
+            w.setAttribute('aria-pressed', String(w.classList.contains('picked')));
+          });
+          ltext.appendChild(w);
+        });
+      });
+      line.appendChild(ltext);
+      view.appendChild(line);
+    });
+
+    testState = { original: Array.prototype.slice.call(passageEl.childNodes) };
+    testState.original.forEach(function (n) { passageEl.removeChild(n); });
+    passageEl.appendChild(view);
+    passageEl.classList.add('testing');
+
+    var bar = document.createElement('div');
+    bar.className = 'test-bar';
+    bar.innerHTML =
+      '<p class="test-msg">Mark every word you think sits inside a deliberate device, then reveal. Tap or click words to toggle.</p>' +
+      '<div class="test-actions">' +
+      '<button type="button" class="quiet-action" data-test="reveal">Reveal the annotations</button>' +
+      '<button type="button" class="quiet-action" data-test="cancel">Cancel</button></div>' +
+      '<div class="test-result" role="status" hidden></div>';
+    passageEl.parentNode.insertBefore(bar, passageEl.nextSibling);
+    bar.querySelector('[data-test="reveal"]').addEventListener('click', revealTest);
+    bar.querySelector('[data-test="cancel"]').addEventListener('click', exitTest);
+    testState.bar = bar;
+    testBtn.textContent = 'Exit test';
+    testBtn.setAttribute('aria-pressed', 'true');
+  }
+
+  function revealTest() {
+    var spotted = {}, falseCount = 0;
+    forEachNode(passageEl.querySelectorAll('.w'), function (w) {
+      var ids = w.dataset.ids ? w.dataset.ids.split(',') : [];
+      var picked = w.classList.contains('picked');
+      if (picked && ids.length) {
+        w.classList.add('w-hit');
+        ids.forEach(function (id) { spotted[id] = true; });
+      } else if (!picked && ids.length) {
+        w.classList.add('w-miss');
+      } else if (picked && !ids.length) {
+        w.classList.add('w-false');
+        falseCount++;
+      }
+      w.disabled = true;
+    });
+    var all = Object.keys(CARDS).filter(function (id) { return CARDS[id].anchored; });
+    var got = all.filter(function (id) { return spotted[id]; });
+    var missed = all.filter(function (id) { return !spotted[id]; });
+    var res = testState.bar.querySelector('.test-result');
+    res.hidden = false;
+    res.innerHTML =
+      '<p><b>You spotted ' + got.length + ' of ' + all.length + ' devices.</b> ' +
+      (falseCount
+        ? falseCount + ' marked word' + (falseCount === 1 ? ' sits' : 's sit') + ' outside every device.'
+        : 'No stray marks.') + '</p>' +
+      (got.length ? '<p><b>Spotted:</b> ' + got.map(function (id) { return escapeHtml(CARDS[id].name); }).join(', ') + '</p>' : '') +
+      (missed.length ? '<p><b>Missed:</b> ' + missed.map(function (id) { return escapeHtml(CARDS[id].name); }).join(', ') + '</p>' : '') +
+      '<button type="button" class="quiet-action" data-test="done">Show the annotated passage</button>';
+    res.querySelector('[data-test="done"]').addEventListener('click', exitTest);
+    testState.bar.querySelector('[data-test="reveal"]').disabled = true;
+  }
+
+  function exitTest() {
+    if (!testState) return;
+    passageEl.innerHTML = '';
+    testState.original.forEach(function (n) { passageEl.appendChild(n); });
+    passageEl.classList.remove('testing');
+    if (testState.bar.parentNode) testState.bar.parentNode.removeChild(testState.bar);
+    testState = null;
+    testBtn.textContent = 'Test yourself';
+    testBtn.setAttribute('aria-pressed', 'false');
+    paint();
+  }
+
+  function forEachNode(list, fn) {
+    Array.prototype.forEach.call(list, fn);
   }
 
   paint();
