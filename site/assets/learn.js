@@ -404,7 +404,7 @@
     // The wrong excerpt has its own device — name it, that's the lesson.
     const pickedItem = q.opts[idx];
     const missNote = right ? '' :
-      `<p class="q-miss">That excerpt is actually <b>${esc(DATA.devices[pickedItem.d].name)}</b> — ${esc(firstSentence(DATA.devices[pickedItem.d].plain))}</p>`;
+      `<p class="q-miss">That excerpt is <b>${esc(DATA.devices[pickedItem.d].name)}</b> — ${esc(firstSentence(DATA.devices[pickedItem.d].plain))}</p>`;
     $('#q-feedback').innerHTML = feedbackCard(q, right, missNote);
     $('#q-next').addEventListener('click', next);
     $('#q-next').focus();
@@ -444,7 +444,7 @@
     $('#results').innerHTML = `
       <p class="eyebrow">${quiz.placement ? 'Placement complete' : 'Results'}</p>
       <div class="results-score"><b>${quiz.right}</b> / ${total} <span>(${pct(quiz.right / total)})</span></div>
-      ${quiz.placement ? '<p class="drill-note">Here is your starting map — the scoreboard below now reflects it, and "My weakest" knows where to aim.</p>' : ''}
+      ${quiz.placement ? '<p class="drill-note">That is your starting map. The scoreboard below records it, and "My weakest" now knows the terrain.</p>' : ''}
       ${famRows}
       <div class="results-actions">
         <button type="button" class="primary-action learn-action" id="again">Run it back</button>

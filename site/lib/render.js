@@ -191,7 +191,7 @@ ${siteNav(null, '.')}
   </section>
 
   <a class="course-banner" href="course/index.html">
-    <span><b>Prefer a guided path?</b> The Rhetoric Course — ten weeks through all three rooms: read, quiz, drill.</span>
+    <span><b>The Rhetoric Course</b> is the guided path — ten weeks of readings, quizzes, and drills through all three rooms.</span>
     <span class="course-banner-go">Start the course →</span>
   </a>
 </main>`;
@@ -203,15 +203,16 @@ ${siteNav(null, '.')}
 
 export function renderLearnPage(quiz, stats) {
   const deviceCount = Object.keys(quiz.devices).length;
+  const inPlay = new Set(quiz.items.map(it => it.d)).size;
   const body = `
 ${siteNav('learn', '..')}
 <main id="main" class="learn-home">
   <p class="eyebrow">Learn Rhetoric</p>
   <h1>The Rhetoric School</h1>
-  <p class="lede">${quiz.items.length} excerpts drawn from the Reader's ${stats.files} passages, covering ${deviceCount} devices in ${quiz.families.length} families. Read the <mark class="lede-mark">marked phrase</mark>, then name its device. All four choices come from the same family — the near misses are the point. Prefer to study first? <a href="../devices/index.html">Browse the device guide</a>.</p>
+  <p class="lede">${quiz.items.length} excerpts drawn from the Reader's ${stats.files} passages put ${inPlay} of the guide's ${deviceCount} devices in play, across ${quiz.families.length} families. Read the <mark class="lede-mark">marked phrase</mark>, then name its device. All four choices come from the same family — the near misses are the point. To study before you drill, <a href="../devices/index.html">browse the device guide</a>.</p>
 
   <div id="placement" class="placement" hidden>
-    <p><b>New here?</b> Take the placement: two quick questions from each family to map where you stand. Your results seed the scoreboard and the "My weakest" preset.</p>
+    <p><b>Start with the placement.</b> Two questions from each family show where you stand and give the scoreboard its first real numbers.</p>
     <button type="button" class="primary-action learn-action" id="start-placement">Start the placement</button>
   </div>
 
@@ -452,7 +453,7 @@ function renderExercise(exercise) {
     <div class="solo">
       <button type="button" class="solo-toggle" aria-expanded="false">Solo mode — the site plays Director</button>
       <div class="solo-panel" hidden>
-        <p class="solo-hint">No partner? Start the signals and follow whichever appears. It changes on its own.</p>
+        <p class="solo-hint">For solo practice, start the signals and follow whichever appears. They change on their own.</p>
         <div class="solo-signal" role="status" aria-live="polite">Press start.</div>
         <div class="solo-controls">
           <label>Change every <select class="solo-interval"><option>10</option><option selected>15</option><option>20</option><option>30</option></select>s</label>
