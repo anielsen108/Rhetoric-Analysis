@@ -11,14 +11,14 @@
 
   var STOPS = [
     {
-      path: 'passages/001_moby_dick_opening.html',
-      title: 'The Rhetoric Reader',
-      body: '<p>Every passage is annotated beneath the surface. <b>Hover any marked phrase</b> — go on, this card will wait — and click to pin its device. The colored chips toggle whole families of underlines, <b>Walk through it</b> hands you to a tutor, and <b>Test yourself</b> hides the marks and grades your eye.</p>',
-    },
-    {
       path: 'devices/anaphora.html',
       title: 'The Rhetoric Field Guide',
       body: '<p>One page per device: the plain definition, the neighbours it gets mistaken for, and every excerpt the Reader contains. <b>Drill this device</b> starts a quiz scoped to it; further down, <b>Travels with</b> shows its usual companions.</p>',
+    },
+    {
+      path: 'passages/001_moby_dick_opening.html',
+      title: 'The Rhetoric Reader',
+      body: '<p>Every passage is annotated beneath the surface. <b>Hover any marked phrase</b> — go on, this card will wait — and click to pin its device. The colored chips toggle whole families of underlines, <b>Walk through it</b> hands you to a tutor, and <b>Test yourself</b> hides the marks and grades your eye.</p>',
     },
     {
       path: 'learn/index.html',
@@ -98,12 +98,13 @@
     overlay.innerHTML =
       '<div class="nux-box">' +
       '<p class="eyebrow">Welcome</p>' +
-      '<h2>One subject, four rooms</h2><ul>' +
+      '<h2>One subject, five doors</h2><ul>' +
       '<li><b>The Field Guide</b> — every device, defined and exemplified.</li>' +
       '<li><b>The Reader</b> — 196 passages annotated device by device.</li>' +
       '<li><b>The School</b> — quizzes that learn where you are weak.</li>' +
-      '<li><b>The Lab</b> — speaking drills, with or without a partner.</li></ul>' +
-      '<p>The tour visits each room in turn — two minutes, on the real pages.</p>' +
+      '<li><b>The Lab</b> — speaking drills, with or without a partner.</li>' +
+      '<li><b>The Course</b> — ten guided weeks through the other four.</li></ul>' +
+      '<p>The tour visits all five in that order — two minutes, on the real pages.</p>' +
       '<div class="nux-actions">' +
       '<button type="button" class="primary-action nux-next" data-nux="tour">Take the tour →</button>' +
       '<button type="button" class="linklike nux-skip" data-nux="skip">I’ll explore on my own</button>' +

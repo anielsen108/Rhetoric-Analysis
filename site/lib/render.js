@@ -188,40 +188,42 @@ ${siteNav(null, '.')}
     <p class="lede">Reference, analysis, learning, and practice.</p>
   </section>
 
-  <section class="part-choices" aria-label="The four parts of the site">
+  <section class="part-choices" aria-label="The five parts of the site">
     <a class="part-choice guide-choice" href="devices/index.html">
-      <p class="eyebrow">Rhetorical Reference</p>
+      <p class="eyebrow">Field Guide</p>
       <h2>The Rhetoric Field Guide</h2>
       <p>${deviceCount} devices in ${quiz.families.length} families, with every example the Reader contains — and a gallery of instructive failures.</p>
       <span class="choice-action">Open the field guide <b>→</b></span>
     </a>
 
     <a class="part-choice analysis-choice" href="analysis/index.html">
-      <p class="eyebrow">Rhetorical Analysis</p>
+      <p class="eyebrow">Analyze</p>
       <h2>The Rhetoric Reader</h2>
       <p>${stats.files} annotated passages.</p>
       <span class="choice-action">Explore the analyses <b>→</b></span>
     </a>
 
     <a class="part-choice learn-choice" href="learn/index.html">
-      <p class="eyebrow">Learn Rhetoric</p>
+      <p class="eyebrow">Learn</p>
       <h2>The Rhetoric School</h2>
       <p>${quiz.items.length} excerpts from the Reader. Read the marked phrase, name the device.</p>
       <span class="choice-action">Start a quiz <b>→</b></span>
     </a>
 
     <a class="part-choice practice-choice" href="practice/index.html">
-      <p class="eyebrow">Practicing Rhetoric</p>
+      <p class="eyebrow">Practice</p>
       <h2>The Rhetoric Lab</h2>
       <p>${exercises.length} partner drills in ${curriculum.sets.length} sets.</p>
       <span class="choice-action">Enter the practice lab <b>→</b></span>
     </a>
-  </section>
 
-  <a class="course-banner" href="course/index.html">
-    <span><b>The Rhetoric Course</b> is the guided path — ten weeks of readings, quizzes, and drills through all four rooms.</span>
-    <span class="course-banner-go">Start the course →</span>
-  </a>
+    <a class="part-choice course-choice" href="course/index.html">
+      <p class="eyebrow">Course</p>
+      <h2>The Rhetoric Course</h2>
+      <p>The guided path — ten weeks of readings, quizzes, and drills through all four rooms, with progress saved in this browser.</p>
+      <span class="choice-action">Start the course <b>→</b></span>
+    </a>
+  </section>
 </main>`;
 
   return layout('Rhetoric — Reference, Analysis, Learning, and Practice', body, 'assets/site.css',

@@ -278,6 +278,7 @@ h2 { font-family: var(--serif); font-size: 1.25rem; font-weight: 600; margin: 2.
 .analysis-choice { --choice-color: var(--scheme); }
 .learn-choice { --choice-color: var(--learn); }
 .practice-choice { --choice-color: var(--practice); }
+.course-choice { --choice-color: var(--ink); grid-column: 1 / -1; min-height: 0; }
 .part-choice .eyebrow { color: var(--choice-color); margin-top: .6rem; }
 .part-choice h2 { font-size: clamp(1.5rem, 2.4vw, 1.95rem); margin: 0 0 .9rem; }
 .part-choice p:not(.eyebrow) { color: var(--ink-soft); }
@@ -566,20 +567,6 @@ h2 { font-family: var(--serif); font-size: 1.25rem; font-weight: 600; margin: 2.
 .skip-link:focus { left: 0; }
 .tool-chip { margin-left: .35rem; }
 .tool-chip:hover, .tool-chip[aria-pressed="true"] { border-color: var(--ink-faint); color: var(--ink); }
-
-/* ---------- course banner on the gateway ---------- */
-.course-banner {
-  display: flex; justify-content: space-between; align-items: baseline; gap: 1rem;
-  margin-top: 1rem; padding: 1rem 1.4rem; text-decoration: none;
-  background: var(--ink); color: var(--ground); border-radius: 12px;
-  font-size: .9rem; transition: transform .18s ease;
-}
-.course-banner:hover { transform: translateY(-2px); }
-.course-banner b { font-family: var(--serif); }
-.course-banner-go {
-  flex: none; font-size: .78rem; font-weight: 600; letter-spacing: .04em;
-  text-transform: uppercase; color: color-mix(in srgb, var(--ground) 80%, transparent);
-}
 
 /* ---------- reader index: search, views, trails ---------- */
 .index-tools {

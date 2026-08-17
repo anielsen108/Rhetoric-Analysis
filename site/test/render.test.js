@@ -112,27 +112,28 @@ test('analysis index keeps Shakespeare-era works in one period', () => {
   assert.doesNotMatch(html, />Renaissance<|>Early Modern</);
 });
 
-test('site home introduces and links the four fundamental parts', () => {
+test('site home shows five cards whose eyebrows mirror the nav labels', () => {
   const curriculum = { sets: [{ exercises: [{}, {}] }, { exercises: [{}] }] };
   const quiz = { items: [{}, {}, {}, {}, {}], families: [{}, {}], devices: { a: {}, b: {}, c: {} } };
   const html = renderHome({ files: 196 }, curriculum, quiz);
-  assert.match(html, /Rhetorical Reference/);
+  assert.equal((html.match(/class="part-choice /g) || []).length, 5);
+  for (const label of ['Field Guide', 'Analyze', 'Learn', 'Practice', 'Course']) {
+    assert.match(html, new RegExp(`<p class="eyebrow">${label}</p>`), `card eyebrow: ${label}`);
+  }
   assert.match(html, /The Rhetoric Field Guide/);
-  assert.match(html, /Rhetorical Analysis/);
-  assert.match(html, /Learn Rhetoric/);
-  assert.match(html, /Practicing Rhetoric/);
+  assert.match(html, /The Rhetoric Course/);
   assert.match(html, /href="devices\/index\.html"/);
   assert.match(html, /href="analysis\/index\.html"/);
   assert.match(html, /href="learn\/index\.html"/);
   assert.match(html, /href="practice\/index\.html"/);
+  assert.match(html, /class="part-choice course-choice" href="course\/index\.html"/);
   assert.match(html, /196 annotated passages/);
   assert.match(html, /5 excerpts from the Reader/);
   assert.match(html, /3 partner drills in 2 sets/);
   assert.match(html, /util-icons/);
   assert.match(html, /nux\.js/);
+  assert.doesNotMatch(html, /course-banner/);
   assert.doesNotMatch(html, /choice-number/);
-  assert.doesNotMatch(html, /Learn to read the choices|Then learn to make them/);
-  assert.doesNotMatch(html, /One craft, two directions/);
 });
 
 test('renderMd handles headings, bold labels, lists, and escaping', () => {
