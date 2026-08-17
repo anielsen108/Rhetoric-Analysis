@@ -85,7 +85,11 @@
       if (act === 'next') goTo(i + 1);
       else if (act === 'back') goTo(i - 1);
       else if (act === 'resume') goTo(i);
-      else if (act === 'finish') finish();
+      else if (act === 'finish') {
+        finish();
+        // completing the tour returns you to the gateway; ending it early leaves you in place
+        if (last && here) location.href = root + 'index.html';
+      }
     });
   }
 
