@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Enthymeme — The Device Guide</title>
+<title>Enthymeme — The Rhetoric Field Guide</title>
 <meta name="description" content="Enthymeme: A syllogism with a premise left silent, trusting the audience to supply it. Definition, examples from literature, and a practice quiz.">
-<meta property="og:title" content="Enthymeme — The Device Guide">
+<meta property="og:title" content="Enthymeme — The Rhetoric Field Guide">
 <meta property="og:description" content="Enthymeme: A syllogism with a premise left silent, trusting the audience to supply it. Definition, examples from literature, and a practice quiz.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Rhetoric">
@@ -18,13 +18,29 @@
 <header class="site-head">
   <a class="site-brand" href="../index.html" aria-label="Rhetoric home"><span>R</span><b>Rhetoric</b></a>
   <nav class="part-nav" aria-label="Primary">
+    <a href="../devices/index.html" aria-current="page">Field Guide</a>
     <a href="../analysis/index.html">Analyze</a>
-    <a href="../learn/index.html" aria-current="page">Learn</a>
+    <a href="../learn/index.html">Learn</a>
     <a href="../practice/index.html">Practice</a>
     <a href="../course/index.html">Course</a>
   </nav>
+  <div class="util-icons">
+    <button type="button" class="util-icon" id="util-search" aria-label="Search the site (Ctrl+K)" title="Search — Ctrl+K">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="20" y1="20" x2="16" y2="16"/></svg>
+    </button>
+    <button type="button" class="util-icon" id="util-keys" aria-label="Keyboard shortcuts" title="Keyboard shortcuts">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="2" y="6" width="20" height="12" rx="2"/><line x1="6" y1="10" x2="6.01" y2="10"/><line x1="10" y1="10" x2="10.01" y2="10"/><line x1="14" y1="10" x2="14.01" y2="10"/><line x1="18" y1="10" x2="18.01" y2="10"/><line x1="8" y1="14" x2="16" y2="14"/></svg>
+    </button>
+    <a class="util-icon" id="util-help" href="../help/index.html" aria-label="Site guide" title="Site guide"><span aria-hidden="true">?</span></a>
+    <div class="util-menu-wrap">
+      <button type="button" class="util-icon" id="util-gear" aria-label="Settings" aria-expanded="false" title="Settings">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h.01a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51h.01a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v.01a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+      </button>
+      <div class="util-menu" id="util-menu" hidden></div>
+    </div>
+  </div>
 </header>
-<header class="crumbs"><a href="index.html">← All devices</a><span class="crumb-title">The Device Guide</span></header>
+<header class="crumbs"><a href="index.html">← The Field Guide</a><span class="crumb-title">The Rhetoric Field Guide</span></header>
 <main id="main" class="gdevice">
   <p class="eyebrow">Address &amp; Argument</p>
   <h1>Enthymeme</h1>
@@ -54,5 +70,6 @@
 </main>
 <script src="../assets/palette-data.js" defer></script>
 <script src="../assets/palette.js" defer></script>
+<script src="../assets/ui.js" defer></script>
 </body>
 </html>

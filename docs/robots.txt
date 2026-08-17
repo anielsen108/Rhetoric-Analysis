@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://rhetorical-analysis.aryehnielsen.com/sitemap.xml

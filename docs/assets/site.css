@@ -12,6 +12,8 @@
   --practice-soft: #f2dfd4;
   --learn: #6f56ad;
   --learn-soft: #e9e3f6;
+  --guide: #1d7a70;
+  --guide-soft: #dcefe9;
   --shadow: 0 10px 34px rgba(30, 34, 44, .14);
   --serif: 'Charter', 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', Georgia, serif;
   --sans: 'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', sans-serif;
@@ -23,6 +25,7 @@
     --trope: #e07a9d; --scheme: #7f9cf0; --syntax: #6cbd82;
     --practice: #e58b62; --practice-soft: #3b2924;
     --learn: #a891e3; --learn-soft: #2d2740;
+  --guide: #5cc8ba; --guide-soft: #1e332f;
     --shadow: 0 12px 38px rgba(0, 0, 0, .5);
   }
 }
@@ -32,6 +35,7 @@
   --trope: #e07a9d; --scheme: #7f9cf0; --syntax: #6cbd82;
   --practice: #e58b62; --practice-soft: #3b2924;
   --learn: #a891e3; --learn-soft: #2d2740;
+  --guide: #5cc8ba; --guide-soft: #1e332f;
   --shadow: 0 12px 38px rgba(0, 0, 0, .5);
 }
 :root[data-theme="light"] {
@@ -40,6 +44,7 @@
   --trope: #b0416b; --scheme: #3a5fc0; --syntax: #3d7a4f;
   --practice: #b4532f; --practice-soft: #f2dfd4;
   --learn: #6f56ad; --learn-soft: #e9e3f6;
+  --guide: #1d7a70; --guide-soft: #dcefe9;
   --shadow: 0 10px 34px rgba(30, 34, 44, .14);
 }
 
@@ -256,7 +261,7 @@ h2 { font-family: var(--serif); font-size: 1.25rem; font-weight: 600; margin: 2.
   margin-bottom: .8rem;
 }
 .gateway-hero .lede { font-size: clamp(1rem, 2vw, 1.18rem); max-width: 68ch; }
-.part-choices { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+.part-choices { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
 .part-choice {
   position: relative; min-height: 18rem; padding: clamp(1.4rem, 3vw, 2rem);
   display: flex; flex-direction: column; color: var(--ink); text-decoration: none;
@@ -268,6 +273,7 @@ h2 { font-family: var(--serif); font-size: 1.25rem; font-weight: 600; margin: 2.
 .part-choice::before {
   content: ''; position: absolute; inset: 0 0 auto; height: 5px; background: var(--choice-color);
 }
+.guide-choice { --choice-color: var(--guide); }
 .analysis-choice { --choice-color: var(--scheme); }
 .learn-choice { --choice-color: var(--learn); }
 .practice-choice { --choice-color: var(--practice); }
@@ -835,6 +841,97 @@ h2 { font-family: var(--serif); font-size: 1.25rem; font-weight: 600; margin: 2.
 .paper-key { margin-top: 2rem; border-top: 1px dashed var(--line); padding-top: 1rem; }
 .paper-key p { font-variant-numeric: tabular-nums; font-size: .9rem; }
 
+/* ---------- header utility icons ---------- */
+.util-icons { display: flex; align-items: center; gap: .4rem; }
+.util-icon {
+  width: 2.1rem; height: 2.1rem; display: inline-flex; align-items: center; justify-content: center;
+  border: 1px solid var(--line); border-radius: 50%; background: var(--card);
+  color: var(--ink-soft); cursor: pointer; text-decoration: none; padding: 0;
+  transition: border-color .15s, color .15s;
+}
+.util-icon:hover, .util-icon[aria-expanded="true"] { border-color: var(--ink-faint); color: var(--ink); }
+.util-icon svg { width: 1.05rem; height: 1.05rem; }
+.util-icon span { font-size: .95rem; font-weight: 600; font-family: var(--serif); }
+.util-menu-wrap { position: relative; }
+.util-menu {
+  position: absolute; right: 0; top: calc(100% + .5rem); z-index: 60; min-width: 15.5rem;
+  background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+  box-shadow: var(--shadow); padding: .35rem; display: flex; flex-direction: column;
+}
+.util-menu button {
+  border: 0; background: none; color: var(--ink-soft); text-align: left; cursor: pointer;
+  padding: .5rem .7rem; border-radius: 7px; font-size: .82rem;
+}
+.util-menu button:hover { background: var(--ground); color: var(--ink); }
+.util-menu hr { border: 0; border-top: 1px solid var(--line); margin: .3rem 0; }
+
+/* ---------- keyboard shortcuts card ---------- */
+#keys-card {
+  position: fixed; inset: 0; z-index: 200; background: rgba(15, 17, 21, .45);
+  display: flex; align-items: flex-start; justify-content: center; padding: 14vh 1rem 0;
+}
+.keys-box {
+  width: min(420px, 100%); background: var(--card); border: 1px solid var(--line);
+  border-radius: 12px; box-shadow: var(--shadow); padding: 1.2rem 1.4rem;
+}
+.keys-box h2 { margin: 0 0 .6rem; font-size: 1.1rem; }
+.keys-box table { border-collapse: collapse; width: 100%; }
+.keys-box td { padding: .3rem 0; font-size: .84rem; color: var(--ink-soft); }
+.keys-box td:first-child { width: 7.5rem; white-space: nowrap; }
+.keys-box p { font-size: .78rem; color: var(--ink-faint); margin: .7rem 0; }
+.keys-box a { color: var(--learn); }
+kbd {
+  display: inline-block; min-width: 1.4em; text-align: center;
+  border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 5px;
+  background: var(--ground); padding: .05em .35em; font-size: .78em;
+  font-family: var(--sans); color: var(--ink);
+}
+
+/* ---------- welcome tour ---------- */
+#nux {
+  position: fixed; inset: 0; z-index: 210; background: rgba(15, 17, 21, .5);
+  display: flex; align-items: center; justify-content: center; padding: 1rem;
+}
+.nux-box {
+  width: min(480px, 100%); background: var(--card); border: 1px solid var(--line);
+  border-radius: 14px; box-shadow: var(--shadow); padding: 1.5rem 1.7rem;
+}
+.nux-box .eyebrow { margin-top: 0; }
+.nux-box h2 { margin: 0 0 .6rem; font-size: 1.35rem; }
+.nux-box p, .nux-box li { font-size: .88rem; color: var(--ink-soft); }
+.nux-box ul { margin: .4rem 0 0; padding-left: 1.2rem; }
+.nux-box li { margin: .3rem 0; }
+.nux-box li b, .nux-box p b { color: var(--ink); }
+.nux-actions { display: flex; align-items: center; gap: .7rem; margin-top: 1.2rem; flex-wrap: wrap; }
+.nux-next { background: var(--ink); border: 1px solid var(--ink); color: var(--ground); }
+.nux-skip { color: var(--ink-faint); }
+.nux-starts { display: flex; flex-direction: column; gap: .5rem; margin-top: .8rem; }
+.nux-start {
+  display: block; text-decoration: none; border: 1px solid var(--line); border-radius: 9px;
+  padding: .65rem .9rem; transition: border-color .15s;
+}
+.nux-start:hover { border-color: var(--ink-faint); }
+.nux-start b { display: block; font-size: .9rem; }
+.nux-start span { font-size: .76rem; color: var(--ink-soft); }
+
+/* ---------- site guide (help) ---------- */
+.help-rooms { display: grid; gap: .6rem; }
+.help-room { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: .9rem 1.1rem; }
+.help-room a { text-decoration: none; }
+.help-room a:hover b { text-decoration: underline; }
+.help-room b { font-family: var(--serif); font-size: 1rem; }
+.help-room p { margin: .3rem 0 0; font-size: .84rem; color: var(--ink-soft); }
+.help-room p a { color: var(--learn); }
+.help-note { font-size: .88rem; color: var(--ink-soft); max-width: 64ch; }
+.help-note b { color: var(--ink); }
+.help-note a { color: var(--learn); text-decoration: none; }
+.help-note a:hover { text-decoration: underline; }
+.help-list { padding-left: 1.2rem; max-width: 66ch; }
+.help-list li { margin: .45rem 0; font-size: .88rem; color: var(--ink-soft); }
+.help-list b { color: var(--ink); }
+.help-keys { border-collapse: collapse; }
+.help-keys td { padding: .3rem .9rem .3rem 0; font-size: .86rem; color: var(--ink-soft); }
+
 /* ---------- command palette ---------- */
 #palette {
   position: fixed; inset: 0; z-index: 200; background: rgba(15, 17, 21, .45);
@@ -865,10 +962,14 @@ h2 { font-family: var(--serif); font-size: 1.25rem; font-weight: 600; margin: 2.
   .deck-cards { grid-template-columns: 1fr; }
 }
 
+@media (max-width: 700px) {
+  .site-head { flex-wrap: wrap; row-gap: .5rem; }
+  .part-nav { order: 3; width: 100%; justify-content: center; flex-wrap: wrap; }
+}
 @media (max-width: 560px) {
   .site-head { padding-inline: 1rem; }
   .site-brand b { display: none; }
-  .part-nav a { padding-inline: .65rem; }
+  .part-nav a { padding-inline: .55rem; font-size: .76rem; }
   .entry { flex-wrap: wrap; gap: .2rem .8rem; }
   .gateway-home { padding: 2.8rem 1rem 4rem; }
   .entry-counts { margin-left: auto; }
@@ -900,7 +1001,7 @@ h2 { font-family: var(--serif); font-size: 1.25rem; font-weight: 600; margin: 2.
 
 /* ---------- print handout (passage pages + the paper quiz) ---------- */
 @media print {
-  .skip-link, .site-head, .crumbs, .legend, #pop, .pager, .walk-bar, #palette,
+  .skip-link, .site-head, .crumbs, .legend, #pop, .pager, .walk-bar, #palette, #nux, #keys-card,
   .index-hint, .dossier-head, .panel, .test-bar, .occasion, .nospan,
   .learn-home > .eyebrow, .learn-home > h1, .learn-home > .lede, .paper-controls { display: none !important; }
   .paper-sheet { border: none; border-radius: 0; padding: 0; }

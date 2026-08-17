@@ -85,4 +85,6 @@
       close();
     }
   });
+
+  window.openCommandPalette = open; // the header's magnifier uses this
 })();

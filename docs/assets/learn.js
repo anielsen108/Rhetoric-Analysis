@@ -13,7 +13,6 @@
   const STORE = 'rhetoric-learn-stats-v1';
   const SESSION = 'rhetoric-learn-session-v2';
   const MISSES = 'rhetoric-learn-misses-v1';
-  const BACKUP_KEYS = [STORE, MISSES, 'rhetoric-course-v1', 'rhetoric-practice-completed-v1'];
 
   const famOf = key => DATA.devices[key].family;
   const famById = Object.fromEntries(DATA.families.map(f => [f.id, f]));
@@ -537,42 +536,6 @@
     btn.textContent = `Review my misses (${n})`;
   }
 
-  // --- progress backup ------------------------------------------------------
-
-  function exportProgress() {
-    const payload = { site: 'rhetoric', exported: new Date().toISOString(), data: {} };
-    for (const k of BACKUP_KEYS) {
-      const v = localStorage.getItem(k);
-      if (v != null) payload.data[k] = v;
-    }
-    const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
-    const a = document.createElement('a');
-    a.href = URL.createObjectURL(blob);
-    a.download = 'rhetoric-progress.json';
-    a.click();
-    URL.revokeObjectURL(a.href);
-  }
-
-  function importProgress(file) {
-    const reader = new FileReader();
-    reader.onload = () => {
-      try {
-        const payload = JSON.parse(reader.result);
-        if (!payload || payload.site !== 'rhetoric' || !payload.data) throw new Error('wrong file');
-        for (const k of BACKUP_KEYS) {
-          if (typeof payload.data[k] === 'string') {
-            JSON.parse(payload.data[k]); // must at least be JSON
-            localStorage.setItem(k, payload.data[k]);
-          }
-        }
-        location.reload();
-      } catch {
-        alert('That file does not look like a Rhetoric progress backup.');
-      }
-    };
-    reader.readAsText(file);
-  }
-
   // --- deep links -----------------------------------------------------------
 
   function applyParams() {
@@ -628,11 +591,6 @@
   updateMissButton();
   $('#review-misses').addEventListener('click', () =>
     startQuiz(playable.map(f => f.id), Math.min(20, missCount()), 'name', { review: true }));
-  $('#export-progress').addEventListener('click', exportProgress);
-  $('#import-progress').addEventListener('click', () => $('#import-file').click());
-  $('#import-file').addEventListener('change', e => {
-    if (e.target.files && e.target.files[0]) importProgress(e.target.files[0]);
-  });
   $('#reset-stats').addEventListener('click', () => {
     if (!confirm('Reset your saved record?')) return;
     stats = { fam: {}, dev: {} };

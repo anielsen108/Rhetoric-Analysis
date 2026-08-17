@@ -81,7 +81,7 @@ test('device page shows glossary content, excerpts, and a drill link', () => {
 test('devices index lists every glossary device grouped by family', () => {
   const html = renderDevicesIndex(quiz);
   assert.equal((html.match(/class="gdev"/g) || []).length, Object.keys(quiz.devices).length);
-  assert.match(html, /The Device Guide/);
+  assert.match(html, /The Rhetoric Field Guide/);
   assert.match(html, /1 excerpt</);
 });
 

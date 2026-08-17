@@ -127,7 +127,7 @@
     if (c.gkey) {
       var moreText = c.others > 0
         ? 'Seen in ' + c.others + ' other passage' + (c.others === 1 ? '' : 's') + ' →'
-        : 'Open the device guide →';
+        : 'Open the field guide →';
       h += '<p class="pop-more"><a href="../devices/' + encodeURIComponent(c.gkey) + '.html">' + moreText + '</a></p>';
     }
     return h + '</div>';

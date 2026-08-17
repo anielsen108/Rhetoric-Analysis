@@ -6,7 +6,7 @@ import { parseAnalysis } from './lib/parse.js';
 import { extractFragments, locateDevice, buildLineSegments } from './lib/segment.js';
 import {
   renderPassagePage, renderHome, renderIndex, renderPracticePage, renderLearnPage,
-  renderDevicesIndex, renderDevicePage, renderCoursePage, renderForgePage, renderPaperPage,
+  renderDevicesIndex, renderDevicePage, renderCoursePage, renderForgePage, renderPaperPage, renderHelpPage,
 } from './lib/render.js';
 import { buildQuizData } from './lib/quiz.js';
 import { lookupGlossaryKey } from './lib/glossary.js';
@@ -54,6 +54,7 @@ mkdirSync(join(outDir, 'learn'), { recursive: true });
 mkdirSync(join(outDir, 'practice'), { recursive: true });
 mkdirSync(join(outDir, 'devices'), { recursive: true });
 mkdirSync(join(outDir, 'course'), { recursive: true });
+mkdirSync(join(outDir, 'help'), { recursive: true });
 mkdirSync(join(outDir, 'assets'), { recursive: true });
 
 // Passages numbered 900+ are Gallery of Errors specimens: annotated bad
@@ -141,7 +142,8 @@ writeFileSync(join(outDir, 'learn', 'index.html'), renderLearnPage(quiz, stats))
 writeFileSync(join(outDir, 'learn', 'forge.html'), renderForgePage());
 writeFileSync(join(outDir, 'learn', 'paper.html'), renderPaperPage());
 writeFileSync(join(outDir, 'practice', 'index.html'), renderPracticePage(curriculum, prompts));
-writeFileSync(join(outDir, 'devices', 'index.html'), renderDevicesIndex(quiz));
+writeFileSync(join(outDir, 'devices', 'index.html'), renderDevicesIndex(quiz, antis));
+writeFileSync(join(outDir, 'help', 'index.html'), renderHelpPage(stats, quiz));
 for (const key of Object.keys(quiz.devices)) {
   writeFileSync(join(outDir, 'devices', `${key}.html`),
     renderDevicePage(key, quiz, { cooc: coocOf(key), forgeable: forgeable.has(key) }));
@@ -172,7 +174,7 @@ writeFileSync(join(outDir, 'assets', 'palette-data.js'),
 if (siteConfig.url) {
   const base = siteConfig.url.replace(/\/$/, '');
   const urls = [
-    '', 'analysis/', 'learn/', 'learn/forge.html', 'learn/paper.html', 'practice/', 'devices/', 'course/',
+    '', 'analysis/', 'learn/', 'learn/forge.html', 'learn/paper.html', 'practice/', 'devices/', 'course/', 'help/',
     ...analyses.map(a => `passages/${a.slug}.html`),
     ...Object.keys(quiz.devices).map(k => `devices/${k}.html`),
   ];
@@ -193,6 +195,8 @@ copyFileSync(join(here, 'assets', 'detect.js'), join(outDir, 'assets', 'detect.j
 copyFileSync(join(here, 'assets', 'forge.js'), join(outDir, 'assets', 'forge.js'));
 copyFileSync(join(here, 'assets', 'paper.js'), join(outDir, 'assets', 'paper.js'));
 copyFileSync(join(here, 'assets', 'palette.js'), join(outDir, 'assets', 'palette.js'));
+copyFileSync(join(here, 'assets', 'ui.js'), join(outDir, 'assets', 'ui.js'));
+copyFileSync(join(here, 'assets', 'nux.js'), join(outDir, 'assets', 'nux.js'));
 copyFileSync(join(here, 'assets', 'favicon.png'), join(outDir, 'assets', 'favicon.png'));
 writeFileSync(join(outDir, '.nojekyll'), '');
 

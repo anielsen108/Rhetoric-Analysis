@@ -128,7 +128,7 @@ export function renderPassagePage(a, glossary, { prev = null, next = null, usage
 
   const body = `
 ${siteNav('analysis', '..')}
-<header class="crumbs"><a href="../analysis/index.html${gallery ? '#gallery' : ''}">← ${gallery ? 'The Gallery of Errors' : 'All passages'}</a><span class="crumb-title">The Rhetoric Reader</span></header>
+<header class="crumbs"><a href="${gallery ? '../devices/index.html#gallery' : '../analysis/index.html'}">← ${gallery ? 'The Gallery of Errors' : 'All passages'}</a><span class="crumb-title">${gallery ? 'The Rhetoric Field Guide' : 'The Rhetoric Reader'}</span></header>
 <main id="main"${gallery ? ' class="gallery-page"' : ''}>
   <p class="eyebrow">${gallery ? `The Gallery of Errors · Specimen ${esc(a.id)}` : `Passage ${esc(a.id)}${a.year ? ` · ${esc(String(a.year))}` : ''}`}</p>
   <h1>${esc(a.title)}</h1>
@@ -179,15 +179,23 @@ function titleCase(s) {
 
 export function renderHome(stats, curriculum, quiz) {
   const exercises = curriculum.sets.flatMap(set => set.exercises);
+  const deviceCount = Object.keys(quiz.devices).length;
   const body = `
 ${siteNav(null, '.')}
 <main id="main" class="gateway-home">
   <section class="gateway-hero">
     <h1>Rhetoric</h1>
-    <p class="lede">Analysis, learning, and practice.</p>
+    <p class="lede">Reference, analysis, learning, and practice.</p>
   </section>
 
-  <section class="part-choices" aria-label="The three parts of the site">
+  <section class="part-choices" aria-label="The four parts of the site">
+    <a class="part-choice guide-choice" href="devices/index.html">
+      <p class="eyebrow">Rhetorical Reference</p>
+      <h2>The Rhetoric Field Guide</h2>
+      <p>${deviceCount} devices in ${quiz.families.length} families, with every example the Reader contains — and a gallery of instructive failures.</p>
+      <span class="choice-action">Open the field guide <b>→</b></span>
+    </a>
+
     <a class="part-choice analysis-choice" href="analysis/index.html">
       <p class="eyebrow">Rhetorical Analysis</p>
       <h2>The Rhetoric Reader</h2>
@@ -211,12 +219,14 @@ ${siteNav(null, '.')}
   </section>
 
   <a class="course-banner" href="course/index.html">
-    <span><b>The Rhetoric Course</b> is the guided path — ten weeks of readings, quizzes, and drills through all three rooms.</span>
+    <span><b>The Rhetoric Course</b> is the guided path — ten weeks of readings, quizzes, and drills through all four rooms.</span>
     <span class="course-banner-go">Start the course →</span>
   </a>
-</main>`;
+</main>
+<script src="assets/nux.js" defer></script>`;
 
-  return layout('Rhetoric — Analysis, Learning, and Practice', body, 'assets/site.css');
+  return layout('Rhetoric — Reference, Analysis, Learning, and Practice', body, 'assets/site.css',
+    'Four rooms for rhetoric: a field guide of 84 devices, 196 annotated passages, a quiz school, and a speaking lab.');
 }
 
 // --- learn / name-that-device quiz -----------------------------------------
@@ -229,7 +239,7 @@ ${siteNav('learn', '..')}
 <main id="main" class="learn-home">
   <p class="eyebrow">Learn Rhetoric</p>
   <h1>The Rhetoric School</h1>
-  <p class="lede">${quiz.items.length} excerpts drawn from the Reader's ${stats.files} passages put ${inPlay} of the guide's ${deviceCount} devices in play, across ${quiz.families.length} families. Read the <mark class="lede-mark">marked phrase</mark>, then name its device. All four choices come from the same family — the near misses are the point. To study before you drill, <a href="../devices/index.html">browse the device guide</a>.</p>
+  <p class="lede">${quiz.items.length} excerpts drawn from the Reader's ${stats.files} passages put ${inPlay} of the guide's ${deviceCount} devices in play, across ${quiz.families.length} families. Read the <mark class="lede-mark">marked phrase</mark>, then name its device. All four choices come from the same family — the near misses are the point. To study before you drill, <a href="../devices/index.html">browse the field guide</a>.</p>
 
   <div id="placement" class="placement" hidden>
     <p><b>Start with the placement.</b> Two questions from each family show where you stand and give the scoreboard its first real numbers.</p>
@@ -277,7 +287,7 @@ ${siteNav('learn', '..')}
     <h2>Your record</h2>
     <p class="index-hint">Accuracy by family, saved in this browser and used to suggest what to drill next. <button type="button" class="linklike" id="reset-stats">Reset record</button></p>
     <div id="scoreboard" class="scoreboard"></div>
-    <p class="index-hint backup-row">Progress lives in this browser only. <button type="button" class="linklike" id="export-progress">Back it up to a file</button> or <button type="button" class="linklike" id="import-progress">restore from one</button>.<input type="file" id="import-file" accept="application/json" class="sr-only" aria-label="Restore progress file"></p>
+    <p class="index-hint backup-row">Progress lives in this browser only — the gear in the header can back it up to a file or restore it.</p>
   </section>
 </main>
 <script src="../assets/learn-data.js"></script>
@@ -323,15 +333,6 @@ export function renderIndex(analyses, stats, trails = null, quiz = null, antis =
         `<option value="${esc(k)}">${esc(quiz.devices[k].name)}</option>`).join('')}</optgroup>`).join('\n      ')}
     </select>` : '';
 
-  const galleryHtml = antis.length ? `
-  <section class="period gallery-section" id="gallery">
-    <h2>The Gallery of Errors</h2>
-    <p class="index-hint">Annotated bad rhetoric: every device competent, every purpose lost. Read these the way a doctor reads an X-ray.</p>
-    <div class="entry-list">
-      ${antis.map(renderEntry).join('\n      ')}
-    </div>
-  </section>` : '';
-
   const body = `
 ${siteNav('analysis', '..')}
 <main id="main" class="home">
@@ -353,7 +354,6 @@ ${trailsHtml}
 ${sections}
   </div>
   <div id="index-alt" hidden></div>
-${galleryHtml}
 </main>
 <script src="../assets/search-data.js"></script>
 <script src="../assets/reader-index.js"></script>`;
@@ -542,7 +542,7 @@ function excerptHtml(item) {
   return item.x.map(s => (s.m ? `<mark>${esc(s.t)}</mark>` : esc(s.t))).join('');
 }
 
-export function renderDevicesIndex(quiz) {
+export function renderDevicesIndex(quiz, antis = []) {
   const countOf = {};
   for (const it of quiz.items) countOf[it.d] = (countOf[it.d] || 0) + 1;
 
@@ -568,16 +568,27 @@ export function renderDevicesIndex(quiz) {
   </section>`;
   }).join('\n');
 
+  const galleryHtml = antis.length ? `
+  <section class="period gallery-section" id="gallery">
+    <h2>The Gallery of Errors</h2>
+    <p class="index-hint">Annotated bad rhetoric: every device competent, every purpose lost. Read these the way a doctor reads an X-ray.</p>
+    <div class="entry-list">
+      ${antis.map(renderEntry).join('\n      ')}
+    </div>
+  </section>` : '';
+
   const body = `
-${siteNav('learn', '..')}
+${siteNav('guide', '..')}
 <main id="main" class="home guide-home">
-  <p class="eyebrow">Learn Rhetoric</p>
-  <h1>The Device Guide</h1>
-  <p class="lede">All ${Object.keys(quiz.devices).length} devices in ${quiz.families.length} families, with every example the Reader contains. Study here, then <a href="../learn/index.html">drill in the School</a>.</p>
+  <p class="eyebrow">Rhetorical Reference</p>
+  <h1>The Rhetoric Field Guide</h1>
+  <p class="lede">All ${Object.keys(quiz.devices).length} devices in ${quiz.families.length} families, with every example the Reader contains — and, at the bottom, a gallery of instructive failures. Study here, then <a href="../learn/index.html">drill in the School</a>.</p>
 ${sections}
+${galleryHtml}
 </main>`;
 
-  return layout('The Device Guide — Learn Rhetoric', body, '../assets/site.css');
+  return layout('The Rhetoric Field Guide — Rhetorical Reference', body, '../assets/site.css',
+    `A field guide to ${Object.keys(quiz.devices).length} rhetorical devices in ${quiz.families.length} families: definitions, pronunciations, literary examples, and a gallery of annotated bad rhetoric.`);
 }
 
 export function renderDevicePage(key, quiz, { cooc = [], forgeable = false } = {}) {
@@ -612,8 +623,8 @@ export function renderDevicePage(key, quiz, { cooc = [], forgeable = false } = {
   </p>` : '';
 
   const body = `
-${siteNav('learn', '..')}
-<header class="crumbs"><a href="index.html">← All devices</a><span class="crumb-title">The Device Guide</span></header>
+${siteNav('guide', '..')}
+<header class="crumbs"><a href="index.html">← The Field Guide</a><span class="crumb-title">The Rhetoric Field Guide</span></header>
 <main id="main" class="gdevice">
   <p class="eyebrow">${esc(fam.name)}</p>
   <h1>${esc(d.name)}</h1>
@@ -633,7 +644,7 @@ ${coocHtml}
   </p>
 </main>`;
 
-  return layout(`${d.name} — The Device Guide`, body, '../assets/site.css',
+  return layout(`${d.name} — The Rhetoric Field Guide`, body, '../assets/site.css',
     `${d.name}: ${(d.plain.match(/^[^.]*\./) || [d.plain])[0]} Definition, examples from literature, and a practice quiz.`);
 }
 
@@ -782,6 +793,66 @@ ${weeks}
   return layout(`${course.title} — A Guided Path`, body, '../assets/site.css');
 }
 
+// --- site guide (help) -------------------------------------------------------
+
+export function renderHelpPage(stats, quiz) {
+  const body = `
+${siteNav(null, '..')}
+<main id="main" class="learn-home help-home">
+  <p class="eyebrow">Orientation</p>
+  <h1>Site Guide</h1>
+  <p class="lede">What each room is for, how the pages work, and where your data lives. Five minutes here repays itself quickly.</p>
+
+  <h2>The four rooms</h2>
+  <div class="help-rooms">
+    <div class="help-room"><a href="../devices/index.html"><b>The Rhetoric Field Guide</b></a><p>The reference. Every device — ${Object.keys(quiz.devices).length} of them in ${quiz.families.length} families — with plain-language definitions, canonical examples, its confusable neighbours, and every excerpt the Reader contains. At the bottom: the Gallery of Errors, eight specimens of bad rhetoric annotated with the same care as the masterpieces.</p></div>
+    <div class="help-room"><a href="../analysis/index.html"><b>The Rhetoric Reader</b></a><p>${stats.files} passages, each annotated device by device. Search the full text, arrange by era, author, or density, or follow a curated reading trail.</p></div>
+    <div class="help-room"><a href="../learn/index.html"><b>The Rhetoric School</b></a><p>The quiz. Name devices in real excerpts, spot excerpts for a named device, or match definitions. Your accuracy per family is tracked and steers what comes next. Also here: <a href="../learn/forge.html">the Device Forge</a>, where you write devices and detectors verify them, and <a href="../learn/paper.html">the printable paper quiz</a> for classrooms.</p></div>
+    <div class="help-room"><a href="../practice/index.html"><b>The Rhetoric Lab</b></a><p>Fifty speaking drills for two people — or one, with solo mode auto-dealing the director's signals. The Prompt Deck deals a topic, an audience, and a constraint for warm-ups.</p></div>
+  </div>
+  <p class="help-note">Prefer a path through all of it? <a href="../course/index.html"><b>The Rhetoric Course</b></a> sequences readings, quizzes, and drills over ten weeks with saved progress.</p>
+
+  <h2>On a passage page</h2>
+  <ul class="help-list">
+    <li><b>Hover a marked phrase</b> to see its device; click to pin the card. The colored chips toggle whole families of underlines.</li>
+    <li><b>Walk through it</b> (on showcase passages) hands you to a tutor who takes the devices one at a time, in teaching order.</li>
+    <li><b>Test yourself</b> hides the annotations and lets you mark the words you think are doing rhetorical work, then scores you against the real spans.</li>
+    <li><b>Print handout</b> produces a clean one-page version with a device key — made for teaching.</li>
+    <li><b>Pinning writes the URL.</b> Copy it and the link opens the passage with that device highlighted.</li>
+    <li>Showcase pages also carry a <b>Sentence Architecture</b> panel diagramming a famous sentence clause by clause.</li>
+  </ul>
+
+  <h2>In the School</h2>
+  <ul class="help-list">
+    <li><b>New here?</b> The placement (two questions per family) maps where you stand and seeds the scoreboard.</li>
+    <li><b>Misses are collected.</b> The "Review my misses" button re-quizzes exactly what you got wrong; two correct answers retire a miss.</li>
+    <li><b>Quiz setups live in the URL</b>, so a particular configuration can be bookmarked or sent to someone else.</li>
+    <li><b>Every device page has a drill button</b> scoped to that device and its confusable neighbours.</li>
+  </ul>
+
+  <h2>Finding things</h2>
+  <ul class="help-list">
+    <li><b>Ctrl+K</b> (⌘K on a Mac) — or the magnifier in the header — opens quick search over every passage, device, and drill, from any page.</li>
+    <li>The Reader index has <b>full-text search</b> and a <b>device filter</b>: every passage containing, say, chiasmus.</li>
+  </ul>
+
+  <h2>Keyboard shortcuts</h2>
+  <table class="help-keys">
+    <tr><td><kbd>Ctrl</kbd>+<kbd>K</kbd></td><td>Quick search, anywhere</td></tr>
+    <tr><td><kbd>1</kbd>–<kbd>4</kbd></td><td>Answer a quiz question</td></tr>
+    <tr><td><kbd>Enter</kbd></td><td>Next question, after answering</td></tr>
+    <tr><td><kbd>Esc</kbd></td><td>Close a card, dialog, or pinned device</td></tr>
+    <tr><td><kbd>Ctrl</kbd>+<kbd>Enter</kbd></td><td>Check your work, in the Forge</td></tr>
+  </table>
+
+  <h2>Your data</h2>
+  <p class="help-note">Everything the site remembers about you — quiz record, mistakes deck, course and drill progress — lives in this browser and nowhere else. Nothing is sent anywhere. The <b>gear icon</b> in the header exports it all to a file, restores from one, replays the welcome tour, or wipes the slate.</p>
+</main>`;
+
+  return layout('Site Guide — Rhetoric', body, '../assets/site.css',
+    'How the Rhetoric site works: the four rooms, passage-page tools, quiz modes, keyboard shortcuts, and where your data lives.');
+}
+
 // --- shared layout ---------------------------------------------------------------
 
 function siteNav(active, root) {
@@ -791,11 +862,27 @@ function siteNav(active, root) {
 <header class="site-head">
   <a class="site-brand" href="${root}/index.html" aria-label="Rhetoric home"><span>R</span><b>Rhetoric</b></a>
   <nav class="part-nav" aria-label="Primary">
+    ${link('devices/index.html', 'guide', 'Field Guide')}
     ${link('analysis/index.html', 'analysis', 'Analyze')}
     ${link('learn/index.html', 'learn', 'Learn')}
     ${link('practice/index.html', 'practice', 'Practice')}
     ${link('course/index.html', 'course', 'Course')}
   </nav>
+  <div class="util-icons">
+    <button type="button" class="util-icon" id="util-search" aria-label="Search the site (Ctrl+K)" title="Search — Ctrl+K">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="20" y1="20" x2="16" y2="16"/></svg>
+    </button>
+    <button type="button" class="util-icon" id="util-keys" aria-label="Keyboard shortcuts" title="Keyboard shortcuts">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="2" y="6" width="20" height="12" rx="2"/><line x1="6" y1="10" x2="6.01" y2="10"/><line x1="10" y1="10" x2="10.01" y2="10"/><line x1="14" y1="10" x2="14.01" y2="10"/><line x1="18" y1="10" x2="18.01" y2="10"/><line x1="8" y1="14" x2="16" y2="14"/></svg>
+    </button>
+    <a class="util-icon" id="util-help" href="${root}/help/index.html" aria-label="Site guide" title="Site guide"><span aria-hidden="true">?</span></a>
+    <div class="util-menu-wrap">
+      <button type="button" class="util-icon" id="util-gear" aria-label="Settings" aria-expanded="false" title="Settings">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h.01a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51h.01a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v.01a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+      </button>
+      <div class="util-menu" id="util-menu" hidden></div>
+    </div>
+  </div>
 </header>`;
 }
 
@@ -819,6 +906,7 @@ function layout(title, body, cssPath, desc = 'Rhetoric: annotated passages, devi
 ${body}
 <script src="${assetRoot}palette-data.js" defer></script>
 <script src="${assetRoot}palette.js" defer></script>
+<script src="${assetRoot}ui.js" defer></script>
 </body>
 </html>`;
 }
