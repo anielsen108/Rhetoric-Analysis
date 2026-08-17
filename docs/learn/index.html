@@ -4,6 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The Rhetoric School — Learn Rhetoric</title>
+<meta name="description" content="Rhetoric: annotated passages, device quizzes, and speaking drills.">
+<meta property="og:title" content="The Rhetoric School — Learn Rhetoric">
+<meta property="og:description" content="Rhetoric: annotated passages, device quizzes, and speaking drills.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Rhetoric">
 <link rel="icon" type="image/png" href="../assets/favicon.png">
 <link rel="stylesheet" href="../assets/site.css">
 </head>
@@ -52,12 +57,15 @@
         <select id="q-mode">
           <option value="name" selected>Name the device</option>
           <option value="spot">Spot the device</option>
+          <option value="define">Define it</option>
           <option value="mix">Mix</option>
         </select>
       </label>
       <button type="button" class="primary-action learn-action" id="start-quiz">Start the quiz</button>
+      <button type="button" class="quiet-action" id="review-misses" hidden>Review my misses</button>
       <span id="pool-note" class="pool-note" aria-live="polite"></span>
     </div>
+    <p class="setup-links">Also in the School: <a href="forge.html">the Device Forge</a> — write devices and have them mechanically verified — and <a href="paper.html">the paper quiz</a> for classrooms.</p>
   </section>
 
   <section id="quiz" class="quiz-stage" tabindex="-1" hidden></section>
@@ -67,9 +75,12 @@
     <h2>Your record</h2>
     <p class="index-hint">Accuracy by family, saved in this browser and used to suggest what to drill next. <button type="button" class="linklike" id="reset-stats">Reset record</button></p>
     <div id="scoreboard" class="scoreboard"></div>
+    <p class="index-hint backup-row">Progress lives in this browser only. <button type="button" class="linklike" id="export-progress">Back it up to a file</button> or <button type="button" class="linklike" id="import-progress">restore from one</button>.<input type="file" id="import-file" accept="application/json" class="sr-only" aria-label="Restore progress file"></p>
   </section>
 </main>
 <script src="../assets/learn-data.js"></script>
 <script src="../assets/learn.js"></script>
+<script src="../assets/palette-data.js" defer></script>
+<script src="../assets/palette.js" defer></script>
 </body>
 </html>

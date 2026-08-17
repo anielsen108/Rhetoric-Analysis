@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Device Forge — Learn Rhetoric</title>
+<meta name="description" content="Write rhetorical devices — anaphora, chiasmus, asyndeton and more — and have them mechanically verified as you type.">
+<meta property="og:title" content="The Device Forge — Learn Rhetoric">
+<meta property="og:description" content="Write rhetorical devices — anaphora, chiasmus, asyndeton and more — and have them mechanically verified as you type.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Rhetoric">
+<link rel="icon" type="image/png" href="../assets/favicon.png">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-head">
+  <a class="site-brand" href="../index.html" aria-label="Rhetoric home"><span>R</span><b>Rhetoric</b></a>
+  <nav class="part-nav" aria-label="Primary">
+    <a href="../analysis/index.html">Analyze</a>
+    <a href="../learn/index.html" aria-current="page">Learn</a>
+    <a href="../practice/index.html">Practice</a>
+    <a href="../course/index.html">Course</a>
+  </nav>
+</header>
+<header class="crumbs"><a href="index.html">← The Rhetoric School</a><span class="crumb-title">The Device Forge</span></header>
+<main id="main" class="learn-home">
+  <p class="eyebrow">Learn Rhetoric</p>
+  <h1>The Device Forge</h1>
+  <p class="lede">Reading a device is knowing; writing one is owning. Choose a device, write a sentence or three that attempts it, and the detectors will verify the mechanism — word positions, repetitions, conjunctions, the measurable bones of the figure.</p>
+
+  <section class="quiz-setup forge-bench" aria-label="The forge">
+    <label class="count-label">Device
+      <select id="forge-device"></select>
+    </label>
+    <div id="forge-brief"></div>
+    <textarea id="forge-text" rows="4" placeholder="Write here. Ctrl+Enter checks." aria-label="Your attempt"></textarea>
+    <div class="setup-row">
+      <button type="button" class="primary-action learn-action" id="forge-check">Check the work</button>
+    </div>
+    <div id="forge-result" aria-live="polite"></div>
+  </section>
+</main>
+<script src="../assets/learn-data.js"></script>
+<script src="../assets/detect.js"></script>
+<script src="../assets/forge.js"></script>
+<script src="../assets/palette-data.js" defer></script>
+<script src="../assets/palette.js" defer></script>
+</body>
+</html>

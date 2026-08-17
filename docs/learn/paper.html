@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Paper Quiz — Learn Rhetoric</title>
+<meta name="description" content="Print a name-that-device quiz: literary excerpts, four choices each, seeded and reproducible, with a detachable answer key.">
+<meta property="og:title" content="The Paper Quiz — Learn Rhetoric">
+<meta property="og:description" content="Print a name-that-device quiz: literary excerpts, four choices each, seeded and reproducible, with a detachable answer key.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Rhetoric">
+<link rel="icon" type="image/png" href="../assets/favicon.png">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-head">
+  <a class="site-brand" href="../index.html" aria-label="Rhetoric home"><span>R</span><b>Rhetoric</b></a>
+  <nav class="part-nav" aria-label="Primary">
+    <a href="../analysis/index.html">Analyze</a>
+    <a href="../learn/index.html" aria-current="page">Learn</a>
+    <a href="../practice/index.html">Practice</a>
+    <a href="../course/index.html">Course</a>
+  </nav>
+</header>
+<header class="crumbs"><a href="index.html">← The Rhetoric School</a><span class="crumb-title">The Paper Quiz</span></header>
+<main id="main" class="learn-home">
+  <p class="eyebrow">Learn Rhetoric</p>
+  <h1>The Paper Quiz</h1>
+  <p class="lede">A printable quiz for classrooms: excerpts with the device underlined, four choices each, answer key on its own page. The same seed always deals the same sheet, so a class can share one and a make-up student can get another.</p>
+
+  <section class="quiz-setup paper-controls" aria-label="Sheet settings">
+    <div id="paper-fams" class="paper-fams" role="group" aria-label="Families to include"></div>
+    <div class="setup-row">
+      <label class="count-label">Questions
+        <select id="paper-count"><option>10</option><option selected>15</option><option>20</option></select>
+      </label>
+      <label class="count-label">Seed
+        <input id="paper-seed" type="text" value="period-3" aria-label="Sheet seed">
+      </label>
+      <button type="button" class="primary-action learn-action" id="paper-generate">Deal the sheet</button>
+      <button type="button" class="quiet-action" id="paper-print">Print</button>
+    </div>
+  </section>
+
+  <section id="sheet" class="paper-sheet" aria-label="The quiz sheet"></section>
+</main>
+<script src="../assets/learn-data.js"></script>
+<script src="../assets/paper.js"></script>
+<script src="../assets/palette-data.js" defer></script>
+<script src="../assets/palette.js" defer></script>
+</body>
+</html>

@@ -11,15 +11,18 @@
   if (!input || !eraEl) return;
 
   var entries = Array.prototype.slice.call(eraEl.querySelectorAll('.entry'));
-  var bySlug = {};
+  var deviceSel = document.getElementById('device-filter');
+  var bySlug = {}, devsBySlug = {};
   SEARCH.forEach(function (r) {
     bySlug[r.s] = (r.t + ' ' + r.a + ' ' + r.w + ' ' + r.th + ' ' + r.d + ' ' + r.x).toLowerCase();
+    devsBySlug[r.s] = r.dk || [];
   });
 
   var currentView = 'era';
 
-  // ---- search ----
-  function matches(slug, terms) {
+  // ---- search + device filter ----
+  function matches(slug, terms, dev) {
+    if (dev && devsBySlug[slug].indexOf(dev) === -1) return false;
     var hay = bySlug[slug] || '';
     for (var i = 0; i < terms.length; i++) {
       if (hay.indexOf(terms[i]) === -1) return false;
@@ -30,10 +33,12 @@
   function applySearch() {
     var q = input.value.trim().toLowerCase();
     var terms = q ? q.split(/\s+/) : [];
+    var dev = deviceSel ? deviceSel.value : '';
+    var filtering = terms.length || dev;
     var visible = 0;
     var container = currentView === 'era' ? eraEl : altEl;
     Array.prototype.forEach.call(container.querySelectorAll('.entry'), function (entry) {
-      var show = !terms.length || matches(entry.dataset.slug, terms);
+      var show = !filtering || matches(entry.dataset.slug, terms, dev);
       entry.hidden = !show;
       if (show) visible++;
     });
@@ -42,7 +47,7 @@
       var any = section.querySelector('.entry:not([hidden])');
       section.hidden = !any;
     });
-    countEl.textContent = terms.length
+    countEl.textContent = filtering
       ? visible + ' passage' + (visible === 1 ? '' : 's') + ' match'
       : '';
   }
@@ -52,6 +57,14 @@
     clearTimeout(debounce);
     debounce = setTimeout(applySearch, 120);
   });
+  if (deviceSel) {
+    deviceSel.addEventListener('change', applySearch);
+    var wanted = new URLSearchParams(location.search).get('device');
+    if (wanted && deviceSel.querySelector('option[value="' + wanted + '"]')) {
+      deviceSel.value = wanted;
+      applySearch();
+    }
+  }
 
   // ---- alternate views ----
   function buildSection(label, items) {

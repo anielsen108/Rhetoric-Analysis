@@ -12,6 +12,8 @@
   const $ = s => document.querySelector(s);
   const STORE = 'rhetoric-learn-stats-v1';
   const SESSION = 'rhetoric-learn-session-v2';
+  const MISSES = 'rhetoric-learn-misses-v1';
+  const BACKUP_KEYS = [STORE, MISSES, 'rhetoric-course-v1', 'rhetoric-practice-completed-v1'];
 
   const famOf = key => DATA.devices[key].family;
   const famById = Object.fromEntries(DATA.families.map(f => [f.id, f]));
@@ -22,7 +24,14 @@
   for (const it of DATA.items) (devsBySlug[it.s] ||= new Set()).add(it.d);
 
   let stats = loadStats();
-  let quiz = null; // {qs, i, right, famIds, count, mode, drill, placement, perFam}
+  let misses = loadMisses(); // {itemIndex: {n: timesWrong, r: rightsSince}}
+  let quiz = null; // {qs, i, right, famIds, count, mode, drill, placement, review, perFam}
+
+  function loadMisses() {
+    try { return JSON.parse(localStorage.getItem(MISSES)) || {}; } catch { return {}; }
+  }
+  const saveMisses = () => localStorage.setItem(MISSES, JSON.stringify(misses));
+  const missCount = () => Object.keys(misses).length;
 
   function loadStats() {
     try {
@@ -187,12 +196,14 @@
       const item = fresh[Math.floor(Math.random() * fresh.length)];
       used.add(item);
       lastDev = dev;
-      const m = mode === 'mix' ? (Math.random() < 0.5 ? 'name' : 'spot') : mode;
+      const m = mode === 'mix'
+        ? ['name', 'spot', 'define'][Math.floor(Math.random() * 3)]
+        : mode;
       if (m === 'spot') {
         const opts = makeSpotOptions(item, pool);
         qs.push({ m: 'spot', item, opts, answer: opts.indexOf(item) });
       } else {
-        qs.push({ m: 'name', item, choices: makeChoices(item.d, drillKey) });
+        qs.push({ m, item, choices: makeChoices(item.d, drillKey) });
       }
     }
     return qs;
@@ -229,6 +240,7 @@
       sessionStorage.setItem(SESSION, JSON.stringify({
         i: quiz.i, right: quiz.right, famIds: quiz.famIds, count: quiz.count,
         mode: quiz.mode, drill: quiz.drill || null, placement: !!quiz.placement,
+        review: !!quiz.review,
         perFam: quiz.perFam,
         qs: quiz.qs.map(q => ({
           m: q.m,
@@ -249,6 +261,7 @@
     quiz = {
       i: s.i, right: s.right || 0, famIds: s.famIds || [], count: s.count,
       mode: s.mode || 'name', drill: s.drill || null, placement: !!s.placement,
+      review: !!s.review,
       perFam: s.perFam || {},
       qs: s.qs.map(r => ({
         m: r.m || 'name',
@@ -260,7 +273,7 @@
       })),
     };
     const broken = quiz.qs.some(q => !q.item ||
-      (q.m === 'name' && !Array.isArray(q.choices)) ||
+      (q.m !== 'spot' && !Array.isArray(q.choices)) ||
       (q.m === 'spot' && (!Array.isArray(q.opts) || q.opts.some(it => !it))));
     if (broken) { quiz = null; return false; }
     $('#setup').hidden = true;
@@ -278,10 +291,12 @@
   // --- quiz screens ---------------------------------------------------------
 
   function startQuiz(famIds, count, mode, extra = {}) {
-    const pool = extra.drill ? drillPool(extra.drill) : famIds.flatMap(id => itemsByFam[id]);
+    const pool = extra.review
+      ? Object.keys(misses).map(i => DATA.items[Number(i)]).filter(Boolean)
+      : extra.drill ? drillPool(extra.drill) : famIds.flatMap(id => itemsByFam[id]);
     const qs = extra.placement ? buildPlacement() : buildQuestions(pool, count, mode, extra.drill);
     if (!qs.length) return;
-    quiz = { qs, i: 0, right: 0, famIds, count, mode, drill: extra.drill || null, placement: !!extra.placement, perFam: {} };
+    quiz = { qs, i: 0, right: 0, famIds, count, mode, drill: extra.drill || null, placement: !!extra.placement, review: !!extra.review, perFam: {} };
     saveSession();
     if (!extra.placement && !extra.drill) {
       const url = `?fams=${famIds.join(',')}&n=${count}&mode=${mode}`;
@@ -297,7 +312,9 @@
 
   function questionHead(q) {
     const fam = famById[famOf(q.item.d)];
-    const label = quiz.placement ? 'Placement' : (quiz.drill ? `Drilling ${DATA.devices[quiz.drill].name}` : fam.name);
+    const label = quiz.placement ? 'Placement'
+      : quiz.review ? 'Reviewing your misses'
+      : (quiz.drill ? `Drilling ${DATA.devices[quiz.drill].name}` : fam.name);
     return `<div class="q-head">
         <span class="q-progress">Question ${quiz.i + 1} of ${quiz.qs.length}</span>
         <span class="q-score">${quiz.right} right</span>
@@ -308,8 +325,23 @@
   function renderQuestion() {
     const q = quiz.qs[quiz.i];
     if (q.m === 'spot') renderSpotQuestion(q);
+    else if (q.m === 'define') renderDefineQuestion(q);
     else renderNameQuestion(q);
     $('#quiz').focus({ preventScroll: true });
+  }
+
+  function renderDefineQuestion(q) {
+    const d = DATA.devices[q.item.d];
+    $('#quiz').innerHTML = `
+      ${questionHead(q)}
+      <p class="q-prompt">Which is the definition of…</p>
+      <p class="q-target"><b>${esc(d.name)}</b>${d.pron ? ` <span class="pron">${esc(d.pron)}</span>` : ''}</p>
+      <div class="q-options q-define-options" role="group" aria-label="Definition choices">
+        ${q.choices.map((k, i) => `<button type="button" class="q-option q-define" data-key="${esc(k)}"><span class="q-key">${i + 1}</span><span>${esc(firstSentence(DATA.devices[k].plain))}</span></button>`).join('')}
+      </div>
+      <div id="q-feedback" aria-live="polite"></div>`;
+    document.querySelectorAll('.q-option').forEach(btn =>
+      btn.addEventListener('click', () => answerName(btn.dataset.key)));
   }
 
   function renderNameQuestion(q) {
@@ -348,6 +380,18 @@
     bump(stats.fam, famOf(key), right);
     bump(stats.dev, key, right);
     saveStats();
+    // the mistakes deck: misses enter it; two subsequent rights retire them
+    const idx = DATA.items.indexOf(q.item);
+    if (idx !== -1) {
+      if (!right) {
+        misses[idx] = { n: (misses[idx] ? misses[idx].n : 0) + 1, r: 0 };
+      } else if (misses[idx]) {
+        misses[idx].r++;
+        if (misses[idx].r >= 2) delete misses[idx];
+      }
+      saveMisses();
+      updateMissButton();
+    }
     saveSession();
   }
 
@@ -381,8 +425,9 @@
     });
 
     // Explain the miss: contrast what they picked with what was there.
-    const missNote = right ? '' :
-      `<p class="q-miss">You picked <b>${esc(DATA.devices[picked].name)}</b> — ${esc(firstSentence(DATA.devices[picked].plain))}</p>`;
+    const missNote = right ? '' : (q.m === 'define'
+      ? `<p class="q-miss">That definition belongs to <b>${esc(DATA.devices[picked].name)}</b>.</p>`
+      : `<p class="q-miss">You picked <b>${esc(DATA.devices[picked].name)}</b> — ${esc(firstSentence(DATA.devices[picked].plain))}</p>`);
     $('#q-feedback').innerHTML = feedbackCard(q, right, missNote);
     $('#q-next').addEventListener('click', next);
     $('#q-next').focus();
@@ -484,13 +529,57 @@
     $('#placement').hidden = hasStats() || (quiz != null);
   }
 
+  function updateMissButton() {
+    const btn = $('#review-misses');
+    if (!btn) return;
+    const n = missCount();
+    btn.hidden = !n;
+    btn.textContent = `Review my misses (${n})`;
+  }
+
+  // --- progress backup ------------------------------------------------------
+
+  function exportProgress() {
+    const payload = { site: 'rhetoric', exported: new Date().toISOString(), data: {} };
+    for (const k of BACKUP_KEYS) {
+      const v = localStorage.getItem(k);
+      if (v != null) payload.data[k] = v;
+    }
+    const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'rhetoric-progress.json';
+    a.click();
+    URL.revokeObjectURL(a.href);
+  }
+
+  function importProgress(file) {
+    const reader = new FileReader();
+    reader.onload = () => {
+      try {
+        const payload = JSON.parse(reader.result);
+        if (!payload || payload.site !== 'rhetoric' || !payload.data) throw new Error('wrong file');
+        for (const k of BACKUP_KEYS) {
+          if (typeof payload.data[k] === 'string') {
+            JSON.parse(payload.data[k]); // must at least be JSON
+            localStorage.setItem(k, payload.data[k]);
+          }
+        }
+        location.reload();
+      } catch {
+        alert('That file does not look like a Rhetoric progress backup.');
+      }
+    };
+    reader.readAsText(file);
+  }
+
   // --- deep links -----------------------------------------------------------
 
   function applyParams() {
     const p = new URLSearchParams(location.search);
     const drill = p.get('drill');
     const n = Number(p.get('n')) || 10;
-    const mode = ['name', 'spot', 'mix'].includes(p.get('mode')) ? p.get('mode') : 'name';
+    const mode = ['name', 'spot', 'define', 'mix'].includes(p.get('mode')) ? p.get('mode') : 'name';
     if (drill && DATA.devices[drill]) {
       startQuiz([famOf(drill)], n, mode, { drill });
       return true;
@@ -536,6 +625,14 @@
   });
   $('#start-placement').addEventListener('click', () =>
     startQuiz(playable.map(f => f.id), 18, 'name', { placement: true }));
+  updateMissButton();
+  $('#review-misses').addEventListener('click', () =>
+    startQuiz(playable.map(f => f.id), Math.min(20, missCount()), 'name', { review: true }));
+  $('#export-progress').addEventListener('click', exportProgress);
+  $('#import-progress').addEventListener('click', () => $('#import-file').click());
+  $('#import-file').addEventListener('change', e => {
+    if (e.target.files && e.target.files[0]) importProgress(e.target.files[0]);
+  });
   $('#reset-stats').addEventListener('click', () => {
     if (!confirm('Reset your saved record?')) return;
     stats = { fam: {}, dev: {} };

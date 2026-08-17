@@ -14,6 +14,7 @@
   var clearTimer = null;
   var popIds = [], popAnchor = null;
   var suppressPreview = false;
+  var walkOn = false; // walkthrough owns the highlights while true
 
   function famColor(f) { return 'var(--' + f + ')'; }
   function visibleIds(ids) {
@@ -43,7 +44,7 @@
   }
 
   // ---- activation / dimming ----
-  function activate(ids, anchor, isPin) {
+  function activate(ids, anchor, isPin, silent) {
     if (!ids.length) return;
     var lit = 0;
     forEach('.seg.tagged', function (span) {
@@ -61,7 +62,18 @@
     forEach('.dev', function (d) {
       d.style.borderColor = ids.indexOf(d.dataset.id) !== -1 ? famColor(CARDS[d.dataset.id].family) : '';
     });
-    showPop(ids, anchor, isPin);
+    if (!silent) showPop(ids, anchor, isPin);
+    if (isPin && !silent) syncHash(ids[0]);
+  }
+
+  // ---- span permalinks: a pinned device lives in the URL ----
+  function syncHash(id) {
+    history.replaceState(null, '', '#d=' + encodeURIComponent(id));
+  }
+  function clearHash() {
+    if (location.hash.indexOf('#d=') === 0) {
+      history.replaceState(null, '', location.pathname + location.search);
+    }
   }
 
   function clearActive() {
@@ -83,11 +95,11 @@
     cancelScheduledClear();
     clearTimer = window.setTimeout(function () {
       clearTimer = null;
-      if (!pinned && !popEl.matches(':hover')) clearActive();
+      if (!pinned && !walkOn && !popEl.matches(':hover')) clearActive();
     }, 300);
   }
 
-  function unpin() { pinned = null; pinAnchor = null; clearActive(); }
+  function unpin() { pinned = null; pinAnchor = null; clearActive(); clearHash(); }
 
   // ---- popover ----
   function cardHtml(id) {
@@ -147,12 +159,12 @@
     function ids() { return visibleIds(span.dataset.ids.split(',')); }
     span.addEventListener('mouseenter', function () {
       cancelScheduledClear();
-      if (!pinned) activate(ids(), span);
+      if (!pinned && !walkOn) activate(ids(), span);
     });
     span.addEventListener('mouseleave', function () { if (!pinned) scheduleClear(); });
     span.addEventListener('focus', function () {
       cancelScheduledClear();
-      if (!pinned && !suppressPreview) activate(ids(), span);
+      if (!pinned && !suppressPreview && !walkOn) activate(ids(), span);
     });
     span.addEventListener('blur', function () { if (!pinned) scheduleClear(); });
     span.addEventListener('click', function (e) {
@@ -168,12 +180,12 @@
     var id = card.dataset.id;
     card.addEventListener('mouseenter', function () {
       cancelScheduledClear();
-      if (!pinned) activate([id], card);
+      if (!pinned && !walkOn) activate([id], card);
     });
     card.addEventListener('mouseleave', function () { if (!pinned) scheduleClear(); });
     card.addEventListener('focus', function () {
       cancelScheduledClear();
-      if (!pinned && !suppressPreview) activate([id], card);
+      if (!pinned && !suppressPreview && !walkOn) activate([id], card);
     });
     card.addEventListener('blur', function () { if (!pinned) scheduleClear(); });
     card.addEventListener('click', function (e) {
@@ -387,6 +399,98 @@
   function forEachNode(list, fn) {
     Array.prototype.forEach.call(list, fn);
   }
+
+  // ---- the walkthrough: a tutor-led tour of the devices ----
+  var walkEl = document.getElementById('walkthrough-data');
+  var walkBtn = document.getElementById('walk-start');
+  if (walkEl && walkBtn) {
+    var WALK = JSON.parse(walkEl.textContent);
+    var walk = null; // {i: -1 intro … steps.length coda}
+
+    walkBtn.addEventListener('click', function () {
+      if (walk) endWalk(); else beginWalk();
+    });
+
+    function beginWalk() {
+      if (testState) exitTest();
+      unpin();
+      walkOn = true;
+      walk = { i: -1 };
+      var bar = document.createElement('div');
+      bar.className = 'walk-bar';
+      passageEl.parentNode.insertBefore(bar, passageEl.nextSibling);
+      walk.bar = bar;
+      walkBtn.textContent = 'End walkthrough';
+      walkBtn.setAttribute('aria-pressed', 'true');
+      paintWalk();
+    }
+
+    function endWalk() {
+      if (!walk) return;
+      if (walk.bar.parentNode) walk.bar.parentNode.removeChild(walk.bar);
+      walk = null;
+      walkOn = false;
+      clearActive();
+      walkBtn.textContent = 'Walk through it';
+      walkBtn.setAttribute('aria-pressed', 'false');
+    }
+
+    function paintWalk() {
+      var total = WALK.steps.length;
+      var atIntro = walk.i === -1;
+      var atCoda = walk.i === total;
+      var text, label, deviceName = '';
+      if (atIntro) { text = WALK.intro; label = 'Before we begin'; }
+      else if (atCoda) { text = WALK.coda; label = 'In sum'; }
+      else {
+        var step = WALK.steps[walk.i];
+        text = step.note;
+        deviceName = CARDS[step.id] ? CARDS[step.id].name : step.id;
+        label = 'Step ' + (walk.i + 1) + ' of ' + total;
+      }
+      walk.bar.innerHTML =
+        '<div class="walk-head"><span class="walk-label">' + escapeHtml(label) + '</span>' +
+        (deviceName ? '<b class="walk-device">' + escapeHtml(deviceName) + '</b>' : '') +
+        '<span class="walk-byline">Your tutor</span></div>' +
+        '<p class="walk-note">' + escapeHtml(text) + '</p>' +
+        '<div class="walk-actions">' +
+        (atIntro ? '' : '<button type="button" class="quiet-action" data-walk="prev">← Back</button>') +
+        '<button type="button" class="quiet-action" data-walk="next">' +
+        (atCoda ? 'Finish' : atIntro ? 'Begin →' : walk.i === total - 1 ? 'In sum →' : 'Next →') +
+        '</button></div>';
+      walk.bar.querySelectorAll('[data-walk]').forEach(function (b) {
+        b.addEventListener('click', function () { stepWalk(b.dataset.walk === 'next' ? 1 : -1); });
+      });
+      if (atIntro || atCoda) {
+        clearActive();
+      } else {
+        var id = WALK.steps[walk.i].id;
+        activate([id], null, true, true);
+        var seg = firstSegFor(id);
+        if (seg) seg.scrollIntoView({ block: 'center', behavior: 'smooth' });
+      }
+    }
+
+    function stepWalk(dir) {
+      if (walk.i + dir > WALK.steps.length) { endWalk(); return; }
+      walk.i = Math.max(-1, walk.i + dir);
+      paintWalk();
+    }
+  }
+
+  // ---- arrive via a span permalink (#d=key or #d=glossary-key) ----
+  (function () {
+    var m = location.hash.match(/^#d=(.+)$/);
+    if (!m) return;
+    var want = decodeURIComponent(m[1]);
+    var id = CARDS[want] ? want : Object.keys(CARDS).find(function (k) { return CARDS[k].gkey === want; });
+    if (!id) return;
+    pinned = [id];
+    var seg = firstSegFor(id);
+    pinAnchor = seg || deviceCardFor(id);
+    activate([id], pinAnchor, true);
+    if (seg) setTimeout(function () { seg.scrollIntoView({ block: 'center' }); }, 50);
+  })();
 
   paint();
 })();

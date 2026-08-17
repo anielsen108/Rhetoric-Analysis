@@ -15,9 +15,12 @@ function loadCorpus() {
 }
 
 test('the entire source corpus is Premium and parseable', () => {
-  const corpus = loadCorpus();
+  const all = loadCorpus();
+  const corpus = all.filter(({ analysis }) => Number(analysis.id) < 900);
+  const gallery = all.filter(({ analysis }) => Number(analysis.id) >= 900);
   assert.equal(corpus.length, 196);
-  for (const { file, md, analysis: a } of corpus) {
+  assert.ok(gallery.length >= 8, 'gallery of errors specimens present');
+  for (const { file, md, analysis: a } of all) {
     assert.match(md, /## A\) RHETORICAL TROPES USED/, `${file}: Premium marker`);
     assert.ok(a.author && a.work && a.year !== null, `${file}: complete byline`);
     assert.ok(a.meta.occasion && a.meta.persona && a.meta.thesis, `${file}: complete critical frame`);
@@ -25,7 +28,12 @@ test('the entire source corpus is Premium and parseable', () => {
     for (const family of ['trope', 'scheme', 'syntax']) {
       assert.ok(a.devices.some(d => d.family === family), `${file}: ${family} coverage`);
     }
+  }
+  for (const { file, analysis: a } of corpus) {
     assert.deepEqual(a.sections.map(s => s.num), [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], `${file}: full dossier`);
+  }
+  for (const { file, analysis: a } of gallery) {
+    assert.ok(a.sections.length >= 2, `${file}: autopsy and repair panels`);
   }
 });
 

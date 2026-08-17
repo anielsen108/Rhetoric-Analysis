@@ -69,7 +69,7 @@ export function deviceCardData(device, glossary, usage = null) {
 
 // --- passage page -----------------------------------------------------------
 
-export function renderPassagePage(a, glossary, { prev = null, next = null, usage = null } = {}) {
+export function renderPassagePage(a, glossary, { prev = null, next = null, usage = null, walkthrough = null, diagram = null, gallery = false } = {}) {
   const cards = {};
   for (const d of a.devices) cards[d.key] = deviceCardData(d, glossary, usage);
   const showGutter = a.lines.length > 1;
@@ -87,9 +87,19 @@ export function renderPassagePage(a, glossary, { prev = null, next = null, usage
   const legend = FAMILY_ORDER.map(f =>
     `<button class="chip" data-family="${f}" aria-pressed="true" style="--c:var(--${f})"><span class="dot"></span>${FAMILY_LABEL[f]}</button>`
   ).join('') +
+    (walkthrough ? '<button type="button" class="chip tool-chip" id="walk-start">Walk through it</button>' : '') +
     '<button type="button" class="chip tool-chip" id="self-test">Test yourself</button>' +
     '<button type="button" class="chip tool-chip" id="print-page">Print handout</button>' +
     '<span class="legend-hint">hover a marked phrase · click to pin · chips toggle layers</span>';
+
+  const diagramHtml = diagram ? `
+  <details class="panel arch-panel">
+    <summary><span class="pnum">§</span>Sentence Architecture — ${esc(diagram.label)}</summary>
+    <div class="panel-body">
+      <p>${esc(diagram.note)}</p>
+      ${renderClauseTree(diagram.tree)}
+    </div>
+  </details>` : '';
 
   const grid = FAMILY_ORDER.map(f => {
     const devs = a.devices.filter(d => d.family === f);
@@ -118,9 +128,9 @@ export function renderPassagePage(a, glossary, { prev = null, next = null, usage
 
   const body = `
 ${siteNav('analysis', '..')}
-<header class="crumbs"><a href="../analysis/index.html">← All passages</a><span class="crumb-title">The Rhetoric Reader</span></header>
-<main id="main">
-  <p class="eyebrow">Passage ${esc(a.id)}${a.year ? ` · ${esc(String(a.year))}` : ''}</p>
+<header class="crumbs"><a href="../analysis/index.html${gallery ? '#gallery' : ''}">← ${gallery ? 'The Gallery of Errors' : 'All passages'}</a><span class="crumb-title">The Rhetoric Reader</span></header>
+<main id="main"${gallery ? ' class="gallery-page"' : ''}>
+  <p class="eyebrow">${gallery ? `The Gallery of Errors · Specimen ${esc(a.id)}` : `Passage ${esc(a.id)}${a.year ? ` · ${esc(String(a.year))}` : ''}`}</p>
   <h1>${esc(a.title)}</h1>
   <p class="byline"><b>${esc(a.author || '')}</b> · <i>${esc(a.work || '')}</i>${a.locus ? ` · ${esc(a.locus)}` : ''}</p>
 
@@ -130,10 +140,10 @@ ${siteNav('analysis', '..')}
     <div class="passage" id="passage">
 ${passageHtml}
     </div>
-    ${a.meta.thesis ? `<p class="thesis"><b>Thesis of effect</b>${esc(a.meta.thesis)}</p>` : ''}
+    ${a.meta.thesis ? `<p class="thesis"><b>${gallery ? 'Thesis of failure' : 'Thesis of effect'}</b>${esc(a.meta.thesis)}</p>` : ''}
     ${meta ? `<div class="occasion">${meta}</div>` : ''}
   </section>
-
+${diagramHtml}
   <div id="pop" role="dialog" aria-label="Device details"></div>
 
   <h2>Device index</h2>
@@ -146,9 +156,19 @@ ${passageHtml}
   <nav class="pager">${navLink(prev, 'prev', '←')}${navLink(next, 'next', '→')}</nav>
 </main>
 <script type="application/json" id="reader-data">${JSON.stringify(cards).replace(/</g, '\\u003c')}</script>
-<script src="../assets/reader.js"></script>`;
+${walkthrough ? `<script type="application/json" id="walkthrough-data">${JSON.stringify(walkthrough).replace(/</g, '\\u003c')}</script>
+` : ''}<script src="../assets/reader.js"></script>`;
 
-  return layout(`${a.author ? a.author + ' — ' : ''}${a.title}`, body, '../assets/site.css');
+  const desc = a.meta.thesis
+    ? a.meta.thesis.slice(0, 155)
+    : `Annotated rhetorical analysis of ${a.title}${a.author ? ` by ${a.author}` : ''}: every device marked in the text.`;
+  return layout(`${a.author ? a.author + ' — ' : ''}${a.title}`, body, '../assets/site.css', desc);
+}
+
+function renderClauseTree(nodes) {
+  const item = n =>
+    `<li><span class="arch-text">${esc(n.t)}</span><span class="arch-role">${esc(n.r)}</span>${n.k ? renderClauseTree(n.k) : ''}</li>`;
+  return `<ul class="clause-tree">${nodes.map(item).join('')}</ul>`;
 }
 
 function titleCase(s) {
@@ -239,12 +259,15 @@ ${siteNav('learn', '..')}
         <select id="q-mode">
           <option value="name" selected>Name the device</option>
           <option value="spot">Spot the device</option>
+          <option value="define">Define it</option>
           <option value="mix">Mix</option>
         </select>
       </label>
       <button type="button" class="primary-action learn-action" id="start-quiz">Start the quiz</button>
+      <button type="button" class="quiet-action" id="review-misses" hidden>Review my misses</button>
       <span id="pool-note" class="pool-note" aria-live="polite"></span>
     </div>
+    <p class="setup-links">Also in the School: <a href="forge.html">the Device Forge</a> — write devices and have them mechanically verified — and <a href="paper.html">the paper quiz</a> for classrooms.</p>
   </section>
 
   <section id="quiz" class="quiz-stage" tabindex="-1" hidden></section>
@@ -254,6 +277,7 @@ ${siteNav('learn', '..')}
     <h2>Your record</h2>
     <p class="index-hint">Accuracy by family, saved in this browser and used to suggest what to drill next. <button type="button" class="linklike" id="reset-stats">Reset record</button></p>
     <div id="scoreboard" class="scoreboard"></div>
+    <p class="index-hint backup-row">Progress lives in this browser only. <button type="button" class="linklike" id="export-progress">Back it up to a file</button> or <button type="button" class="linklike" id="import-progress">restore from one</button>.<input type="file" id="import-file" accept="application/json" class="sr-only" aria-label="Restore progress file"></p>
   </section>
 </main>
 <script src="../assets/learn-data.js"></script>
@@ -274,7 +298,7 @@ const PERIODS = [
   [2000, 9999, '21st Century'],
 ];
 
-export function renderIndex(analyses, stats, trails = null) {
+export function renderIndex(analyses, stats, trails = null, quiz = null, antis = []) {
   const sorted = analyses.slice().sort((x, y) => (x.year || 0) - (y.year || 0) || x.id.localeCompare(y.id));
   const groups = PERIODS.map(([from, to, label]) => ({
     label,
@@ -292,6 +316,22 @@ export function renderIndex(analyses, stats, trails = null) {
   const bySlug = Object.fromEntries(analyses.map(a => [a.slug, a]));
   const trailsHtml = trails ? renderTrails(trails, bySlug) : '';
 
+  const deviceFilter = quiz ? `
+    <select id="device-filter" aria-label="Filter by device">
+      <option value="">Any device</option>
+      ${quiz.families.map(f => `<optgroup label="${esc(f.name)}">${f.keys.map(k =>
+        `<option value="${esc(k)}">${esc(quiz.devices[k].name)}</option>`).join('')}</optgroup>`).join('\n      ')}
+    </select>` : '';
+
+  const galleryHtml = antis.length ? `
+  <section class="period gallery-section" id="gallery">
+    <h2>The Gallery of Errors</h2>
+    <p class="index-hint">Annotated bad rhetoric: every device competent, every purpose lost. Read these the way a doctor reads an X-ray.</p>
+    <div class="entry-list">
+      ${antis.map(renderEntry).join('\n      ')}
+    </div>
+  </section>` : '';
+
   const body = `
 ${siteNav('analysis', '..')}
 <main id="main" class="home">
@@ -301,6 +341,7 @@ ${siteNav('analysis', '..')}
 ${trailsHtml}
   <div class="index-tools">
     <input id="reader-search" type="search" placeholder="Search passages, authors, devices, text…" aria-label="Search the passages">
+    ${deviceFilter}
     <div class="view-toggle" role="group" aria-label="Arrange the index by">
       <button type="button" data-view="era" aria-pressed="true">Era</button>
       <button type="button" data-view="author" aria-pressed="false">Author</button>
@@ -312,11 +353,13 @@ ${trailsHtml}
 ${sections}
   </div>
   <div id="index-alt" hidden></div>
+${galleryHtml}
 </main>
 <script src="../assets/search-data.js"></script>
 <script src="../assets/reader-index.js"></script>`;
 
-  return layout('The Rhetoric Reader — Rhetorical Analysis', body, '../assets/site.css');
+  return layout('The Rhetoric Reader — Rhetorical Analysis', body, '../assets/site.css',
+    `${stats.files} classic passages annotated device by device, from Ovid to the present — plus a gallery of instructive failures.`);
 }
 
 function renderTrails(trails, bySlug) {
@@ -537,7 +580,7 @@ ${sections}
   return layout('The Device Guide — Learn Rhetoric', body, '../assets/site.css');
 }
 
-export function renderDevicePage(key, quiz) {
+export function renderDevicePage(key, quiz, { cooc = [], forgeable = false } = {}) {
   const d = quiz.devices[key];
   const fam = quiz.families.find(f => f.id === d.family);
   const items = quiz.items.filter(it => it.d === key);
@@ -546,7 +589,7 @@ export function renderDevicePage(key, quiz) {
   const excerpts = shown.map(it =>
     `<figure class="gx">
       <blockquote class="q-excerpt">${excerptHtml(it)}</blockquote>
-      <figcaption>— ${esc(it.a)}, <i>${esc(it.w)}</i> · <a href="../passages/${esc(it.s)}.html">open the passage →</a></figcaption>
+      <figcaption>— ${esc(it.a)}, <i>${esc(it.w)}</i> · <a href="../passages/${esc(it.s)}.html#d=${esc(key)}">open the passage →</a></figcaption>
     </figure>`).join('\n  ');
 
   const nearLinks = (d.near || [])
@@ -558,6 +601,15 @@ export function renderDevicePage(key, quiz) {
   const drill = items.length >= 4
     ? `<a class="primary-action learn-action" href="../learn/index.html?drill=${esc(key)}&start=1">Drill this device — ${items.length} excerpts</a>`
     : `<a class="primary-action learn-action" href="../learn/index.html?fams=${esc(fam.id)}&start=1">Drill its family — ${esc(fam.name)}</a>`;
+  const forge = forgeable
+    ? `<a class="quiet-action forge-link" href="../learn/forge.html?dev=${esc(key)}">Forge one yourself →</a>` : '';
+
+  const coocHtml = cooc.length ? `
+  <h2>Travels with</h2>
+  <p class="index-hint">Devices that share a passage with ${esc(d.name.toLowerCase())} most often — company reveals character.</p>
+  <p class="gsibs">
+      ${cooc.map(c => `<a class="gsib" href="${esc(c.key)}.html">${esc(quiz.devices[c.key].name)} <span class="gsib-n">${c.count}</span></a>`).join('\n      ')}
+  </p>` : '';
 
   const body = `
 ${siteNav('learn', '..')}
@@ -569,19 +621,83 @@ ${siteNav('learn', '..')}
   <p class="gplain">${esc(d.plain)}</p>
   ${d.example ? `<blockquote class="gexample">${esc(d.example)}</blockquote>` : ''}
   ${d.confuse ? `<p class="gconfuse"><b>Don't confuse it with${nearLinks ? ` ${nearLinks}` : ''}.</b> ${esc(d.confuse)}</p>` : ''}
-  <div class="gactions">${drill}</div>
+  <div class="gactions">${drill}${forge}</div>
 
   <h2>${items.length ? `In the Reader — ${items.length} excerpt${items.length === 1 ? '' : 's'}` : 'In the Reader'}</h2>
   ${items.length ? excerpts : '<p class="index-hint">No anchored excerpts yet — this device lives in the glossary but has not been marked in a passage.</p>'}
   ${items.length > shown.length ? `<p class="index-hint">…and ${items.length - shown.length} more. <a href="../learn/index.html?drill=${esc(key)}&start=1">Meet the rest in the quiz →</a></p>` : ''}
-
+${coocHtml}
   <h2>The rest of the family</h2>
   <p class="gsibs">
       ${siblings}
   </p>
 </main>`;
 
-  return layout(`${d.name} — The Device Guide`, body, '../assets/site.css');
+  return layout(`${d.name} — The Device Guide`, body, '../assets/site.css',
+    `${d.name}: ${(d.plain.match(/^[^.]*\./) || [d.plain])[0]} Definition, examples from literature, and a practice quiz.`);
+}
+
+// --- the forge and the paper quiz --------------------------------------------
+
+export function renderForgePage() {
+  const body = `
+${siteNav('learn', '..')}
+<header class="crumbs"><a href="index.html">← The Rhetoric School</a><span class="crumb-title">The Device Forge</span></header>
+<main id="main" class="learn-home">
+  <p class="eyebrow">Learn Rhetoric</p>
+  <h1>The Device Forge</h1>
+  <p class="lede">Reading a device is knowing; writing one is owning. Choose a device, write a sentence or three that attempts it, and the detectors will verify the mechanism — word positions, repetitions, conjunctions, the measurable bones of the figure.</p>
+
+  <section class="quiz-setup forge-bench" aria-label="The forge">
+    <label class="count-label">Device
+      <select id="forge-device"></select>
+    </label>
+    <div id="forge-brief"></div>
+    <textarea id="forge-text" rows="4" placeholder="Write here. Ctrl+Enter checks." aria-label="Your attempt"></textarea>
+    <div class="setup-row">
+      <button type="button" class="primary-action learn-action" id="forge-check">Check the work</button>
+    </div>
+    <div id="forge-result" aria-live="polite"></div>
+  </section>
+</main>
+<script src="../assets/learn-data.js"></script>
+<script src="../assets/detect.js"></script>
+<script src="../assets/forge.js"></script>`;
+
+  return layout('The Device Forge — Learn Rhetoric', body, '../assets/site.css',
+    'Write rhetorical devices — anaphora, chiasmus, asyndeton and more — and have them mechanically verified as you type.');
+}
+
+export function renderPaperPage() {
+  const body = `
+${siteNav('learn', '..')}
+<header class="crumbs"><a href="index.html">← The Rhetoric School</a><span class="crumb-title">The Paper Quiz</span></header>
+<main id="main" class="learn-home">
+  <p class="eyebrow">Learn Rhetoric</p>
+  <h1>The Paper Quiz</h1>
+  <p class="lede">A printable quiz for classrooms: excerpts with the device underlined, four choices each, answer key on its own page. The same seed always deals the same sheet, so a class can share one and a make-up student can get another.</p>
+
+  <section class="quiz-setup paper-controls" aria-label="Sheet settings">
+    <div id="paper-fams" class="paper-fams" role="group" aria-label="Families to include"></div>
+    <div class="setup-row">
+      <label class="count-label">Questions
+        <select id="paper-count"><option>10</option><option selected>15</option><option>20</option></select>
+      </label>
+      <label class="count-label">Seed
+        <input id="paper-seed" type="text" value="period-3" aria-label="Sheet seed">
+      </label>
+      <button type="button" class="primary-action learn-action" id="paper-generate">Deal the sheet</button>
+      <button type="button" class="quiet-action" id="paper-print">Print</button>
+    </div>
+  </section>
+
+  <section id="sheet" class="paper-sheet" aria-label="The quiz sheet"></section>
+</main>
+<script src="../assets/learn-data.js"></script>
+<script src="../assets/paper.js"></script>`;
+
+  return layout('The Paper Quiz — Learn Rhetoric', body, '../assets/site.css',
+    'Print a name-that-device quiz: literary excerpts, four choices each, seeded and reproducible, with a detachable answer key.');
 }
 
 // --- the course --------------------------------------------------------------
@@ -683,19 +799,26 @@ function siteNav(active, root) {
 </header>`;
 }
 
-function layout(title, body, cssPath) {
-  const faviconPath = cssPath.replace(/site\.css$/, 'favicon.png');
+function layout(title, body, cssPath, desc = 'Rhetoric: annotated passages, device quizzes, and speaking drills.') {
+  const assetRoot = cssPath.replace(/site\.css$/, '');
   return `<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${esc(title)}</title>
-<link rel="icon" type="image/png" href="${faviconPath}">
+<meta name="description" content="${esc(desc)}">
+<meta property="og:title" content="${esc(title)}">
+<meta property="og:description" content="${esc(desc)}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Rhetoric">
+<link rel="icon" type="image/png" href="${assetRoot}favicon.png">
 <link rel="stylesheet" href="${cssPath}">
 </head>
 <body>
 ${body}
+<script src="${assetRoot}palette-data.js" defer></script>
+<script src="${assetRoot}palette.js" defer></script>
 </body>
 </html>`;
 }

@@ -91,8 +91,10 @@ function makeHarness() {
     setTimeout,
     clearTimeout
   };
+  const location = { hash: '', pathname: '/passages/x.html', search: '' };
+  const history = { replaceState() {} };
 
-  runInNewContext(readerSource, { document, window, console });
+  runInNewContext(readerSource, { document, window, console, location, history });
   return { card, pop, span };
 }
 

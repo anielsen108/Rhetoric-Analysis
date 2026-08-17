@@ -1,0 +1,123 @@
+{
+  "intro": "The sentence, taken apart. Indentation shows dependency: each element hangs from the one above it. Main clauses sit flush left — everything else is modification.",
+  "diagrams": {
+    "001_moby_dick_opening": {
+      "label": "The second sentence: a cumulative drift",
+      "note": "One short main clause buried mid-sentence, with circumstance piled before it and destination trailing after. The grammar drifts exactly as the man does.",
+      "tree": [
+        { "t": "Some years ago", "r": "adverbial of time", "k": [
+          { "t": "— never mind how long precisely —", "r": "parenthesis (the refused fact)" }
+        ] },
+        { "t": "having little or no money in my purse,", "r": "participial absolute (cause? circumstance? unranked)" },
+        { "t": "and nothing particular to interest me on shore,", "r": "coordinated absolute" },
+        { "t": "I thought", "r": "MAIN CLAUSE", "k": [
+          { "t": "I would sail about a little", "r": "noun clause (the intention)" },
+          { "t": "and see the watery part of the world.", "r": "coordinated clause (end-weight: the sea, saved for last)" }
+        ] }
+      ]
+    },
+    "003_tale_two_cities_opening": {
+      "label": "Ten clauses, no hierarchy",
+      "note": "Pure parataxis: every clause independent, spliced by commas, paired by antithesis. Nothing is subordinated because the age refused to rank its own contradictions.",
+      "tree": [
+        { "t": "It was the best of times,", "r": "independent clause", "k": [
+          { "t": "it was the worst of times,", "r": "its antithesis (spliced, not joined)" }
+        ] },
+        { "t": "it was the age of wisdom,", "r": "independent clause", "k": [
+          { "t": "it was the age of foolishness,", "r": "its antithesis" }
+        ] },
+        { "t": "it was the epoch of belief,", "r": "independent clause", "k": [
+          { "t": "it was the epoch of incredulity,", "r": "its antithesis" }
+        ] },
+        { "t": "it was the season of Light,", "r": "independent clause", "k": [
+          { "t": "it was the season of Darkness,", "r": "its antithesis" }
+        ] },
+        { "t": "it was the spring of hope,", "r": "independent clause", "k": [
+          { "t": "it was the winter of despair.", "r": "its antithesis (and the sentence's only full stop)" }
+        ] }
+      ]
+    },
+    "005_hamlet_to_be": {
+      "label": "The question that never completes",
+      "note": "A subordinate frame launches two alternatives and waits for a main clause that never arrives. The missing slot is the paralysis.",
+      "tree": [
+        { "t": "Whether 'tis nobler in the mind", "r": "subordinate frame (posing the comparison)", "k": [
+          { "t": "to suffer the slings and arrows of outrageous fortune,", "r": "infinitive alternative A (passive endurance)" },
+          { "t": "or to take arms against a sea of troubles,", "r": "infinitive alternative B (impossible action)", "k": [
+            { "t": "and by opposing end them.", "r": "coordinated infinitive (the imagined victory)" }
+          ] }
+        ] },
+        { "t": "[ the main clause never comes ]", "r": "MAIN CLAUSE — missing. The syntax cannot decide either." }
+      ]
+    },
+    "026_declaration_independence": {
+      "label": "One verb holding three truths",
+      "note": "A single short main clause, then three parallel that-clauses hung from it like articles of a contract — the last one opening into the famous ascending list.",
+      "tree": [
+        { "t": "We hold these truths to be self-evident,", "r": "MAIN CLAUSE (the performative)", "k": [
+          { "t": "that all men are created equal,", "r": "appositive clause 1" },
+          { "t": "that they are endowed by their Creator with certain unalienable Rights,", "r": "appositive clause 2 (passive, agent named)" },
+          { "t": "that among these are", "r": "appositive clause 3", "k": [
+            { "t": "Life, Liberty and the pursuit of Happiness.", "r": "climactic tricolon (existence → freedom → the unpromised)" }
+          ] }
+        ] }
+      ]
+    },
+    "027_gettysburg_address": {
+      "label": "Birth of a nation, diagrammed",
+      "note": "Time fronted, one main clause, then two parallel participles carrying the metaphor — with the borrowed proposition tucked at the deepest level.",
+      "tree": [
+        { "t": "Four score and seven years ago", "r": "adverbial of time (the archaic reach backward)" },
+        { "t": "our fathers brought forth on this continent, a new nation,", "r": "MAIN CLAUSE (the birth)", "k": [
+          { "t": "conceived in Liberty,", "r": "participial modifier (the condition of birth)" },
+          { "t": "and dedicated to the proposition", "r": "parallel participle (the vow)", "k": [
+            { "t": "that all men are created equal.", "r": "noun clause — Jefferson, quoted at the sentence's deepest point" }
+          ] }
+        ] }
+      ]
+    },
+    "076_second_inaugural_lincoln": {
+      "label": "Three withs, then the ask",
+      "note": "Three fronted prepositional phrases delay the main clause — the sentence practises the patience it preaches before issuing its gentle imperative.",
+      "tree": [
+        { "t": "With malice toward none,", "r": "fronted prepositional phrase 1 (what we renounce)" },
+        { "t": "with charity for all,", "r": "fronted prepositional phrase 2 (what we extend)" },
+        { "t": "with firmness in the right", "r": "fronted prepositional phrase 3 (what we keep)", "k": [
+          { "t": "as God gives us to see the right,", "r": "subordinate qualification (certainty, humbled)" }
+        ] },
+        { "t": "let us strive on", "r": "MAIN CLAUSE (cohortative — command shared, not issued)", "k": [
+          { "t": "to finish the work", "r": "infinitive of purpose", "k": [
+            { "t": "we are in.", "r": "relative clause (four plain words for a civil war)" }
+          ] }
+        ] }
+      ]
+    },
+    "082_one_art": {
+      "label": "The alibi, diagrammed",
+      "note": "A main clause hands agency to the things themselves, and a result clause delivers the verdict the poem will spend four stanzas failing to keep.",
+      "tree": [
+        { "t": "so many things seem filled with the intent", "r": "MAIN CLAUSE (agency transferred to the objects)", "k": [
+          { "t": "to be lost", "r": "infinitive (their intent, not hers)" },
+          { "t": "that their loss is no disaster.", "r": "result clause (the verdict — litotes in terminal position)" }
+        ] }
+      ]
+    },
+    "090_blood_meridian": {
+      "label": "Three beats, then forty",
+      "note": "A closed door of a sentence, then one that will not stop: simile opening into participle, participle into relative clause, and the whole conjoined outward by and.",
+      "tree": [
+        { "t": "They rode on.", "r": "MAIN CLAUSE (complete; a door closing)" },
+        { "t": "They rode", "r": "MAIN CLAUSE (the frame returns)", "k": [
+          { "t": "like men", "r": "simile", "k": [
+            { "t": "invested with a purpose", "r": "participial modifier", "k": [
+              { "t": "whose origins were antique and diffuse", "r": "relative clause (the purpose recedes into the past)" }
+            ] }
+          ] },
+          { "t": "and the wholes thereof were scattered", "r": "coordinated clause (level with the riding — nothing subordinated)", "k": [
+            { "t": "like paper in the wind.", "r": "simile (the cathedral roofed with newspaper)" }
+          ] }
+        ] }
+      ]
+    }
+  }
+}
