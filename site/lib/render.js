@@ -222,8 +222,7 @@ ${siteNav(null, '.')}
     <span><b>The Rhetoric Course</b> is the guided path — ten weeks of readings, quizzes, and drills through all four rooms.</span>
     <span class="course-banner-go">Start the course →</span>
   </a>
-</main>
-<script src="assets/nux.js" defer></script>`;
+</main>`;
 
   return layout('Rhetoric — Reference, Analysis, Learning, and Practice', body, 'assets/site.css',
     'Four rooms for rhetoric: a field guide of 84 devices, 196 annotated passages, a quiz school, and a speaking lab.');
@@ -907,6 +906,7 @@ ${body}
 <script src="${assetRoot}palette-data.js" defer></script>
 <script src="${assetRoot}palette.js" defer></script>
 <script src="${assetRoot}ui.js" defer></script>
+<script src="${assetRoot}nux.js" defer></script>
 </body>
 </html>`;
 }

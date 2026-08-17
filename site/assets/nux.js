@@ -1,83 +1,131 @@
-// First-visit welcome tour on the homepage. Shows once; the gear menu's
-// "Replay the welcome tour" clears the flag to bring it back.
+// The welcome tour. First visit to the gateway shows a welcome card; taking
+// the tour then walks through the real pages — Reader, Field Guide, School,
+// Lab, Course — with a docked card on each, so every feature is demonstrated
+// on the page that has it. Progress rides in sessionStorage; the gear menu's
+// "Replay the welcome tour" clears the seen-flag to bring it back.
 (function () {
   var FLAG = 'rhetoric-nux-v1';
-  try {
-    if (localStorage.getItem(FLAG)) return;
-  } catch (_) { return; }
+  var TOUR = 'rhetoric-nux-step';
+  var css = document.querySelector('link[rel="stylesheet"]');
+  var root = css ? css.getAttribute('href').replace(/assets\/site\.css$/, '') : '';
 
-  var steps = [
+  var STOPS = [
     {
-      title: 'Welcome to Rhetoric',
-      body: '<p>One subject, four rooms.</p><ul>' +
-        '<li><b>The Field Guide</b> — every device, defined and exemplified.</li>' +
-        '<li><b>The Reader</b> — 196 passages annotated device by device.</li>' +
-        '<li><b>The School</b> — quizzes that learn where you are weak.</li>' +
-        '<li><b>The Lab</b> — speaking drills, with or without a partner.</li></ul>',
+      path: 'passages/001_moby_dick_opening.html',
+      title: 'The Rhetoric Reader',
+      body: '<p>Every passage is annotated beneath the surface. <b>Hover any marked phrase</b> — go on, this card will wait — and click to pin its device. The colored chips toggle whole families of underlines, <b>Walk through it</b> hands you to a tutor, and <b>Test yourself</b> hides the marks and grades your eye.</p>',
     },
     {
-      title: 'Three things worth knowing',
-      body: '<ul>' +
-        '<li>In any passage, <b>hover a marked phrase</b> to open its device; click to pin it.</li>' +
-        '<li><b>Ctrl+K</b> (⌘K) jumps to any passage, device, or drill from anywhere.</li>' +
-        '<li>The <b>?</b> in the header opens the Site Guide; the <b>gear</b> backs up your progress.</li></ul>',
+      path: 'devices/anaphora.html',
+      title: 'The Rhetoric Field Guide',
+      body: '<p>One page per device: the plain definition, the neighbours it gets mistaken for, and every excerpt the Reader contains. <b>Drill this device</b> starts a quiz scoped to it; further down, <b>Travels with</b> shows its usual companions.</p>',
     },
     {
-      title: 'Where would you like to begin?',
-      body: '<div class="nux-starts">' +
-        '<a class="nux-start" href="learn/index.html"><b>Take the placement</b><span>18 questions map what you already know.</span></a>' +
-        '<a class="nux-start" href="course/index.html"><b>Follow the course</b><span>Ten guided weeks through all four rooms.</span></a>' +
-        '<a class="nux-start" href="passages/001_moby_dick_opening.html"><b>Read one great passage</b><span>Start where the Reader starts: "Call me Ishmael."</span></a>' +
-        '</div>',
+      path: 'learn/index.html',
+      title: 'The Rhetoric School',
+      body: '<p>Quizzes built from real excerpts. Pick families and a mode — name the device, spot it in an excerpt, or match its definition. Your accuracy is tracked by family, misses are collected for review, and the <b>placement</b> maps where you stand in eighteen questions.</p>',
+    },
+    {
+      path: 'practice/index.html',
+      title: 'The Rhetoric Lab',
+      body: '<p>Fifty speaking drills for two people. Open any drill to see its director signals — <b>solo mode</b> deals them automatically when you have no partner — and the <b>Prompt Deck</b> above the sets deals a topic, an audience, and a constraint for a two-minute warm-up.</p>',
+    },
+    {
+      path: 'course/index.html',
+      title: 'The Course — and you are off',
+      body: '<p>Ten weeks through all four rooms — read, quiz, drill — with progress saved in this browser.</p><p>Three parting habits: <kbd>Ctrl</kbd>+<kbd>K</kbd> jumps to anything from anywhere, the <b>?</b> in the header opens the Site Guide, and the <b>gear</b> backs your progress up to a file.</p>',
     },
   ];
 
-  var i = 0;
-  var overlay = document.createElement('div');
-  overlay.id = 'nux';
-  overlay.setAttribute('role', 'dialog');
-  overlay.setAttribute('aria-label', 'Welcome tour');
-  document.body.appendChild(overlay);
+  var seen = null;
+  try { seen = localStorage.getItem(FLAG); } catch (_) { return; }
+  var raw = sessionStorage.getItem(TOUR);
+  var step = raw == null ? null : Number(raw);
 
-  function done() {
+  function finish() {
     try { localStorage.setItem(FLAG, '1'); } catch (_) { /* fine */ }
-    if (overlay.parentNode) overlay.parentNode.removeChild(overlay);
+    sessionStorage.removeItem(TOUR);
+    var el = document.getElementById('nux') || document.getElementById('nux-tour');
+    if (el && el.parentNode) el.parentNode.removeChild(el);
   }
 
-  function paint() {
-    var last = i === steps.length - 1;
+  function goTo(i) {
+    sessionStorage.setItem(TOUR, String(i));
+    location.href = root + STOPS[i].path;
+  }
+
+  // ---- mid-tour: docked card on the page being demonstrated ----
+  function showStop(i) {
+    var stop = STOPS[i];
+    var here = location.pathname.endsWith('/' + stop.path) || location.pathname.endsWith(stop.path);
+    var last = i === STOPS.length - 1;
+    var card = document.createElement('aside');
+    card.id = 'nux-tour';
+    card.setAttribute('role', 'complementary');
+    card.setAttribute('aria-label', 'Site tour');
+    card.innerHTML = here
+      ? '<p class="eyebrow">The tour · stop ' + (i + 1) + ' of ' + STOPS.length + '</p>' +
+        '<h2>' + stop.title + '</h2>' + stop.body +
+        '<div class="nux-actions">' +
+        (i > 0 ? '<button type="button" class="quiet-action" data-nux="back">← Back</button>' : '') +
+        (last
+          ? '<button type="button" class="primary-action nux-next" data-nux="finish">Finish the tour</button>'
+          : '<button type="button" class="primary-action nux-next" data-nux="next">Next stop →</button>') +
+        (last ? '' : '<button type="button" class="linklike nux-skip" data-nux="finish">End tour</button>') +
+        '</div>'
+      : '<p class="eyebrow">The tour · paused</p>' +
+        '<h2>You wandered off</h2>' +
+        '<p>Exploring is allowed — the next stop is <b>' + stop.title + '</b>.</p>' +
+        '<div class="nux-actions">' +
+        '<button type="button" class="primary-action nux-next" data-nux="resume">Resume the tour →</button>' +
+        '<button type="button" class="linklike nux-skip" data-nux="finish">End tour</button></div>';
+    document.body.appendChild(card);
+    card.addEventListener('click', function (e) {
+      var act = e.target.dataset && e.target.dataset.nux;
+      if (act === 'next') goTo(i + 1);
+      else if (act === 'back') goTo(i - 1);
+      else if (act === 'resume') goTo(i);
+      else if (act === 'finish') finish();
+    });
+  }
+
+  // ---- first visit: welcome card on the gateway ----
+  function showWelcome() {
+    var overlay = document.createElement('div');
+    overlay.id = 'nux';
+    overlay.setAttribute('role', 'dialog');
+    overlay.setAttribute('aria-label', 'Welcome');
     overlay.innerHTML =
       '<div class="nux-box">' +
-      '<p class="eyebrow">Welcome' + (steps.length > 1 ? ' · ' + (i + 1) + ' of ' + steps.length : '') + '</p>' +
-      '<h2>' + steps[i].title + '</h2>' +
-      steps[i].body +
+      '<p class="eyebrow">Welcome</p>' +
+      '<h2>One subject, four rooms</h2><ul>' +
+      '<li><b>The Field Guide</b> — every device, defined and exemplified.</li>' +
+      '<li><b>The Reader</b> — 196 passages annotated device by device.</li>' +
+      '<li><b>The School</b> — quizzes that learn where you are weak.</li>' +
+      '<li><b>The Lab</b> — speaking drills, with or without a partner.</li></ul>' +
+      '<p>The tour visits each room in turn — two minutes, on the real pages.</p>' +
       '<div class="nux-actions">' +
-      (i > 0 ? '<button type="button" class="quiet-action" data-nux="back">← Back</button>' : '') +
-      (last
-        ? '<button type="button" class="quiet-action" data-nux="done">I’ll explore on my own</button>'
-        : '<button type="button" class="primary-action nux-next" data-nux="next">Next →</button>' +
-          '<button type="button" class="linklike nux-skip" data-nux="done">Skip the tour</button>') +
+      '<button type="button" class="primary-action nux-next" data-nux="tour">Take the tour →</button>' +
+      '<button type="button" class="linklike nux-skip" data-nux="skip">I’ll explore on my own</button>' +
       '</div></div>';
-    overlay.querySelectorAll('[data-nux]').forEach(function (b) {
-      b.addEventListener('click', function () {
-        if (b.dataset.nux === 'next') { i++; paint(); }
-        else if (b.dataset.nux === 'back') { i--; paint(); }
-        else done();
-      });
+    document.body.appendChild(overlay);
+    overlay.addEventListener('click', function (e) {
+      var act = e.target.dataset && e.target.dataset.nux;
+      if (act === 'tour') goTo(0);
+      else if (act === 'skip' || e.target === overlay) finish();
     });
-    // choosing a starting point counts as finishing the tour
-    overlay.querySelectorAll('.nux-start').forEach(function (a) {
-      a.addEventListener('click', function () {
-        try { localStorage.setItem(FLAG, '1'); } catch (_) { /* fine */ }
-      });
-    });
-    var first = overlay.querySelector('.nux-next') || overlay.querySelector('[data-nux="done"]');
+    var first = overlay.querySelector('.nux-next');
     if (first) first.focus();
   }
 
-  overlay.addEventListener('click', function (e) { if (e.target === overlay) done(); });
   document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape' && overlay.parentNode) done();
+    if (e.key === 'Escape' &&
+        (document.getElementById('nux') || document.getElementById('nux-tour'))) finish();
   });
-  paint();
+
+  if (step != null && step >= 0 && step < STOPS.length) {
+    showStop(step);
+  } else if (!seen && root === '') {
+    showWelcome(); // root '' means we are on the gateway page
+  }
 })();
