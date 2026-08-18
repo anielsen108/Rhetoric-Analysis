@@ -583,7 +583,7 @@ ${siteNav('guide', '..')}
 <main id="main" class="home guide-home">
   <p class="eyebrow">Rhetorical Reference</p>
   <h1>The Rhetoric Field Guide</h1>
-  <p class="lede">All ${Object.keys(quiz.devices).length} devices in ${quiz.families.length} families, with every example the Reader contains — and, at the bottom, a gallery of instructive failures. Study here, then <a href="../learn/index.html">drill in the School</a>.</p>
+  <p class="lede">All ${Object.keys(quiz.devices).length} devices in ${quiz.families.length} families, with every example the Reader contains — and a gallery of instructive failures. Study here, then <a href="../learn/index.html">drill in the School</a>.</p>
 ${sections}
 ${galleryHtml}
 </main>`;
@@ -658,7 +658,7 @@ ${siteNav('learn', '..')}
 <main id="main" class="learn-home">
   <p class="eyebrow">Learn Rhetoric</p>
   <h1>The Device Forge</h1>
-  <p class="lede">Reading a device is knowing; writing one is owning. Choose a device, write a sentence or three that attempts it, and the detectors will verify the mechanism — word positions, repetitions, conjunctions, the measurable bones of the figure.</p>
+  <p class="lede">Choose a device, write a sentence or three that attempts it, and the detectors will verify the mechanism — word positions, repetitions, conjunctions, the measurable bones of the figure.</p>
 
   <section class="quiz-setup forge-bench" aria-label="The forge">
     <label class="count-label">Device
@@ -737,7 +737,7 @@ export function renderCoursePage(course, analyses, curriculum, quiz) {
         <label for="w${w.n}-quiz" class="sr-only">Mark quiz done</label>
         <div><span class="step-kind">Quiz</span>
         <a href="${quizUrl}"><b>${esc(w.quiz.label)}</b> — ${w.quiz.n} questions</a>
-        <p>Aim for 7 of 10 before moving on; re-run it if the family fights back.</p></div>
+        <p>Aim for 7 of 10 before moving on; re-run it if you fall short.</p></div>
       </li>`;
 
     const drills = w.drills.map(id => {
@@ -802,7 +802,7 @@ ${siteNav(null, '..')}
 <main id="main" class="learn-home help-home">
   <p class="eyebrow">Orientation</p>
   <h1>Site Guide</h1>
-  <p class="lede">What each room is for, how the pages work, and where your data lives. Five minutes here repays itself quickly.</p>
+  <p class="lede">What each room is for, how the pages work, and where your data lives.</p>
 
   <h2>The four rooms</h2>
   <div class="help-rooms">
@@ -811,7 +811,7 @@ ${siteNav(null, '..')}
     <div class="help-room"><a href="../learn/index.html"><b>The Rhetoric School</b></a><p>The quiz. Name devices in real excerpts, spot excerpts for a named device, or match definitions. Your accuracy per family is tracked and steers what comes next. Also here: <a href="../learn/forge.html">the Device Forge</a>, where you write devices and detectors verify them, and <a href="../learn/paper.html">the printable paper quiz</a> for classrooms.</p></div>
     <div class="help-room"><a href="../practice/index.html"><b>The Rhetoric Lab</b></a><p>Fifty speaking drills for two people — or one, with solo mode auto-dealing the director's signals. The Prompt Deck deals a topic, an audience, and a constraint for warm-ups.</p></div>
   </div>
-  <p class="help-note">Prefer a path through all of it? <a href="../course/index.html"><b>The Rhetoric Course</b></a> sequences readings, quizzes, and drills over ten weeks with saved progress.</p>
+  <p class="help-note"><a href="../course/index.html"><b>The Rhetoric Course</b></a> sequences readings, quizzes, and drills over ten weeks, with saved progress.</p>
 
   <h2>On a passage page</h2>
   <ul class="help-list">

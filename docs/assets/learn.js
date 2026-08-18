@@ -488,7 +488,7 @@
     $('#results').innerHTML = `
       <p class="eyebrow">${quiz.placement ? 'Placement complete' : 'Results'}</p>
       <div class="results-score"><b>${quiz.right}</b> / ${total} <span>(${pct(quiz.right / total)})</span></div>
-      ${quiz.placement ? '<p class="drill-note">That is your starting map. The scoreboard below records it, and "My weakest" now knows the terrain.</p>' : ''}
+      ${quiz.placement ? '<p class="drill-note">Your starting map is recorded — the scoreboard and the "My weakest" preset now use it.</p>' : ''}
       ${famRows}
       <div class="results-actions">
         <button type="button" class="primary-action learn-action" id="again">Run it back</button>

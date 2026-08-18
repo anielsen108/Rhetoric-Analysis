@@ -35,7 +35,7 @@
   function check() {
     var k = select.value;
     var text = $('#forge-text').value.trim();
-    if (!text) { $('#forge-result').innerHTML = '<p class="index-hint">Write something first — the anvil is empty.</p>'; return; }
+    if (!text) { $('#forge-result').innerHTML = '<p class="index-hint">Write something first.</p>'; return; }
     var found = DETECT.detectAll(text);
     var target = found.find(function (f) { return f.key === k; });
     var others = found.filter(function (f) { return f.key !== k; });
@@ -53,7 +53,7 @@
         return esc(f.name);
       }).join(', ') + '.</p>';
     }
-    html += '<p class="index-hint">The detectors read surfaces — word positions, repetitions, conjunctions. They verify the mechanism, not the music. A sentence can pass the check and still deserve a red circle.</p>';
+    html += '<p class="index-hint">The detectors verify the mechanism, not the music: a sentence can pass the check and still be clumsy.</p>';
     $('#forge-result').innerHTML = html;
   }
 
