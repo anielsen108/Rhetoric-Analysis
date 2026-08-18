@@ -66,7 +66,7 @@
 
 ## 1) THE AUTOPSY
 
-One sentence, five lines, and not one clause allowed to finish its work. Observe the order of failure: first the hedge (torrents, retracted), then the digression (London, announced), then the decoration (lamps, ensouled). These are three separate vices, and the sentence commits them in ascending order of vanity. The grammar is sound throughout — that is the lesson. Nothing here is a mistake of syntax. Every fault is a decision.
+One sentence, five lines, and not one clause allowed to finish its work. The order of failure: first the hedge (torrents, retracted), then the digression (London, announced), then the decoration (lamps, ensouled). These are three separate vices, and the sentence commits them in ascending order of vanity. The grammar is sound throughout — that is the lesson. Nothing here is a mistake of syntax. Every fault is a decision.
 
 ## 2) THE REPAIR
 

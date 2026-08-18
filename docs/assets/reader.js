@@ -400,7 +400,7 @@
     Array.prototype.forEach.call(list, fn);
   }
 
-  // ---- the walkthrough: a tutor-led tour of the devices ----
+  // ---- the walkthrough: a step-by-step tour of the devices ----
   var walkEl = document.getElementById('walkthrough-data');
   var walkBtn = document.getElementById('walk-start');
   if (walkEl && walkBtn) {
@@ -440,8 +440,8 @@
       var atIntro = walk.i === -1;
       var atCoda = walk.i === total;
       var text, label, deviceName = '';
-      if (atIntro) { text = WALK.intro; label = 'Before we begin'; }
-      else if (atCoda) { text = WALK.coda; label = 'In sum'; }
+      if (atIntro) { text = WALK.intro; label = 'Overview'; }
+      else if (atCoda) { text = WALK.coda; label = 'Summary'; }
       else {
         var step = WALK.steps[walk.i];
         text = step.note;
@@ -451,12 +451,12 @@
       walk.bar.innerHTML =
         '<div class="walk-head"><span class="walk-label">' + escapeHtml(label) + '</span>' +
         (deviceName ? '<b class="walk-device">' + escapeHtml(deviceName) + '</b>' : '') +
-        '<span class="walk-byline">Your tutor</span></div>' +
+        '</div>' +
         '<p class="walk-note">' + escapeHtml(text) + '</p>' +
         '<div class="walk-actions">' +
         (atIntro ? '' : '<button type="button" class="quiet-action" data-walk="prev">← Back</button>') +
         '<button type="button" class="quiet-action" data-walk="next">' +
-        (atCoda ? 'Finish' : atIntro ? 'Begin →' : walk.i === total - 1 ? 'In sum →' : 'Next →') +
+        (atCoda ? 'Finish' : atIntro ? 'Begin →' : walk.i === total - 1 ? 'Summary →' : 'Next →') +
         '</button></div>';
       walk.bar.querySelectorAll('[data-walk]').forEach(function (b) {
         b.addEventListener('click', function () { stepWalk(b.dataset.walk === 'next' ? 1 : -1); });

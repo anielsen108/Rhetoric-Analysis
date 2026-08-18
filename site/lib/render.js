@@ -240,7 +240,7 @@ ${siteNav('learn', '..')}
 <main id="main" class="learn-home">
   <p class="eyebrow">Learn Rhetoric</p>
   <h1>The Rhetoric School</h1>
-  <p class="lede">${quiz.items.length} excerpts drawn from the Reader's ${stats.files} passages put ${inPlay} of the guide's ${deviceCount} devices in play, across ${quiz.families.length} families. Read the <mark class="lede-mark">marked phrase</mark>, then name its device. All four choices come from the same family — the near misses are the point. To study before you drill, <a href="../devices/index.html">browse the field guide</a>.</p>
+  <p class="lede">${quiz.items.length} excerpts drawn from the Reader's ${stats.files} passages put ${inPlay} of the guide's ${deviceCount} devices in play, across ${quiz.families.length} families. Read the <mark class="lede-mark">marked phrase</mark>, then name its device. All four choices come from the same family. To study before you drill, <a href="../devices/index.html">browse the field guide</a>.</p>
 
   <div id="placement" class="placement" hidden>
     <p><b>Start with the placement.</b> Two questions from each family show where you stand and give the scoreboard its first real numbers.</p>
@@ -572,7 +572,7 @@ export function renderDevicesIndex(quiz, antis = []) {
   const galleryHtml = antis.length ? `
   <section class="period gallery-section" id="gallery">
     <h2>The Gallery of Errors</h2>
-    <p class="index-hint">Annotated bad rhetoric: every device competent, every purpose lost. Read these the way a doctor reads an X-ray.</p>
+    <p class="index-hint">Bad rhetoric, annotated: what went wrong, and the repair.</p>
     <div class="entry-list">
       ${antis.map(renderEntry).join('\n      ')}
     </div>
@@ -816,7 +816,7 @@ ${siteNav(null, '..')}
   <h2>On a passage page</h2>
   <ul class="help-list">
     <li><b>Hover a marked phrase</b> to see its device; click to pin the card. The colored chips toggle whole families of underlines.</li>
-    <li><b>Walk through it</b> (on showcase passages) hands you to a tutor who takes the devices one at a time, in teaching order.</li>
+    <li><b>Walk through it</b> (on showcase passages) steps through the devices one at a time, in teaching order.</li>
     <li><b>Test yourself</b> hides the annotations and lets you mark the words you think are doing rhetorical work, then scores you against the real spans.</li>
     <li><b>Print handout</b> produces a clean one-page version with a device key — made for teaching.</li>
     <li><b>Pinning writes the URL.</b> Copy it and the link opens the passage with that device highlighted.</li>

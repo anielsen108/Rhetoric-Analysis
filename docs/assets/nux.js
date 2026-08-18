@@ -18,7 +18,7 @@
     {
       path: 'passages/001_moby_dick_opening.html',
       title: 'The Rhetoric Reader',
-      body: '<p><b>Hover any marked phrase</b> to open its device; click to pin it. The colored chips toggle whole families of underlines, <b>Walk through it</b> hands you to a tutor, and <b>Test yourself</b> hides the marks and grades your eye.</p>',
+      body: '<p><b>Hover any marked phrase</b> to open its device; click to pin it. The colored chips toggle whole families of underlines, <b>Walk through it</b> steps through the devices in order, and <b>Test yourself</b> hides the marks and grades your eye.</p>',
     },
     {
       path: 'learn/index.html',

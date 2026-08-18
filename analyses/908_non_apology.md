@@ -68,7 +68,7 @@
 
 ## 1) THE AUTOPSY
 
-Understand this passage and you understand why rhetoric requires an ethics. Nothing here is incompetent — the passive is correctly formed, the apophasis is textbook, the parallelism scans. Every device functions; every device is aimed away from the truth. The tell is distributional: agency appears nowhere near the wrong ("mistakes were made") and promptly reappears for the virtue ("lessons have been *learned*" — by us, the quick studies). Grammar that misplaces agents this consistently is not confused. It is drafted.
+This passage is why rhetoric requires an ethics. Nothing here is incompetent — the passive is correctly formed, the apophasis is textbook, the parallelism scans. Every device functions; every device is aimed away from the truth. The tell is distributional: agency appears nowhere near the wrong ("mistakes were made") and promptly reappears for the virtue ("lessons have been *learned*" — by us, the quick studies). Grammar that misplaces agents this consistently is not confused. It is drafted.
 
 ## 2) THE REPAIR
 

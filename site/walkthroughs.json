@@ -1,93 +1,92 @@
 {
-  "byline": "Your tutor",
   "walkthroughs": {
     "001_moby_dick_opening": {
-      "intro": "Three lines, and nearly everything a novel must do. We will take the devices in the order a careful ear meets them, not the order the index prefers. Do try to keep up.",
+      "intro": "Five devices in three lines, in reading order.",
       "steps": [
-        { "id": "parataxis", "note": "Begin with what is *not* there. 'Call me Ishmael. Some years ago…' — two utterances set side by side with no because, no and, no therefore. The reader is made to supply the connection, and a reader who supplies a connection believes it. That is parataxis: flat coordination as a trap for consent." },
-        { "id": "parenthesis", "note": "Now the dashes. '—never mind how long precisely—' interrupts the sentence to refuse us a fact. Observe that the refusal tells us more than the fact would have: a man who will not count the years is a man for whom the years blurred. Interruption as characterization — this is how a parenthesis earns its keep." },
-        { "id": "litotes", "note": "'Little or no money,' 'nothing particular.' Understatement by negation, twice in one breath. You will be tempted to read this as modesty; read it instead as evasion. Litotes lets the narrator confess poverty and aimlessness while sounding faintly amused by both. The double negative slows you down precisely where he'd rather you not linger." },
-        { "id": "asyndeton-polysyndeton", "note": "Attend to the conjunctions — first their absence, then their sudden abundance. 'Call me Ishmael' arrives clipped, asyndetic, a command. Then the ands begin: 'and nothing particular… and see…' The sentence loosens exactly as the man does. Decisiveness melting into drift, enacted in the connective tissue. Nothing in the vocabulary announces this; only the syntax knows." },
-        { "id": "end-weight-end-focus", "note": "Finally, the destination. 'The watery part of the world' is held for the sentence's terminal position — the seat of stress in English prose. Everything prior is given information; the sea arrives as the new thing, at the very end, and drags the reader's attention over the horizon with it. When you write, spend your final position this deliberately or not at all." }
+        { "id": "parataxis", "note": "'Call me Ishmael. Some years ago…' — two statements side by side with no connective. The reader supplies the link between naming and story, and a supplied link is believed." },
+        { "id": "parenthesis", "note": "'—never mind how long precisely—' interrupts the sentence to refuse a fact. The refusal characterizes: a man for whom the years blurred." },
+        { "id": "litotes", "note": "'Little or no money,' 'nothing particular' — understatement by negation. The narrator admits poverty and aimlessness while sounding amused by both; the double negative slows the reading at the exact spot he'd rather not dwell on." },
+        { "id": "asyndeton-polysyndeton", "note": "The opening is clipped and connective-free; then the ands multiply: 'and nothing particular… and see…' Decisiveness loosens into drift, carried entirely by the conjunctions." },
+        { "id": "end-weight-end-focus", "note": "'The watery part of the world' holds the sentence's final position — the stress point in English prose. Everything before it is given information; the sea arrives last, as the new thing." }
       ],
-      "coda": "Now read the three lines again, whole. Command, hedge, evasion, drift, horizon — five gestures in forty-five words, none of them stated, all of them performed. That is the standard. Aspire to it."
+      "coda": "Command, hedge, evasion, drift, horizon — five gestures in forty-five words, none stated, all performed."
     },
     "003_tale_two_cities_opening": {
-      "intro": "Ten clauses, one comma splice of genius, and a century's argument about whether it is magnificent or a trick. It is both. Let us see how.",
+      "intro": "Ten clauses, one famous comma splice.",
       "steps": [
-        { "id": "anaphora", "note": "'It was the' — ten times. Note what disciplined anaphora buys: with the frame fixed, every reader's attention is herded onto the one slot that changes. Dickens has built a machine with a single moving part, and the moving part is the age itself." },
-        { "id": "antithesis", "note": "Each pair sets opposites in identical grammar: best against worst, Light against Darkness, hope against despair. The symmetry is the argument — matched frames assert that these contraries are equally true, equally weighted. The sentence does not choose between them. That refusal *is* the thesis of the novel." },
-        { "id": "isocolon", "note": "Measure the clauses: copula, article, noun, 'of,' noun — seven-ish syllables, again and again. Isocolon is antithesis's percussion section. Without the metrical match, the oppositions would merely alternate; with it, they toll. You should be able to conduct this sentence with a baton." },
-        { "id": "paradox", "note": "Step back from the pairs and take the whole: everything and its opposite asserted of the same moment, without embarrassment. This is paradox at sentence scale — not a contradiction to be resolved but a condition to be inhabited. Revolutionary times feel exactly like this; the sentence performs the feeling rather than describing it." },
-        { "id": "comma-splice", "note": "And now the misdemeanour. Ten independent clauses joined by commas — a construction for which I would return your essay unread. Why does Dickens escape? Because the splice enforces breathlessness: full stops would let the reader rest, and rest would let the reader choose sides. The rule is real; the licence must be earned at this price or not taken." }
+        { "id": "anaphora", "note": "'It was the' — ten times. The fixed frame drives all attention to the one slot that changes." },
+        { "id": "antithesis", "note": "Each pair sets opposites in identical grammar: best against worst, Light against Darkness, hope against despair. The symmetry weighs the contraries equally — the sentence refuses to choose, and that refusal is the novel's thesis." },
+        { "id": "isocolon", "note": "Each clause runs copula, article, noun, 'of,' noun, at near-equal length. The metrical match makes the oppositions toll rather than alternate." },
+        { "id": "paradox", "note": "Everything and its opposite, asserted of the same moment. Not a contradiction to resolve but a condition to inhabit: revolutionary time, performed rather than described." },
+        { "id": "comma-splice", "note": "Ten independent clauses joined by commas — normally an error. The splice enforces breathlessness: full stops would let the reader rest, and rest would let the reader choose sides." }
       ],
-      "coda": "Observe the economy of it: one pattern, repeated past all prudence, carrying an entire historical argument. Repetition without escalation is a metronome — except here, where the escalation happens in the reader, who grows dizzier with each toll. Know the difference before you attempt it."
+      "coda": "One pattern repeated past prudence, carrying a historical argument. Repetition without escalation is a metronome; here the escalation happens in the reader."
     },
     "005_hamlet_to_be": {
-      "intro": "The most famous sentence fragment in the language. Yes — fragment. The soliloquy's grammar never completes its own question, and in that failure is the whole man. Attend.",
+      "intro": "The most famous sentence fragment in English: the question never completes, and the incompletion is the character.",
       "steps": [
-        { "id": "bare-infinitive-phrases", "note": "'To be, or not to be' — infinitives without a subject. Who is to be? The grammar declines to say. Hamlet contemplates existence without ever attaching it to himself; the syntax holds the question at arm's length, impersonal as an examination paper. A lesser dramatist would have written 'Shall I live?' and lost everything." },
-        { "id": "antithesis", "note": "The alternatives are framed as perfect opposites: to suffer, passive, against to take arms, active. But inspect the scales — 'in the mind to suffer' has quiet dignity; 'take arms against a sea' has doomed grandeur. The antithesis is rigged, and Hamlet rigged it. Balanced form, unbalanced heart." },
-        { "id": "metaphor", "note": "'The slings and arrows of outrageous fortune' — suffering rendered as bombardment. Note the choice of weapons: slings and arrows are *aimed*. Fortune, in Hamlet's figure, is not indifferent but hostile, taking shots at him personally. Metaphor always deposes; ask what reality it replaced, and you learn the speaker." },
-        { "id": "catachresis-the-mixed-metaphor", "note": "'To take arms against a sea of troubles.' One cannot. Swords are useless against water — and that is precisely the point. The mixed metaphor, a fault in your prose and mine, is here a diagnosis: the contemplated action is as absurd as the figure that carries it. Shakespeare breaks the rule to show a mind discovering its plan is impossible. You may break it when you can do that." },
-        { "id": "aposiopesis", "note": "Now the deepest device, and the easiest to miss: the question never ends. 'Whether 'tis nobler…' launches a subordinate clause that waits for a main clause which never comes. The soliloquy abandons its own syntax mid-thought — grammar enacting paralysis. The sentence cannot decide; neither can he; they are the same fact." }
+        { "id": "bare-infinitive-phrases", "note": "'To be, or not to be' — infinitives without a subject. Hamlet contemplates existence without attaching it to himself; the grammar holds the question at arm's length." },
+        { "id": "antithesis", "note": "To suffer (passive) against to take arms (active), in balanced frames. The scales are loaded: quiet dignity on one side, doomed grandeur on the other." },
+        { "id": "metaphor", "note": "'The slings and arrows of outrageous fortune' — suffering as bombardment. Slings and arrows are aimed: fortune, in this figure, is not indifferent but hostile." },
+        { "id": "catachresis-the-mixed-metaphor", "note": "'To take arms against a sea of troubles.' Swords are useless against water — which is the point. The broken figure diagnoses the plan: the contemplated action is as impossible as the image that carries it." },
+        { "id": "aposiopesis", "note": "'Whether 'tis nobler…' opens a subordinate clause that waits for a main clause that never comes. The sentence cannot decide; neither can he." }
       ],
-      "coda": "You have now watched a sentence fail to finish for five acts' worth of reasons. The lesson is severe: syntax is character. What a mind cannot do, its grammar cannot do — and an audience feels the incompletion long before it could name it."
+      "coda": "Syntax is character: what the mind cannot do, its grammar cannot do."
     },
     "026_declaration_independence": {
-      "intro": "One sentence made to carry a revolution. Its business is to make a wholly arguable proposition sound like arithmetic. Watch the machinery do it.",
+      "intro": "One sentence built to make an arguable proposition sound like arithmetic.",
       "steps": [
-        { "id": "performative-first-person-plural", "note": "'We hold' — attend to that verb. Not 'we believe,' which invites dispute, nor 'we assert,' which admits effort. To *hold* a truth is to possess it already; the argument is over before the sentence begins. And 'we' — the signatories? the colonies? mankind? The pronoun recruits every reader into a body that was never convened." },
-        { "id": "enthymeme", "note": "'Self-evident' is the boldest word in the document. An enthymeme persuades by omitting the premise the audience will supply — and here the omitted premise is the entire case. Truths requiring no proof receive none; the reader, handed the honour of finding them obvious, declines to ask for evidence. Audacity, dressed as geometry." },
-        { "id": "anaphora", "note": "'That all men… that they are endowed… that among these are.' Three subordinate clauses hung from one verb, each launched by the same word. The anaphora does quiet legal work: it makes the three claims feel like clauses of a single contract rather than three separate assertions, each of which might be separately denied." },
-        { "id": "climactic-ordering", "note": "'Life, Liberty and the pursuit of Happiness.' Examine the series' direction: from bare existence, to freedom, to — note — not happiness but its *pursuit*. The tricolon ascends from what government must not take to what it cannot give. That final abstraction, carefully unpromised, is the most lawyerly phrase in the sentence." },
-        { "id": "passive-voice", "note": "'Are created… are endowed.' You have heard me condemn the agentless passive as a getaway car. Here is the exception that instructs: the agent is named — 'by their Creator' — and the passive exists to put *men* in the subject position and their rights in the emphatic one. The passive ennobles when it knows exactly who acted. Compare the press release that has forgotten." }
+        { "id": "performative-first-person-plural", "note": "'We hold' — not 'we believe,' which invites dispute, nor 'we assert,' which admits effort. To hold a truth is to possess it already. And 'we' recruits every reader into a body that never convened." },
+        { "id": "enthymeme", "note": "'Self-evident' omits the entire case: truths requiring no proof receive none. The reader, credited with finding them obvious, declines to ask for evidence." },
+        { "id": "anaphora", "note": "'That all men… that they are endowed… that among these are.' Three claims hung from one verb by one repeated word — clauses of a single contract rather than three separate assertions, each separately deniable." },
+        { "id": "climactic-ordering", "note": "'Life, Liberty and the pursuit of Happiness' ascends from bare existence to freedom to — not happiness — its pursuit. The final term is carefully unpromised." },
+        { "id": "passive-voice", "note": "'Are created… are endowed' — passive with the agent named: 'by their Creator.' The construction puts men in the subject position and their rights at the point of stress. Compare the agentless passive of the press release." }
       ],
-      "coda": "Read it once more and notice your own assent arriving ahead of your judgement. That is the sentence working. It remains the finest demonstration on record that style is not the decoration of an argument — it is the argument."
+      "coda": "Style here is not the decoration of the argument. It is the argument."
     },
     "027_gettysburg_address": {
-      "intro": "Two hundred and seventy-two words at a cemetery, and the opening sentence does half the work. Lincoln must consecrate the ground and refound a nation, in one breath. Observe the tools.",
+      "intro": "The opening sentence does half the speech's work: consecrate the ground, refound the nation.",
       "steps": [
-        { "id": "archaism", "note": "'Four score and seven years ago.' Simply 'eighty-seven' was available and Lincoln declined it. The archaism reaches backward in diction as the sentence reaches backward in time — the number arrives already antique, already scriptural. You cannot consecrate anything in the language of an invoice." },
-        { "id": "biblical-opening", "note": "The whole opening movement is cut to the pattern of scripture — the measured cadence of Genesis and the Psalms. His audience carried one book in common, and the sentence borrows that book's authority without citing it. Allusion of *rhythm* rather than of phrase: the subtlest borrowing there is." },
-        { "id": "personification", "note": "The nation is 'conceived' and 'brought forth' — a birth, with the founders as parents and Liberty as the condition of conception. The metaphor performs quiet argumentative work: nations that are born can die, and can be *reborn* — which is where this speech is headed. The figure plants the seed of its own conclusion." },
-        { "id": "parallel-participles", "note": "'Conceived in Liberty, and dedicated to the proposition.' Two participles in step, past and purposive. The balance implies the nation's origin had both a condition and an intention — birth and vow. When Lincoln later asks for 'a new birth of freedom,' it is this parallel he redeems." },
-        { "id": "allusion", "note": "'All men are created equal' — Jefferson's words, verbatim, unattributed. His hearers knew the source, and knew Lincoln knew. The allusion converts the Declaration from a historical document into a 'proposition' — a thing still to be proven, on that battlefield. Quotation as escalation: the boldest reframing in American oratory, done in seven borrowed words." }
+        { "id": "archaism", "note": "'Four score and seven' where 'eighty-seven' would do. The number arrives already antique, already scriptural — consecration does not happen in invoice language." },
+        { "id": "biblical-opening", "note": "The cadence is cut to the pattern of Genesis and the Psalms. The audience carried one book in common; the sentence borrows that book's authority without citing it." },
+        { "id": "personification", "note": "The nation is 'conceived' and 'brought forth' — a birth, with Liberty as its condition. Nations that are born can die, and can be reborn: the figure plants the speech's conclusion." },
+        { "id": "parallel-participles", "note": "'Conceived in Liberty, and dedicated to the proposition' — two participles in step, origin as condition and vow. 'A new birth of freedom' later redeems exactly this parallel." },
+        { "id": "allusion", "note": "'All men are created equal' — Jefferson, verbatim, unattributed. The quotation reframes the Declaration as a 'proposition' still to be proven, on that field." }
       ],
-      "coda": "Notice what is absent: no ornament, no digression, not one wasted syllable. Every device serves the single motion from past birth to present test. When you have something to say over the dead, say it like this — or more briefly."
+      "coda": "No ornament, no digression: every device serves the single motion from past birth to present test."
     },
     "028_i_have_dream": {
-      "intro": "The most famous anaphora in American English — but the frame is the least of it. Watch what the sentence does with time, and with someone else's words.",
+      "intro": "The most famous anaphora in American English — and the frame is the least of it.",
       "steps": [
-        { "id": "first-person-declaration", "note": "'I have a dream.' Present tense, first person, possessive. Not 'we shall see' nor 'there will come' — the dream exists *now*, in a particular man, as property no one can vote down. The grammar makes one person's interior state a public fact, and dares the audience to deny what only he can witness." },
-        { "id": "anaphora", "note": "The frame returns — 'I have a dream that one day' — and each return raises the cargo: this nation, then states, then his own children. This is the escalation the commencement circuit forgets: anaphora is a ratchet, not a refrain. Same words, higher price, every time. The repetition builds a debt the final image must pay — and it pays." },
-        { "id": "future-tense", "note": "'One day this nation *will* rise up.' Attend to the modal: will, not may, not could. Prophecy, not proposal. The future tense here performs certainty about the one thing no speaker can be certain of — and the audience, hearing certainty, begins to supply it. Hope stated as schedule." },
-        { "id": "allusion", "note": "'We hold these truths to be self-evident, that all men are created equal.' Jefferson again — but where Lincoln paraphrased, King *quotes*, in full, on the steps of Lincoln's own memorial. The nation's founding sentence is read back to the nation as an unpaid promissory note. An allusion becomes an audit." },
-        { "id": "colon-and-quotation", "note": "Note the punctuation doing rhetoric: the colon before the quotation presents the creed as evidence — exhibit A, entered into the record. 'Live out the true meaning of its creed:' and then the creed itself, verbatim. The syntax stages a courtroom: the dream is merely that the defendant honour its own signed confession." }
+        { "id": "first-person-declaration", "note": "'I have a dream' — present tense, first person, possessive. The dream exists now, in a particular man, as a fact no vote can repeal." },
+        { "id": "anaphora", "note": "The frame returns and each return raises the cargo: the nation, the states, his own children. Anaphora as ratchet — same words, higher price each time." },
+        { "id": "future-tense", "note": "'This nation will rise up' — will, not may. Prophecy, not proposal: certainty stated until the audience supplies it." },
+        { "id": "allusion", "note": "Jefferson quoted in full, on the steps of Lincoln's memorial: the founding sentence read back to the nation as an unpaid promissory note." },
+        { "id": "colon-and-quotation", "note": "The colon presents the creed as evidence — exhibit A, entered into the record. The dream is only that the country honor its own signed words." }
       ],
-      "coda": "The devices are old — anaphora from the Psalms, allusion from the schoolroom. The genius is in the aiming: every figure points the country's own language back at it. Borrowed authority, compounded. That is how you move a nation with a sentence it already knew."
+      "coda": "Old devices, new aim: every figure points the nation's own language back at it."
     },
     "082_one_art": {
-      "intro": "Bishop's villanelle about losing everything, conducted in the tone of someone teaching a card trick. The gap between the tone and the freight is the entire poem. Mind the gap.",
+      "intro": "A poem about losing everything, in the tone of someone teaching a card trick. The gap between tone and freight is the poem.",
       "steps": [
-        { "id": "gerund-subject", "note": "'The art of losing.' Attend to the grammar's first move: *losing* — a verb of catastrophe — is nominalized, domesticated, made the object of an art. Grammar as anaesthetic. You cannot practise an art unwillingly; the gerund quietly asserts that loss is a discipline one might choose, which is precisely the lie the poem needs to survive." },
-        { "id": "litotes", "note": "'Isn't hard to master,' 'no disaster.' Understatement by negation, twice, in the calmest possible register. Litotes here is load-bearing: the poem can only hold its subject at all by holding it upside down. Each negation names the exact word — hard, disaster — that the speaker is trying not to believe, and so plants it in your ear." },
-        { "id": "irony", "note": "The claim is instruction; the truth is grief. Every reader knows 'isn't hard to master' is false, and knows the speaker knows. That triple awareness — hers, ours, and hers-of-ours — is dramatic irony run inward. The poem does not lie to us; it shows us someone practising a lie to herself, with perfect technique." },
-        { "id": "personification", "note": "'So many things seem filled with the intent to be lost.' The keys, the houses, the continents — granted *intent*, as though they had been planning their departures. Observe what this personification purchases: if things intend to be lost, no one loses them. Agency is transferred from the griever to the objects, and the speaker is briefly, mercifully, not responsible." },
-        { "id": "final-assertion", "note": "'Their loss is no disaster' — the line lands with the confidence of a proof concluded, in the terminal position where English puts its verdicts. But the poem will spend four more stanzas re-testing this verdict against larger and larger losses until it cracks. A final assertion placed this early is not a conclusion. It is a defendant's opening statement." }
+        { "id": "gerund-subject", "note": "'The art of losing' — the verb of catastrophe nominalized into a discipline. Arts are chosen; the grammar quietly claims loss can be practiced." },
+        { "id": "litotes", "note": "'Isn't hard to master,' 'no disaster' — negation naming the exact words, hard and disaster, that the speaker is trying not to believe." },
+        { "id": "irony", "note": "The claim is instruction; the truth is grief. Reader and speaker both know 'isn't hard to master' is false — the poem shows a lie being practiced with perfect technique." },
+        { "id": "personification", "note": "Things 'filled with the intent to be lost.' If objects intend their loss, no one loses them: agency transferred, the speaker briefly not responsible." },
+        { "id": "final-assertion", "note": "'Their loss is no disaster' lands like a verdict — then four stanzas re-test it against larger and larger losses until it cracks. An opening statement, not a conclusion." }
       ],
-      "coda": "Note the master-class in restraint: not one exclamation, not one image of weeping — only grammar arranged to keep the speaker upright. Form as composure, and composure as the visible effort of not breaking. That is what understatement is *for*."
+      "coda": "No exclamation, no weeping — only grammar arranged to keep the speaker upright. That is what understatement is for."
     },
     "090_blood_meridian": {
-      "intro": "Three words, then a flood. McCarthy's two sentences demonstrate that rhythm is meaning — that where the words fall matters as much as what they say.",
+      "intro": "Two sentences: three words, then forty. The ratio is the style.",
       "steps": [
-        { "id": "parataxis", "note": "'They rode on.' Subject, verb, particle — a sentence with the finality of a door closing. Then, without transition, the second sentence opens its floodgate. The juxtaposition of clipped and vast is the book's whole metric: violence stated flatly, cosmology unspooling after. Neither sentence would signify alone; the ratio is the style." },
-        { "id": "anaphora", "note": "'They rode… They rode' — the smallest anaphora that can exist, and among the most relentless in the language. Across the novel this frame returns like hoofbeats; the repetition does not emphasize, it *erodes* — the riders persist the way weather persists. Anaphora as inevitability rather than crescendo. Compare King's ascending ratchet; this one is flat as the desert it crosses." },
-        { "id": "polysyndeton", "note": "'Antique and diffuse and the wholes thereof were scattered.' The ands multiply where an editor would prune, and each one refuses hierarchy: no clause subordinated, no idea ranked above another. Polysyndeton is the grammar of scripture and of exhaustion — everything level, everything continuing. The sentence rides on because the syntax will not let it stop." },
-        { "id": "archaic-genitive", "note": "'The wholes thereof.' No one has said 'thereof' unironically for two centuries, which is why it is here. The archaism tilts the sentence toward the King James register, granting a band of scalp-hunters the cadence of prophecy. Diction is period costume; McCarthy dresses the present in Deuteronomy and the desert becomes Old Testament ground." },
-        { "id": "simile", "note": "'Scattered like paper in the wind.' After the biblical machinery, the simile lands with deliberate poverty — not chaff, not stars: *paper*. The men's purpose, so grandly 'antique and diffuse,' compares in the end to litter. The sentence builds a cathedral of syntax and roofs it with newspaper. That anticlimax is the judgement." }
+        { "id": "parataxis", "note": "'They rode on.' Complete, closed. The second sentence opens its floodgate with no transition — violence stated flatly, cosmology unspooling after." },
+        { "id": "anaphora", "note": "'They rode… They rode' — the smallest possible anaphora, returning across the novel like hoofbeats. Flat repetition, no crescendo: persistence like weather." },
+        { "id": "polysyndeton", "note": "'Antique and diffuse and the wholes thereof' — the ands refuse hierarchy. Nothing subordinated, everything level; the sentence rides on because the syntax will not stop." },
+        { "id": "archaic-genitive", "note": "'The wholes thereof' — King James diction. The archaism grants a band of scalp-hunters the cadence of prophecy and turns the desert into Old Testament ground." },
+        { "id": "simile", "note": "After the biblical machinery: 'scattered like paper in the wind.' Not chaff, not stars — paper. The grand purpose compares, in the end, to litter." }
       ],
-      "coda": "Read both sentences aloud — this prose is scored, not merely written. Three beats, then forty. When your own paragraphs all breathe at the same rate, remember this ratio, and vary or be monotonous."
+      "coda": "Three beats, then forty — prose scored, not merely written."
     }
   }
 }

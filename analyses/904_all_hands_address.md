@@ -70,7 +70,7 @@
 
 ## 1) THE AUTOPSY
 
-No single phrase here is a crime; every one of them was a serviceable metaphor once, and several still function alone in casual speech. The failure is combinatorial. Metaphor asks the listener to build a picture; this passage commissions six pictures on one canvas and blames the audience when nothing coheres. And note what the fog is *for*: not one sentence names a product, a number, a decision, or a date. The mixture is not carelessness. It is camouflage.
+No single phrase here is a crime; every one of them was a serviceable metaphor once, and several still function alone in casual speech. The failure is combinatorial. Metaphor asks the listener to build a picture; this passage commissions six pictures on one canvas and blames the audience when nothing coheres. What the fog is *for*: not one sentence names a product, a number, a decision, or a date. The mixture is not carelessness. It is camouflage.
 
 ## 2) THE REPAIR
 

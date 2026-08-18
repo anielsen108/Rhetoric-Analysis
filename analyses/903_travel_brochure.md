@@ -63,7 +63,7 @@
 
 ## 1) THE AUTOPSY
 
-Read it aloud and count the decisions made by sound: napkin (for the n), niceness (for the n), sizzles (for the s), splendour (for the s). Nearly half the content words were chosen by their first letters. This is the central corruption — a sentence assembled from the outside in. The clichés then finish the job: where the alliteration was at least energetic, "memories are made" is a phrase that has never made anyone feel anything, which is why committees trust it.
+Count the decisions made by sound: napkin (for the n), niceness (for the n), sizzles (for the s), splendour (for the s). Nearly half the content words were chosen by their first letters. This is the central corruption — a sentence assembled from the outside in. The clichés then finish the job: where the alliteration was at least energetic, "memories are made" is a phrase that has never made anyone feel anything, which is why committees trust it.
 
 ## 2) THE REPAIR
 

@@ -63,7 +63,7 @@
 
 ## 1) THE AUTOPSY
 
-Sincerity is not a defence. McGonagall means every word, and that is precisely the difficulty: unearned devices are worse when meant. Note the order of address — bridge first, self second, victims third — which is the poem's true moral structure, arrived at by accident. The final line teaches the great lesson of scale: the reader will always weigh your largest fact against the phrase you spend on it, and "a very long time" cannot lift ninety lives.
+Sincerity is not a defence. McGonagall means every word, and that is precisely the difficulty: unearned devices are worse when meant. The order of address — bridge first, self second, victims third — is the poem's true moral structure, arrived at by accident. The final line shows the rule of scale: a fact is weighed against the phrase spent on it, and "a very long time" cannot lift ninety lives.
 
 ## 2) THE REPAIR
 

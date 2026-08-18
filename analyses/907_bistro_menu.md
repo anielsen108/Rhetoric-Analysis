@@ -62,7 +62,7 @@
 
 ## 1) THE AUTOPSY
 
-Every device here is aimed at the same target — magnitude — and that is the tell. Real praise varies its instruments: a texture, a provenance, a comparison, a fact. Uniform superlatives are the signature of a writer who has not tasted the dish, or worse, has, and is compensating. Note also the temporal madness of the final claim: "the best thing you will *ever* eat" mortgages the customer's entire future against a side order. No sentence should make promises its potatoes must keep.
+Every device here is aimed at the same target — magnitude — and that is the tell. Real praise varies its instruments: a texture, a provenance, a comparison, a fact. Uniform superlatives are the signature of a writer who has not tasted the dish, or worse, has, and is compensating. The final claim compounds it: "the best thing you will *ever* eat" mortgages the customer's entire future against a side order. No sentence should make promises its potatoes must keep.
 
 ## 2) THE REPAIR
 
