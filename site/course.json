@@ -7,7 +7,7 @@
       "title": "Sentence Control",
       "focus": "Length, diction, and the two great sentence shapes: cumulative and periodic.",
       "read": [
-        { "slug": "090_blood_meridian", "note": "The cumulative sentence at full gallop — clause added to clause without mercy." },
+        { "slug": "090_blood_meridian", "note": "The cumulative sentence at full speed: clause added to clause without pause." },
         { "slug": "026_declaration_independence", "note": "The periodic sentence holds everything suspended until the main clause lands." }
       ],
       "quiz": { "fams": ["syntax"], "n": 10, "label": "Syntax & Word Order" },
@@ -29,7 +29,7 @@
       "title": "Antithesis and Contrast",
       "focus": "Balanced opposition: making two ideas clarify each other by collision.",
       "read": [
-        { "slug": "003_tale_two_cities_opening", "note": "Antithesis stacked clause on clause until the whole age balances." },
+        { "slug": "003_tale_two_cities_opening", "note": "Antithesis stacked clause on clause across a whole era." },
         { "slug": "076_second_inaugural_lincoln", "note": "Balance used for mercy — matched clauses refusing vengeance." }
       ],
       "quiz": { "fams": ["balance"], "n": 10, "label": "Balance & Opposition" },
@@ -40,7 +40,7 @@
       "title": "Metaphor and Image",
       "focus": "Saying one thing by another — transfer, embodiment, the image that argues.",
       "read": [
-        { "slug": "006_great_gatsby_green_light", "note": "A dock light made to carry a whole national longing." },
+        { "slug": "006_great_gatsby_green_light", "note": "A dock light made to carry a nation's longing." },
         { "slug": "056_second_coming_yeats", "note": "Image escalating into prophecy: the falcon, the gyre, the rough beast." }
       ],
       "quiz": { "fams": ["figuration"], "n": 10, "label": "Metaphor & Figuration" },
@@ -51,7 +51,7 @@
       "title": "Rhythm and Conjunction",
       "focus": "Asyndeton, polysyndeton, and the pulse of prose — what connectives do to time.",
       "read": [
-        { "slug": "001_moby_dick_opening", "note": "Clipped command melting into meandering ands — both connective strategies in three lines." },
+        { "slug": "001_moby_dick_opening", "note": "A clipped command, then spreading ands — both connective strategies in three lines." },
         { "slug": "079_we_real_cool", "note": "The rhythm carries the entire argument — enjambment and omission at maximum compression." }
       ],
       "quiz": { "fams": ["flow"], "n": 10, "label": "Omission & Flow" },

@@ -25,19 +25,19 @@
 **Definition:** Direct address to an absent or non-human entity.
 **Evidence:** "Beautiful Railway Bridge of the Silv'ry Tay!"
 **Effect:** Elegy traditionally addresses the dead, the muse, or God. McGonagall salutes the infrastructure — the very bridge whose collapse killed the people the poem is about. The device is executed with full ceremony and pointed at the one party that cannot grieve and did the harm.
-**Near-miss:** Lear addresses the storm *because* it is his antagonist. This address mistakes the antagonist for the dedicatee.
+**Near-miss:** Lear addresses the storm *because* it is his antagonist. This one salutes the thing that caused the deaths.
 
 ### **Bathos** (the terminal understatement)
 **Lines:** L5
 **Definition:** A collapse from the momentous to the trivial.
 **Evidence:** "Which will be remember'd for a very long time"
-**Effect:** Ninety deaths arrive at their conclusion and are handed the vaguest measurement in English. "A very long time" is how one describes a queue at the post office. The poem's largest fact receives its smallest phrase, and the reader's grief converts, against everyone's wishes, into laughter.
+**Effect:** Ninety deaths arrive at their conclusion and are handed the vaguest measurement in English. "A very long time" is the vaguest measure available. The poem's largest fact gets its smallest phrase, and grief turns into unintended comedy.
 
 ### **Epithet** (ornamental)
 **Lines:** L1
 **Definition:** A descriptive tag fixed to a name.
 **Evidence:** "Beautiful," "Silv'ry"
-**Effect:** Decoration pasted onto disaster. The epithets are not wrong — the bridge may well have been beautiful — but praise of the scenery while the bodies are still in the water is a failure of tact performed as a figure of style.
+**Effect:** Decoration pasted onto disaster. The epithets are not wrong — the bridge may well have been beautiful — but praising the scenery in a poem about the dead is a failure of tact.
 
 ---
 
@@ -47,7 +47,7 @@
 **Lines:** L2
 **Definition:** Words surplus to the sense.
 **Evidence:** "Alas! I am very sorry to say"
-**Effect:** Seven words announcing that sad news is sad to deliver, placed *before* the news. The poet's discomfort takes precedence over ninety deaths. "Alas" alone was the elegiac convention; the paraphrase that follows converts convention into throat-clearing.
+**Effect:** Seven words announcing that sad news is sad to deliver, placed *before* the news. The poet's discomfort takes precedence over ninety deaths. "Alas" alone was the convention; the paraphrase after it is filler.
 
 ---
 
@@ -57,7 +57,7 @@
 **Lines:** L2–5
 **Definition:** Word order and word choice dictated by the rhyme scheme rather than the sense.
 **Evidence:** "very sorry to say," "taken away," "for a very long time"
-**Effect:** The rhyme is the tail wagging this poem. "Taken away" is the passive a coroner would avoid; it exists because "say" needed a partner. When sound outranks meaning, the reader hears the machinery and stops believing the grief.
+**Effect:** The rhyme drives the poem. "Taken away" exists because "say" needed a partner. When sound outranks meaning, the reader hears the machinery and stops believing the grief.
 
 ---
 

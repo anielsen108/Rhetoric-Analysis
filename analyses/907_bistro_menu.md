@@ -23,20 +23,20 @@
 **Lines:** L1, L3–4
 **Definition:** Overstatement — here with no remaining headroom.
 **Evidence:** "life-changing," "unforgettable," "legendary," "the best thing you will ever eat in your entire life"
-**Effect:** Four superlatives in four lines, each pegged at the ceiling. Hyperbole works on a gradient — the reader must feel the stretch. A menu on which fries are life-changing has no vocabulary left for anything that actually is, and the reader silently reprices every claim to zero.
+**Effect:** Four superlatives in four lines, each pegged at the ceiling. Hyperbole works on a gradient — the reader must feel the stretch. A menu where fries are life-changing has no words left for anything that actually is, and the reader discounts every claim to zero.
 **Risk:** The first inflated word costs nothing. The tenth costs the whole menu.
 
 ### **Synecdoche** (the unaccompanied taste buds)
 **Lines:** L2
 **Definition:** The part standing for the whole — here, travelling without it.
 **Evidence:** "transport your taste buds on an unforgettable odyssey"
-**Effect:** The taste buds depart on an odyssey; the customer, presumably, remains at the table awaiting their return. Synecdoche fails comically when the part is granted an itinerary the whole cannot join. Homer's odyssey took ten years; this one ends when the fries do.
+**Effect:** The taste buds leave on a journey; the customer stays at the table. Synecdoche turns comic when the part gets an adventure the whole can't join.
 
 ### **Catachresis** (explosion, in a restaurant)
 **Lines:** L1
 **Definition:** A figure whose literal content was never inspected.
 **Evidence:** "a life-changing explosion of...flavour"
-**Effect:** An explosion, on premises, of flavour — promised as an inducement. The metaphor's violence was never examined because the writer no longer sees the word, only its retail glow. Diners are being offered shrapnel and expected to book.
+**Effect:** An explosion of flavour, promised as a selling point. The writer no longer sees the word's violence, only its sales glow.
 
 ---
 
@@ -46,7 +46,7 @@
 **Lines:** L1, L3
 **Definition:** Descriptive tags fixed to a noun.
 **Evidence:** "hand-crafted, artisanal," "legendary signature"
-**Effect:** Two epithet pairs doing the work the potato should do. "Hand-crafted" and "artisanal" are the same claim twice; "legendary" is a claim no kitchen can adjudicate. Homer's epithets identified — swift-footed Achilles could be picked from a crowd. These conceal: what, precisely, is in the fryer?
+**Effect:** Two epithet pairs doing the work the potato should do. "Hand-crafted" and "artisanal" are the same claim twice; "legendary" is a claim no kitchen can verify. Homer's epithets identified their subjects; these hide the one fact that matters — what is in the fryer?
 
 ---
 
@@ -62,8 +62,8 @@
 
 ## 1) THE AUTOPSY
 
-Every device here is aimed at the same target — magnitude — and that is the tell. Real praise varies its instruments: a texture, a provenance, a comparison, a fact. Uniform superlatives are the signature of a writer who has not tasted the dish, or worse, has, and is compensating. The final claim compounds it: "the best thing you will *ever* eat" mortgages the customer's entire future against a side order. No sentence should make promises its potatoes must keep.
+Every device here is aimed at the same target — magnitude — and that is the tell. Real praise varies its instruments: a texture, a provenance, a comparison, a fact. Uniform superlatives are the signature of a writer who has not tasted the dish, or worse, has, and is compensating. The final claim compounds it: "the best thing you will *ever* eat" mortgages the customer's entire future against a side order. No sentence should promise more than its potatoes can deliver.
 
 ## 2) THE REPAIR
 
-Underclaim and specify. *"Fries: cut this morning, fried twice in beef fat, salted once. Ask for the aioli."* Not one adjective of praise — and the reader trusts every word, because the sentence spends its authority on facts and lets the eater supply the superlatives. Understatement is the only flattery a menu can afford.
+Underclaim and specify. *"Fries: cut this morning, fried twice in beef fat, salted once. Ask for the aioli."* Not one word of praise — and the reader trusts all of it, because the sentence gives facts and lets the eater supply the praise.

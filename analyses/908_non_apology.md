@@ -24,13 +24,13 @@
 **Lines:** L2–4
 **Definition:** The soft word installed over the hard fact.
 **Evidence:** "the events in question," "regrettable miscommunications," "what transpired"
-**Effect:** Whatever happened has been issued three aliases in four lines, each vaguer than the last. Note the craftsmanship: "miscommunications" converts an act into an accident of transmission — nobody *did* anything; a message merely lost its way. Euphemism in mourning spares the grieving. Euphemism in a press release spares the guilty.
+**Effect:** Whatever happened has been issued three aliases in four lines, each vaguer than the last. "Miscommunications" converts an act into an accident — nobody *did* anything; a message merely got lost. Euphemism in mourning spares the grieving. In a press release it spares the guilty.
 
 ### **Irony** (structural, unintended)
 **Lines:** L4–5
 **Definition:** A meaning opposite to the stated one — here, audible to everyone but the author.
 **Evidence:** "we regret that they feel that way"
-**Effect:** An apology whose grammatical object is the audience's feelings rather than the speaker's act. Parsed plainly: *we regret your reaction.* The statement performs contrition while assigning the fault to those injured — an inversion so complete it has become the genre's fingerprint.
+**Effect:** An apology whose grammatical object is the audience's feelings rather than the speaker's act. Parsed plainly: *we regret your reaction.* The statement performs contrition while assigning the fault to those injured — an inversion so complete it defines the genre.
 
 ---
 
@@ -40,13 +40,13 @@
 **Lines:** L2–3
 **Definition:** Mentioning by declining to mention.
 **Evidence:** "We will not dwell on who may or may not have authorized...nor mention the regrettable miscommunications"
-**Effect:** Cicero's apophasis feigned restraint to smuggle in an attack; the audience enjoyed the wink. This apophasis smuggles in the *defence* — authorization doubted, communications blamed — while wearing restraint's costume. The device backfires because its purpose is inverted: apophasis borrows credit for what the speaker sacrifices, and this speaker sacrifices nothing.
+**Effect:** Classical apophasis pretends restraint to slip in an attack, and the audience enjoys the trick. This one slips in the *defence* — authorization doubted, communications blamed — while pretending restraint. It fails because apophasis earns credit by giving something up, and this speaker gives up nothing.
 
 ### **Parallelism** (the false ledger)
 **Lines:** L1
 **Definition:** Matched frames implying matched substance.
 **Evidence:** "Mistakes were made, and lessons have been learned"
-**Effect:** Two passive clauses in perfect balance, implying a transaction completed — error entered, wisdom withdrawn, books closed. The symmetry is the swindle: it converts an unfinished scandal into a finished sentence.
+**Effect:** Two passive clauses in perfect balance, implying the matter is closed — error logged, lesson banked. The symmetry does the trick: it makes an unfinished scandal read as a finished sentence.
 
 ---
 
@@ -56,20 +56,20 @@
 **Lines:** L1
 **Definition:** The action preserved, the actor deleted.
 **Evidence:** "Mistakes were made"
-**Effect:** The most famous evasion in modern English. The sentence contains a wrong and no wrongdoer — grammar as getaway car, idling outside the scene of the verb. Compare "are endowed by their Creator": the passive can ennoble when the agent is named. Unnamed, it absconds.
+**Effect:** The most famous evasion in modern English. The sentence contains a wrong and no wrongdoer. Compare "are endowed by their Creator": the passive can elevate when the actor is named. Unnamed, it hides.
 
 ### **Conditional Erasure**
 **Lines:** L4
 **Definition:** The "if" that converts an established fact into a hypothesis.
 **Evidence:** "If anyone was offended"
-**Effect:** People *were* offended; that is why the statement exists. The conditional relocates them from fact to possibility, so the apology addresses a hypothetical population while the actual one watches. One subordinating conjunction, and the injured are downgraded to a rounding error.
+**Effect:** People *were* offended; that is why the statement exists. The conditional relocates them from fact to possibility, so the apology addresses a hypothetical population while the actual one watches. One little "if," and the injured become hypothetical.
 
 ---
 
 ## 1) THE AUTOPSY
 
-This passage is why rhetoric requires an ethics. Nothing here is incompetent — the passive is correctly formed, the apophasis is textbook, the parallelism scans. Every device functions; every device is aimed away from the truth. The tell is distributional: agency appears nowhere near the wrong ("mistakes were made") and promptly reappears for the virtue ("lessons have been *learned*" — by us, the quick studies). Grammar that misplaces agents this consistently is not confused. It is drafted.
+This passage is why rhetoric requires an ethics. Nothing here is incompetent — the passive is correctly formed, the apophasis is textbook, the parallelism scans. Every device functions; every device is aimed away from the truth. The tell is where the actors appear: nowhere near the wrong ("mistakes were made"), and right beside the virtue ("lessons have been *learned*" — by us). Grammar that places its actors this consistently is not confused. It is drafted.
 
 ## 2) THE REPAIR
 
-There is only one: *"We did it. We were wrong. Here is what changes, and here is the date by which it changes."* Active voice, named agent, falsifiable promise. It cannot be written by a committee, which is rather the point.
+There is only one: *"We did it. We were wrong. Here is what changes, and here is the date by which it changes."* Active voice, named agent, falsifiable promise. A committee cannot write it, which is the point.

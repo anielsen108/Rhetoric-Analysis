@@ -66,7 +66,7 @@ test('passage page embeds annotated spans and card data', () => {
   const json = html.match(/<script type="application\/json" id="reader-data">(.*?)<\/script>/s)[1];
   const cards = JSON.parse(json);
   assert.equal(cards.litotes.family, 'trope');
-  assert.match(cards.litotes.plain, /negating its opposite/); // glossary enrichment
+  assert.match(cards.litotes.plain, /denying its opposite/); // glossary enrichment
   assert.match(cards.litotes.example, /Melville/);
   assert.equal(cards.litotes.anchored, true);
   assert.equal(cards['bespoke-scheme-nobody-knows'].anchored, false);

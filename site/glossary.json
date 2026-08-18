@@ -2,588 +2,588 @@
   "anaphora": {
     "name": "Anaphora",
     "pron": "uh-NAF-or-uh / əˈnæfərə",
-    "plain": "Beginning successive clauses, sentences, or lines with the same word or phrase. The repetition builds a drumbeat: each return to the anchor phrase raises the emotional pressure while the changing endings carry the argument forward. It is the signature device of oratory because an audience can feel the structure without seeing it.",
+    "plain": "Starting several clauses, sentences, or lines in a row with the same word or phrase. Each repeat adds pressure, and the changing endings carry the idea forward. Common in speeches because listeners feel the pattern without needing to see it.",
     "example": "\"We shall fight on the beaches, we shall fight on the landing grounds, we shall fight in the fields…\" — Churchill",
     "confuse": "Epistrophe repeats at clause *ends*; symploce does both at once."
   },
   "epistrophe": {
     "name": "Epistrophe",
     "pron": "eh-PIS-truh-fee / ɪˈpɪstrəfi",
-    "plain": "Ending successive clauses or sentences with the same word or phrase. Where anaphora launches each clause from the same spot, epistrophe makes every clause land on the same spot, so the repeated word accumulates finality — each sentence hammers the same nail deeper.",
+    "plain": "Ending several clauses or sentences in a row with the same word or phrase. Where anaphora repeats the start, epistrophe repeats the finish, so each sentence lands on the same word with more force.",
     "example": "\"…government of the people, by the people, for the people\" — Lincoln",
     "confuse": "Anaphora repeats at beginnings; epanalepsis repeats a clause's opening word at its own end."
   },
   "symploce": {
     "name": "Symploce",
     "pron": "SIM-ploh-see / ˈsɪmploʊsiː",
-    "plain": "Anaphora and epistrophe combined: successive clauses share both their opening and their closing words, with variation trapped in the middle. The frame stays fixed while the center changes, which makes the changing element feel like the only thing in the world that moves.",
+    "plain": "Anaphora and epistrophe at once: several clauses in a row share both their opening and their closing words, with only the middle changing. The fixed frame makes the changing part stand out.",
     "example": "\"When there is talk of hatred, let us stand up and talk against it. When there is talk of violence, let us stand up and talk against it.\" — Bill Clinton",
     "confuse": "Not mere parallelism: symploce requires the identical words at both edges, not just matching grammar."
   },
   "epanalepsis": {
     "name": "Epanalepsis",
     "pron": "eh-puh-nuh-LEP-sis / ɛpənəˈlɛpsɪs",
-    "plain": "Repeating a clause's opening word or phrase at its own end, closing the loop: the sentence returns to where it began. The circular shape suggests obsession, inevitability, or a truth that contains itself.",
+    "plain": "Starting and ending a clause with the same word or phrase, so the sentence circles back to where it began. The loop suggests obsession, inevitability, or a self-contained truth.",
     "example": "\"The king is dead, long live the king.\"",
     "confuse": "Anadiplosis repeats across a clause boundary (end of one, start of the next); epanalepsis circles within one unit."
   },
   "anadiplosis": {
     "name": "Anadiplosis",
     "pron": "an-uh-dih-PLOH-sis / ænədɪˈploʊsɪs",
-    "plain": "The last word of one clause becomes the first word of the next, linking clauses like a chain. Each link hands its weight to the next, so the sequence feels like consequence — one thing leading inexorably to another. Stacked anadiplosis ascending in importance becomes gradatio (climax).",
+    "plain": "The last word of one clause becomes the first word of the next, linking them like a chain. The sequence feels like one thing leading to another. Stacked with rising importance, it becomes gradatio (climax).",
     "example": "\"Fear leads to anger. Anger leads to hate. Hate leads to suffering.\" — Yoda",
     "confuse": "Gradatio is anadiplosis sustained up a ladder of intensity; epanalepsis circles back within a single clause."
   },
   "gradatio": {
     "name": "Gradatio / Climax",
     "pron": "gruh-DAH-tee-oh / ɡrəˈdɑːtioʊ",
-    "plain": "A ladder of linked clauses, each picking up the previous one's key word and raising the stakes, until the sequence peaks. The reader climbs step by step, so the summit — the final term — feels earned rather than asserted.",
+    "plain": "A chain of linked clauses, each picking up the last one's key word and raising the stakes until the sequence peaks. The step-by-step climb makes the final term feel earned.",
     "example": "\"…tribulation worketh patience; and patience, experience; and experience, hope.\" — Romans 5:3–4",
     "confuse": "One chained repetition is anadiplosis; gradatio is the whole ascending staircase."
   },
   "antithesis": {
     "name": "Antithesis",
     "pron": "an-TIH-thuh-sis / ænˈtɪθəsɪs",
-    "plain": "Setting contrasting ideas in balanced, parallel grammar so the opposition itself becomes visible in the sentence's shape. The symmetry implies the two terms exhaust the possibilities — the world divides cleanly in two — which is why antithesis feels authoritative even when the dichotomy is false.",
+    "plain": "Contrasting ideas placed in balanced, matching grammar, so the contrast shows in the sentence's shape. The symmetry suggests the two options are the only ones — which is why it sounds authoritative even when the split is false.",
     "example": "\"It was the best of times, it was the worst of times…\" — Dickens",
     "confuse": "Oxymoron compresses contradiction into a two-word phrase; antithesis holds the contrast across balanced clauses. Paradox asserts a contradiction as true rather than balancing alternatives."
   },
   "asyndeton": {
     "name": "Asyndeton",
     "pron": "uh-SIN-duh-ton / əˈsɪndətɒn",
-    "plain": "Omitting the conjunctions a list or clause-series would normally carry (\"I came, I saw, I conquered\" rather than \"and I conquered\"). The missing connectives compress and accelerate: items arrive as raw succession, implying the list could go on forever or that there is no time for grammar.",
+    "plain": "Leaving out the connecting words a list would normally have: 'I came, I saw, I conquered' with no 'and.' The missing connectives speed things up and suggest the list could keep going.",
     "example": "\"…and that government of the people, by the people, for the people, shall not perish.\" — Lincoln (phrases without 'and')",
     "confuse": "Polysyndeton is its mirror — conjunctions multiplied rather than deleted. Brachylogia is asyndeton between single words."
   },
   "polysyndeton": {
     "name": "Polysyndeton",
     "pron": "pah-lee-SIN-duh-ton / ˌpɒlɪˈsɪndətɒn",
-    "plain": "Multiplying conjunctions beyond grammatical need — and… and… and — so every item in a series gets equal, deliberate weight. The effect can be biblical accumulation, a child's breathless narration, or exhaustion, depending on what is being stacked; the ands flatten hierarchy and make sequence feel like fate.",
+    "plain": "Using more connecting words than needed — and… and… and. Every item gets equal weight, and the series feels relentless. The effect can be biblical, breathless, or exhausted, depending on what is stacked.",
     "example": "\"And the rain descended, and the floods came, and the winds blew and beat upon that house…\" — Matthew 7:25",
     "confuse": "Asyndeton deletes the connectives instead. Parataxis is the broader habit of coordination over subordination; polysyndeton is its most audible form."
   },
   "parataxis": {
     "name": "Parataxis",
     "pron": "pair-uh-TAK-sis / ˌpærəˈtæksɪs",
-    "plain": "Placing clauses side by side without subordination — no because, although, or which to rank one thought under another. Everything sits on one flat logical plane, so the reader must supply the causal connections the grammar withholds. The signature syntax of Hemingway, the King James Bible, and hard-boiled narration.",
+    "plain": "Clauses set side by side with no subordinating words — no because, although, or which. Everything sits on one level, so the reader supplies the connections the grammar leaves out. Typical of Hemingway and the King James Bible.",
     "example": "\"The sun rose. He walked to the window. The street was empty.\"",
     "confuse": "Hypotaxis is its opposite: clauses nested by subordination. Asyndeton concerns missing conjunctions; parataxis concerns missing *hierarchy*."
   },
   "isocolon": {
     "name": "Isocolon",
     "pron": "eye-soh-KOH-lon / ˌaɪsoʊˈkoʊlən",
-    "plain": "Successive phrases or clauses of matching length and identical grammatical shape — parallelism with the meter of a scale in balance. Because the units weigh the same, the sentence sounds pre-measured, judicial, inevitable; two-part isocolon suggests fairness, three-part suggests completeness.",
+    "plain": "Phrases or clauses in a row with the same shape and nearly the same length. The equal weights make the sentence sound measured and deliberate: two parts suggest fairness, three suggest completeness.",
     "example": "\"Veni, vidi, vici.\" — Julius Caesar",
     "confuse": "All isocolon is parallelism, but parallelism only requires matching structure, not matching *length and rhythm*."
   },
   "parallelism": {
     "name": "Parallelism",
     "pron": "PAIR-uh-lel-iz-um / ˈpærəlɛlɪzəm",
-    "plain": "Expressing coordinate ideas in coordinate grammatical form — matching phrases with phrases, clauses with clauses. The repeated structure tells the reader these items belong to one set and invites comparison among them; break the pattern and the breaking item gets the spotlight.",
+    "plain": "Putting matching ideas in matching grammatical form — phrases with phrases, clauses with clauses. The repeated structure says the items belong to one set and invites comparison. Break the pattern and the odd item stands out.",
     "example": "\"…conceived in Liberty, and dedicated to the proposition…\" — Lincoln",
     "confuse": "Isocolon adds equal length and rhythm; antithesis is parallelism put in service of contrast."
   },
   "chiasmus": {
     "name": "Chiasmus",
     "pron": "ky-AZ-mus / kaɪˈæzməs",
-    "plain": "A two-part structure whose second half inverts the order of the first: A-B / B-A. The crossing shape (named for the Greek letter chi, X) makes the sentence feel self-sealing — it ends by folding back through its own material, leaving nothing outside the pattern. Chiasmus of exact repeated words is antimetabole.",
+    "plain": "A two-part structure where the second half reverses the order of the first: A-B, then B-A. The crossing shape makes the sentence feel complete and closed. With the exact same words reversed, it is antimetabole.",
     "example": "\"Ask not what your country can do for you — ask what you can do for your country.\" — JFK",
     "confuse": "Antimetabole reverses the *same words*; chiasmus may invert grammar or concepts without exact lexical repetition."
   },
   "antimetabole": {
     "name": "Antimetabole",
     "pron": "an-tee-muh-TAB-oh-lee / ˌæntimɛˈtæbəliː",
-    "plain": "Repeating the same words in reverse order — A-B / B-A with the identical vocabulary. The perfect mirror suggests the speaker has examined the idea from both directions and found the reversal more true; it is chiasmus at its most audible and most quotable.",
+    "plain": "Repeating the same words in reverse order: A-B, then B-A. The mirror shape suggests the speaker has examined the idea from both directions. The most quotable form of chiasmus.",
     "example": "\"When the going gets tough, the tough get going.\"",
     "confuse": "Every antimetabole is a chiasmus, but chiasmus can invert structure or sense without repeating the exact words."
   },
   "polyptoton": {
     "name": "Polyptoton",
     "pron": "pah-lip-TOH-ton / pəˈlɪptətɒn",
-    "plain": "Repeating a word in different grammatical forms — please/pleasure, judge/judgment, dying/death. The root recurs while its function shifts, so the idea seems to permeate the whole grammar of the sentence: the concept isn't just mentioned, it conjugates through reality.",
+    "plain": "Repeating a word in different forms — please/pleasure, judge/judgment. The root returns while its job changes, so the idea seems to run through the whole sentence.",
     "example": "\"The Greeks are strong, and skilful to their strength, / Fierce to their skill, and to their fierceness valiant.\" — Shakespeare",
     "confuse": "Simple repetition (epizeuxis, diacope) repeats the same form; polyptoton morphs the word as it returns."
   },
   "epizeuxis": {
     "name": "Epizeuxis",
     "pron": "eh-pih-ZOOK-sis / ˌɛpɪˈzjuːksɪs",
-    "plain": "Immediate repetition of a word with nothing between: words, words, words. The bare doubling or tripling registers as overflow — grief, rage, or emphasis that grammar cannot process, only repeat. The least subtle repetition scheme, and therefore the most visceral.",
+    "plain": "Repeating a word immediately, with nothing in between: 'words, words, words.' The bare repetition reads as feeling too strong for grammar — grief, rage, or emphasis. The bluntest repetition device.",
     "example": "\"O horror, horror, horror!\" — Macbeth",
     "confuse": "Diacope repeats with a word or two intervening (\"O villain, villain, smiling, damnèd villain\"); epizeuxis allows no gap."
   },
   "diacope": {
     "name": "Diacope",
     "pron": "dy-ACK-oh-pee / daɪˈækəpiː",
-    "plain": "Repetition of a word or phrase with a short interruption between the repeats — the pattern of \"Bond. James Bond.\" The intervening material gets framed by the echo, and the return of the word feels like insistence: the speaker circles back because once was not enough.",
+    "plain": "Repeating a word or phrase with a short interruption in between — 'Bond. James Bond.' The return of the word feels like insistence: once was not enough.",
     "example": "\"Put out the light, and then put out the light.\" — Othello",
     "confuse": "Epizeuxis repeats with no gap at all; anaphora repeats only at clause openings."
   },
   "conduplicatio": {
     "name": "Conduplicatio",
     "pron": "kon-doo-plih-KAH-tee-oh / ˌkɒndjuːplɪˈkɑːtioʊ",
-    "plain": "Picking up a key word from one sentence or clause and redeploying it prominently in the next, dragging the concept forward for re-examination. Unlike a pronoun, the full repetition insists the word itself — not just its referent — is what matters.",
+    "plain": "Taking a key word from one sentence and placing it prominently in the next. Unlike a pronoun, the full repetition insists on the word itself and carries the idea forward for another look.",
     "example": "\"This afternoon, this Easter afternoon, I saw a friend die. A friend I had known…\"",
     "confuse": "Anadiplosis requires the repeat at the exact seam (last word → first word); conduplicatio just needs the key word to recur early in the next unit."
   },
   "metaphor": {
     "name": "Metaphor",
     "pron": "MET-uh-for / ˈmɛtəfɔːr",
-    "plain": "Asserting that one thing *is* another, transferring the second thing's properties wholesale without announcing the comparison. Because nothing signals the figure, the reader's mind performs the fusion itself — which is why metaphor persuades where argument can't: it installs the mapping before it can be inspected.",
+    "plain": "Saying one thing is another, without announcing the comparison. Because nothing flags the figure, the reader makes the connection themselves — which is why metaphor persuades where argument can't.",
     "example": "\"Juliet is the sun.\" — Romeo and Juliet",
     "confuse": "Simile flags the comparison with like/as, keeping the two things separate. A metaphor sustained across a passage becomes extended metaphor or allegory; a strained, category-breaking one is catachresis."
   },
   "simile": {
     "name": "Simile",
     "pron": "SIM-ih-lee / ˈsɪməliː",
-    "plain": "An explicit comparison marked by like or as. The marker keeps both terms visible and honest — the reader is invited to test the resemblance rather than swallow an identity. Similes can afford to be more outrageous than metaphors precisely because the grammar admits they are figures.",
+    "plain": "A comparison marked with like or as. The marker keeps both things visible, so the reader can test the resemblance. Similes can be more extreme than metaphors because the grammar admits they are comparisons.",
     "example": "\"My love is like a red, red rose.\" — Burns",
     "confuse": "Drop the 'like' and it becomes metaphor. An epic simile extends the comparison over many lines with its own internal scene."
   },
   "catachresis": {
     "name": "Catachresis",
     "pron": "kat-uh-KREE-sis / ˌkætəˈkriːsɪs",
-    "plain": "A deliberately strained or 'wrong' metaphor — using a word where no literal word exists, or forcing a term outside its category until the semantic misfit itself is the effect. It reads as slightly broken on purpose; the wrongness defamiliarizes, making the reader re-see an ordinary thing as if newly named.",
+    "plain": "A deliberately strained or 'wrong' metaphor — a word forced outside its normal use until the misfit itself is the effect. It reads as slightly broken on purpose, and makes an ordinary thing look new.",
     "example": "\"the watery part of the world\" — Melville, for the ocean",
     "confuse": "A dead metaphor ('table leg') no longer registers as figurative; catachresis keeps its torque — it must still feel misapplied."
   },
   "metonymy": {
     "name": "Metonymy",
     "pron": "meh-TAH-nuh-mee / mɛˈtɒnəmi",
-    "plain": "Substituting a thing's name with something associated with it — the crown for the monarchy, the White House for the administration, the sword for war. The figure works by contiguity (association) rather than resemblance, and it quietly encodes a worldview: what you choose as the stand-in reveals what you take to be the essence.",
+    "plain": "Replacing a thing's name with something associated with it — the crown for the monarchy, the White House for the administration. It works by association rather than resemblance, and the chosen stand-in shows what the writer takes to be essential.",
     "example": "\"The pen is mightier than the sword.\"",
     "confuse": "Metaphor maps by resemblance; metonymy by association. Synecdoche is the special case where the substitute is a *part* of the whole."
   },
   "synecdoche": {
     "name": "Synecdoche",
     "pron": "sih-NEK-duh-kee / sɪˈnɛkdəkiː",
-    "plain": "Letting a part stand for the whole (hired hands for workers) or the whole for a part (the law for a police officer). The chosen part does silent argumentative work: calling sailors 'hands' reduces them to their labor; calling a car 'wheels' reduces it to motion.",
+    "plain": "A part standing for the whole (hired hands for workers) or the whole for a part (the law for one officer). The chosen part quietly makes an argument: calling sailors 'hands' reduces them to their labor.",
     "example": "\"All hands on deck.\"",
     "confuse": "A subtype of metonymy: synecdoche requires the part/whole relation specifically, not just any association."
   },
   "personification": {
     "name": "Personification",
     "pron": "per-sah-nih-fih-KAY-shun / pərˌsɒnɪfɪˈkeɪʃən",
-    "plain": "Granting human qualities, actions, or feelings to non-human things — nations conceive, winds sigh, justice sleeps. It converts description into drama: once a thing can act and intend, it can be a character in the sentence, with motives the reader instinctively reads.",
+    "plain": "Giving human qualities, actions, or feelings to non-human things — nations conceive, winds sigh. Once a thing can act and want, it becomes a character in the sentence.",
     "example": "\"Because I could not stop for Death – / He kindly stopped for me –\" — Dickinson",
     "confuse": "Prosopopoeia goes further and gives the thing a speaking voice. Pathetic fallacy is personification of nature specifically, colored by the observer's emotion."
   },
   "prosopopoeia": {
     "name": "Prosopopoeia",
     "pron": "proh-soh-poh-PEE-uh / prəˌsoʊpəˈpiːə",
-    "plain": "Bringing an absent, dead, or non-human speaker onstage to talk — giving a voice, not just attributes. Where personification says the storm raged, prosopopoeia lets the storm (or the ancestors, or the country) deliver lines. The borrowed voice carries authority the author could not claim directly.",
+    "plain": "Giving an absent, dead, or non-human speaker actual lines to say — a voice, not just human qualities. The borrowed voice carries authority the author could not claim directly.",
     "example": "Cicero making the state of Rome herself rebuke Catiline.",
     "confuse": "Personification stops at attributing human qualities; prosopopoeia hands over the microphone."
   },
   "pathetic-fallacy": {
     "name": "Pathetic Fallacy",
     "pron": "puh-THET-ik FAL-uh-see",
-    "plain": "Nature mirroring human emotion — storms for turmoil, spring for hope — as if the world felt what the character feels. Ruskin coined it as a criticism (the 'fallacy' of emotional projection), but writers use it deliberately to make setting do the psychological narration.",
+    "plain": "Nature mirroring human emotion — storms for turmoil, spring for hope — as if the world felt what the character feels. Writers use it to let the setting carry the psychology.",
     "example": "The storm on the heath matching Lear's madness.",
     "confuse": "Ordinary personification needn't reflect anyone's inner state; pathetic fallacy specifically syncs outer weather to inner weather."
   },
   "hyperbole": {
     "name": "Hyperbole",
     "pron": "hy-PER-buh-lee / haɪˈpɜːrbəliː",
-    "plain": "Exaggeration beyond literal credibility, offered in the confidence that the reader will scale it back — and land exactly where the writer wanted. The inflation isn't meant to deceive but to transmit intensity: the size of the overstatement measures the size of the feeling.",
+    "plain": "Exaggeration past literal belief, trusting the reader to scale it back. The point is not to deceive but to show intensity: the size of the overstatement measures the size of the feeling.",
     "example": "\"I had to wait in the station for ten days — an eternity.\" — Conrad",
     "confuse": "Its opposite pole is understatement/litotes. When exaggeration collapses into the trivial for comic effect, that's bathos."
   },
   "litotes": {
     "name": "Litotes",
     "pron": "LY-tuh-teez / ˈlaɪtətiːz (also lie-TOH-teez)",
-    "plain": "Affirming something by negating its opposite — not bad, no small feat, not unaware. The double processing (reader must flip the negation) slows comprehension just enough to make the understatement felt as a choice: the speaker could have praised directly and pointedly didn't. It projects modesty, irony, or cool control.",
+    "plain": "Stating something by denying its opposite — not bad, no small feat. The reader must flip the negative, and that extra step makes the understatement feel chosen. It signals modesty, irony, or control.",
     "example": "\"having little or no money in my purse\" — Melville",
     "confuse": "Meiosis is plain understatement without the negation mechanism; litotes specifically runs on negatives."
   },
   "meiosis": {
     "name": "Meiosis / Understatement",
     "pron": "my-OH-sis / maɪˈoʊsɪs",
-    "plain": "Deliberately representing something as smaller or less significant than it is — calling a wound 'a scratch.' The gap between the thing and its label transfers the unstated magnitude to the reader's imagination, which reliably overshoots; understatement is how stoics boast.",
+    "plain": "Deliberately calling something smaller than it is — a wound is 'a scratch.' The gap between the thing and its label makes the reader imagine the real size, which usually overshoots.",
     "example": "\"'Tis but a flesh wound.\"",
     "confuse": "Litotes is understatement achieved specifically through negation ('not unkind'); meiosis just shrinks the label."
   },
   "irony": {
     "name": "Irony",
     "pron": "EYE-ruh-nee / ˈaɪrəni",
-    "plain": "A gap between what is said and what is meant (verbal irony), between what a character knows and what the audience knows (dramatic irony), or between expectation and outcome (situational irony). The reader who catches the gap is flattered into complicity with the author — irony builds an in-group of those who get it.",
+    "plain": "A gap between what is said and what is meant, between what a character knows and what the audience knows, or between expectation and outcome. Readers who catch the gap feel like insiders.",
     "example": "\"Brutus is an honourable man.\" — Antony, meaning the reverse",
     "confuse": "Sarcasm is verbal irony weaponized at a target. Paradox asserts a real contradiction; irony merely means other than it says."
   },
   "paradox": {
     "name": "Paradox",
     "pron": "PAIR-uh-doks / ˈpærədɒks",
-    "plain": "A statement that contradicts itself yet insists on being true — and, examined, yields a truth ordinary language couldn't hold. Paradox forces the reader to abandon the frame in which the contradiction is impossible; it is the trope of mystics, lovers, and dialecticians.",
+    "plain": "A statement that contradicts itself but turns out to be true in a way ordinary wording couldn't reach. It forces the reader to drop the frame in which the contradiction is impossible.",
     "example": "\"The child is father of the man.\" — Wordsworth",
     "confuse": "Oxymoron is paradox compressed to a two-word collision ('living death'); antithesis balances opposites without asserting both are true."
   },
   "oxymoron": {
     "name": "Oxymoron",
     "pron": "ok-see-MOR-on / ˌɒksɪˈmɔːrɒn",
-    "plain": "Two contradictory terms fused into one phrase — darkness visible, deafening silence. The collision happens inside a single grammatical unit, so the contradiction can't be resolved by reading on; the reader must hold both terms lit at once, which is precisely the state the writer wants to induce.",
+    "plain": "Two contradictory words fused into one phrase — deafening silence, living death. The clash sits inside a single unit, so it can't be resolved by reading on; both terms must be held at once.",
     "example": "\"Parting is such sweet sorrow.\" — Romeo and Juliet",
     "confuse": "Paradox is a contradictory *statement* that unfolds; oxymoron is the two-word spark."
   },
   "allusion": {
     "name": "Allusion",
     "pron": "uh-LOO-zhun / əˈluːʒən",
-    "plain": "An unflagged reference to another text, event, or figure that imports its whole context into the new sentence. The device runs on shared knowledge: readers who catch it receive a second channel of meaning, and the borrowed authority (biblical, classical, literary) arrives without the cost of citation.",
+    "plain": "An unmarked reference to another text, event, or figure, bringing its whole context along. Readers who catch it get a second layer of meaning, and the borrowed authority arrives without a citation.",
     "example": "\"all men are created equal\" inside the Gettysburg Address — importing the Declaration.",
     "confuse": "Quotation announces its borrowing; allusion smuggles it. Metalepsis is allusion at a further remove, referencing through a chain."
   },
   "euphemism": {
     "name": "Euphemism",
     "pron": "YOO-fuh-miz-um / ˈjuːfəmɪzəm",
-    "plain": "Substituting a mild or indirect expression for a harsh or taboo one — passed away, let go, collateral damage. Every euphemism is a small argument about what should not be looked at directly; writers deploy them straight (tact), or expose them ironically to indict the evasion.",
+    "plain": "A mild or indirect phrase in place of a harsh or taboo one — passed away, let go, collateral damage. Every euphemism is a small argument about what should not be looked at directly.",
     "example": "\"He is helping the police with their inquiries.\"",
     "confuse": "Periphrasis is roundabout wording for any reason; euphemism specifically launders the unpleasant."
   },
   "periphrasis": {
     "name": "Periphrasis",
     "pron": "puh-RIF-ruh-sis / pəˈrɪfrəsɪs",
-    "plain": "Saying something in deliberately more words than needed — a roundabout route in place of the direct name. The detour can elevate (epic circumlocution), evade, or characterize a speaker who cannot bring themselves to say the plain thing; the reader always registers the swerve around the missing word.",
+    "plain": "Saying something in more words than needed — a roundabout route instead of the direct name. The detour can elevate, evade, or characterize a speaker who can't say the plain thing.",
     "example": "\"the finny tribe\" for fish, in Augustan verse",
     "confuse": "Euphemism detours specifically around the offensive; pleonasm adds redundant words without rerouting the meaning."
   },
   "pleonasm": {
     "name": "Pleonasm",
     "pron": "PLEE-oh-naz-um / ˈpliːənæzəm",
-    "plain": "Redundancy of words — using more than the grammar strictly needs: I saw it with my own eyes. Handled deliberately, the surplus is emphasis or ritual fullness (KJV: 'answered and said'); handled carelessly, it is padding. The effect depends on the reader sensing the extra weight as chosen.",
+    "plain": "Using more words than the grammar needs: 'I saw it with my own eyes.' Done deliberately, the surplus is emphasis or ritual fullness; done carelessly, it is padding.",
     "example": "\"free gift\", \"burnt fire\" — or ritual doubling in scripture",
     "confuse": "Tautology repeats the same *idea*; pleonasm repeats within one construction. Periphrasis reroutes; pleonasm just doubles."
   },
   "zeugma": {
     "name": "Zeugma",
     "pron": "ZOOG-muh / ˈzuːɡmə",
-    "plain": "One verb (or governing word) yoked to two or more objects that require it in different senses — often one literal, one figurative. The single verb forks midway, and the reader feels the fork as wit: the sentence economizes and jokes in the same motion.",
+    "plain": "One verb governing two or more objects in different senses — often one literal, one figurative: 'She arrived in a taxi and a flood of tears.' The verb forks midway, and the fork reads as wit.",
     "example": "\"She arrived in a taxi and a flood of tears.\"",
     "confuse": "Syllepsis is often used interchangeably; strictly, syllepsis requires the senses to differ while zeugma is any shared-verb yoking."
   },
   "hendiadys": {
     "name": "Hendiadys",
     "pron": "hen-DY-uh-dis / hɛnˈdaɪədɪs",
-    "plain": "Expressing one complex idea as two nouns joined by 'and' instead of a noun with modifier — sound and fury rather than furious sound. Splitting the idea in two makes both halves stand alone and equal, lending a strange, slightly ritual doubleness that resists paraphrase. Shakespeare's favorite estranging device.",
+    "plain": "One complex idea expressed as two nouns joined by 'and' — sound and fury instead of furious sound. Splitting the idea makes both halves stand equal and gives the phrase a strange doubleness. A Shakespeare favorite.",
     "example": "\"the sound and the fury\" — Macbeth",
     "confuse": "Not a mere pair of things: in hendiadys the two nouns secretly name *one* thing."
   },
   "hyperbaton": {
     "name": "Hyperbaton",
     "pron": "hy-PER-buh-ton / haɪˈpɜːrbətɒn",
-    "plain": "Wrenching normal word order — object before subject, adjective after noun, verb delayed — so that the displaced word lands with unnatural emphasis. English word order is rigid, which makes every violation loud: the reader feels grammar itself strained by the pressure of the thought.",
+    "plain": "Breaking normal word order — object first, verb delayed, adjective after noun — so the displaced word lands with extra force. English word order is strict, so every violation is loud.",
     "example": "\"Some rise by sin, and some by virtue fall.\" — Measure for Measure",
     "confuse": "Anastrophe is the mild, single-pair inversion; hyperbaton covers more violent or extended derangements."
   },
   "anastrophe": {
     "name": "Anastrophe",
     "pron": "uh-NAS-truh-fee / əˈnæstrəfi",
-    "plain": "Inversion of the usual order of a pair of words — adjective after noun, preposition after object. A local, controlled reversal that archaizes or poeticizes: the reader hears older English, verse convention, or Yoda, depending on dosage.",
+    "plain": "Reversing the usual order of a word pair — adjective after noun, preposition after object: 'the forest primeval.' A small, controlled inversion that sounds older or more poetic.",
     "example": "\"the forest primeval\" — Longfellow",
     "confuse": "The gentle end of hyperbaton's spectrum; periodic structure delays whole clauses, not word pairs."
   },
   "periodic-sentence": {
     "name": "Periodic Sentence",
     "pron": "peer-ee-OD-ik",
-    "plain": "A sentence that withholds its main clause (or essential verb) until the end, stacking subordinate material first. The reader is held in suspension, carrying every qualifier forward, until the close snaps the whole structure into meaning at once. It is syntax as delayed gratification — and a display of authorial control.",
+    "plain": "A sentence that saves its main clause for the end, stacking qualifying material first. The reader carries everything forward until the close snaps it into meaning. Suspense built from grammar.",
     "example": "\"Of Man's first disobedience, and the fruit / Of that forbidden tree… Sing, Heav'nly Muse.\" — Milton",
     "confuse": "The loose/cumulative sentence is its opposite: main clause first, modifiers trailing after."
   },
   "cumulative-sentence": {
     "name": "Cumulative (Loose) Sentence",
     "pron": "KYOOM-yuh-luh-tiv",
-    "plain": "Main clause first, then modifiers accrete after it — participles, absolutes, appositives — each adding focus like camera pulls after establishing the shot. The grammar completes early, so everything after feels like generous elaboration; it is the signature sentence of American prose from Twain through Didion.",
+    "plain": "Main clause first, then modifiers added after it, each one sharpening the picture. The grammar finishes early, so everything after reads as elaboration. The standard sentence of modern American prose.",
     "example": "\"He dipped his hands in the bichloride solution and shook them, a quick shake, fingers down, like the fingers of a pianist above the keys.\" — Sinclair Lewis",
     "confuse": "The periodic sentence withholds its main clause until the end; cumulative delivers it first and then unspools."
   },
   "parenthesis": {
     "name": "Parenthesis",
     "pron": "puh-REN-thuh-sis / pəˈrɛnθəsɪs",
-    "plain": "An aside inserted mid-sentence — set off by dashes, brackets, or commas — that interrupts the syntax without joining it. The interruption stages two time-streams at once: the sentence's argument and the mind commenting on it live. It is the printed trace of a speaking voice that can't help itself.",
+    "plain": "An aside dropped into the middle of a sentence — set off by dashes, brackets, or commas — that interrupts without joining the grammar. It reads as a voice commenting on its own sentence as it goes.",
     "example": "\"—never mind how long precisely—\" — Melville",
     "confuse": "An appositive renames the noun beside it; a parenthesis digresses without renaming anything."
   },
   "apposition": {
     "name": "Apposition / Appositive",
     "pron": "ap-uh-ZISH-un / ˌæpəˈzɪʃən",
-    "plain": "Placing a noun phrase beside another to rename or re-describe it — 'my brother, the doctor.' Each appositive is a second take: the writer looks at the same thing twice and hands the reader both exposures. Stacked appositives create incantatory redefinition, each one correcting the aim.",
+    "plain": "A noun phrase placed beside another to rename it: 'my brother, the doctor.' Each appositive is a second look at the same thing. Stacked, they redefine it step by step.",
     "example": "\"124 was spiteful. Full of a baby's venom.\" — Morrison (appositive fragment)",
     "confuse": "Parenthesis interrupts without renaming; apposition always re-identifies the neighboring noun."
   },
   "aposiopesis": {
     "name": "Aposiopesis",
     "pron": "ap-oh-sy-oh-PEE-sis / ˌæpəsaɪəˈpiːsɪs",
-    "plain": "Breaking off mid-sentence and leaving it unfinished — the dash into silence. The unsaid completion is louder than words could be: threat, grief, or the unspeakable, delegated to the reader's imagination. Grammar fails on purpose, and the failure is the meaning.",
+    "plain": "Breaking off mid-sentence and leaving it unfinished — a dash into silence. What goes unsaid reads louder than words: threat, grief, or the unspeakable, left to the reader.",
     "example": "\"I will have such revenges on you both, / That all the world shall— I will do such things—\" — King Lear",
     "confuse": "Ellipsis omits words the reader can reconstruct; aposiopesis abandons the sentence at a cliff edge."
   },
   "ellipsis": {
     "name": "Ellipsis",
     "pron": "ee-LIP-sis / ɪˈlɪpsɪs",
-    "plain": "Omitting words that grammar requires but context supplies — 'I took the high road; she, the low.' The reader silently restores what's missing, becoming co-author of the sentence. Ellipsis compresses, quickens, and flatters; what it deletes, it also emphasizes by the gap.",
+    "plain": "Leaving out words the grammar needs but the context supplies: 'I took the high road; she, the low.' The reader restores what's missing, and the gap itself draws attention.",
     "example": "\"And he to England shall along with you.\" — Hamlet",
     "confuse": "Aposiopesis breaks off irrecoverably; elliptical omissions are recoverable from the surrounding grammar."
   },
   "brachylogia": {
     "name": "Brachylogia",
     "pron": "brak-ih-LOH-jee-uh / ˌbrækɪˈloʊdʒiə",
-    "plain": "Extreme compression: single words strung without conjunctions — a telegraphic staccato. Each word gets a full stress-beat, and the missing grammar reads as urgency, shell-shock, or command. Prolonged, it becomes a style of exhaustion where syntax has been rationed.",
+    "plain": "Extreme compression: single words strung together without connectives. Each word gets a full beat, and the missing grammar reads as urgency or command.",
     "example": "\"We real cool. We / Left school.\" — Gwendolyn Brooks",
     "confuse": "Asyndeton omits conjunctions between phrases or clauses; brachylogia does it between bare words."
   },
   "alliteration": {
     "name": "Alliteration",
     "pron": "uh-lit-er-AY-shun / əˌlɪtəˈreɪʃən",
-    "plain": "Repetition of initial consonant sounds across nearby words. It binds words into a perceptual unit before their meanings connect — the ear declares them related and the mind scrambles to agree. The oldest structuring device in English verse, and still the fastest way to make a phrase memorable.",
+    "plain": "Repeating the first consonant sound across nearby words. The shared sound binds the words together before their meanings do. The oldest structuring device in English verse, and the fastest way to make a phrase stick.",
     "example": "\"would sail about a little and see the watery part of the world\" — Melville's w's",
     "confuse": "Assonance repeats vowel sounds; consonance repeats consonants anywhere in the word, not just initially."
   },
   "enjambment": {
     "name": "Enjambment",
     "pron": "en-JAM-ment / ɪnˈdʒæmmənt",
-    "plain": "A verse line that ends before its sentence does, forcing the reader over the line-break to complete the thought. The break creates a split-second of double meaning — the line means one thing alone, another once continued — and the carried-over word lands with inherited momentum.",
+    "plain": "A verse line that ends before its sentence does, pushing the reader across the break. For a moment the line means one thing alone and another once continued, and the carried-over word lands with momentum.",
     "example": "\"April is the cruellest month, breeding / Lilacs out of the dead land…\" — Eliot",
     "confuse": "An end-stopped line completes its grammar at the break. Caesura is a pause *inside* the line, not at its edge."
   },
   "in-medias-res": {
     "name": "In Medias Res",
     "pron": "in MAY-dee-ahs RACE / ɪn ˈmɛdiəs ˈreɪs",
-    "plain": "Beginning in the middle of the action, with context withheld and backstory deferred. The reader arrives late to a world already running and must orient by inference — which manufactures instant momentum and flatters the reader into detective work. Epic convention since Homer; the default for modern openings.",
+    "plain": "Starting in the middle of the action, with backstory held for later. The reader arrives in a world already moving and must catch up by inference — which creates instant momentum.",
     "example": "Paradise Lost opening after the fall of the rebel angels, not before.",
     "confuse": "Analepsis (flashback) is how the deferred backstory later arrives; in medias res is the choice of entry point itself."
   },
   "prolepsis": {
     "name": "Prolepsis",
     "pron": "proh-LEP-sis / proʊˈlɛpsɪs",
-    "plain": "Anticipation: treating a future event as already accomplished, or answering an objection before it is raised. In narrative it is the flash-forward; in argument, the pre-emptive strike. Either way the audience's future is colonized in advance — resistance is narrated before it can occur.",
+    "plain": "Anticipation: treating a future event as already settled, or answering an objection before it is raised. In stories, the flash-forward; in argument, the pre-emptive answer.",
     "example": "\"Many years later, as he faced the firing squad, Colonel Aureliano Buendía was to remember…\" — García Márquez",
     "confuse": "Analepsis looks backward (flashback); prolepsis looks forward. In rhetoric, procatalepsis is the objection-answering subtype."
   },
   "analepsis": {
     "name": "Analepsis",
     "pron": "an-uh-LEP-sis / ˌænəˈlɛpsɪs",
-    "plain": "The flashback: narration steps out of the story's present to recount earlier events. It subordinates chronology to significance — the past arrives exactly when it will mean most — and reminds the reader that a narrator, not time, is in charge of order.",
+    "plain": "The flashback: the narration steps out of the present to tell earlier events. The past arrives when it will mean most, which shows that the narrator, not the calendar, controls the order.",
     "example": "\"Some years ago…\" — Ishmael looking back",
     "confuse": "Prolepsis is its forward-facing mirror, the flash-forward."
   },
   "apostrophe-device": {
     "name": "Apostrophe",
     "pron": "uh-POS-truh-fee / əˈpɒstrəfi",
-    "plain": "Turning from the actual audience to address someone absent, dead, or something non-human — O wild West Wind. The swerve of address dramatizes overflow: feeling too great for the real audience gets aimed at the cosmos. It also quietly recasts the reader as eavesdropper on a private communion.",
+    "plain": "Turning from the real audience to address someone absent, dead, or something non-human: 'O wild West Wind.' The turn dramatizes feeling too big for the room, and makes the reader an overhearer.",
     "example": "\"O Romeo, Romeo, wherefore art thou Romeo?\"",
     "confuse": "Direct address speaks to the present audience ('Reader, I married him' sits between the two); invocation is apostrophe petitioning for aid."
   },
   "invocation": {
     "name": "Invocation",
     "pron": "in-voh-KAY-shun",
-    "plain": "A formal appeal to a muse, deity, or power to inspire and authorize the work — the epic's opening gesture. It stages humility (the poet claims to be a vessel) while performing supreme ambition, and signals to the reader what tradition the work is claiming descent from.",
+    "plain": "A formal appeal to a muse, god, or power to inspire the work — the classic epic opening. It performs humility and ambition at once, and signals which tradition the work claims.",
     "example": "\"Sing, Heav'nly Muse…\" — Paradise Lost",
     "confuse": "Apostrophe is any address to the absent; invocation specifically petitions for aid at a threshold."
   },
   "rhetorical-question": {
     "name": "Rhetorical Question",
     "pron": "(erotema: air-oh-TEE-muh)",
-    "plain": "A question posed for effect, whose answer is presumed or performed rather than sought. It conscripts the reader: you supply the answer, and having supplied it, you feel you argued it. A string of rhetorical questions simulates interrogation without surrendering control for a second.",
+    "plain": "A question asked for effect, with the answer assumed rather than sought. The reader supplies the answer — and, having supplied it, half believes it.",
     "example": "\"Hath not a Jew eyes?\" — The Merchant of Venice",
     "confuse": "Hypophora asks and then *answers its own* question; aporia performs genuine (or staged) doubt."
   },
   "apophasis": {
     "name": "Apophasis",
     "pron": "uh-POF-uh-sis / əˈpɒfəsɪs",
-    "plain": "Asserting something by declaring you will not mention it — 'I won't dwell on his record.' The denial performs innocence while the content lands anyway; the audience receives the accusation minus the accountability. A favorite of politicians and Mark Antony.",
+    "plain": "Claiming you won't mention something while mentioning it: 'I won't dwell on his record.' The denial performs innocence while the content lands anyway.",
     "example": "\"I come to bury Caesar, not to praise him.\"",
     "confuse": "Paralipsis and praeteritio are near-synonyms; irony is the wider genus of saying-other-than-meaning."
   },
   "aphorism": {
     "name": "Aphorism",
     "pron": "AF-or-iz-um / ˈæfərɪzəm",
-    "plain": "A compact, freestanding statement of general truth, polished until it feels inevitable. Aphorism converts opinion into apparent law: the balance and brevity signal that the sentence has survived long testing, even when freshly minted. Openings that begin aphoristically borrow the authority of proverbs.",
+    "plain": "A short, freestanding statement of general truth, polished until it sounds inevitable. The balance and brevity make an opinion feel like a law.",
     "example": "\"It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.\" — Austen (ironic aphorism)",
     "confuse": "A maxim instructs conduct; an epigram jokes; the aphorism claims truth. Austen's is an aphorism wearing irony."
   },
   "epithet": {
     "name": "Epithet",
     "pron": "EP-ih-thet / ˈɛpɪθɛt",
-    "plain": "A characterizing adjective or phrase attached to a name or thing — wine-dark sea, swift-footed Achilles. Repeated, it fuses with its noun and becomes identity; the quality stops being observed and starts being definitional. Homeric formula, tabloid nickname, and brand slogan share this engine.",
+    "plain": "A characterizing adjective or phrase attached to a name — wine-dark sea, swift-footed Achilles. Repeated, it fuses with the noun and becomes part of the identity.",
     "example": "\"rosy-fingered Dawn\" — Homer",
     "confuse": "A transferred epithet (hypallage) moves the adjective to the wrong noun: 'a sleepless night' — the night wasn't sleepless; you were."
   },
   "hypallage": {
     "name": "Transferred Epithet / Hypallage",
     "pron": "hy-PAL-uh-jee / haɪˈpælədʒi",
-    "plain": "An adjective displaced from the noun it logically describes onto a neighboring noun — a condemned cell, a restless night. The grammar misassigns the feeling, and the misassignment is expressive: emotion has leaked out of the person and soaked into the furniture of the scene.",
+    "plain": "An adjective moved from the noun it logically belongs to onto a neighbor — a sleepless night, a condemned cell. The feeling leaks from the person into the scenery, and the misplacement is the point.",
     "example": "\"Once more the storm is howling, and half hid / Under this cradle-hood and coverlid / My child sleeps on\" → \"murderous innocence of the sea\" — Yeats",
     "confuse": "A plain epithet sits on its rightful noun; hypallage is the deliberate misdelivery."
   },
   "enumeratio": {
     "name": "Enumeration / Accumulatio",
     "pron": "ee-noo-mer-AH-tee-oh",
-    "plain": "Amassing details, examples, or charges in a deliberate pile — the catalogue as argument. Sheer quantity becomes quality: by the tenth item the reader stops evaluating and starts surrendering. Whitman's catalogues make abundance into democracy; a prosecutor's make it into guilt.",
+    "plain": "Piling up details, examples, or charges into a deliberate list. By the tenth item the reader stops weighing and starts accepting: the size of the pile becomes the argument.",
     "example": "Whitman's catalogues of trades and bodies in \"Song of Myself\"",
     "confuse": "Simple listing is neutral; enumeratio is a list with rhetorical intent — the pile *is* the point. Congeries is the near-synonym."
   },
   "tmesis": {
     "name": "Tmesis",
     "pron": "TMEE-sis / təˈmiːsɪs",
-    "plain": "Splitting a word or fixed phrase and wedging another word inside — abso-bloody-lutely. The intruder detonates inside the host word, which makes the emphasis feel involuntary, as if feeling burst the word open from within.",
+    "plain": "Splitting a word or set phrase and wedging another word inside: abso-bloody-lutely. The interruption makes the emphasis feel involuntary, as if the feeling burst the word open.",
     "example": "\"un-bloody-believable\"",
     "confuse": "Infixation is the linguist's term for the same surgery; parenthesis interrupts a sentence, tmesis interrupts a single word."
   },
   "bathos": {
     "name": "Bathos",
     "pron": "BAY-thos / ˈbeɪθɒs",
-    "plain": "A sudden fall from the elevated to the trivial — the sublime stubbing its toe. When accidental it is failed grandeur; when engineered, it is deflationary comedy that punctures pretension by letting the reader feel the drop in altitude bodily.",
+    "plain": "A sudden drop from the lofty to the trivial. Accidental, it is failed grandeur; deliberate, it is comedy that punctures pretension by letting the reader feel the fall.",
     "example": "\"Here thou, great Anna! whom three realms obey, / Dost sometimes counsel take — and sometimes tea.\" — Pope",
     "confuse": "Pathos moves; bathos drops. Anticlimax is the structural name for the same descent."
   },
   "stichomythia": {
     "name": "Stichomythia",
     "pron": "stik-oh-MITH-ee-uh / ˌstɪkəˈmɪθiə",
-    "plain": "Dialogue exchanged in rapid, alternating single lines, each speaker capping or reversing the other's words. The tight turn-taking turns conversation into fencing — every line parries the last — and the shared rhythm shows antagonists locked in one mind even as they oppose.",
+    "plain": "Dialogue traded in quick single lines, each speaker capping or reversing the other's words. The exchange works like fencing: every line answers the last.",
     "example": "The Hamlet–Gertrude closet scene exchanges.",
     "confuse": "Ordinary quick dialogue lacks the line-for-line symmetry and echoed vocabulary that make stichomythia a formal duel."
   },
   "solecism": {
     "name": "Solecism",
     "pron": "SOL-uh-siz-um / ˈsɒləsɪzəm",
-    "plain": "A deliberate breach of grammar or usage deployed for effect — dialect, double negatives, non-standard agreement. In fiction it is voice: the 'error' authenticates a speaker the standard language would erase. What the schoolroom marks wrong, the novelist banks as ethos.",
+    "plain": "A deliberate breach of standard grammar — dialect, double negatives, non-standard forms — used for effect. In fiction it builds voice: the 'error' makes the speaker real.",
     "example": "\"You don't know about me without you have read a book…\" — Huck Finn",
     "confuse": "An accidental solecism is just an error; the device requires the wrongness to be chosen and characterizing. Enallage is the classical name for expressive grammatical substitution."
   },
   "neologism": {
     "name": "Neologism",
     "pron": "nee-OL-uh-jiz-um / niˈɒlədʒɪzəm",
-    "plain": "A coined word — invented outright or fused from existing parts — filling a gap the lexicon didn't know it had. The reader parses it from its components and the surrounding pressure, and the small act of decoding creates ownership: you understand a word no dictionary taught you.",
+    "plain": "An invented word, coined outright or fused from existing parts. The reader works it out from its pieces and its context, and the small act of decoding makes the word theirs.",
     "example": "\"'Twas brillig, and the slithy toves…\" — Carroll",
     "confuse": "Catachresis misuses an existing word; neologism mints a new one. A portmanteau is a neologism made by fusion (slithy = slimy + lithe)."
   },
   "enthymeme": {
     "name": "Enthymeme",
     "pron": "EN-thih-meem / ˈɛnθɪmiːm",
-    "plain": "A syllogism with a premise left silent, trusting the audience to supply it. The suppressed premise is the persuasive payload: what the audience provides themselves, they do not audit. Most real-world argument runs on enthymemes; finding the missing premise is where critique begins.",
+    "plain": "An argument with one premise left unstated, trusting the audience to supply it. What the audience supplies, it doesn't question — the missing premise is where the persuasion hides.",
     "example": "\"He's a politician, so check your wallet.\" (Suppressed: all politicians are venal.)",
     "confuse": "A full syllogism states both premises; an enthymeme's power is exactly the one it doesn't state."
   },
   "correctio": {
     "name": "Correctio / Epanorthosis",
     "pron": "kor-REK-tee-oh / eh-pan-or-THOH-sis",
-    "plain": "Saying something and immediately amending it — 'a hundred, no, a thousand times.' The visible self-correction performs sincerity (the speaker cares enough to be exact) while getting both versions on the record; the first term is never really withdrawn.",
+    "plain": "Saying something and immediately revising it: 'a hundred — no, a thousand times.' The visible self-correction performs sincerity while keeping both versions on the record.",
     "example": "\"Sixty Million and more\" — Morrison's epigraph revising itself upward",
     "confuse": "Aposiopesis abandons the sentence; correctio revises it in flight and keeps going."
   },
   "metalepsis": {
     "name": "Metalepsis",
     "pron": "met-uh-LEP-sis / ˌmɛtəˈlɛpsɪs",
-    "plain": "A figure built on another figure — reference at a remove, where the reader must traverse a chain of associations to arrive. In narrative theory it is the breach between levels: a character addressing the author, a narrator stepping into the story. Either way, a transgression of the frame that exposes the frame.",
+    "plain": "A figure built on another figure — a reference the reader reaches only through a chain of associations. In narrative, it names a break between levels: a character addressing the author, a narrator entering the story.",
     "example": "\"I have drunk milk from the cow that scattered the seed\" — reaching an idea through chained figures",
     "confuse": "Simple metonymy makes one associative hop; metalepsis needs at least two. The narrative sense (frame-breaking) is the common modern usage."
   },
   "free-indirect-discourse": {
     "name": "Free Indirect Discourse",
     "pron": "(FID)",
-    "plain": "Third-person narration that absorbs a character's voice, idiom, and judgments without quotation marks or 'she thought' tags. The narrator's grammar carries the character's mind, so inner life arrives unmediated — and irony becomes possible in the gap between the borrowed voice and the narrating intelligence. The great engine of the modern novel, from Austen to Woolf.",
+    "plain": "Third-person narration that takes on a character's voice and judgments without quotation marks or 'she thought' tags. The character's mind arrives inside the narrator's sentences, and irony lives in the gap between the two.",
     "example": "\"What a lark! What a plunge!\" — Mrs. Dalloway's mind in the narrator's sentence",
     "confuse": "Direct discourse quotes; indirect discourse reports ('she thought that…'); FID deletes the tag and lets the voices blend."
   },
   "stream-of-consciousness": {
     "name": "Stream of Consciousness",
     "pron": "—",
-    "plain": "Prose that imitates the unedited flow of a mind — associative leaps, unfinished syntax, sensation and memory interleaved without hierarchy. Grammar loosens because the mind being rendered hasn't sorted experience into sentences yet; the reader swims in pre-verbal weather. Joyce, Woolf, and Faulkner made it the modernist signature.",
+    "plain": "Prose imitating the raw flow of a mind — jumps of association, unfinished syntax, memory and sensation mixed together. The grammar loosens because the mind hasn't sorted itself into sentences yet.",
     "example": "Benjy's section of The Sound and the Fury.",
     "confuse": "Free indirect discourse keeps the narrator's grammatical order while borrowing the character's voice; stream of consciousness lets the order itself dissolve."
   },
   "passive-voice": {
     "name": "Passive Voice",
     "pron": "—",
-    "plain": "The grammatical subject receives the action rather than performing it — mistakes were made. Passivization deletes or demotes the agent, and that deletion is always information: modesty, evasion, bureaucratic anonymity, or a world where forces act and no one is responsible. As style, it slows and formalizes; as rhetoric, it hides the doer.",
+    "plain": "The subject receives the action instead of doing it: 'mistakes were made.' The construction can drop the actor entirely, and that omission is always information — modesty, evasion, or anonymity.",
     "example": "\"…upon this continent, a new nation, conceived in Liberty\" — agency diffused into the passive participles",
     "confuse": "Not every 'to be' + participle is passive ('he was tired' is adjectival); the test is whether an agent has been displaced."
   },
   "cleft-sentence": {
     "name": "Cleft Sentence",
     "pron": "—",
-    "plain": "Splitting a simple sentence into two clauses to spotlight one element — 'It was Ishmael who survived' instead of 'Ishmael survived.' The cleft manufactures focus grammatically: the it-clause points, the relative clause carries the rest. English's main tool for stressing a chosen word without italics.",
+    "plain": "Splitting a simple sentence in two to spotlight one part: 'It was Ishmael who survived' instead of 'Ishmael survived.' Grammar's way of stressing a word without italics.",
     "example": "\"It was the best butter.\" → \"It was a bright cold day in April…\" — Orwell's it-frame",
     "confuse": "A pseudo-cleft uses 'what' ('What he wanted was peace'); both are focus machines, differing in which slot gets the spotlight."
   },
   "juxtaposition": {
     "name": "Juxtaposition",
     "pron": "juk-stuh-puh-ZISH-un",
-    "plain": "Placing two elements side by side without stated connection and letting the collision generate the meaning. The writer supplies proximity; the reader supplies the relation — irony, causation, contrast — and owns the inference. Montage in prose.",
+    "plain": "Two things placed side by side with no stated connection, letting the pairing make the meaning. The writer supplies the closeness; the reader supplies the relation.",
     "example": "\"The apparition of these faces in the crowd; / Petals on a wet, black bough.\" — Pound",
     "confuse": "Antithesis states its contrast in balanced grammar; juxtaposition just sets the two things down and walks away."
   },
   "foreshadowing": {
     "name": "Foreshadowing",
     "pron": "—",
-    "plain": "Planting details that quietly predict later events, legible fully only in retrospect. On first pass it tunes mood; on second pass it proves design. Foreshadowing converts a story into a structure — the ending was always already present, distributed through the beginning.",
+    "plain": "Details planted early that quietly predict later events, fully readable only in hindsight. On first pass they set the mood; on second pass they prove the design.",
     "example": "Romeo's \"my mind misgives / Some consequence yet hanging in the stars.\"",
     "confuse": "Prolepsis states the future outright; foreshadowing only seeds it. Chekhov's gun is its craft maxim."
   },
   "symbol": {
     "name": "Symbol",
     "pron": "—",
-    "plain": "A concrete thing that carries a field of abstract meaning beyond its literal presence — recurring, accumulating significance each time it returns. Unlike allegory's one-to-one code, a live symbol stays inexhaustible: the green light is longing, the future, money, America, and none of these exactly.",
+    "plain": "A concrete thing that carries meanings beyond itself, gathering more each time it returns. Unlike allegory's one-to-one code, a live symbol never runs out: the green light is longing, the future, money, America — and none of these exactly.",
     "example": "The green light at the end of Daisy's dock — Gatsby",
     "confuse": "Allegory fixes the correspondence; metaphor asserts it locally in one sentence. A symbol earns its meanings by recurrence."
   },
   "archaism": {
     "name": "Archaism",
     "pron": "AR-kay-iz-um / ˈɑːrkeɪɪzəm",
-    "plain": "Deliberately outdated language — four score, thou, brought forth — imported for its patina. Old words carry their era's authority with them: scripture, epic, law. The reader hears ancestry, and the sentence claims a place in the long line it echoes.",
+    "plain": "Deliberately old-fashioned language — four score, thou — used for its aura. Old words bring their era's authority with them: scripture, epic, law.",
     "example": "\"Four score and seven years ago…\" — Lincoln",
     "confuse": "Allusion points to a specific prior text; archaism borrows a period's diction wholesale without citing anyone."
   },
   "parrhesia": {
     "name": "Parrhesia",
     "pron": "pa-RAY-zhuh / pəˈreɪziə",
-    "plain": "Bold, risky frankness — saying the dangerous thing plainly, and often flagging the risk ('I'll speak freely'). The announced candor is itself rhetorical: it buys credibility for everything that follows, since a speaker willing to offend is presumed unwilling to lie.",
+    "plain": "Bold, risky frankness — saying the dangerous thing plainly, often flagging the risk first: 'I'll speak freely.' The announced candor buys trust: a speaker willing to offend seems unwilling to lie.",
     "example": "Kent to Lear: \"be Kent unmannerly, / When Lear is mad… What wouldst thou do, old man?\"",
     "confuse": "Apophasis pretends *not* to say the thing; parrhesia says it and points at its own daring."
   },
   "metabasis": {
     "name": "Metabasis",
     "pron": "meh-TAB-uh-sis / mɛˈtæbəsɪs",
-    "plain": "A brief transitional summary: what has been said, what comes next. It is the argument turning to face the audience and showing its map — an act of confidence that also disciplines the reader's memory into the writer's preferred shape.",
+    "plain": "A brief transition that sums up what has been said and previews what comes next: 'So much for the causes; now the consequences.' The argument showing the reader its map.",
     "example": "\"So much for the causes; now for the consequences.\"",
     "confuse": "Metanoia revises a statement; metabasis merely pivots between sections."
   },
   "amplificatio": {
     "name": "Amplificatio",
     "pron": "am-plih-fih-KAH-tee-oh",
-    "plain": "Expanding and intensifying a point through repetition, accumulation, and escalation — returning to the same idea with greater force each pass. Where enumeration adds instances, amplification adds magnitude: the theme is not just restated but enlarged until it fills the reader's whole field of view.",
+    "plain": "Returning to the same point with more force each time — repeating, stacking, escalating until the idea fills the frame. Where a list adds instances, amplification adds size.",
     "example": "Cicero circling Catiline's treachery in wave after rising wave.",
     "confuse": "Enumeratio lists; amplificatio inflates. Auxesis is its close kin, arranging terms in ascending force."
   },
   "aporia": {
     "name": "Aporia",
     "pron": "uh-POR-ee-uh / əˈpɔːriə",
-    "plain": "Performed doubt or perplexity — the speaker pauses to wonder aloud what to say, how to proceed, whether the thing can be said at all. The hesitation dramatizes honesty and difficulty; sometimes it is real (the essay thinking), sometimes staged (the lawyer 'at a loss' before a jury).",
+    "plain": "Performed doubt: the speaker wonders aloud what to say, or whether it can be said at all. Sometimes the doubt is real, sometimes staged; either way it dramatizes honesty and difficulty.",
     "example": "\"To be, or not to be, that is the question\" — deliberation as spectacle",
     "confuse": "A rhetorical question presumes its answer; aporia performs not having one."
   },
   "onomatopoeia": {
     "name": "Onomatopoeia",
     "pron": "on-uh-mat-uh-PEE-uh / ˌɒnəˌmætəˈpiːə",
-    "plain": "Words whose sound imitates their sense — buzz, crack, murmur. At full power it extends past single words: whole lines can be engineered so their phonetics perform the event they describe, making the reader's mouth enact the meaning.",
+    "plain": "Words that sound like what they mean — buzz, crack, murmur. At full strength, whole lines can be built so their sound acts out the event they describe.",
     "example": "\"The moan of doves in immemorial elms, / And murmuring of innumerable bees\" — Tennyson",
     "confuse": "Alliteration and assonance pattern sounds without imitating anything; onomatopoeia requires the sound-sense match."
   },
   "assonance": {
     "name": "Assonance",
     "pron": "ASS-uh-nunce / ˈæsənəns",
-    "plain": "Repetition of vowel sounds within nearby words — the deep green sea. Vowels carry a line's music and emotional temperature: long vowels slow and mourn, short vowels patter and quicken. Assonance is rhyme's shy cousin, binding lines below conscious notice.",
+    "plain": "Repeating vowel sounds in nearby words — the deep green sea. Long vowels slow a line down; short ones speed it up. It binds lines together below conscious notice.",
     "example": "\"in Xanadu did Kubla Khan / A stately pleasure-dome decree\" — the a's and u's",
     "confuse": "Alliteration repeats initial consonants; consonance repeats consonants anywhere; assonance is vowels only."
   },
   "mythopoesis": {
     "name": "Mythopoesis",
     "pron": "mith-oh-poh-EE-sis",
-    "plain": "Myth-making: narration pitched at the register of origin stories, where characters become archetypes and events become cosmology. The prose signals that what happens here explains the world, not just the plot — genealogies, epithets, and ritual repetition are its instruments.",
+    "plain": "Writing pitched at the level of origin stories, where characters become archetypes and events explain the world, not just the plot. Genealogies, epithets, and ritual repetition are its tools.",
     "example": "\"Many years later… his father took him to discover ice.\" — García Márquez founding a world",
     "confuse": "Allusion borrows an existing myth; mythopoesis manufactures the mythic register itself."
   },
   "enargeia": {
     "name": "Enargeia / Vivid Specificity",
     "pron": "en-AR-gay-uh / ɛnɑːrˈɡeɪə",
-    "plain": "Description so concrete and sensory that the audience seems to witness rather than read — the classical virtue of 'bringing before the eyes.' It is precision recruited as persuasion: the detail's specificity vouches for the whole account's truth.",
+    "plain": "Description so concrete and sensory that the audience seems to see it rather than read it. The precision does persuasive work: specific detail vouches for the whole account.",
     "example": "Homer lingering on the boar's-tusk helmet, strap by strap.",
     "confuse": "Ekphrasis is enargeia aimed at an artwork; imagery is the broad modern term without the persuasive charge."
   }

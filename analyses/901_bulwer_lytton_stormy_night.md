@@ -24,15 +24,15 @@
 **Lines:** L1–2
 **Definition:** An unintended collapse from the elevated to the flat.
 **Evidence:** "the rain fell in torrents—except at occasional intervals"
-**Effect:** Torrents are announced and then, four words later, rescinded. The correction is honest and fatal: a storm qualified into a drizzle. Drama cannot survive an author this anxious about meteorological accuracy.
-**Near-miss:** Deliberate bathos deflates for comedy. This deflation is administrative.
+**Effect:** Torrents are announced and then, four words later, taken back. The correction defeats the drama: a storm qualified down to a drizzle.
+**Near-miss:** Deliberate bathos deflates for comedy. This deflation is accidental.
 
 ### **Pathetic Fallacy** (unearned)
 **Lines:** L4–5
 **Definition:** Granting nature human feeling.
 **Evidence:** "fiercely agitating the scanty flame of the lamps that struggled against the darkness"
-**Effect:** The lamps receive a moral life nobody has prepared. Wind is "violent" and "fierce," flames "struggle" — three emotional adjectives deep before a single human being has appeared to feel anything.
-**Risk:** Personification spent on furniture leaves nothing in the account for people.
+**Effect:** The lamps are given feelings before any person appears. Wind is "violent" and "fierce," flames "struggle" — three emotional words in, and still no human being to feel anything.
+**Risk:** If the objects get all the emotion, nothing is left for the people.
 
 ---
 
@@ -42,15 +42,15 @@
 **Lines:** L3
 **Definition:** An inserted aside breaking syntactic flow.
 **Evidence:** "(for it is in London that our scene lies)"
-**Effect:** At the precise moment the weather threatens to become interesting, the narrator stops the storm to check the reader's geography. The aside is not urgent, not witty, and not brief in spirit — it is a tour guide clearing his throat mid-thunderclap.
-**Near-miss:** Melville's "—never mind how long precisely—" earns its interruption by revealing character. This one reveals only an author worried we've lost the map.
+**Effect:** Just as the weather gets interesting, the narrator stops the storm to give the reader directions. The aside is not urgent, witty, or necessary.
+**Near-miss:** Melville's "—never mind how long precisely—" earns its interruption by revealing character. This one reveals only an author worried the reader is lost.
 
 ### **Cumulative Sentence** (runaway)
 **Lines:** L1–5
 **Definition:** A main clause extended by trailing modifiers.
 **Evidence:** "which swept up the streets," "rattling along the housetops," "and fiercely agitating the scanty flame"
-**Effect:** The main clause is dead by word six; everything after is appendage. Each modifier hooks onto the last — gust, streets, housetops, lamps — a chain of sub-tenants living in a sentence whose landlord has left.
-**Risk:** The cumulative shape rewards writers who know where they are going. It punishes the rest in public.
+**Effect:** The main clause is over by word six; everything after is add-on. Each modifier hooks onto the last — gust, streets, housetops, lamps — long after the main clause stopped mattering.
+**Risk:** The cumulative shape rewards writers who know where they are going. It exposes the rest.
 
 ---
 
@@ -60,14 +60,14 @@
 **Lines:** L1–3
 **Definition:** Reflexive hedging that dilutes every assertion as it is made.
 **Evidence:** "except at occasional intervals," "when it was checked"
-**Effect:** The prose cannot commit. Rain falls except when it doesn't; the exception has its own exception. Each hedge is small; their sum is a narrator no reader can trust to describe the weather, let alone a soul.
+**Effect:** The prose cannot commit. Rain falls except when it doesn't; the exception has its own exception. Each hedge is small; together they make a narrator the reader cannot trust to describe anything.
 
 ---
 
 ## 1) THE AUTOPSY
 
-One sentence, five lines, and not one clause allowed to finish its work. The order of failure: first the hedge (torrents, retracted), then the digression (London, announced), then the decoration (lamps, ensouled). These are three separate vices, and the sentence commits them in ascending order of vanity. The grammar is sound throughout — that is the lesson. Nothing here is a mistake of syntax. Every fault is a decision.
+One sentence, five lines, and not one clause allowed to finish its work. The order of failure: first the hedge (torrents, retracted), then the digression (London, announced), then the decoration (lamps, ensouled). Three separate faults, each more self-indulgent than the last. The grammar is sound throughout — that is the lesson. Nothing here is a mistake of syntax. Every fault is a decision.
 
 ## 2) THE REPAIR
 
-Strip the exceptions, evict the parenthesis, and let one image stand: *"The night was dark and stormy. Rain swept the London streets in gusts, and the lamps guttered."* Two sentences, one commitment each. The reader now knows the city, the weather, and — from what is no longer there — that the author trusts them.
+Strip the exceptions, remove the parenthesis, and let one image stand: *"The night was dark and stormy. Rain swept the London streets in gusts, and the lamps guttered."* Two sentences, one commitment each. The reader now knows the city, the weather, and — from what is no longer there — that the author trusts them.
