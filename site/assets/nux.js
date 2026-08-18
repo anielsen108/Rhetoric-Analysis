@@ -13,12 +13,12 @@
     {
       path: 'devices/anaphora.html',
       title: 'The Rhetoric Field Guide',
-      body: '<p>One page per device: the plain definition, the neighbours it gets mistaken for, and every excerpt the Reader contains. <b>Drill this device</b> starts a quiz scoped to it; further down, <b>Travels with</b> shows its usual companions.</p>',
+      body: '<p>One page per device: the plain definition, the neighbours it gets mistaken for, and every excerpt the Reader contains. <b>Drill this device</b> starts a quiz scoped to it; <b>Travels with</b> shows its usual companions.</p>',
     },
     {
       path: 'passages/001_moby_dick_opening.html',
       title: 'The Rhetoric Reader',
-      body: '<p>Every passage is annotated beneath the surface. <b>Hover any marked phrase</b> — go on, this card will wait — and click to pin its device. The colored chips toggle whole families of underlines, <b>Walk through it</b> hands you to a tutor, and <b>Test yourself</b> hides the marks and grades your eye.</p>',
+      body: '<p><b>Hover any marked phrase</b> to open its device; click to pin it. The colored chips toggle whole families of underlines, <b>Walk through it</b> hands you to a tutor, and <b>Test yourself</b> hides the marks and grades your eye.</p>',
     },
     {
       path: 'learn/index.html',
@@ -32,8 +32,8 @@
     },
     {
       path: 'course/index.html',
-      title: 'The Course — and you are off',
-      body: '<p>Ten weeks through all four rooms — read, quiz, drill — with progress saved in this browser.</p><p>Three parting habits: <kbd>Ctrl</kbd>+<kbd>K</kbd> jumps to anything from anywhere, the <b>?</b> in the header opens the Site Guide, and the <b>gear</b> backs your progress up to a file.</p>',
+      title: 'The Rhetoric Course',
+      body: '<p>Ten weeks through all four rooms — read, quiz, drill — with progress saved in this browser.</p><p><kbd>Ctrl</kbd>+<kbd>K</kbd> jumps to anything from anywhere; the <b>?</b> in the header opens the Site Guide; the <b>gear</b> backs your progress up to a file.</p>',
     },
   ];
 
@@ -74,8 +74,7 @@
         (last ? '' : '<button type="button" class="linklike nux-skip" data-nux="finish">End tour</button>') +
         '</div>'
       : '<p class="eyebrow">The tour · paused</p>' +
-        '<h2>You wandered off</h2>' +
-        '<p>Exploring is allowed — the next stop is <b>' + stop.title + '</b>.</p>' +
+        '<h2>Next: ' + stop.title + '</h2>' +
         '<div class="nux-actions">' +
         '<button type="button" class="primary-action nux-next" data-nux="resume">Resume the tour →</button>' +
         '<button type="button" class="linklike nux-skip" data-nux="finish">End tour</button></div>';
@@ -108,7 +107,7 @@
       '<li><b>The School</b> — quizzes that learn where you are weak.</li>' +
       '<li><b>The Lab</b> — speaking drills, with or without a partner.</li>' +
       '<li><b>The Course</b> — ten guided weeks through the other four.</li></ul>' +
-      '<p>The tour visits all five in that order — two minutes, on the real pages.</p>' +
+      '<p>Two minutes, on the real pages.</p>' +
       '<div class="nux-actions">' +
       '<button type="button" class="primary-action nux-next" data-nux="tour">Take the tour →</button>' +
       '<button type="button" class="linklike nux-skip" data-nux="skip">I’ll explore on my own</button>' +
