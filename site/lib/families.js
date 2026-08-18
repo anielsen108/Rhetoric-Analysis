@@ -20,7 +20,7 @@ export const FAMILIES = [
   {
     id: 'figuration',
     name: 'Metaphor & Figuration',
-    blurb: 'Saying one thing by another — transfer, substitution, embodiment.',
+    blurb: 'Saying one thing through another.',
     keys: ['metaphor', 'simile', 'catachresis', 'metonymy', 'synecdoche',
       'personification', 'prosopopoeia', 'pathetic-fallacy', 'hypallage',
       'metalepsis', 'symbol', 'allusion', 'mythopoesis'],
@@ -42,7 +42,7 @@ export const FAMILIES = [
   {
     id: 'syntax',
     name: 'Syntax & Word Order',
-    blurb: 'The architecture of the sentence — inversion, suspension, accumulation.',
+    blurb: 'How sentences are built — word order, delay, pile-up.',
     keys: ['hyperbaton', 'anastrophe', 'periodic-sentence', 'cumulative-sentence',
       'parataxis', 'parenthesis', 'apposition', 'zeugma', 'hendiadys', 'pleonasm',
       'enumeratio', 'passive-voice', 'cleft-sentence'],
